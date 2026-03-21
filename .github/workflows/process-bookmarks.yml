@@ -1,0 +1,76 @@
+name: Process Reading List
+
+on:
+  schedule:
+    - cron: '0 0 * * *'
+  workflow_dispatch:
+
+concurrency:
+  group: process-reading-list
+  cancel-in-progress: false
+
+permissions:
+  contents: write
+  issues: write
+
+jobs:
+  process:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Setup tools
+        run: sudo apt-get install -y jq
+
+      - name: Install Claude Code
+        run: npm install -g @anthropic-ai/claude-code
+
+      - name: Initial setup (ensure quarantine collection exists)
+        run: scripts/setup.sh
+        env:
+          RAINDROP_TEST_TOKEN: ${{ secrets.RAINDROP_TEST_TOKEN }}
+
+      - name: Cleanup quarantine (10일 경과 → 휴지통)
+        run: scripts/cleanup-quarantine.sh
+        env:
+          RAINDROP_TEST_TOKEN: ${{ secrets.RAINDROP_TEST_TOKEN }}
+
+      - name: Fetch unsorted bookmarks
+        run: scripts/fetch-unsorted.sh
+        env:
+          RAINDROP_TEST_TOKEN: ${{ secrets.RAINDROP_TEST_TOKEN }}
+
+      - name: Split into batches
+        run: scripts/split-batches.sh
+
+      - name: Process batches
+        run: |
+          for batch in tmp/batch_*.json; do
+            [ -f "$batch" ] || continue
+            result_file="tmp/result_$(basename "$batch")"
+
+            echo "=== 배치 처리: $(basename "$batch") ==="
+
+            cat "$batch" | claude --print \
+              --system-prompt "$(cat prompts/analyze-bookmarks.md)" \
+              --output-format json \
+              --dangerously-skip-permissions \
+              > "$result_file" 2>/dev/null || { echo "배치 실패: $batch"; continue; }
+
+            scripts/apply-results.sh "$result_file" || { echo "적용 실패: $result_file"; continue; }
+          done
+        env:
+          RAINDROP_TEST_TOKEN: ${{ secrets.RAINDROP_TEST_TOKEN }}
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+
+      - name: Generate daily index
+        run: scripts/generate-index.sh
+
+      - name: Commit and push reports
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add reports/ config/collections.json
+          git diff --cached --quiet && echo "변경사항 없음" && exit 0
+          git commit -m "report: $(date +%Y-%m-%d) 처리 결과"
+          git push
