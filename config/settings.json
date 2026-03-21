@@ -6,5 +6,9 @@
   "raindrop_api_base": "https://api.raindrop.io/rest/v1",
   "raindrop_api_delay_ms": 500,
   "slug_max_length": 60,
-  "issue_labels": ["new-collection", "auto"]
+  "issue_labels": ["new-collection", "auto"],
+  "tag_pending": "대기중",
+  "tag_quarantine": "검증실패",
+  "status_passed": "passed",
+  "status_failed": "failed"
 }

@@ -2,6 +2,7 @@
 
 setup() {
   export SCRIPT_DIR="$(cd "$(dirname "$BATS_TEST_FILENAME")/.." && pwd)"
+  export RAINDROP_TEST_TOKEN="test-token-123"
   mkdir -p tmp
   # input_sample.json에 3개 북마크 (1개 중복 URL)
   cp tests/fixtures/input_sample.json tmp/input.json

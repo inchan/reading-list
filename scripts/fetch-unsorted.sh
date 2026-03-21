@@ -16,6 +16,8 @@ bookmarks=$(raindrop_get_all_pages "/raindrops/-1")
 bookmark_count=$(echo "$bookmarks" | jq 'length')
 log_info "Unsorted 북마크 ${bookmark_count}개 조회됨"
 
+mkdir -p tmp
+
 if [ "$bookmark_count" -eq 0 ]; then
   log_info "처리할 북마크 없음"
   echo '{"run_date":"'"$(date +%Y-%m-%d)"'","collections":[],"bookmarks":[]}' > tmp/input.json
@@ -23,7 +25,7 @@ if [ "$bookmark_count" -eq 0 ]; then
 fi
 
 # #대기중 태그가 붙은 항목 제외 (이전 실행에서 컬렉션 미매칭으로 대기 중인 항목)
-bookmarks=$(echo "$bookmarks" | jq '[.[] | select(.tags | index("대기중") | not)]')
+bookmarks=$(echo "$bookmarks" | jq --arg tag "$TAG_PENDING" '[.[] | select(.tags | index($tag) | not)]')
 bookmark_count=$(echo "$bookmarks" | jq 'length')
 log_info "대기중 태그 제외 후 ${bookmark_count}개"
 
@@ -42,7 +44,6 @@ input=$(jq -n \
   }]')" \
   '{run_date: $date, collections: $collections, bookmarks: $bookmarks}')
 
-mkdir -p tmp
 echo "$input" > tmp/input.json
 log_info "tmp/input.json 저장 완료 (${bookmark_count}개 북마크)"
 

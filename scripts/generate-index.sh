@@ -23,21 +23,21 @@ for result_file in tmp/result_batch_*.json; do
   [ -f "$result_file" ] || continue
 
   # passed 항목
-  jq -c '.results[] | select(.verification.status == "passed")' "$result_file" | while IFS= read -r item; do
+  jq -c --arg status "$STATUS_PASSED" '.results[] | select(.verification.status == $status)' "$result_file" | while IFS= read -r item; do
     url=$(echo "$item" | jq -r '.url')
     collection=$(echo "$item" | jq -r '.category.collection_title // "미분류"')
     tags=$(echo "$item" | jq -r '.tags | join(", ")')
-    slug=$(slugify "$(echo "$url" | sed -E 's|https?://||;s|/|-|g;s|[?#].*||')")
-    title=$(echo "$url" | sed -E 's|https?://||;s|/| |g' | head -c 50)
+    slug=$(slugify_url "$url")
+    title=$(title_from_url "$url")
 
     echo "| ${title} | ${collection} | ${tags} | [보기](./${slug}.md) |" >> "${REPORT_DIR}/.passed.tmp"
   done
 
   # failed 항목
-  jq -c '.results[] | select(.verification.status == "failed")' "$result_file" | while IFS= read -r item; do
+  jq -c --arg status "$STATUS_FAILED" '.results[] | select(.verification.status == $status)' "$result_file" | while IFS= read -r item; do
     url=$(echo "$item" | jq -r '.url')
     reason=$(echo "$item" | jq -r '.verification.reason')
-    title=$(echo "$url" | sed -E 's|https?://||;s|/| |g' | head -c 50)
+    title=$(title_from_url "$url")
 
     echo "| ${title} | ${reason} |" >> "${REPORT_DIR}/.failed.tmp"
   done

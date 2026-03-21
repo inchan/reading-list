@@ -16,7 +16,7 @@ run_date=$(jq -r '.run_date' "$RESULT_FILE")
 report_dir="reports/${run_date}"
 
 # passed 항목만 보고서 생성
-passed_items=$(jq '[.results[] | select(.verification.status == "passed")]' "$RESULT_FILE")
+passed_items=$(jq --arg status "$STATUS_PASSED" '[.results[] | select(.verification.status == $status)]' "$RESULT_FILE")
 count=$(echo "$passed_items" | jq 'length')
 
 if [ "$count" -eq 0 ]; then
@@ -40,9 +40,8 @@ for i in $(seq 0 $((count - 1))); do
     title=$(echo "$url" | sed -E 's|https?://||;s|/| |g;s|[?#].*||')
   fi
 
-  # slug는 URL에서 생성 (프로토콜 제거, /를 -로, 쿼리 제거)
-  slug_source=$(echo "$url" | sed -E 's|https?://||;s|/|-|g;s|[?#].*||')
-  slug=$(slugify "$slug_source")
+  # slug는 URL에서 생성
+  slug=$(slugify_url "$url")
 
   # 중복 slug 처리
   slug_file="${report_dir}/${slug}.md"
@@ -56,8 +55,6 @@ for i in $(seq 0 $((count - 1))); do
   tags=$(echo "$item" | jq -r '.tags | map("\"" + . + "\"") | join(", ")')
   summary=$(echo "$item" | jq -r '.summary // ""')
   insights=$(echo "$item" | jq -r '.insights // ""')
-  raindrop_id=$(echo "$item" | jq -r '.bookmark_id')
-
   # 검증 결과 포매팅
   claims_text=""
   claims_count=$(echo "$item" | jq '.verification.claims | length')
@@ -86,7 +83,7 @@ date: "${run_date}"
 collection: "${collection}"
 tags: [${tags}]
 verification: "passed"
-raindrop_id: ${raindrop_id}
+raindrop_id: ${bookmark_id}
 ---
 
 ## 요약

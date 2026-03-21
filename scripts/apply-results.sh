@@ -15,9 +15,7 @@ fi
 run_date=$(jq -r '.run_date' "$RESULT_FILE")
 
 # 검증실패 컬렉션 ID 조회
-collections=$(raindrop_get "/collections") || { log_error "컬렉션 조회 실패"; exit 1; }
-quarantine_id=$(echo "$collections" | jq -r --arg name "$QUARANTINE_COLLECTION_NAME" \
-  '.items[] | select(.title == $name) | ._id // empty')
+quarantine_id=$(get_quarantine_id) || { log_error "컬렉션 조회 실패"; exit 1; }
 
 # 보고서 생성 먼저
 bash "$SCRIPT_DIR/generate-reports.sh" "$RESULT_FILE"
@@ -28,13 +26,13 @@ jq -c '.results[]' "$RESULT_FILE" | while IFS= read -r item; do
   status=$(echo "$item" | jq -r '.verification.status')
   url=$(echo "$item" | jq -r '.url')
 
-  if [ "$status" = "passed" ]; then
+  if [ "$status" = "$STATUS_PASSED" ]; then
     collection_id=$(echo "$item" | jq -r '.category.collection_id // empty')
     tags=$(echo "$item" | jq -c '.tags')
 
     if [ -n "$collection_id" ]; then
       # 컬렉션 이동 + 태그 + 노트 (GitHub Pages URL)
-      slug=$(slugify "$(echo "$url" | sed -E 's|https?://||;s|/|-|g;s|[?#].*||')")
+      slug=$(slugify_url "$url")
       note_url="${PAGES_BASE_URL}/reports/${run_date}/${slug}"
 
       update_data=$(jq -n \
@@ -48,17 +46,17 @@ jq -c '.results[]' "$RESULT_FILE" | while IFS= read -r item; do
         || log_error "이동 실패: ID=${bookmark_id}"
     else
       # 컬렉션 미매칭 → Unsorted 유지 + #대기중 태그
-      update_data=$(jq -n --argjson tags '["대기중"]' '{tags: $tags}')
+      update_data=$(jq -n --argjson tags "[\"$TAG_PENDING\"]" '{tags: $tags}')
       raindrop_put "/raindrop/${bookmark_id}" "$update_data" \
         && log_info "PENDING: ID=${bookmark_id} → 대기중 태그" \
         || log_error "태그 실패: ID=${bookmark_id}"
     fi
 
-  elif [ "$status" = "failed" ]; then
+  elif [ "$status" = "$STATUS_FAILED" ]; then
     if [ -n "$quarantine_id" ]; then
       update_data=$(jq -n \
         --argjson collection_id "$quarantine_id" \
-        --argjson tags '["검증실패"]' \
+        --argjson tags "[\"$TAG_QUARANTINE\"]" \
         '{collection: {"$id": $collection_id}, tags: $tags}')
 
       raindrop_put "/raindrop/${bookmark_id}" "$update_data" \

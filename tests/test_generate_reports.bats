@@ -2,6 +2,7 @@
 
 setup() {
   export SCRIPT_DIR="$(cd "$(dirname "$BATS_TEST_FILENAME")/.." && pwd)"
+  export RAINDROP_TEST_TOKEN="test-token-123"
   rm -rf reports/2026-03-21
 }
 

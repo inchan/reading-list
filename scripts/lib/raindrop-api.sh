@@ -6,14 +6,22 @@ CONFIG_FILE="${SCRIPT_DIR}/../../config/settings.json"
 
 # --- 설정 로드 ---
 load_settings() {
-  QUARANTINE_DAYS=$(jq -r '.quarantine_days' "$CONFIG_FILE")
-  QUARANTINE_COLLECTION_NAME=$(jq -r '.quarantine_collection_name' "$CONFIG_FILE")
-  MAX_PER_BATCH=$(jq -r '.max_bookmarks_per_batch' "$CONFIG_FILE")
-  PAGES_BASE_URL=$(jq -r '.pages_base_url' "$CONFIG_FILE")
-  API_BASE=$(jq -r '.raindrop_api_base' "$CONFIG_FILE")
-  API_DELAY_MS=$(jq -r '.raindrop_api_delay_ms' "$CONFIG_FILE")
-  SLUG_MAX_LENGTH=$(jq -r '.slug_max_length' "$CONFIG_FILE")
-  ISSUE_LABELS=$(jq -r '.issue_labels | join(",")' "$CONFIG_FILE")
+  eval "$(jq -r '
+    @sh "QUARANTINE_DAYS=\(.quarantine_days)",
+    @sh "QUARANTINE_COLLECTION_NAME=\(.quarantine_collection_name)",
+    @sh "MAX_PER_BATCH=\(.max_bookmarks_per_batch)",
+    @sh "PAGES_BASE_URL=\(.pages_base_url)",
+    @sh "API_BASE=\(.raindrop_api_base)",
+    @sh "API_DELAY_MS=\(.raindrop_api_delay_ms)",
+    @sh "SLUG_MAX_LENGTH=\(.slug_max_length)",
+    @sh "ISSUE_LABELS=\(.issue_labels | join(","))",
+    @sh "TAG_PENDING=\(.tag_pending)",
+    @sh "TAG_QUARANTINE=\(.tag_quarantine)",
+    @sh "STATUS_PASSED=\(.status_passed)",
+    @sh "STATUS_FAILED=\(.status_failed)"
+  ' "$CONFIG_FILE")"
+  API_DELAY_S=$(awk "BEGIN {printf \"%.1f\", ${API_DELAY_MS}/1000}")
+  : "${RAINDROP_TEST_TOKEN:?RAINDROP_TEST_TOKEN is not set}"
 }
 
 # --- 인증 ---
@@ -21,73 +29,27 @@ raindrop_auth_header() {
   echo "Authorization: Bearer ${RAINDROP_TEST_TOKEN}"
 }
 
-raindrop_api_base() {
-  if [ -n "${API_BASE:-}" ]; then
-    echo "$API_BASE"
-  else
-    echo "https://api.raindrop.io/rest/v1"
-  fi
-}
-
 # --- API 호출 (rate limit 대응) ---
-raindrop_get() {
-  local endpoint="$1"
-  local base
-  base=$(raindrop_api_base)
-  local delay_s
-  delay_s=$(echo "${API_DELAY_MS:-500}" | awk '{printf "%.1f", $1/1000}')
-
-  sleep "$delay_s"
-  curl -s -f \
-    -H "$(raindrop_auth_header)" \
-    -H "Content-Type: application/json" \
-    "${base}${endpoint}"
+_raindrop_request() {
+  local method="$1" endpoint="$2" data="${3:-}"
+  sleep "$API_DELAY_S"
+  local -a args=(-s -f -H "$(raindrop_auth_header)" -H "Content-Type: application/json")
+  [ "$method" != "GET" ] && args+=(-X "$method")
+  [ -n "$data" ] && args+=(-d "$data")
+  curl "${args[@]}" "${API_BASE}${endpoint}"
 }
 
-raindrop_put() {
-  local endpoint="$1"
-  local data="$2"
-  local base
-  base=$(raindrop_api_base)
-  local delay_s
-  delay_s=$(echo "${API_DELAY_MS:-500}" | awk '{printf "%.1f", $1/1000}')
+raindrop_get() { _raindrop_request GET "$1"; }
+raindrop_put() { _raindrop_request PUT "$1" "$2"; }
+raindrop_post() { _raindrop_request POST "$1" "$2"; }
+raindrop_delete() { _raindrop_request DELETE "$1"; }
 
-  sleep "$delay_s"
-  curl -s -f -X PUT \
-    -H "$(raindrop_auth_header)" \
-    -H "Content-Type: application/json" \
-    -d "$data" \
-    "${base}${endpoint}"
-}
-
-raindrop_post() {
-  local endpoint="$1"
-  local data="$2"
-  local base
-  base=$(raindrop_api_base)
-  local delay_s
-  delay_s=$(echo "${API_DELAY_MS:-500}" | awk '{printf "%.1f", $1/1000}')
-
-  sleep "$delay_s"
-  curl -s -f -X POST \
-    -H "$(raindrop_auth_header)" \
-    -H "Content-Type: application/json" \
-    -d "$data" \
-    "${base}${endpoint}"
-}
-
-raindrop_delete() {
-  local endpoint="$1"
-  local base
-  base=$(raindrop_api_base)
-  local delay_s
-  delay_s=$(echo "${API_DELAY_MS:-500}" | awk '{printf "%.1f", $1/1000}')
-
-  sleep "$delay_s"
-  curl -s -f -X DELETE \
-    -H "$(raindrop_auth_header)" \
-    -H "Content-Type: application/json" \
-    "${base}${endpoint}"
+# --- 검증실패 컬렉션 ID 조회 ---
+get_quarantine_id() {
+  local collections
+  collections=$(raindrop_get "/collections") || { log_error "컬렉션 조회 실패"; return 1; }
+  echo "$collections" | jq -r --arg name "$QUARANTINE_COLLECTION_NAME" \
+    '.items[] | select(.title == $name) | ._id // empty'
 }
 
 # --- 페이지네이션 조회 ---
@@ -129,6 +91,18 @@ slugify() {
     | sed 's/^-//;s/-$//' \
     | cut -c1-"$max_len" \
     | sed 's/-$//'
+}
+
+# --- URL → Slug ---
+slugify_url() {
+  local url="$1"
+  slugify "$(echo "$url" | sed -E 's|https?://||;s|/|-|g;s|[?#].*||')"
+}
+
+# --- URL → 제목 ---
+title_from_url() {
+  local url="$1" max_len="${2:-50}"
+  echo "$url" | sed -E 's|https?://||;s|/| |g;s|[?#].*||' | head -c "$max_len"
 }
 
 # --- 로그 ---
