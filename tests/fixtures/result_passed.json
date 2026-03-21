@@ -1,0 +1,31 @@
+{
+  "run_date": "2026-03-21",
+  "results": [
+    {
+      "bookmark_id": 98765,
+      "url": "https://example.com/react-19-guide",
+      "final_url": null,
+      "fetch_status": "ok",
+      "verification": {
+        "status": "passed",
+        "reason": null,
+        "claims": [
+          {
+            "claim": "React 19에서 서버 컴포넌트가 기본 지원됨",
+            "verified": true,
+            "sources": ["https://react.dev/blog/react-19"]
+          }
+        ]
+      },
+      "summary": "React 19의 서버 컴포넌트 지원에 대한 실무 가이드. RSC가 기본 활성화되며 기존 클라이언트 컴포넌트와의 공존 전략을 설명한다.",
+      "insights": "Next.js 프로젝트에서 점진적 마이그레이션이 가능하므로, 신규 페이지부터 서버 컴포넌트를 적용하면 된다.",
+      "category": {
+        "collection_id": 12345,
+        "collection_title": "Frontend"
+      },
+      "tags": ["react", "server-components", "성능최적화"],
+      "related_links": ["https://nextjs.org/docs/app/building-your-application/rendering"]
+    }
+  ],
+  "new_collections_needed": []
+}
