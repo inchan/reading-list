@@ -3,6 +3,7 @@
   "results": [
     {
       "bookmark_id": 98766,
+      "title": "Fake Framework Release",
       "url": "https://example.com/fake-framework",
       "final_url": null,
       "fetch_status": "ok",

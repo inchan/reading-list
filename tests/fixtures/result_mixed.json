@@ -3,6 +3,7 @@
   "results": [
     {
       "bookmark_id": 98765,
+      "title": "React 19 Server Components Guide",
       "url": "https://example.com/react-19-guide",
       "final_url": null,
       "fetch_status": "ok",
@@ -15,6 +16,7 @@
     },
     {
       "bookmark_id": 98766,
+      "title": "Fake Framework Release",
       "url": "https://example.com/fake-framework",
       "final_url": null,
       "fetch_status": "ok",
@@ -27,6 +29,7 @@
     },
     {
       "bookmark_id": 98768,
+      "title": "MLOps Production Guide",
       "url": "https://example.com/mlops-guide",
       "final_url": null,
       "fetch_status": "ok",
