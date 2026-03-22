@@ -65,6 +65,12 @@ jobs:
         env:
           RAINDROP_TEST_TOKEN: ${{ secrets.RAINDROP_TEST_TOKEN }}
 
+      - name: Prefetch URLs (Jina Reader → Firecrawl fallback)
+        run: scripts/prefetch-urls.sh
+        env:
+          RAINDROP_TEST_TOKEN: ${{ secrets.RAINDROP_TEST_TOKEN }}
+          FIRECRAWL_API_KEY: ${{ secrets.FIRECRAWL_API_KEY }}
+
       - name: Process batches with Claude
         run: |
           for batch in tmp/batch_*.json; do
