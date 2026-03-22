@@ -1,5 +1,5 @@
 ---
-title: "m.ppomppu.co.kr new bbs_view.php"
+title: "서울근교 아이들과 콧바람 쐬기 좋은곳"
 url: "https://m.ppomppu.co.kr/new/bbs_view.php?id=baby&no=44963"
 source_url: "https://m.ppomppu.co.kr/new/bbs_view.php?id=baby&no=44963"
 date: "2026-03-22"

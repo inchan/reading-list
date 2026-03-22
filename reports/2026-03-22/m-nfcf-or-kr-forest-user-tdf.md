@@ -1,5 +1,5 @@
 ---
-title: "m.nfcf.or.kr forest user.tdf"
+title: "산림조합 송이 공판 현황 조회"
 url: "https://m.nfcf.or.kr/forest/user.tdf?a=user.songi.SongiApp&c=1003&mc=MOB_CST01"
 source_url: "https://m.nfcf.or.kr/forest/user.tdf?a=user.songi.SongiApp&c=1003&mc=MOB_CST01"
 date: "2026-03-22"

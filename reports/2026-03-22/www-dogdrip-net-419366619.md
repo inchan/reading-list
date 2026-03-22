@@ -1,5 +1,5 @@
 ---
-title: "www.dogdrip.net 419366619"
+title: "4-7-8 호흡법 — 수면 유도법"
 url: "https://www.dogdrip.net/419366619"
 source_url: "https://www.dogdrip.net/419366619"
 date: "2026-03-22"

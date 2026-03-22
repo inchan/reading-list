@@ -1,5 +1,5 @@
 ---
-title: "www.threads.com @unclejobs.ai post DWI15TmCRMW"
+title: "Claude Code Channels 리서치 프리뷰"
 url: "https://www.threads.com/@unclejobs.ai/post/DWI15TmCRMW?xmt=AQF0UfaGDgUFUbw8HmKpw777RTUoQw2dk5cxlf0KkAcvhRU_wKScjVvQ_VGUBS6iE26n8kK9&slof=1"
 source_url: "https://www.threads.com/@unclejobs.ai/post/DWI15TmCRMW?xmt=AQF0UfaGDgUFUbw8HmKpw777RTUoQw2dk5cxlf0KkAcvhRU_wKScjVvQ_VGUBS6iE26n8kK9&slof=1"
 date: "2026-03-22"

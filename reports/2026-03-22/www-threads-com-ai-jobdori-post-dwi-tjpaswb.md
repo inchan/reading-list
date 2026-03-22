@@ -1,5 +1,5 @@
 ---
-title: "www.threads.com @ai_jobdori post DWI_TjpASWB"
+title: "NVIDIA 합성 데이터 임베딩 모델 구축법"
 url: "https://www.threads.com/@ai_jobdori/post/DWI_TjpASWB?xmt=AQF0Sjw-2vj_2q1pdqGg4nprQ0bk2mjJxxSIXt0Pq47fg9bRpygcKYImOyEfxVn5gsB_buE&slof=1"
 source_url: "https://www.threads.com/@ai_jobdori/post/DWI_TjpASWB?xmt=AQF0Sjw-2vj_2q1pdqGg4nprQ0bk2mjJxxSIXt0Pq47fg9bRpygcKYImOyEfxVn5gsB_buE&slof=1"
 date: "2026-03-22"

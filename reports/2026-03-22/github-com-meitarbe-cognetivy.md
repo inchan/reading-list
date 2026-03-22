@@ -1,5 +1,5 @@
 ---
-title: "github.com meitarbe cognetivy"
+title: "Cognetivy — AI 에이전트 상태 관리 레이어"
 url: "https://github.com/meitarbe/cognetivy"
 source_url: "https://github.com/meitarbe/cognetivy"
 date: "2026-03-22"

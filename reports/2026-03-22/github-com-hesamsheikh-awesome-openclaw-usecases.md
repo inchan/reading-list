@@ -1,5 +1,5 @@
 ---
-title: "github.com hesamsheikh awesome-openclaw-usecases"
+title: "Awesome OpenClaw Use Cases"
 url: "https://github.com/hesamsheikh/awesome-openclaw-usecases?media_id=3842830682847166438_67001888484&media_author_id=67001888484&ranking_info_token=GCA0ZjQ2MGJlOTFiNmU0MWE5OGUwOTYwODZiNWIyNTExZlgTMzg0MjgzMDY0NTUxNzg2NDI3NigDdmxsAA%3D%3D&utm_source=ig_text_post_permalink"
 source_url: "https://github.com/hesamsheikh/awesome-openclaw-usecases?media_id=3842830682847166438_67001888484&media_author_id=67001888484&ranking_info_token=GCA0ZjQ2MGJlOTFiNmU0MWE5OGUwOTYwODZiNWIyNTExZlgTMzg0MjgzMDY0NTUxNzg2NDI3NigDdmxsAA%3D%3D&utm_source=ig_text_post_permalink"
 date: "2026-03-22"

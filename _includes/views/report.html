@@ -34,13 +34,10 @@
   <div class="hero-panel hero-panel--article">
     <div class="hero-panel__content">
       {% include breadcrumbs.html page_type='report' %}
-      <p class="eyebrow">Individual Report</p>
       <h1 class="hero-title hero-title--article">{{ page.title }}</h1>
-      <div class="hero-meta">
-        {% include collection_badge.html label=page.collection %}
-        {% include verification_badge.html status=page.verification %}
-        <span class="meta-chip">{{ report_date }}</span>
-      </div>
+      {% if source_url contains '://' %}
+        <p class="hero-source-url"><a href="{{ source_url }}" target="_blank" rel="noreferrer">{{ source_url | split: '?' | first | truncate: 80 }}</a></p>
+      {% endif %}
       {% if page.tags %}
         <div class="tag-list">
           {% for tag in page.tags %}
@@ -50,6 +47,11 @@
           {% endfor %}
         </div>
       {% endif %}
+      <div class="hero-meta">
+        {% include collection_badge.html label=page.collection %}
+        {% include verification_badge.html status=page.verification %}
+        <span class="meta-chip">{{ report_date }}</span>
+      </div>
     </div>
     <div class="hero-panel__actions">
       {% if source_url contains '://' %}
