@@ -43,8 +43,8 @@ if [ -d "$REPORT_DIR" ]; then
     done
   fi
 
-  passed_count=$(wc -l < "${REPORT_DIR}/.passed.tmp" 2>/dev/null | tr -d ' ' || echo 0)
-  failed_count=$(wc -l < "${REPORT_DIR}/.failed.tmp" 2>/dev/null | tr -d ' ' || echo 0)
+  passed_count=$([ -f "${REPORT_DIR}/.passed.tmp" ] && wc -l < "${REPORT_DIR}/.passed.tmp" | tr -d ' ' || echo 0)
+  failed_count=$([ -f "${REPORT_DIR}/.failed.tmp" ] && wc -l < "${REPORT_DIR}/.failed.tmp" | tr -d ' ' || echo 0)
   total=$((passed_count + failed_count))
 
   cat > "${REPORT_DIR}/index.md" << INDEX
