@@ -22,6 +22,11 @@
 
 **차단 목록에 없는 URL만** 접근하여 본문을 읽는다.
 
+**Fallback 전략 (직접 fetch 실패 시):**
+직접 URL fetch가 실패하면(`blocked`, `error`, `empty`), **즉시 failed 처리하지 말고** 다음 fallback을 시도한다:
+1. **Jina Reader**: `https://r.jina.ai/{원본URL}` 을 fetch한다. Jina Reader는 JavaScript 렌더링을 지원하며 대부분의 사이트에서 본문을 markdown으로 반환한다.
+2. Jina Reader도 실패하면 그때 `failed` 처리하고 `newly_blocked_domains`에 추가한다.
+
 **접근 상태 판정:**
 | 상태 | 조건 |
 |------|------|

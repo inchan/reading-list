@@ -90,6 +90,8 @@ jobs:
 
       - name: Generate daily index
         run: scripts/generate-index.sh
+        env:
+          RAINDROP_TEST_TOKEN: ${{ secrets.RAINDROP_TEST_TOKEN }}
 
       - name: Commit and push reports
         run: |

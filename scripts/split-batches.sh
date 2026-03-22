@@ -25,6 +25,15 @@ if [ "$skipped" -gt 0 ]; then
   log_warn "중복 URL ${skipped}개 제거됨"
 fi
 
+# 모바일→PC URL 변환 (접근성 개선)
+bookmarks=$(echo "$bookmarks" | jq '[.[] | .url = (.url
+  | gsub("https://m\\.blog\\.naver\\.com/"; "https://blog.naver.com/")
+  | gsub("https://m\\.clien\\.net/"; "https://www.clien.net/")
+  | gsub("https://m\\.ppomppu\\.co\\.kr/"; "https://www.ppomppu.co.kr/")
+  | gsub("https://m\\.search\\.naver\\.com/"; "https://search.naver.com/")
+)]')
+log_info "모바일→PC URL 변환 완료"
+
 # 차단 도메인 사전 필터 — Claude에 보내지 않고 바로 결과 생성
 BLOCKED_DOMAINS_FILE="config/blocked-domains.json"
 if [ -f "$BLOCKED_DOMAINS_FILE" ]; then
