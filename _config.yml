@@ -1,0 +1,19 @@
+title: Reading List
+description: 자동 북마크 분석 보고서
+baseurl: /reading-list
+url: https://inchan.github.io
+theme: minima
+markdown: kramdown
+
+exclude:
+  - scripts/
+  - prompts/
+  - config/
+  - tests/
+  - tmp/
+  - docs/
+  - autoresearch-results.tsv
+  - "*.sh"
+  - Gemfile
+  - CLAUDE.md
+  - LICENSE

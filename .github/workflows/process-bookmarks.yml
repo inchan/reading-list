@@ -98,7 +98,7 @@ jobs:
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
-          git add reports/ config/collections.json config/blocked-domains.json
+          git add reports/ config/collections.json config/blocked-domains.json index.md
           git diff --cached --quiet && echo "변경사항 없음" && exit 0
           git commit -m "report: $(date +%Y-%m-%d) 처리 결과"
           git pull --rebase origin main || { git rebase --abort 2>/dev/null; git pull --no-rebase origin main; }
