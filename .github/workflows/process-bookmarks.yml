@@ -42,10 +42,20 @@ jobs:
         env:
           RAINDROP_TEST_TOKEN: ${{ secrets.RAINDROP_TEST_TOKEN }}
 
-      - name: Split into batches
+      - name: Split into batches (차단 도메인 사전 필터 포함)
         run: scripts/split-batches.sh
+        env:
+          RAINDROP_TEST_TOKEN: ${{ secrets.RAINDROP_TEST_TOKEN }}
 
-      - name: Process batches
+      - name: Apply blocked domain results
+        run: |
+          if [ -f tmp/result_blocked.json ]; then
+            scripts/apply-results.sh tmp/result_blocked.json || echo "차단 도메인 적용 실패"
+          fi
+        env:
+          RAINDROP_TEST_TOKEN: ${{ secrets.RAINDROP_TEST_TOKEN }}
+
+      - name: Process batches with Claude
         run: |
           for batch in tmp/batch_*.json; do
             [ -f "$batch" ] || continue
@@ -53,11 +63,19 @@ jobs:
 
             echo "=== 배치 처리: $(basename "$batch") ==="
 
+            raw_file="tmp/raw_$(basename "$batch")"
             cat "$batch" | claude --print \
               --system-prompt "$(cat prompts/analyze-bookmarks.md)" \
               --output-format json \
               --dangerously-skip-permissions \
-              > "$result_file" 2>/dev/null || { echo "배치 실패: $batch"; continue; }
+              --max-turns 15 \
+              > "$raw_file" 2>/dev/null || { echo "배치 실패: $batch"; continue; }
+
+            # Claude CLI JSON에서 실제 결과 추출
+            jq -r '.result' "$raw_file" | sed -n '/^```json$/,/^```$/p' | sed '1d;$d' > "$result_file"
+            if ! jq empty "$result_file" 2>/dev/null; then
+              echo "파싱 실패: $result_file"; continue
+            fi
 
             scripts/apply-results.sh "$result_file" || { echo "적용 실패: $result_file"; continue; }
           done
@@ -72,7 +90,7 @@ jobs:
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
-          git add reports/ config/collections.json
+          git add reports/ config/collections.json config/blocked-domains.json
           git diff --cached --quiet && echo "변경사항 없음" && exit 0
           git commit -m "report: $(date +%Y-%m-%d) 처리 결과"
           git push

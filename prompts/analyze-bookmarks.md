@@ -4,6 +4,7 @@
 - stdin으로 전달되는 JSON 텍스트 (배치 파일 내용이 파이프로 주입됨)
 - 각 북마크에는 id, title, url, excerpt 포함
 - 사용 가능한 컬렉션 목록도 포함됨
+- `config/blocked-domains.json`에 이전 실행에서 차단된 도메인 목록이 있음
 
 ## 출력 언어
 - 요약, 인사이트, 사유 등 모든 텍스트는 **한국어**로 작성
@@ -12,7 +13,14 @@
 ## 작업 순서
 
 ### 1. URL 접근 (Fetch)
-각 북마크 URL에 접근하여 본문을 읽는다.
+
+**차단 도메인 확인 (최우선):**
+먼저 `config/blocked-domains.json`을 읽는다. 북마크 URL의 도메인이 차단 목록에 있으면:
+- fetch를 **시도하지 않고** 즉시 `skipped` 처리
+- `fetch_status`를 `"skipped_blocked_domain"`으로 설정
+- 해당 북마크는 unsorted에 남김 (컬렉션 이동 없음, 태깅만 수행)
+
+**차단 목록에 없는 URL만** 접근하여 본문을 읽는다.
 
 **접근 상태 판정:**
 | 상태 | 조건 |
@@ -23,8 +31,10 @@
 | `blocked` | 401/403/429 또는 봇 차단 |
 | `empty` | 200이지만 본문 없음, 소프트 404, 파킹 도메인 |
 | `error` | 404/5xx, 타임아웃, DNS 실패 등 |
+| `skipped_blocked_domain` | 차단 도메인 목록에 있어 fetch 스킵 |
 
-- `blocked`, `empty`, `error` → 즉시 **failed** 처리 (본문 분석 불가)
+- `blocked`, `empty`, `error` → 즉시 **failed** 처리 (본문 분석 불가). **또한 해당 도메인을 `newly_blocked_domains`에 추가**
+- `skipped_blocked_domain` → **skipped** 처리 (아래 별도 형식)
 - `paywalled` → 접근 가능한 부분(제목, 미리보기, excerpt)으로 분석 시도. 검증할 주장이 충분하지 않으면 failed
 - `redirected` → 최종 URL(`final_url`)을 기록하고 정상 분석 진행
 - PDF, 슬라이드, 비디오 등 비HTML 콘텐츠 → 메타데이터와 excerpt 기반으로 분석 시도
@@ -100,6 +110,17 @@
 | `tags` | `["검증실패"]` |
 | `related_links` | `[]` |
 
+**results[] — skipped일 때 (차단 도메인):**
+| 필드 | 값 |
+|------|-----|
+| `fetch_status` | `"skipped_blocked_domain"` |
+| `verification` | `{ "status": "skipped", "reason": "차단 도메인", "claims": [] }` |
+| `summary` | null |
+| `insights` | null |
+| `category` | null |
+| `tags` | title/excerpt 기반으로 추정 태그 1-3개 부여 |
+| `related_links` | `[]` |
+
 ### 예시: 통과 항목
 
 ```json
@@ -169,11 +190,14 @@
       "reason": "필요 사유",
       "bookmark_ids": [98765, 98770]
     }
-  ]
+  ],
+  "newly_blocked_domains": ["threads.com", "example-blocked.com"]
 }
 ```
 
 `new_collections_needed`는 중복 제거할 것 — 여러 북마크가 같은 컬렉션을 제안하면 하나로 합치고 `bookmark_ids`에 해당 ID를 모두 포함.
+
+`newly_blocked_domains`는 이번 실행에서 fetch 실패(`blocked`, `error`, `empty`)가 발생한 도메인 목록. 호스트명만 기록 (예: `threads.com`, `medium.com`). 중복 제거할 것.
 
 ## 주의사항
 - 접근 실패(`blocked`, `empty`, `error`) 시 웹 검색으로 우회 시도하지 말 것

@@ -17,6 +17,7 @@ load_settings() {
     @sh "ISSUE_LABELS=\(.issue_labels | join(","))",
     @sh "TAG_PENDING=\(.tag_pending)",
     @sh "TAG_QUARANTINE=\(.tag_quarantine)",
+    @sh "TAG_BLOCKED=\(.tag_blocked)",
     @sh "STATUS_PASSED=\(.status_passed)",
     @sh "STATUS_FAILED=\(.status_failed)"
   ' "$CONFIG_FILE")"

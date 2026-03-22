@@ -24,10 +24,13 @@ if [ "$bookmark_count" -eq 0 ]; then
   exit 0
 fi
 
-# #대기중 태그가 붙은 항목 제외 (이전 실행에서 컬렉션 미매칭으로 대기 중인 항목)
-bookmarks=$(echo "$bookmarks" | jq --arg tag "$TAG_PENDING" '[.[] | select(.tags | index($tag) | not)]')
+# #대기중, #접근불가 태그가 붙은 항목 제외
+bookmarks=$(echo "$bookmarks" | jq \
+  --arg tag_pending "$TAG_PENDING" \
+  --arg tag_blocked "$TAG_BLOCKED" \
+  '[.[] | select((.tags | index($tag_pending) | not) and (.tags | index($tag_blocked) | not))]')
 bookmark_count=$(echo "$bookmarks" | jq 'length')
-log_info "대기중 태그 제외 후 ${bookmark_count}개"
+log_info "대기중/접근불가 태그 제외 후 ${bookmark_count}개"
 
 # input.json 형식으로 변환
 input=$(jq -n \
