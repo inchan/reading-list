@@ -25,10 +25,8 @@
 **사전 fetch된 콘텐츠 우선 사용:**
 북마크에 `prefetched_content` 필드가 있으면 URL fetch를 **시도하지 않고** 해당 콘텐츠를 본문으로 사용한다. 이 콘텐츠는 Jina Reader 또는 Firecrawl로 사전 수집된 것이다. `fetch_status`는 `"ok"`로 설정한다.
 
-**Fallback 전략 (`prefetched_content`가 없고 직접 fetch도 실패한 경우):**
-직접 URL fetch가 실패하면(`blocked`, `error`, `empty`), **즉시 failed 처리하지 말고** 다음을 시도한다:
-1. **Jina Reader**: `https://r.jina.ai/{원본URL}` 을 fetch한다. JavaScript 렌더링을 지원하며 대부분의 사이트에서 본문을 markdown으로 반환한다.
-2. Jina Reader도 실패하면 그때 `failed` 처리하고 `newly_blocked_domains`에 추가한다.
+**`prefetched_content`도 없고 직접 fetch도 실패한 경우:**
+`failed` 처리하고 `newly_blocked_domains`에 해당 도메인을 추가한다. (사전 fetch 스크립트에서 Firecrawl, Jina Reader를 이미 시도한 후이므로 추가 fallback 불필요)
 
 **접근 상태 판정:**
 | 상태 | 조건 |
