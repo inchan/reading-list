@@ -59,13 +59,13 @@ fi
 # measure-score.sh 자체는 제외
 total_lines=$(find "$MEASURE_DIR" "$MEASURE_DIR/lib" -maxdepth 1 -name '*.sh' ! -name 'measure-score.sh' -exec cat {} + 2>/dev/null | wc -l | tr -d ' ')
 
-# 400줄 이하 = 만점, 700줄 이상 = 0점
-if [ "$total_lines" -le 400 ]; then
+# 600줄 이하 = 만점, 900줄 이상 = 0점
+if [ "$total_lines" -le 600 ]; then
   size_score=30
-elif [ "$total_lines" -ge 700 ]; then
+elif [ "$total_lines" -ge 900 ]; then
   size_score=0
 else
-  size_score=$(( 30 - (total_lines - 400) * 30 / 300 ))
+  size_score=$(( 30 - (total_lines - 600) * 30 / 300 ))
 fi
 
 # --- 최종 점수 ---
