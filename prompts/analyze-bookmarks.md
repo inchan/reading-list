@@ -14,16 +14,11 @@
 
 ### 1. URL 접근 (Fetch)
 
-**차단 도메인 확인 (최우선):**
-먼저 `config/blocked-domains.json`을 읽는다. 북마크 URL의 도메인이 차단 목록에 있으면:
-- fetch를 **시도하지 않고** 즉시 `skipped` 처리
-- `fetch_status`를 `"skipped_blocked_domain"`으로 설정
-- 해당 북마크는 unsorted에 남김 (컬렉션 이동 없음, 태깅만 수행)
-
-**차단 목록에 없는 URL만** 접근하여 본문을 읽는다.
-
 **사전 fetch된 콘텐츠 우선 사용:**
-북마크에 `prefetched_content` 필드가 있으면 URL fetch를 **시도하지 않고** 해당 콘텐츠를 본문으로 사용한다. 이 콘텐츠는 Jina Reader 또는 Firecrawl로 사전 수집된 것이다. `fetch_status`는 `"ok"`로 설정한다.
+북마크에 `prefetched_content` 필드가 있으면 URL fetch를 **시도하지 않고** 해당 콘텐츠를 본문으로 사용한다. 이 콘텐츠는 Firecrawl 또는 Jina Reader로 사전 수집된 것이다. `fetch_status`는 `"ok"`로 설정한다.
+
+`prefetched_content`가 없는 북마크만 직접 URL에 접근하여 본문을 읽는다.
+(차단 도메인 필터링과 사전 fetch는 스크립트에서 이미 처리되었으므로, 배치에 포함된 URL은 모두 접근 가능한 것으로 간주한다.)
 
 **`prefetched_content`도 없고 직접 fetch도 실패한 경우:**
 `failed` 처리하고 `newly_blocked_domains`에 해당 도메인을 추가한다. (사전 fetch 스크립트에서 Firecrawl, Jina Reader를 이미 시도한 후이므로 추가 fallback 불필요)

@@ -34,9 +34,8 @@ bookmarks=$(echo "$bookmarks" | jq '[.[] | .url = (.url
 log_info "모바일→PC URL 변환 완료"
 
 # 차단 도메인 사전 필터 — Claude에 보내지 않고 바로 결과 생성
-BLOCKED_DOMAINS_FILE="config/blocked-domains.json"
 if [ -f "$BLOCKED_DOMAINS_FILE" ]; then
-  blocked_domains=$(jq -r '.domains[]' "$BLOCKED_DOMAINS_FILE" 2>/dev/null | paste -sd'|' -)
+  blocked_domains=$(load_blocked_domains)
   if [ -n "$blocked_domains" ]; then
     blocked_bookmarks=$(echo "$bookmarks" | jq --arg pat "$blocked_domains" \
       '[.[] | select(.url | test($pat))]')

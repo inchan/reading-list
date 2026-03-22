@@ -8,7 +8,7 @@ load_settings
 log_info "#대기중 태그 정리 시작"
 
 # 전체 북마크에서 #대기중 태그 검색 (collection 0 = 전체)
-encoded_tag=$(python3 -c "import urllib.parse; print(urllib.parse.quote('#${TAG_PENDING}'))")
+encoded_tag=$(urlencode "#${TAG_PENDING}")
 result=$(raindrop_get "/raindrops/0?search=${encoded_tag}&perpage=50") || { log_error "검색 실패"; exit 1; }
 items=$(echo "$result" | jq '.items // []')
 count=$(echo "$items" | jq 'length')

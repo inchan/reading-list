@@ -106,6 +106,37 @@ title_from_url() {
   echo "$url" | sed -E 's|https?://||;s|/| |g;s|[?#].*||' | head -c "$max_len"
 }
 
+# --- 프로젝트 루트 ---
+PROJECT_ROOT="${SCRIPT_DIR}/../.."
+BLOCKED_DOMAINS_FILE="${PROJECT_ROOT}/config/blocked-domains.json"
+
+# --- URL → 도메인 추출 ---
+extract_domain() {
+  echo "$1" | sed -E 's|https?://||;s|/.*||'
+}
+
+# --- URL 인코딩 ---
+urlencode() {
+  echo "$1" | jq -Rr @uri
+}
+
+# --- 차단 도메인 로드 (파이프 구분자) ---
+load_blocked_domains() {
+  jq -r '.domains[]' "$BLOCKED_DOMAINS_FILE" 2>/dev/null | paste -sd'|' -
+}
+
+# --- 차단 도메인 업데이트 (새 도메인 추가) ---
+update_blocked_domains() {
+  local new_domains="$1"
+  [ -z "$new_domains" ] && return
+  local existing
+  existing=$(jq -r '.domains[]' "$BLOCKED_DOMAINS_FILE" 2>/dev/null || echo "")
+  local merged
+  merged=$(printf '%s\n%s' "$existing" "$new_domains" | sort -u | grep -v '^$')
+  echo "$merged" | jq -R . | jq -s --arg ts "$(date -u +%Y-%m-%dT%H:%M:%SZ)" \
+    '{domains: ., updated_at: $ts}' > "$BLOCKED_DOMAINS_FILE"
+}
+
 # --- 로그 ---
 log_info() { echo "[INFO] $(date '+%Y-%m-%d %H:%M:%S') $*"; }
 log_error() { echo "[ERROR] $(date '+%Y-%m-%d %H:%M:%S') $*" >&2; }

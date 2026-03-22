@@ -125,13 +125,9 @@ if [ -n "$new_collections" ]; then
 fi
 
 # 차단 도메인 업데이트
-blocked_file="config/blocked-domains.json"
 new_domains=$(jq -r '.newly_blocked_domains[]?' "$RESULT_FILE" 2>/dev/null)
 if [ -n "$new_domains" ]; then
-  existing=$(jq -r '.domains[]' "$blocked_file" 2>/dev/null || echo "")
-  merged=$(printf '%s\n%s' "$existing" "$new_domains" | sort -u | grep -v '^$')
-  updated=$(echo "$merged" | jq -R . | jq -s --arg ts "$(date -u +%Y-%m-%dT%H:%M:%SZ)" '{domains: ., updated_at: $ts}')
-  echo "$updated" > "$blocked_file"
+  update_blocked_domains "$new_domains"
   log_info "차단 도메인 업데이트: $(echo "$new_domains" | tr '\n' ', ')"
 fi
 
