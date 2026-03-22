@@ -99,20 +99,16 @@ if [ -n "$new_collections" ]; then
   echo "$new_collections" | while IFS= read -r nc; do
     name=$(echo "$nc" | jq -r '.suggested_name')
     reason=$(echo "$nc" | jq -r '.reason')
-    bookmark_ids=$(echo "$nc" | jq -r '.bookmark_ids[]')
+    ids_json=$(echo "$nc" | jq -c '.bookmark_ids')
 
-    # 관련 북마크의 URL, 제목, 요약을 결과에서 추출
-    bookmark_details=""
-    for bid in $bookmark_ids; do
-      detail=$(jq -r --argjson id "$bid" '
-        .results[] | select(.bookmark_id == $id) |
+    # 한 번의 jq로 관련 북마크 상세 추출
+    bookmark_details=$(jq -r --argjson ids "$ids_json" '
+      [.results[] | select(.bookmark_id as $b | $ids | index($b)) |
         "### [\(.url)](\(.url))\n" +
         (if .summary then "**요약**: \(.summary)\n" else "" end) +
         (if .insights then "**인사이트**: \(.insights)\n" else "" end) +
-        "**태그**: \(.tags | join(", "))\n"
-      ' "$RESULT_FILE" 2>/dev/null)
-      bookmark_details="${bookmark_details}${detail}\n"
-    done
+        "**태그**: \(.tags | join(", "))\n"] | join("\n")
+    ' "$RESULT_FILE" 2>/dev/null)
 
     gh issue create \
       --title "[컬렉션 제안] ${name}" \
