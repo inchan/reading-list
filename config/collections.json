@@ -1,42 +1,52 @@
 [
   {
     "id": 68738645,
-    "title": "뉴스/시사"
+    "title": "뉴스/시사",
+    "parent_id": null
   },
   {
     "id": 68738644,
-    "title": "개발/프로그래밍"
+    "title": "개발/프로그래밍",
+    "parent_id": null
   },
   {
     "id": 68738562,
-    "title": "AI 개발도구"
+    "title": "AI 개발도구",
+    "parent_id": null
   },
   {
     "id": 68738561,
-    "title": "쇼핑/생활"
+    "title": "쇼핑/생활",
+    "parent_id": null
   },
   {
     "id": 68737305,
-    "title": "검증실패"
+    "title": "검증실패",
+    "parent_id": null
   },
   {
     "id": 26972538,
-    "title": "맛집"
+    "title": "맛집",
+    "parent_id": null
   },
   {
     "id": 20521417,
-    "title": "여행"
+    "title": "여행",
+    "parent_id": null
   },
   {
     "id": 20521420,
-    "title": "요리"
+    "title": "요리",
+    "parent_id": null
   },
   {
     "id": 27494682,
-    "title": "금융"
+    "title": "금융",
+    "parent_id": null
   },
   {
     "id": 47947246,
-    "title": "Must"
+    "title": "Must",
+    "parent_id": null
   }
 ]
