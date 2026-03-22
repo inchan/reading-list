@@ -5,6 +5,11 @@ on:
     - cron: '0 10 * * *'  # 매일 19:00 KST (UTC+9)
   push:
     branches: [main]
+    paths:
+      - 'scripts/**'
+      - 'prompts/**'
+      - 'config/settings.json'
+      - '.github/workflows/process-bookmarks.yml'
   workflow_dispatch:
 
 concurrency:
@@ -96,5 +101,5 @@ jobs:
           git add reports/ config/collections.json config/blocked-domains.json
           git diff --cached --quiet && echo "변경사항 없음" && exit 0
           git commit -m "report: $(date +%Y-%m-%d) 처리 결과"
-          git pull --rebase origin main || true
+          git pull --rebase origin main || { git rebase --abort 2>/dev/null; git pull --no-rebase origin main; }
           git push
