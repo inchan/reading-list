@@ -29,9 +29,8 @@ fi
 bookmarks=$(echo "$bookmarks" | jq '[.[] | .url = (.url
   | gsub("https://m\\.blog\\.naver\\.com/"; "https://blog.naver.com/")
   | gsub("https://m\\.clien\\.net/"; "https://www.clien.net/")
-  | gsub("https://m\\.ppomppu\\.co\\.kr/"; "https://www.ppomppu.co.kr/")
-  | gsub("https://m\\.search\\.naver\\.com/"; "https://search.naver.com/")
 )]')
+# NOTE: ppomppu는 모바일/PC URL 구조가 달라 변환하면 404 발생. 변환하지 않음.
 log_info "모바일→PC URL 변환 완료"
 
 # 차단 도메인 사전 필터 — Claude에 보내지 않고 바로 결과 생성
