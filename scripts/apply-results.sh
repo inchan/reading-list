@@ -48,15 +48,24 @@ echo "$passed_with_collection" | jq -c '.[]' 2>/dev/null | while IFS= read -r it
     || log_error "이동 실패: ID=${bookmark_id}"
 done
 
-# --- 2. passed + 컬렉션 미매칭: 일괄 #대기중 태그 ---
-pending_ids=$(echo "$passed_pending" | jq '[.[].bookmark_id]')
-pending_count=$(echo "$pending_ids" | jq 'length')
+# --- 2. passed + 컬렉션 미매칭: #대기중 태그 + 노트 설정 ---
+pending_count=$(echo "$passed_pending" | jq 'length')
 if [ "$pending_count" -gt 0 ]; then
-  update_data=$(jq -n --argjson ids "$pending_ids" --arg tag "$TAG_PENDING" \
-    '{ids: $ids, tags: [$tag]}')
-  raindrop_put "/raindrops/-1" "$update_data" \
-    && log_info "PENDING: ${pending_count}건 일괄 #대기중 태그" \
-    || log_error "일괄 태그 실패: pending"
+  echo "$passed_pending" | jq -c '.[]' 2>/dev/null | while IFS= read -r item; do
+    bookmark_id=$(echo "$item" | jq -r '.bookmark_id')
+    url=$(echo "$item" | jq -r '.url')
+    slug=$(slugify_url "$url")
+    note_url="${PAGES_BASE_URL}/reports/${run_date}/${slug}"
+
+    update_data=$(jq -n \
+      --arg tag "$TAG_PENDING" \
+      --arg note "$note_url" \
+      '{tags: [$tag], note: $note}')
+
+    raindrop_put "/raindrop/${bookmark_id}" "$update_data" \
+      && log_info "PENDING: ID=${bookmark_id} → #대기중 + 노트 설정" \
+      || log_error "업데이트 실패: ID=${bookmark_id}"
+  done
 fi
 
 # --- 3. skipped + fetch_failed: 일괄 #접근불가 태그 ---
