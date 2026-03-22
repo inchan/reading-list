@@ -1,78 +1,45 @@
 #!/usr/bin/env bash
 set -euo pipefail
 
-SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
-source "$SCRIPT_DIR/lib/raindrop-api.sh"
+REPORTS_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
+source "$REPORTS_DIR/lib/raindrop-api.sh"
 load_settings
 
 RESULT_FILE="${1:?사용법: generate-reports.sh <result_file>}"
-
-if [ ! -f "$RESULT_FILE" ]; then
-  log_error "결과 파일 없음: $RESULT_FILE"
-  exit 1
-fi
+[ -f "$RESULT_FILE" ] || { log_error "결과 파일 없음: $RESULT_FILE"; exit 1; }
 
 run_date=$(jq -r '.run_date' "$RESULT_FILE")
 report_dir="reports/${run_date}"
 
-# passed 항목만 보고서 생성
-passed_items=$(jq --arg status "$STATUS_PASSED" '[.results[] | select(.verification.status == $status)]' "$RESULT_FILE")
-count=$(echo "$passed_items" | jq 'length')
-
-if [ "$count" -eq 0 ]; then
-  log_info "보고서 생성할 passed 항목 없음"
-  exit 0
-fi
+count=$(jq --arg s "$STATUS_PASSED" '[.results[] | select(.verification.status == $s)] | length' "$RESULT_FILE")
+[ "$count" -eq 0 ] && { log_info "보고서 생성할 passed 항목 없음"; exit 0; }
 
 mkdir -p "$report_dir"
-
 log_info "${count}개 보고서 생성 시작"
 
-for i in $(seq 0 $((count - 1))); do
-  item=$(echo "$passed_items" | jq -c ".[$i]")
-
-  bookmark_id=$(echo "$item" | jq -r '.bookmark_id')
+jq -c --arg s "$STATUS_PASSED" '.results[] | select(.verification.status == $s)' "$RESULT_FILE" | while IFS= read -r item; do
   url=$(echo "$item" | jq -r '.url')
+  bookmark_id=$(echo "$item" | jq -r '.bookmark_id')
   title=$(echo "$item" | jq -r '.title // empty')
+  [ -z "$title" ] && title=$(title_from_url "$url")
 
-  # title이 없으면 URL에서 추출
-  if [ -z "$title" ]; then
-    title=$(echo "$url" | sed -E 's|https?://||;s|/| |g;s|[?#].*||')
-  fi
-
-  # slug는 URL에서 생성
   slug=$(slugify_url "$url")
-
-  # 중복 slug 처리
   slug_file="${report_dir}/${slug}.md"
-  counter=2
-  while [ -f "$slug_file" ]; do
-    slug_file="${report_dir}/${slug}-${counter}.md"
-    counter=$((counter + 1))
-  done
 
   collection=$(echo "$item" | jq -r 'if .category then (.category.collection_title // "미분류") else "미분류" end')
   tags=$(echo "$item" | jq -r '.tags | map("\"" + . + "\"") | join(", ")')
   summary=$(echo "$item" | jq -r '.summary // ""')
   insights=$(echo "$item" | jq -r '.insights // ""')
-  # 검증 결과 포매팅
-  claims_text=""
-  claims_count=$(echo "$item" | jq '.verification.claims | length')
-  if [ "$claims_count" -gt 0 ]; then
-    for j in $(seq 0 $((claims_count - 1))); do
-      claim=$(echo "$item" | jq -c ".verification.claims[$j]")
-      claim_text=$(echo "$claim" | jq -r '.claim')
-      verified=$(echo "$claim" | jq -r '.verified')
-      sources=$(echo "$claim" | jq -r '.sources | join(", ")')
-      if [ "$verified" = "true" ]; then
-        claims_text="${claims_text}- \"${claim_text}\" -> verified (출처: ${sources})"$'\n'
-      else
-        claims_text="${claims_text}- \"${claim_text}\" -> not verified"$'\n'
-      fi
-    done
-  fi
 
-  # 관련 링크
+  claims_text=""
+  while IFS= read -r claim; do
+    [ -z "$claim" ] && continue
+    ct=$(echo "$claim" | jq -r '.claim')
+    v=$(echo "$claim" | jq -r 'if .verified then "verified" else "not verified" end')
+    src=$(echo "$claim" | jq -r '.sources | join(", ")')
+    claims_text="${claims_text}- \"${ct}\" -> ${v}${src:+ (출처: ${src})}"$'\n'
+  done < <(echo "$item" | jq -c '.verification.claims[]?' 2>/dev/null)
+
   related=$(echo "$item" | jq -r '.related_links[]?' | sed 's/^/- /')
 
   cat > "$slug_file" << REPORT
