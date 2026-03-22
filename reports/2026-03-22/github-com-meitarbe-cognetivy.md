@@ -1,6 +1,7 @@
 ---
 title: "github.com meitarbe cognetivy"
 url: "https://github.com/meitarbe/cognetivy"
+source_url: "https://github.com/meitarbe/cognetivy"
 date: "2026-03-22"
 collection: "미분류"
 tags: ["ai-agent", "workflow", "state-management", "claude-code", "개발도구"]

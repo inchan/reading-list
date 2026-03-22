@@ -1,6 +1,7 @@
 ---
 title: "m.nfcf.or.kr forest user.tdf"
 url: "https://m.nfcf.or.kr/forest/user.tdf?a=user.songi.SongiApp&c=1003&mc=MOB_CST01"
+source_url: "https://m.nfcf.or.kr/forest/user.tdf?a=user.songi.SongiApp&c=1003&mc=MOB_CST01"
 date: "2026-03-22"
 collection: "쇼핑/생활"
 tags: ["송이", "농산물가격", "공판현황", "산림조합"]

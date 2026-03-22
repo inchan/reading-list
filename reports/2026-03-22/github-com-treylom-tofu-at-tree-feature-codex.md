@@ -1,6 +1,7 @@
 ---
 title: "github.com treylom tofu-at tree feature codex"
 url: "https://github.com/treylom/tofu-at/tree/feature/codex?media_id=3853429103470924595_63388232158&media_author_id=63388232158&ranking_info_token=GCA2ZmRkNjM0NmY3Y2U0NTFlYTlmYmE2YzZkMDk5MDMzYyWGs2UVkAMWsve%2Fmw0YEzM4NTMzOTUxMTUwMjkxMTkyMjgoA3ZsbAA%3D&utm_source=ig_text_post_permalink"
+source_url: "https://github.com/treylom/tofu-at/tree/feature/codex?media_id=3853429103470924595_63388232158&media_author_id=63388232158&ranking_info_token=GCA2ZmRkNjM0NmY3Y2U0NTFlYTlmYmE2YzZkMDk5MDMzYyWGs2UVkAMWsve%2Fmw0YEzM4NTMzOTUxMTUwMjkxMTkyMjgoA3ZsbAA%3D&utm_source=ig_text_post_permalink"
 date: "2026-03-22"
 collection: "미분류"
 tags: ["claude-code", "agent-teams", "orchestration", "병렬처리"]

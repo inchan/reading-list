@@ -46,6 +46,7 @@ jq -c --arg s "$STATUS_PASSED" '.results[] | select(.verification.status == $s)'
 ---
 title: "${title}"
 url: "${url}"
+source_url: "${url}"
 date: "${run_date}"
 collection: "${collection}"
 tags: [${tags}]

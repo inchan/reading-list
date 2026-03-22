@@ -1,6 +1,7 @@
 ---
 title: "github.com zubair-trabzada geo-seo-claude"
 url: "https://github.com/zubair-trabzada/geo-seo-claude?media_id=3854094815449621905_76574528153&media_author_id=76574528153&ranking_info_token=GCA2ZmRkNjM0NmY3Y2U0NTFlYTlmYmE2YzZkMDk5MDMzYyWGs2UVyAEWsve%2Fmw0YEzM4NTQwOTQ4MTU0NDk2MjE5MDUoA3ZsbAA%3D&utm_source=ig_text_feed_timeline"
+source_url: "https://github.com/zubair-trabzada/geo-seo-claude?media_id=3854094815449621905_76574528153&media_author_id=76574528153&ranking_info_token=GCA2ZmRkNjM0NmY3Y2U0NTFlYTlmYmE2YzZkMDk5MDMzYyWGs2UVyAEWsve%2Fmw0YEzM4NTQwOTQ4MTU0NDk2MjE5MDUoA3ZsbAA%3D&utm_source=ig_text_feed_timeline"
 date: "2026-03-22"
 collection: "미분류"
 tags: ["seo", "geo", "ai-search-optimization", "claude-code", "마케팅"]

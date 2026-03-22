@@ -1,6 +1,7 @@
 ---
 title: "www.dogdrip.net 419366619"
 url: "https://www.dogdrip.net/419366619"
+source_url: "https://www.dogdrip.net/419366619"
 date: "2026-03-22"
 collection: "미분류"
 tags: ["수면", "호흡법", "건강", "웰빙"]

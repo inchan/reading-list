@@ -1,0 +1,7 @@
+<article class="stat-card">
+  <p class="stat-card__label">{{ include.label }}</p>
+  <strong class="stat-card__value">{{ include.value }}</strong>
+  {% if include.meta %}
+    <p class="stat-card__meta">{{ include.meta }}</p>
+  {% endif %}
+</article>

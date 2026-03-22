@@ -1,6 +1,7 @@
 ---
 title: "theqoo.net hot 3629473401"
 url: "https://theqoo.net/hot/3629473401?filter_mode=normal"
+source_url: "https://theqoo.net/hot/3629473401?filter_mode=normal"
 date: "2026-03-22"
 collection: "미분류"
 tags: ["도자기", "브랜드", "쇼핑"]
@@ -17,4 +18,3 @@ raindrop_id: 981280215
 ## 실체 검증 결과
 
 ## 관련 링크
-

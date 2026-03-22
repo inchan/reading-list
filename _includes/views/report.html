@@ -1,0 +1,150 @@
+{% assign path_parts = page.path | split: '/' %}
+{% assign report_date = path_parts[1] %}
+{% assign source_url = page.source_url | default: page.url %}
+{% assign summary_block = '' %}
+{% assign insight_block = '' %}
+{% assign verification_block = '' %}
+{% assign links_block = '' %}
+
+{% if page.content contains '## 요약' %}
+  {% assign summary_block = page.content | split: '## 요약' | last %}
+  {% if summary_block contains '## 인사이트' %}
+    {% assign summary_block = summary_block | split: '## 인사이트' | first %}
+  {% endif %}
+{% endif %}
+{% if page.content contains '## 인사이트' %}
+  {% assign insight_block = page.content | split: '## 인사이트' | last %}
+  {% if insight_block contains '## 실체 검증 결과' %}
+    {% assign insight_block = insight_block | split: '## 실체 검증 결과' | first %}
+  {% elsif insight_block contains '## 관련 링크' %}
+    {% assign insight_block = insight_block | split: '## 관련 링크' | first %}
+  {% endif %}
+{% endif %}
+{% if page.content contains '## 실체 검증 결과' %}
+  {% assign verification_block = page.content | split: '## 실체 검증 결과' | last %}
+  {% if verification_block contains '## 관련 링크' %}
+    {% assign verification_block = verification_block | split: '## 관련 링크' | first %}
+  {% endif %}
+{% endif %}
+{% if page.content contains '## 관련 링크' %}
+  {% assign links_block = page.content | split: '## 관련 링크' | last %}
+{% endif %}
+
+<section class="container page-section">
+  <div class="hero-panel hero-panel--article">
+    <div class="hero-panel__content">
+      {% include breadcrumbs.html page_type='report' %}
+      <p class="eyebrow">Individual Report</p>
+      <h1 class="hero-title hero-title--article">{{ page.title }}</h1>
+      <div class="hero-meta">
+        {% include collection_badge.html label=page.collection %}
+        {% include verification_badge.html status=page.verification %}
+        <span class="meta-chip">{{ report_date }}</span>
+      </div>
+      {% if page.tags %}
+        <div class="tag-list">
+          {% for tag in page.tags %}
+            {% assign encoded_tag = tag | url_encode %}
+            {% assign tag_href = '/reports/' | append: report_date | append: '/?tag=' | append: encoded_tag %}
+            <a class="tag-chip tag-chip--link" href="{{ tag_href | relative_url }}">{{ tag }}</a>
+          {% endfor %}
+        </div>
+      {% endif %}
+    </div>
+    <div class="hero-panel__actions">
+      {% if source_url contains '://' %}
+        <a class="primary-button" href="{{ source_url }}" target="_blank" rel="noreferrer">원본 URL 열기</a>
+      {% endif %}
+      {% if page.raindrop_id %}
+        <div class="mini-panel">
+          <span class="mini-panel__label">Raindrop ID</span>
+          <strong class="mini-panel__value">{{ page.raindrop_id }}</strong>
+        </div>
+      {% endif %}
+    </div>
+  </div>
+</section>
+
+<section class="container page-section article-layout">
+  <div class="article-stack">
+    {% if summary_block != '' %}
+      <article class="surface-panel article-section">
+        <div class="section-heading section-heading--stacked">
+          <div>
+            <p class="eyebrow">Summary</p>
+            <h2>요약</h2>
+          </div>
+        </div>
+        <div class="prose-block">
+          {{ summary_block | markdownify }}
+        </div>
+      </article>
+    {% endif %}
+
+    {% if insight_block != '' %}
+      <article class="surface-panel article-section">
+        <div class="section-heading section-heading--stacked">
+          <div>
+            <p class="eyebrow">Insight</p>
+            <h2>인사이트</h2>
+          </div>
+        </div>
+        <div class="prose-block">
+          {{ insight_block | markdownify }}
+        </div>
+      </article>
+    {% endif %}
+
+    <article class="surface-panel article-section">
+      <div class="section-heading section-heading--stacked">
+        <div>
+          <p class="eyebrow">Verification</p>
+          <h2>실체 검증 결과</h2>
+        </div>
+      </div>
+      {% if verification_block != '' %}
+        <div class="prose-block">
+          {{ verification_block | markdownify }}
+        </div>
+      {% else %}
+        <p class="empty-copy">기록된 검증 항목이 없습니다.</p>
+      {% endif %}
+    </article>
+
+    <article class="surface-panel article-section">
+      <div class="section-heading section-heading--stacked">
+        <div>
+          <p class="eyebrow">Links</p>
+          <h2>관련 링크</h2>
+        </div>
+      </div>
+      {% if links_block != '' %}
+        <div class="prose-block">
+          {{ links_block | markdownify }}
+        </div>
+      {% else %}
+        <p class="empty-copy">추가 링크가 없습니다.</p>
+      {% endif %}
+    </article>
+  </div>
+
+  <aside class="article-aside">
+    <div class="surface-panel aside-panel">
+      <p class="eyebrow">Navigate</p>
+      <h2>같은 날짜의 다른 보고서</h2>
+      <div class="aside-list">
+        {% assign related_count = 0 %}
+        {% for related in site.pages %}
+          {% if related.dir == page.dir and related.name != 'index.md' and related.path != page.path %}
+            {% assign related_href = '/' | append: related.path | replace: '.md', '.html' %}
+            <a class="aside-link" href="{{ related_href | relative_url }}">{{ related.title }}</a>
+            {% assign related_count = related_count | plus: 1 %}
+          {% endif %}
+        {% endfor %}
+        {% if related_count == 0 %}
+          <p class="empty-copy">같은 날짜의 다른 보고서가 없습니다.</p>
+        {% endif %}
+      </div>
+    </div>
+  </aside>
+</section>

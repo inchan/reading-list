@@ -1,0 +1,12 @@
+{% assign status = include.status | default: 'unknown' | downcase %}
+{% assign tone = 'tone-neutral' %}
+{% assign text = '검증 미확인' %}
+{% case status %}
+  {% when 'passed' %}
+    {% assign tone = 'tone-success' %}
+    {% assign text = '검증 통과' %}
+  {% when 'failed' %}
+    {% assign tone = 'tone-danger' %}
+    {% assign text = '검증 실패' %}
+{% endcase %}
+<span class="badge badge--verification {{ tone }}">{{ text }}</span>

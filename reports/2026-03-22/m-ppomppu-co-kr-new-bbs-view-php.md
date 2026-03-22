@@ -1,6 +1,7 @@
 ---
 title: "m.ppomppu.co.kr new bbs_view.php"
 url: "https://m.ppomppu.co.kr/new/bbs_view.php?id=baby&no=44963"
+source_url: "https://m.ppomppu.co.kr/new/bbs_view.php?id=baby&no=44963"
 date: "2026-03-22"
 collection: "여행"
 tags: ["서울근교", "육아", "체험농장", "의왕", "아이와함께"]
@@ -17,4 +18,3 @@ raindrop_id: 379506837
 ## 실체 검증 결과
 
 ## 관련 링크
-
