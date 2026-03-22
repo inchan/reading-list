@@ -20,12 +20,19 @@ quarantine_id=$(get_quarantine_id) || { log_error "컬렉션 조회 실패"; exi
 # 보고서 생성 먼저
 bash "$APPLY_DIR/generate-reports.sh" "$RESULT_FILE"
 
-# --- 결과를 카테고리별로 분류 ---
-passed_with_collection=$(jq -c '[.results[] | select(.verification.status == "passed" and .category.collection_id != null)]' "$RESULT_FILE")
-passed_pending=$(jq -c '[.results[] | select(.verification.status == "passed" and .category.collection_id == null)]' "$RESULT_FILE")
-skipped_items=$(jq -c '[.results[] | select(.verification.status == "skipped")]' "$RESULT_FILE")
-fetch_failed=$(jq -c '[.results[] | select(.verification.status == "failed" and (.fetch_status == "blocked" or .fetch_status == "error" or .fetch_status == "empty"))]' "$RESULT_FILE")
-verify_failed=$(jq -c '[.results[] | select(.verification.status == "failed" and .fetch_status != "blocked" and .fetch_status != "error" and .fetch_status != "empty")]' "$RESULT_FILE")
+# --- 결과를 한 번의 jq로 5개 카테고리로 분류 ---
+classified=$(jq '{
+  passed_with_collection: [.results[] | select(.verification.status == "passed" and .category.collection_id != null)],
+  passed_pending: [.results[] | select(.verification.status == "passed" and .category.collection_id == null)],
+  skipped_items: [.results[] | select(.verification.status == "skipped")],
+  fetch_failed: [.results[] | select(.verification.status == "failed" and (.fetch_status == "blocked" or .fetch_status == "error" or .fetch_status == "empty"))],
+  verify_failed: [.results[] | select(.verification.status == "failed" and .fetch_status != "blocked" and .fetch_status != "error" and .fetch_status != "empty")]
+}' "$RESULT_FILE")
+passed_with_collection=$(echo "$classified" | jq -c '.passed_with_collection')
+passed_pending=$(echo "$classified" | jq -c '.passed_pending')
+skipped_items=$(echo "$classified" | jq -c '.skipped_items')
+fetch_failed=$(echo "$classified" | jq -c '.fetch_failed')
+verify_failed=$(echo "$classified" | jq -c '.verify_failed')
 
 # --- 1. passed + 컬렉션 매칭: 컬렉션별로 일괄 이동 ---
 # 개별 처리 (컬렉션/태그/노트가 북마크마다 다르므로 일괄 불가)
