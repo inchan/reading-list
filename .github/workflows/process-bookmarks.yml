@@ -106,4 +106,5 @@ jobs:
           git add reports/ config/collections.json config/blocked-domains.json
           git diff --cached --quiet && echo "변경사항 없음" && exit 0
           git commit -m "report: $(date +%Y-%m-%d) 처리 결과"
+          git pull --rebase origin main || true
           git push
