@@ -42,6 +42,11 @@ jobs:
         env:
           RAINDROP_TEST_TOKEN: ${{ secrets.RAINDROP_TEST_TOKEN }}
 
+      - name: Retry blocked (영구 차단 아닌 #접근불가 재시도)
+        run: scripts/retry-blocked.sh
+        env:
+          RAINDROP_TEST_TOKEN: ${{ secrets.RAINDROP_TEST_TOKEN }}
+
       - name: Fetch unsorted bookmarks
         run: scripts/fetch-unsorted.sh
         env:
