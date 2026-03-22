@@ -90,18 +90,26 @@ if [ -n "$new_collections" ]; then
   echo "$new_collections" | while IFS= read -r nc; do
     name=$(echo "$nc" | jq -r '.suggested_name')
     reason=$(echo "$nc" | jq -r '.reason')
-    ids=$(echo "$nc" | jq -r '.bookmark_ids | map(tostring) | join(", #")')
+    bookmark_ids=$(echo "$nc" | jq -r '.bookmark_ids[]')
+
+    # 관련 북마크의 URL, 제목, 요약을 결과에서 추출
+    bookmark_details=""
+    for bid in $bookmark_ids; do
+      detail=$(jq -r --argjson id "$bid" '
+        .results[] | select(.bookmark_id == $id) |
+        "### [\(.url)](\(.url))\n" +
+        (if .summary then "**요약**: \(.summary)\n" else "" end) +
+        (if .insights then "**인사이트**: \(.insights)\n" else "" end) +
+        "**태그**: \(.tags | join(", "))\n"
+      ' "$RESULT_FILE" 2>/dev/null)
+      bookmark_details="${bookmark_details}${detail}\n"
+    done
 
     gh issue create \
       --title "[컬렉션 제안] ${name}" \
       --label "$ISSUE_LABELS" \
-      --body "$(cat <<ISSUE_BODY
-## 제안 컬렉션: ${name}
-**사유**: ${reason}
-**관련 북마크 ID**: #${ids}
-**처리일**: ${run_date}
-ISSUE_BODY
-)" \
+      --body "$(printf '## 제안 컬렉션: %s\n**사유**: %s\n**처리일**: %s\n\n---\n\n## 관련 북마크\n\n%b' \
+        "$name" "$reason" "$run_date" "$bookmark_details")" \
       && log_info "Issue 생성: [컬렉션 제안] ${name}" \
       || log_error "Issue 생성 실패: ${name}"
   done
