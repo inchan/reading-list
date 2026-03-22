@@ -23,9 +23,17 @@
 **차단 목록에 없는 URL만** 접근하여 본문을 읽는다.
 
 **Fallback 전략 (직접 fetch 실패 시):**
-직접 URL fetch가 실패하면(`blocked`, `error`, `empty`), **즉시 failed 처리하지 말고** 다음 fallback을 시도한다:
-1. **Jina Reader**: `https://r.jina.ai/{원본URL}` 을 fetch한다. Jina Reader는 JavaScript 렌더링을 지원하며 대부분의 사이트에서 본문을 markdown으로 반환한다.
-2. Jina Reader도 실패하면 그때 `failed` 처리하고 `newly_blocked_domains`에 추가한다.
+직접 URL fetch가 실패하면(`blocked`, `error`, `empty`), **즉시 failed 처리하지 말고** 순서대로 fallback을 시도한다:
+1. **Jina Reader**: `https://r.jina.ai/{원본URL}` 을 fetch한다. JavaScript 렌더링을 지원하며 대부분의 사이트에서 본문을 markdown으로 반환한다. API 키 불필요.
+2. **Firecrawl API**: Jina도 실패하면 다음 curl 요청을 실행한다:
+   ```
+   curl -s "https://api.firecrawl.dev/v1/scrape" \
+     -H "Authorization: Bearer ${FIRECRAWL_API_KEY}" \
+     -H "Content-Type: application/json" \
+     -d '{"url":"원본URL","formats":["markdown"],"onlyMainContent":true}'
+   ```
+   응답의 `.data.markdown` 필드가 본문이다.
+3. 모든 fallback이 실패하면 그때 `failed` 처리하고 `newly_blocked_domains`에 추가한다.
 
 **접근 상태 판정:**
 | 상태 | 조건 |
