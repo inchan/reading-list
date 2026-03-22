@@ -37,6 +37,11 @@ jobs:
         env:
           RAINDROP_TEST_TOKEN: ${{ secrets.RAINDROP_TEST_TOKEN }}
 
+      - name: Cleanup pending (분류 완료된 북마크에서 #대기중 제거)
+        run: scripts/cleanup-pending.sh
+        env:
+          RAINDROP_TEST_TOKEN: ${{ secrets.RAINDROP_TEST_TOKEN }}
+
       - name: Fetch unsorted bookmarks
         run: scripts/fetch-unsorted.sh
         env:
