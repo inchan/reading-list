@@ -2,7 +2,9 @@ name: Process Reading List
 
 on:
   schedule:
-    - cron: '0 0 * * *'
+    - cron: '0 10 * * *'  # 매일 19:00 KST (UTC+9)
+  push:
+    branches: [main]
   workflow_dispatch:
 
 concurrency:
@@ -61,7 +63,7 @@ jobs:
           done
         env:
           RAINDROP_TEST_TOKEN: ${{ secrets.RAINDROP_TEST_TOKEN }}
-          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+          CLAUDE_CODE_OAUTH_TOKEN: ${{ secrets.CLAUDE_CODE_OAUTH_TOKEN }}
 
       - name: Generate daily index
         run: scripts/generate-index.sh
