@@ -12,18 +12,13 @@ if [ ! -f "$INPUT_FILE" ]; then
   exit 1
 fi
 
-run_date=$(jq -r '.run_date' "$INPUT_FILE")
+# input.json을 한 번만 파싱
+eval "$(jq -r '@sh "run_date=\(.run_date)", @sh "original_count=\(.bookmarks | length)"' "$INPUT_FILE")"
 collections=$(jq '.collections' "$INPUT_FILE")
-
-# 중복 URL 제거 (첫 번째만 유지)
 bookmarks=$(jq '[.bookmarks | group_by(.url) | .[] | .[0]]' "$INPUT_FILE")
-original_count=$(jq '.bookmarks | length' "$INPUT_FILE")
 deduped_count=$(echo "$bookmarks" | jq 'length')
 skipped=$((original_count - deduped_count))
-
-if [ "$skipped" -gt 0 ]; then
-  log_warn "중복 URL ${skipped}개 제거됨"
-fi
+[ "$skipped" -gt 0 ] && log_warn "중복 URL ${skipped}개 제거됨"
 
 # 모바일→PC URL 변환 (접근성 개선)
 bookmarks=$(echo "$bookmarks" | jq '[.[] | .url = (.url
