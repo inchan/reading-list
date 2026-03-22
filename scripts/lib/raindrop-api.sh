@@ -86,7 +86,7 @@ slugify() {
 
   echo "$title" \
     | tr '[:upper:]' '[:lower:]' \
-    | sed 's/[^a-z0-9가-힣ㄱ-ㅎㅏ-ㅣ ]/-/g' \
+    | LC_ALL=C sed 's/[^a-z0-9 -]/-/g' \
     | sed 's/  */-/g' \
     | sed 's/--*/-/g' \
     | sed 's/^-//;s/-$//' \
