@@ -61,8 +61,47 @@
 - 3-5문장 요약
 - 인사이트 (주목할 점, 실무 적용 가능성)
 - 컬렉션 목록에서 가장 적합한 대분류 선택
-- 세부 분류 태그 부여 (2-5개)
+- 세부 분류 태그 부여 (2-7개, AI 관련은 최대한 다양하게)
 - 매칭되는 컬렉션이 없으면 `new_collections_needed`에 추가
+
+### 5-1. AI 관련 태깅 가이드
+
+AI 관련 북마크는 **복합적으로 다층 태깅**한다. 아래 분류를 조합하여 해당하는 태그를 모두 부여할 것.
+
+**기본 태그** — AI 관련이면 항상 포함:
+- `ai`
+
+**모델/도구 태그** — 제공사·모델·도구를 아래 4개로 통일:
+- `claude` — Anthropic 관련 전체 (Claude, Claude Code, Sonnet, Opus 등)
+- `codex` — OpenAI 관련 전체 (GPT, Codex, ChatGPT, OpenAI 등)
+- `gemini` — Google 관련 전체 (Gemini, Bard, Google AI 등)
+- `openclaw` — 오픈소스 AI 코딩 도구/클론 전체 (Llama, Mistral, DeepSeek, 몰트봇, Roo Code, Cline, Aider, PearAI, Void 등)
+
+**실천 분야 태그:**
+- `prompt-engineering` — 프롬프트 작성/최적화
+- `context-engineering` — 컨텍스트 윈도우 관리, RAG, 컨텍스트 설계
+- `harness-engineering` — CLAUDE.md, .cursorrules 등 AI 하네스/설정 파일 설계
+- `ai-agent` — 에이전트 아키텍처, 멀티에이전트, 자율 실행
+- `ai-skills` — AI 도구용 스킬/플러그인/확장
+- `mcp` — Model Context Protocol 관련
+
+**응용 분야 태그:**
+- `ai-dev` — AI 활용 개발 전반
+- `ai-workflow` — AI 기반 워크플로우/자동화
+- `fine-tuning` — 모델 파인튜닝/커스터마이징
+- `ai-infra` — AI 인프라, 배포, 서빙
+- `rag` — RAG 파이프라인
+- `ai-ux` — AI 제품 UX/인터페이스 설계
+
+**예시:**
+- Claude Code용 스킬 저장소 → `ai`, `claude`, `ai-skills`
+- Codex 활용 가이드 → `ai`, `codex`, `ai-dev`
+- 몰트봇 소개 글 → `ai`, `openclaw`, `ai-dev`
+- CLAUDE.md 작성법 → `ai`, `claude`, `harness-engineering`
+- MCP 서버 구축 → `ai`, `mcp`, `ai-dev`, `context-engineering`
+- 프롬프트 최적화 기법 → `ai`, `prompt-engineering`
+- Llama 파인튜닝 → `ai`, `openclaw`, `fine-tuning`
+- RAG 파이프라인 설계 → `ai`, `rag`, `context-engineering`, `ai-infra`
 
 ## 출력 형식
 
@@ -99,7 +138,7 @@
 | `summary` | string | 3-5문장 한국어 요약 |
 | `insights` | string | 한국어 인사이트 |
 | `category` | object | `{ collection_id, collection_title }` |
-| `tags` | string[] | 2-5개 |
+| `tags` | string[] | 2-7개 (AI 관련은 다층 태깅) |
 | `related_links` | string[] | 검증 과정에서 발견한 참고 자료 (0-5개) |
 
 **results[] — failed일 때 필드값:**
@@ -147,7 +186,7 @@
     "collection_id": 12345,
     "collection_title": "Frontend"
   },
-  "tags": ["react", "server-components", "성능최적화"],
+  "tags": ["react", "server-components", "frontend", "성능최적화"],
   "related_links": ["https://nextjs.org/docs/..."]
 }
 ```
