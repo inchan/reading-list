@@ -48,7 +48,7 @@ for batch_file in tmp/batch_*.json; do
   cp "$batch_file" "$tmp_batch"
   for i in "${!urls[@]}"; do
     [ -f "${content_dir}/${i}.md" ] && [ -s "${content_dir}/${i}.md" ] || continue
-    jq --argjson i "$i" --arg c "$(cat "${content_dir}/${i}.md")" \
+    jq --argjson i "$i" --rawfile c "${content_dir}/${i}.md" \
       '.bookmarks[$i].prefetched_content = $c' "$tmp_batch" > "${tmp_batch}.new"
     mv "${tmp_batch}.new" "$tmp_batch"
   done
