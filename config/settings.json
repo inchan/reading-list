@@ -2,7 +2,6 @@
   "quarantine_days": 10,
   "quarantine_collection_name": "검증실패",
   "max_bookmarks_per_batch": 50,
-  "pages_base_url": "https://inchan.github.io/reading-list",
   "raindrop_api_base": "https://api.raindrop.io/rest/v1",
   "raindrop_api_delay_ms": 500,
   "slug_max_length": 60,

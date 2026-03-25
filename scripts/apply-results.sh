@@ -3,6 +3,7 @@ set -euo pipefail
 
 APPLY_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
 source "$APPLY_DIR/lib/raindrop-api.sh"
+source "$APPLY_DIR/lib/note-render.sh"
 load_settings
 
 RESULT_FILE="${1:?사용법: apply-results.sh <result_file>}"
@@ -14,11 +15,15 @@ fi
 
 run_date=$(jq -r '.run_date' "$RESULT_FILE")
 
+suggested_collection_for() {
+  local bookmark_id="$1"
+  jq -r --argjson id "$bookmark_id" '
+    [.new_collections_needed[]? | select(.bookmark_ids | index($id)) | .suggested_name][0] // "미정"
+  ' "$RESULT_FILE"
+}
+
 # 검증실패 컬렉션 ID 조회
 quarantine_id=$(get_quarantine_id) || { log_error "컬렉션 조회 실패"; exit 1; }
-
-# 보고서 생성 먼저
-bash "$APPLY_DIR/generate-reports.sh" "$RESULT_FILE"
 
 # --- 결과를 카테고리별로 분류 ---
 passed_with_collection=$(jq -c '[.results[] | select(.verification.status == "passed" and .category.collection_id != null)]' "$RESULT_FILE")
@@ -32,19 +37,20 @@ verify_failed=$(jq -c '[.results[] | select(.verification.status == "failed" and
 echo "$passed_with_collection" | jq -c '.[]' 2>/dev/null | while IFS= read -r item; do
   bookmark_id=$(echo "$item" | jq -r '.bookmark_id')
   collection_id=$(echo "$item" | jq -r '.category.collection_id')
+  collection_title=$(echo "$item" | jq -r '.category.collection_title // "미분류"')
   tags=$(echo "$item" | jq -c '.tags')
-  url=$(echo "$item" | jq -r '.url')
-  slug=$(slugify_url "$url")
-  note_url="${PAGES_BASE_URL}/reports/${run_date}/${slug}"
+  summary=$(echo "$item" | jq -r '.summary // ""')
+  insights=$(echo "$item" | jq -r '.insights // ""')
+  note_text=$(render_classified_note "$summary" "$insights" "$collection_title" "$tags")
 
   update_data=$(jq -n \
     --argjson collection_id "$collection_id" \
     --argjson tags "$tags" \
-    --arg note "$note_url" \
+    --arg note "$note_text" \
     '{collection: {"$id": $collection_id}, tags: $tags, note: $note}')
 
   raindrop_put "/raindrop/${bookmark_id}" "$update_data" \
-    && log_info "PASSED: ID=${bookmark_id} → 컬렉션 ${collection_id}" \
+    && log_info "PASSED: ID=${bookmark_id} → 컬렉션 ${collection_id} + note 갱신" \
     || log_error "이동 실패: ID=${bookmark_id}"
 done
 
@@ -53,17 +59,20 @@ pending_count=$(echo "$passed_pending" | jq 'length')
 if [ "$pending_count" -gt 0 ]; then
   echo "$passed_pending" | jq -c '.[]' 2>/dev/null | while IFS= read -r item; do
     bookmark_id=$(echo "$item" | jq -r '.bookmark_id')
-    url=$(echo "$item" | jq -r '.url')
-    slug=$(slugify_url "$url")
-    note_url="${PAGES_BASE_URL}/reports/${run_date}/${slug}"
+    tags=$(echo "$item" | jq -c '.tags // []')
+    pending_tags=$(echo "$item" | jq -c --arg pending "$TAG_PENDING" '((.tags // []) + [$pending]) | unique')
+    summary=$(echo "$item" | jq -r '.summary // ""')
+    insights=$(echo "$item" | jq -r '.insights // ""')
+    suggested_collection=$(suggested_collection_for "$bookmark_id")
+    note_text=$(render_pending_note "$summary" "$insights" "$tags" "$suggested_collection")
 
     update_data=$(jq -n \
-      --arg tag "$TAG_PENDING" \
-      --arg note "$note_url" \
-      '{tags: [$tag], note: $note}')
+      --argjson tags "$pending_tags" \
+      --arg note "$note_text" \
+      '{tags: $tags, note: $note}')
 
     raindrop_put "/raindrop/${bookmark_id}" "$update_data" \
-      && log_info "PENDING: ID=${bookmark_id} → #대기중 + 노트 설정" \
+      && log_info "PENDING: ID=${bookmark_id} → #대기중 + note 갱신" \
       || log_error "업데이트 실패: ID=${bookmark_id}"
   done
 fi

@@ -10,7 +10,6 @@ load_settings() {
     @sh "QUARANTINE_DAYS=\(.quarantine_days)",
     @sh "QUARANTINE_COLLECTION_NAME=\(.quarantine_collection_name)",
     @sh "MAX_PER_BATCH=\(.max_bookmarks_per_batch)",
-    @sh "PAGES_BASE_URL=\(.pages_base_url)",
     @sh "API_BASE=\(.raindrop_api_base)",
     @sh "API_DELAY_MS=\(.raindrop_api_delay_ms)",
     @sh "SLUG_MAX_LENGTH=\(.slug_max_length)",
