@@ -10,11 +10,6 @@
     "parent_id": null
   },
   {
-    "id": 68757538,
-    "title": "지식",
-    "parent_id": null
-  },
-  {
     "id": 68757537,
     "title": "실패",
     "parent_id": null
@@ -22,6 +17,11 @@
   {
     "id": 68757536,
     "title": "처리중",
+    "parent_id": null
+  },
+  {
+    "id": 68757538,
+    "title": "지식",
     "parent_id": null
   }
 ]
