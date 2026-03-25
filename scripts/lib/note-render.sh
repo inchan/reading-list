@@ -68,3 +68,25 @@ render_pending_note() {
       "검증: 통과"
     '
 }
+
+render_recovered_note() {
+  local title="$1"
+  local excerpt="$2"
+  local tags_json="$3"
+  local tags_text
+  tags_text=$(join_tags "$tags_json")
+
+  jq -nr \
+    --arg title "$(text_or_placeholder "$title")" \
+    --arg excerpt "$(text_or_placeholder "$excerpt")" \
+    --arg tags "$tags_text" '
+      "핵심 요약\n" +
+      $excerpt + "\n\n" +
+      "인사이트\n" +
+      "기존 report 본문이 남아 있지 않아 저장 시점 제목, excerpt, 태그를 기준으로 복구한 note입니다. 필요하면 원문 링크를 다시 확인해 주세요." + "\n\n" +
+      "분류 제안\n" +
+      "원문 제목: " + $title + "\n" +
+      "후보 태그: " + $tags + "\n" +
+      "상태: 복구노트"
+    '
+}
