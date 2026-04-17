@@ -1,0 +1,22 @@
+{
+  "items": [
+    {
+      "_id": 101,
+      "title": "Karpathy LLM Wiki",
+      "link": "https://example.com/karpathy-llm-wiki",
+      "excerpt": "A note about LLM-maintained markdown wikis.",
+      "note": "Useful for reading-list pivot.",
+      "created": "2026-04-17T00:00:00Z",
+      "lastUpdate": "2026-04-17T01:02:03Z",
+      "tags": ["llm-wiki", "knowledge-base"],
+      "collection": { "$id": -1 },
+      "highlights": [
+        {
+          "_id": "h1",
+          "text": "The wiki compounds over time.",
+          "created": "2026-04-17T01:00:00Z"
+        }
+      ]
+    }
+  ]
+}

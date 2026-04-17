@@ -1,102 +1,111 @@
-name: Process Reading List
+name: Process Reading List Wiki
 
 on:
-  schedule:
-    - cron: '0 10 * * *'  # 매일 19:00 KST (UTC+9)
-  push:
-    branches: [main]
-    paths:
-      - 'scripts/**'
-      - 'prompts/**'
-      - 'config/settings.json'
-      - '.github/workflows/process-bookmarks.yml'
   workflow_dispatch:
+    inputs:
+      collection_id:
+        description: "Raindrop collection id (-1 = Unsorted, 0 = All)"
+        required: false
+        default: "-1"
+      limit:
+        description: "Sample limit for raw sync"
+        required: false
+        default: "3"
+      dry_run:
+        description: "Run without committing changes"
+        required: false
+        default: "true"
 
 concurrency:
-  group: process-reading-list
+  group: process-reading-list-wiki
   cancel-in-progress: false
 
 permissions:
   contents: write
-  issues: write
 
 jobs:
   process:
     runs-on: ubuntu-latest
     env:
       RAINDROP_TEST_TOKEN: ${{ secrets.RAINDROP_TEST_TOKEN }}
+      CLAUDE_CODE_OAUTH_TOKEN: ${{ secrets.CLAUDE_CODE_OAUTH_TOKEN }}
+      COLLECTION_ID: ${{ github.event.inputs.collection_id || '-1' }}
+      SYNC_LIMIT: ${{ github.event.inputs.limit || '3' }}
+      DRY_RUN: ${{ github.event.inputs.dry_run || 'true' }}
     steps:
       - uses: actions/checkout@v4
 
       - name: Setup tools
-        run: sudo apt-get install -y jq
+        run: sudo apt-get update && sudo apt-get install -y jq
 
       - name: Install Claude Code
         run: npm install -g @anthropic-ai/claude-code
 
-      - name: Initial setup (ensure quarantine collection exists)
-        run: scripts/setup.sh
-
-      - name: Cleanup quarantine (10일 경과 → 휴지통)
-        run: scripts/cleanup-quarantine.sh
-
-      - name: Cleanup pending (분류 완료된 북마크에서 #대기중 제거)
-        run: scripts/cleanup-pending.sh
-
-      - name: Retry blocked (영구 차단 아닌 #접근불가 재시도)
-        run: scripts/retry-blocked.sh
-
-      - name: Fetch unsorted bookmarks
-        run: scripts/fetch-unsorted.sh
-
-      - name: Split into batches (차단 도메인 사전 필터 포함)
-        run: scripts/split-batches.sh
-
-      - name: Apply blocked domain results
+      - name: Sync Raindrop raw snapshots
         run: |
-          if [ -f tmp/result_blocked.json ]; then
-            scripts/apply-results.sh tmp/result_blocked.json || echo "차단 도메인 적용 실패"
+          scripts/sync-raindrop-raw.sh \
+            --collection "$COLLECTION_ID" \
+            --limit "$SYNC_LIMIT" \
+            --queue tmp/wiki-compile-queue.json
+
+      - name: Compile raw sources into wiki with prompt-only skill
+        run: |
+          queue_count="$(jq '.items | length' tmp/wiki-compile-queue.json)"
+          if [ "$queue_count" -eq 0 ]; then
+            echo "No new raw sources to compile."
+            exit 0
           fi
 
-      - name: Prefetch URLs (Firecrawl → Jina Reader)
-        run: scripts/prefetch-urls.sh
-        env:
-          FIRECRAWL_API_KEY: ${{ secrets.FIRECRAWL_API_KEY }}
+          system_prompt="$(
+            printf '%s\n\n' "$(cat prompts/skills/karpathy-llm-wiki.upstream.md)"
+            printf '%s\n\n' "$(cat wiki/SCHEMA.md)"
+            printf '%s\n\n' "$(cat prompts/ingest-source-into-wiki.md)"
+            printf '%s\n' "$(cat prompts/actions/wiki-compile.md)"
+          )"
 
-      - name: Process batches with Claude
+          claude --print \
+            --system-prompt "$system_prompt" \
+            --dangerously-skip-permissions \
+            --max-turns 30 \
+            "Compile the raw sources listed in tmp/wiki-compile-queue.json into the reading-list wiki. Edit repository files directly according to the prompt contracts."
+
+      - name: Validate wiki-only changes
         run: |
-          for batch in tmp/batch_*.json; do
-            [ -f "$batch" ] || continue
-            result_file="tmp/result_$(basename "$batch")"
+          if [ -d raw ]; then
+            echo "Unexpected root-level raw/ directory created."
+            exit 1
+          fi
 
-            echo "=== 배치 처리: $(basename "$batch") ==="
+          bad_changes="$(
+            git status --short --untracked-files=all |
+              awk '
+                {
+                  path=$2
+                  if ($1 == "R" || $1 == "RM" || $1 == "RD") { path=$4 }
+                  if (path !~ /^wiki\// && path !~ /^tmp\//) { print }
+                }
+              '
+          )"
 
-            raw_file="tmp/raw_$(basename "$batch")"
-            cat "$batch" | claude --print \
-              --system-prompt "$(cat prompts/analyze-bookmarks.md)" \
-              --output-format json \
-              --dangerously-skip-permissions \
-              --max-turns 15 \
-              > "$raw_file" 2>/dev/null || { echo "배치 실패: $batch"; continue; }
+          if [ -n "$bad_changes" ]; then
+            echo "Unexpected non-wiki changes:"
+            printf '%s\n' "$bad_changes"
+            exit 1
+          fi
 
-            # Claude CLI JSON에서 실제 결과 추출
-            jq -r '.result' "$raw_file" | sed -n '/^```json$/,/^```$/p' | sed '1d;$d' > "$result_file"
-            if ! jq empty "$result_file" 2>/dev/null; then
-              echo "파싱 실패: $result_file"; continue
-            fi
-
-            scripts/apply-results.sh "$result_file" || { echo "적용 실패: $result_file"; continue; }
-          done
-        env:
-          CLAUDE_CODE_OAUTH_TOKEN: ${{ secrets.CLAUDE_CODE_OAUTH_TOKEN }}
-          FIRECRAWL_API_KEY: ${{ secrets.FIRECRAWL_API_KEY }}
-
-      - name: Commit and push pipeline state
+      - name: Commit and push wiki state
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
-          git add config/collections.json config/blocked-domains.json
-          git diff --cached --quiet && echo "변경사항 없음" && exit 0
-          git commit -m "reading-list: $(date +%Y-%m-%d) 처리 결과"
+
+          if [ "$DRY_RUN" = "true" ]; then
+            echo "Dry run enabled; showing pending changes without commit."
+            git status --short
+            exit 0
+          fi
+
+          git add wiki
+          git diff --cached --quiet && echo "No wiki changes to commit." && exit 0
+          git commit -m "Compile reading-list wiki from raw sources"
           git pull --rebase origin main || { git rebase --abort 2>/dev/null; git pull --no-rebase origin main; }
           git push
