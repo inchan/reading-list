@@ -1,0 +1,35 @@
+{
+  "run_date": "2026-04-17",
+  "synced_at": "2026-04-17T10:12:02Z",
+  "source_type": "raindrop",
+  "collection_id": -1,
+  "items": [
+    {
+      "source_id": "raindrop:1685382417",
+      "title": "아키텍쳐 다이어그램 그려주는 스킬이 새로 나온것 같네요",
+      "url": "https://www.threads.com/@ai.corder/post/DXIzTBvmUmX?xmt=AQF0kiH3C2xVzR4e6jEmr1v8cj8DDIudxGtNDIZVHyX1lTBo5ckijj0PuWhQlq9V83H7I4g&slof=1",
+      "status": "new",
+      "raw_markdown": "wiki/raw/raindrop/items/1685382417/20260416T1103365.582034b2d93267821b9f531e61ab01867374b688d3f6329a667bd0c6baaf27d4.md",
+      "raw_json": "wiki/raw/raindrop/items/1685382417/20260416T1103365.582034b2d93267821b9f531e61ab01867374b688d3f6329a667bd0c6baaf27d4.json",
+      "content_digest": "sha256:582034b2d93267821b9f531e61ab01867374b688d3f6329a667bd0c6baaf27d4"
+    },
+    {
+      "source_id": "raindrop:1685373321",
+      "title": "Claude Mythos 이후",
+      "url": "https://www.threads.com/@tatum_hq/post/DXJCzwWEo3K?xmt=AQF0WSOcF4cDdTLJetyBuq907p39e1R-NzMWWXb1hM4pnjmgwJ70mwOTMjZ87o8ezqwSxnG3&slof=1",
+      "status": "new",
+      "raw_markdown": "wiki/raw/raindrop/items/1685373321/20260416T1103365.0396d268711cccd7e5bc83f48e65178f7954fa28794339c9e25cbcc76da8b291.md",
+      "raw_json": "wiki/raw/raindrop/items/1685373321/20260416T1103365.0396d268711cccd7e5bc83f48e65178f7954fa28794339c9e25cbcc76da8b291.json",
+      "content_digest": "sha256:0396d268711cccd7e5bc83f48e65178f7954fa28794339c9e25cbcc76da8b291"
+    },
+    {
+      "source_id": "raindrop:1685372035",
+      "title": "아키텍쳐 다이어그램 그려주는 스킬이 새로 나온것 같네요",
+      "url": "https://www.threads.com/@ai.corder/post/DXIzTBvmUmX?xmt=AQF08d2O-8uDeoelw_a2ZgdCz0aKxbcN4mh9hre5jj5c4mBRXYO-cC2b7on4NPTfu51Pg0E&slof=1",
+      "status": "new",
+      "raw_markdown": "wiki/raw/raindrop/items/1685372035/20260416T1103365.b3ef2de8a919a0e0426611a408609e72706d30d7ae3441e09af0da39cd3dd3e4.md",
+      "raw_json": "wiki/raw/raindrop/items/1685372035/20260416T1103365.b3ef2de8a919a0e0426611a408609e72706d30d7ae3441e09af0da39cd3dd3e4.json",
+      "content_digest": "sha256:b3ef2de8a919a0e0426611a408609e72706d30d7ae3441e09af0da39cd3dd3e4"
+    }
+  ]
+}

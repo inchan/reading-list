@@ -1,0 +1,41 @@
+{
+  "_id": 1685372035,
+  "collection": {
+    "$id": -1,
+    "$ref": "collections",
+    "oid": -1
+  },
+  "collectionId": -1,
+  "cover": "https://scontent-fra5-1.cdninstagram.com/v/t51.82787-15/670895323_17874605562591770_5731115594906736654_n.webp?_nc_cat=110&ig_cache_key=Mzg3NTU3MzA4NzI2Njc1MjkxOQ%3D%3D.3-ccb7-5&ccb=7-5&_nc_sid=58cdad&efg=eyJ2ZW5jb2RlX3RhZyI6InhwaWRzLjI0MTZ4MTU3Ni5zZHIuQzMifQ%3D%3D&_nc_ohc=0_u2M7JHTDEQ7kNvwG4O8fM&_nc_oc=AdoIA7SpQUwxXioZgsKlksppM6Gb3HbYv8ZeW-p7YhBt2qruqs8nnHP36eHAmPNS4io&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=scontent-fra5-1.cdninstagram.com&_nc_gid=P415xATTTpmzPPgc-IVGHw&_nc_ss=7a32e&oh=00_Af3t5szSEIvc3XwAt_sQvHBeZjUwDGkUSZjzid-kiwSIvw&oe=69E5A413",
+  "created": "2026-04-15T16:10:07.270Z",
+  "creatorRef": {
+    "_id": 724603,
+    "avatar": "",
+    "email": "",
+    "name": "kangsazang"
+  },
+  "domain": "threads.com",
+  "excerpt": "Hermes에서는 스킬 받아서 /architecture-digram 프롬프트로도 가능하다고 하네요.",
+  "highlights": [],
+  "important": false,
+  "lastUpdate": "2026-04-16T11:03:36.571Z",
+  "link": "https://www.threads.com/@ai.corder/post/DXIzTBvmUmX?xmt=AQF08d2O-8uDeoelw_a2ZgdCz0aKxbcN4mh9hre5jj5c4mBRXYO-cC2b7on4NPTfu51Pg0E&slof=1",
+  "media": [
+    {
+      "link": "https://scontent-fra5-1.cdninstagram.com/v/t51.82787-15/670895323_17874605562591770_5731115594906736654_n.webp?_nc_cat=110&ig_cache_key=Mzg3NTU3MzA4NzI2Njc1MjkxOQ%3D%3D.3-ccb7-5&ccb=7-5&_nc_sid=58cdad&efg=eyJ2ZW5jb2RlX3RhZyI6InhwaWRzLjI0MTZ4MTU3Ni5zZHIuQzMifQ%3D%3D&_nc_ohc=0_u2M7JHTDEQ7kNvwG4O8fM&_nc_oc=AdoIA7SpQUwxXioZgsKlksppM6Gb3HbYv8ZeW-p7YhBt2qruqs8nnHP36eHAmPNS4io&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=scontent-fra5-1.cdninstagram.com&_nc_gid=P415xATTTpmzPPgc-IVGHw&_nc_ss=7a32e&oh=00_Af3t5szSEIvc3XwAt_sQvHBeZjUwDGkUSZjzid-kiwSIvw&oe=69E5A413",
+      "type": "image"
+    }
+  ],
+  "note": "",
+  "removed": false,
+  "sort": 1685372035,
+  "tags": [
+    "접근불가"
+  ],
+  "title": "아키텍쳐 다이어그램 그려주는 스킬이 새로 나온것 같네요",
+  "type": "link",
+  "user": {
+    "$id": 724603,
+    "$ref": "users"
+  }
+}

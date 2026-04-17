@@ -1,0 +1,41 @@
+{
+  "_id": 1685373321,
+  "collection": {
+    "$id": -1,
+    "$ref": "collections",
+    "oid": -1
+  },
+  "collectionId": -1,
+  "cover": "https://scontent-fra3-1.cdninstagram.com/v/t51.82787-19/650540464_18059604422428453_6205817757932929816_n.jpg?stp=dst-jpg_s640x640_tt6&efg=eyJ2ZW5jb2RlX3RhZyI6InByb2ZpbGVfcGljLmRqYW5nby42NDYuYzIifQ&_nc_ht=scontent-fra3-1.cdninstagram.com&_nc_cat=101&_nc_oc=Q6cZ2gH6Gdg9fqZ3aeWFz0rPzsB7fORYBjpvD01JPtXSeZOK5H1oRtPqn_so7-vRjkWLIyo&_nc_ohc=fXKFtP5bqDIQ7kNvwHam9rT&_nc_gid=Cgjbd9PHxrmWaP3TehKvkQ&edm=APs17CUBAAAA&ccb=7-5&oh=00_Af0VLEiIU6lXggINXkiY5bkgtom3l1P1QQeIP-j0aLM4Cw&oe=69E58BEB&_nc_sid=10d13b",
+  "created": "2026-04-15T16:12:36.527Z",
+  "creatorRef": {
+    "_id": 724603,
+    "avatar": "",
+    "email": "",
+    "name": "kangsazang"
+  },
+  "domain": "threads.com",
+  "excerpt": "보안팀이 지금 당장 바꿔야 할 11가지\n\n1. AI로 코드를 먼저 점검해야 합니다.\n2. AI 에이전트 사용을 ‘실험’이 아니라 ‘표준’으로 바꿔야 합니다.\n3. 보안·법무·엔지니어링이 함께 움직이는 구조를 만들어야 합니다.\n4. 위험 지표를 다시 써야 합니다.\n5. 패치 폭증 상황을 전제로 준비해야 합니다.\n6. 에이전트 자체를 방어해야 합니다.\n7. 공격 표면 인벤토리를 다시 만들어야 합니다.\n8. 기본 통제를 다시 점검해야 합니다.\n9. 디셉션(Deception) 역량을 구축해야 합니다.\n10. 자동화된 대응 체계를 만들어야 합니다.\n11. VulnOps를 만들어야 합니다.",
+  "highlights": [],
+  "important": false,
+  "lastUpdate": "2026-04-16T11:03:36.571Z",
+  "link": "https://www.threads.com/@tatum_hq/post/DXJCzwWEo3K?xmt=AQF0WSOcF4cDdTLJetyBuq907p39e1R-NzMWWXb1hM4pnjmgwJ70mwOTMjZ87o8ezqwSxnG3&slof=1",
+  "media": [
+    {
+      "link": "https://scontent-fra3-1.cdninstagram.com/v/t51.82787-19/650540464_18059604422428453_6205817757932929816_n.jpg?stp=dst-jpg_s640x640_tt6&efg=eyJ2ZW5jb2RlX3RhZyI6InByb2ZpbGVfcGljLmRqYW5nby42NDYuYzIifQ&_nc_ht=scontent-fra3-1.cdninstagram.com&_nc_cat=101&_nc_oc=Q6cZ2gH6Gdg9fqZ3aeWFz0rPzsB7fORYBjpvD01JPtXSeZOK5H1oRtPqn_so7-vRjkWLIyo&_nc_ohc=fXKFtP5bqDIQ7kNvwHam9rT&_nc_gid=Cgjbd9PHxrmWaP3TehKvkQ&edm=APs17CUBAAAA&ccb=7-5&oh=00_Af0VLEiIU6lXggINXkiY5bkgtom3l1P1QQeIP-j0aLM4Cw&oe=69E58BEB&_nc_sid=10d13b",
+      "type": "image"
+    }
+  ],
+  "note": "",
+  "removed": false,
+  "sort": 1685373321,
+  "tags": [
+    "접근불가"
+  ],
+  "title": "Claude Mythos 이후",
+  "type": "link",
+  "user": {
+    "$id": 724603,
+    "$ref": "users"
+  }
+}
