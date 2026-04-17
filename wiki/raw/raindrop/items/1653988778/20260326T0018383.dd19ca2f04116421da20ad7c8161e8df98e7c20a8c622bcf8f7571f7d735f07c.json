@@ -1,0 +1,45 @@
+{
+  "_id": 1653988778,
+  "collection": {
+    "$id": 68757538,
+    "$ref": "collections",
+    "oid": 68757538
+  },
+  "collectionId": 68757538,
+  "cover": "https://scontent-ber1-1.cdninstagram.com/v/t51.82787-19/588962630_17903236788311844_8140256756029158424_n.jpg?efg=eyJ2ZW5jb2RlX3RhZyI6InByb2ZpbGVfcGljLmRqYW5nby4zODIuYzIifQ&_nc_ht=scontent-ber1-1.cdninstagram.com&_nc_cat=100&_nc_oc=Q6cZ2gEgzdv2lmh9D3fNxjOStzYG5XXeSBeeiblShHYH1yv8buBYf-IN82_LIN4vreCB0tA&_nc_ohc=-LSDpc41g3AQ7kNvwF4B-Ik&_nc_gid=itt4YbpO_-R_geT-Snmk_A&edm=APs17CUBAAAA&ccb=7-5&oh=00_Afwr8WftvRTe1thIYWqUEFYC8lUnNzP1Nw9jj7Xm7MfRZg&oe=69C65EEF&_nc_sid=10d13b",
+  "created": "2026-03-23T01:15:09.847Z",
+  "creatorRef": {
+    "_id": 724603,
+    "avatar": "",
+    "email": "",
+    "name": "kangsazang"
+  },
+  "domain": "threads.com",
+  "excerpt": "Anthropic이 2026년 3월 12일에 Claude Certified Architect - Foundations 인증을 공식 출시했습니다. \n\n준비 과정은 무료이며, Claude Academy의 13개 코스로 구성되어 있습니다. \n시험은 프로덕션 수준의 AI 시스템을 중심으로 한 실무형 평가로, 60문항(120분)이며 720/1000점 이상이 합격 기준입니다. (외부 도움 금지)\n\n주요 내용 비중  Agentic Architecture(에이전트 구조) → 27% (가장 높은 비중) \n실제 운영 사례 중심 문제 (예: 멀티 에이전트 CI/CD 파이프라인 설계 등)\n\n이미 대기업 도입 현황  Deloitte: 15,000명 교육 중 \nAccenture: 30,000명 규모로 기업 전체에 도입 완료",
+  "highlights": [],
+  "important": false,
+  "lastUpdate": "2026-03-26T00:18:38.306Z",
+  "link": "https://www.threads.com/@focusrefresh/post/DWNN0QZj2ES?xmt=AQF0iDc_cNT6d9qe1hqo0T8RfIFAW1DXAJBoKymsQfbbP4zZ0PgKPYMJU4xHwUmhxHYTIAKu&slof=1",
+  "media": [
+    {
+      "link": "https://scontent-ber1-1.cdninstagram.com/v/t51.82787-19/588962630_17903236788311844_8140256756029158424_n.jpg?efg=eyJ2ZW5jb2RlX3RhZyI6InByb2ZpbGVfcGljLmRqYW5nby4zODIuYzIifQ&_nc_ht=scontent-ber1-1.cdninstagram.com&_nc_cat=100&_nc_oc=Q6cZ2gEgzdv2lmh9D3fNxjOStzYG5XXeSBeeiblShHYH1yv8buBYf-IN82_LIN4vreCB0tA&_nc_ohc=-LSDpc41g3AQ7kNvwF4B-Ik&_nc_gid=itt4YbpO_-R_geT-Snmk_A&edm=APs17CUBAAAA&ccb=7-5&oh=00_Afwr8WftvRTe1thIYWqUEFYC8lUnNzP1Nw9jj7Xm7MfRZg&oe=69C65EEF&_nc_sid=10d13b",
+      "type": "image"
+    }
+  ],
+  "note": "Anthropic이 2026년 3월 12일 'Claude Certified Architect - Foundations(CCA-F)'를 공식 출시했다.\n60개의 시나리오 기반 객관식 문제·120분·720/1000 합격 점수의 엄격한 프록터 시험으로, Agentic Architecture(27%)·Tool Design & MCP(18%)·Claude Code Configuration(20%)·Prompt Engineering(20%)·Context Management(15%) 5개 도메인을 다룬다.\nAnthropic Academy에서 13개의 무료 자기주도 학습 코스를 제공하며, 합격자에게는 공유 가능한 디지털 뱃지가 발급된다.\n현재는 Claude 파트너 네트워크 회원사 직원에게만 접근 가능하며, Anthropic은 이 네트워크에 초기 1억 달러를 투자했다.\n\n메모: Anthropic이 AWS, Google Cloud와 같은 공식 파트너 인증 생태계를 구축함으로써 Claude 기반 엔터프라이즈 솔루션 시장이 더욱 성숙해질 것으로 전망된다.\n분류: 지식\n태그: certification, anthropic, claude, enterprise, exam",
+  "removed": false,
+  "sort": 1654556508,
+  "tags": [
+    "certification",
+    "anthropic",
+    "claude",
+    "enterprise",
+    "exam"
+  ],
+  "title": "Anthony Cho (@focusrefresh) on Threads",
+  "type": "link",
+  "user": {
+    "$id": 724603,
+    "$ref": "users"
+  }
+}

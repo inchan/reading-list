@@ -1,6 +1,6 @@
-# GitHub Actions Wiki Compile Prompt
+# Local Codex Wiki Compile Prompt
 
-You are running inside the `reading-list` repository in GitHub Actions.
+You are running locally inside the `reading-list` repository with Codex.
 
 Use the prompt-only Karpathy LLM Wiki skill as the operating philosophy, then
 apply the repository-specific rules below.
@@ -49,8 +49,10 @@ For each source:
 2. Prefer updating existing pages over creating duplicates.
 3. Preserve provenance in frontmatter with `sources` and `source_ids`.
 4. Cite raw sources in the body when making factual claims.
-5. Update `wiki/index.md`.
-6. Append a parseable entry to `wiki/log.md`.
+5. Write summaries, section headings, and explanatory prose Korean-first.
+6. Update `wiki/index.md` with Korean-first summaries.
+7. Append a parseable entry to `wiki/log.md`.
+8. After compilation, run `scripts/prepare-wiki-publish.sh --site-url "$READING_LIST_SITE_URL"` to regenerate `wiki/feed.xml`.
 
 ## Safety Rules
 

@@ -1,0 +1,47 @@
+{
+  "_id": 1671496698,
+  "collection": {
+    "$id": 68757538,
+    "$ref": "collections",
+    "oid": 68757538
+  },
+  "collectionId": 68757538,
+  "cover": "https://scontent-fra5-1.cdninstagram.com/v/t51.2885-19/358233073_954705942426358_8649642003519420454_n.jpg?stp=dst-jpg_s640x640_tt6&efg=eyJ2ZW5jb2RlX3RhZyI6InByb2ZpbGVfcGljLmRqYW5nby43NDUuYzIifQ&_nc_ht=scontent-fra5-1.cdninstagram.com&_nc_cat=110&_nc_oc=Q6cZ2gEJ7mIuX6GdbA4Ii_fjlX6ScRGnEUw7vrOgHN2NWwRo26LTtDLv8_4zVrqEDr3eyTE&_nc_ohc=Mm8e9Q6itQMQ7kNvwG6l-Un&_nc_gid=EfndUG_0b7FP-ezwAGKfCQ&edm=APs17CUBAAAA&ccb=7-5&oh=00_Af28C-FiMsvBaW3U5ufKhvmDSzCYu4s83jDpJxA3a1hXQA&oe=69D67BBA&_nc_sid=10d13b",
+  "created": "2026-04-04T05:54:25.613Z",
+  "creatorRef": {
+    "_id": 724603,
+    "avatar": "",
+    "email": "",
+    "name": "kangsazang"
+  },
+  "domain": "threads.com",
+  "excerpt": "https://jkf87.github.io/llm-personal-knowledge-base-obsidian-workflow.html \n이렇게 정리해놨습니다",
+  "highlights": [],
+  "important": false,
+  "lastUpdate": "2026-04-04T10:40:24.180Z",
+  "link": "https://www.threads.com/@conanssam/post/DWsc51GERgy?xmt=AQF0KJ4unV0HbRBs5CQXQmknNbeVLT7NYWYUx8g-Asf_bgRTNsrMVWICbjBqT1iXs_ahBv4&slof=1",
+  "media": [
+    {
+      "link": "https://scontent-fra5-1.cdninstagram.com/v/t51.2885-19/358233073_954705942426358_8649642003519420454_n.jpg?stp=dst-jpg_s640x640_tt6&efg=eyJ2ZW5jb2RlX3RhZyI6InByb2ZpbGVfcGljLmRqYW5nby43NDUuYzIifQ&_nc_ht=scontent-fra5-1.cdninstagram.com&_nc_cat=110&_nc_oc=Q6cZ2gEJ7mIuX6GdbA4Ii_fjlX6ScRGnEUw7vrOgHN2NWwRo26LTtDLv8_4zVrqEDr3eyTE&_nc_ohc=Mm8e9Q6itQMQ7kNvwG6l-Un&_nc_gid=EfndUG_0b7FP-ezwAGKfCQ&edm=APs17CUBAAAA&ccb=7-5&oh=00_Af28C-FiMsvBaW3U5ufKhvmDSzCYu4s83jDpJxA3a1hXQA&oe=69D67BBA&_nc_sid=10d13b",
+      "type": "image"
+    }
+  ],
+  "note": "LLM을 코드 보조 도구가 아닌 '지식 컴파일러'로 활용해 Obsidian 기반 개인 연구 워크플로우를 구축하는 방법을 소개하는 글이다.\n원본 수집→자동 정리→질의응답→산출물 생성→지속적 개선의 5단계로 구성된다.\nObsidian의 마크다운 구조가 LLM이 읽고 수정하기에 최적이며, 축적된 자료를 체계적으로 재활용하는 환경을 만드는 것이 핵심이다.\nRAG 없이도 100개 문서·40만 단어 규모까지는 정리된 위키와 인덱싱으로 충분하다고 주장한다.\n\n인사이트\n단순 RAG 파이프라인 구축 없이도 장문 컨텍스트 모델과 잘 정리된 마크다운 위키 조합만으로 개인 연구 환경을 구성할 수 있다는 점이 실용적이다.",
+  "removed": false,
+  "sort": 1671496698,
+  "tags": [
+    "ai",
+    "llm",
+    "obsidian",
+    "knowledge-management",
+    "ai-workflow",
+    "context-engineering",
+    "rag"
+  ],
+  "title": "코난쌤 (@conanssam) on Threads",
+  "type": "link",
+  "user": {
+    "$id": 724603,
+    "$ref": "users"
+  }
+}

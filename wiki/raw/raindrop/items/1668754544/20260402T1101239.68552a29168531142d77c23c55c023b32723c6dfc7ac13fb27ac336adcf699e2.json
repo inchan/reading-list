@@ -1,0 +1,62 @@
+{
+  "_id": 1668754544,
+  "collection": {
+    "$id": 68757538,
+    "$ref": "collections",
+    "oid": 68757538
+  },
+  "collectionId": 68757538,
+  "cover": "https://media2.dev.to/dynamic/image/width=1000,height=500,fit=cover,gravity=auto,format=auto/https%3A%2F%2Fdev-to-uploads.s3.amazonaws.com%2Fuploads%2Farticles%2Fo3xxk41zcaox3fybfahp.png",
+  "created": "2026-04-02T00:12:57.884Z",
+  "creatorRef": {
+    "_id": 724603,
+    "avatar": "",
+    "email": "",
+    "name": "kangsazang"
+  },
+  "domain": "dev.to",
+  "excerpt": "Intro   I have been using AI tools such as Claude Code and Cursor at work for a while. And I...",
+  "highlights": [],
+  "important": false,
+  "lastUpdate": "2026-04-02T11:01:23.925Z",
+  "link": "https://dev.to/webdeveloperhyper/how-to-make-ai-follow-your-instructions-more-for-free-openspec-2c85",
+  "media": [
+    {
+      "link": "https://media2.dev.to/dynamic/image/width=1000,height=500,fit=cover,gravity=auto,format=auto/https%3A%2F%2Fdev-to-uploads.s3.amazonaws.com%2Fuploads%2Farticles%2Fo3xxk41zcaox3fybfahp.png",
+      "type": "image"
+    },
+    {
+      "link": "https://media2.dev.to/dynamic/image/width=800%2Cheight=%2Cfit=scale-down%2Cgravity=auto%2Cformat=auto/https%3A%2F%2Fdev-to-uploads.s3.amazonaws.com%2Fuploads%2Farticles%2Fcxxh0pxmi63xrml8289m.png",
+      "type": "image"
+    },
+    {
+      "link": "https://media2.dev.to/dynamic/image/width=800%2Cheight=%2Cfit=scale-down%2Cgravity=auto%2Cformat=auto/https%3A%2F%2Fdev-to-uploads.s3.amazonaws.com%2Fuploads%2Farticles%2Fsq33xyicivs1ybbvyjve.png",
+      "type": "image"
+    },
+    {
+      "link": "https://media2.dev.to/dynamic/image/width=800%2Cheight=%2Cfit=scale-down%2Cgravity=auto%2Cformat=auto/https%3A%2F%2Fdev-to-uploads.s3.amazonaws.com%2Fuploads%2Farticles%2Fvpvxdf0x75oogwon99po.png",
+      "type": "image"
+    },
+    {
+      "link": "https://media2.dev.to/dynamic/image/width=775%2Cheight=%2Cfit=scale-down%2Cgravity=auto%2Cformat=auto/https%3A%2F%2Fi.imgur.com%2FVYTIlUE.png",
+      "type": "image"
+    }
+  ],
+  "note": "OpenSpec은 AI 코딩 어시스턴트가 지시를 더 잘 따르게 하기 위한 경량 스펙 주도 개발(SDD) 프레임워크다.\nProposal → Apply → Archive의 3단계 워크플로우를 통해 AI가 코딩을 시작하기 전에 상세 명세서를 작성하고 검증하도록 강제한다.\nnpm 전역 설치 후 `openspec init` 명령 한 줄로 프로젝트를 초기화하며, AGENTS.md 파일을 통해 AI에게 명확한 작업 지침과 범위를 제공한다.\n저자는 실제 프로젝트에 일본어 로컬라이제이션을 추가하는 과정을 통해 전체 워크플로우를 단계별로 설명한다.\n\n인사이트\nAI가 할 일 목록을 무시하고 멋대로 코딩하는 현상은 많은 개발자가 경험하는 문제다.",
+  "removed": false,
+  "sort": 1668754544,
+  "tags": [
+    "ai",
+    "claude",
+    "codex",
+    "harness-engineering",
+    "ai-dev",
+    "ai-workflow"
+  ],
+  "title": "🤖How to make AI follow your instructions more for free (OpenSpec)📝",
+  "type": "article",
+  "user": {
+    "$id": 724603,
+    "$ref": "users"
+  }
+}

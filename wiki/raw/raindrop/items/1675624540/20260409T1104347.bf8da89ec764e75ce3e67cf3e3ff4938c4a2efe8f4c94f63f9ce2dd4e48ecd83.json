@@ -1,0 +1,46 @@
+{
+  "_id": 1675624540,
+  "collection": {
+    "$id": 68757538,
+    "$ref": "collections",
+    "oid": 68757538
+  },
+  "collectionId": 68757538,
+  "cover": "https://scontent-dus1-1.cdninstagram.com/v/t51.82787-19/567435319_17929332282111487_3721888975743619784_n.jpg?stp=dst-jpg_s640x640_tt6&efg=eyJ2ZW5jb2RlX3RhZyI6InByb2ZpbGVfcGljLmRqYW5nby45OTkuYzIifQ&_nc_ht=scontent-dus1-1.cdninstagram.com&_nc_cat=107&_nc_oc=Q6cZ2gHv53HfGoGQuSeXmLteEQu5bStlO69GcBqjxYW9Uzkej9LvKP4vIxgwuV6O-h0z-No&_nc_ohc=9Pk6cilBVMUQ7kNvwGbmVAt&_nc_gid=NVI5GHEePOudHDU80tag9Q&edm=APs17CUBAAAA&ccb=7-5&oh=00_Af2AibKjX4WYourgCJQBYvwYLK_Blydv89_ekC8xiMZWyw&oe=69DABDF9&_nc_sid=10d13b",
+  "created": "2026-04-07T09:54:00.205Z",
+  "creatorRef": {
+    "_id": 724603,
+    "avatar": "",
+    "email": "",
+    "name": "kangsazang"
+  },
+  "domain": "threads.com",
+  "excerpt": "Autoresearch/council 내나름의 버전으로.\n\n원하는 north star를 추상부터 구체까지 명확하게 하고,\n그걸 바탕으로 클로드 + 코덱스 합의체로 Evaluation을 정말 촘촘하게 짜고 (Eval system 자체를 반복으로 돌림 + 마지막 Human in the loop - 내가 sign off) \n그 Eval 채점관은 따로 두고 통과할 때까지 둘 토론.\n\n이걸 각 flow마다 - 리서치, 유저 저니, 랜딩 카피, 유저 플로우, AI 정확도 판단 Eval set, 프롬프트 튜닝 등등 - 마지막에 내가 그 로그를 확인하고 sign off 혹은 개선요구. \n디자인이나 플로우는 시안 1, 2, 3안을 제시 - 이유. \n유저플로우 벤치마크 범위는 그 특정 산업에 한정하지 않고 스킬도 사용.\n\n로그 기록들을 보니 내가 아무리 도메인 할아버지여도 못할 촘촘함이. 과설계 방지도 어느정도. \n\n정성평가 Evaluation방법론 정말 감사. 혈을 뚫어 주셨네요.",
+  "highlights": [],
+  "important": false,
+  "lastUpdate": "2026-04-09T11:04:34.799Z",
+  "link": "https://www.threads.com/@hongso0921/post/DWyVV6Mk_jI?xmt=AQF0LkSU3zT9q6nbcqb__Mmez4WsyfO8rmALL7N41i-FZFSKCw5r1k4Gqe7oWOpxll-kgmI&slof=1",
+  "media": [
+    {
+      "link": "https://scontent-dus1-1.cdninstagram.com/v/t51.82787-19/567435319_17929332282111487_3721888975743619784_n.jpg?stp=dst-jpg_s640x640_tt6&efg=eyJ2ZW5jb2RlX3RhZyI6InByb2ZpbGVfcGljLmRqYW5nby45OTkuYzIifQ&_nc_ht=scontent-dus1-1.cdninstagram.com&_nc_cat=107&_nc_oc=Q6cZ2gHv53HfGoGQuSeXmLteEQu5bStlO69GcBqjxYW9Uzkej9LvKP4vIxgwuV6O-h0z-No&_nc_ohc=9Pk6cilBVMUQ7kNvwGbmVAt&_nc_gid=NVI5GHEePOudHDU80tag9Q&edm=APs17CUBAAAA&ccb=7-5&oh=00_Af2AibKjX4WYourgCJQBYvwYLK_Blydv89_ekC8xiMZWyw&oe=69DABDF9&_nc_sid=10d13b",
+      "type": "image"
+    }
+  ],
+  "note": "작성자가 'Autoresearch/council'의 개인화 버전으로 Claude와 Codex를 합의체로 운영하는 AI 워크플로우를 소개한다.\n원하는 목표(north star)를 추상부터 구체까지 명확히 정의한 후, Claude + Codex가 협력해 Evaluation 시스템을 정교하게 설계하고 반복 실행하는 구조다.\nEval 채점관을 별도로 두어 기준 통과까지 AI 간 토론이 지속되며, 마지막에 인간이 로그를 확인하고 sign off 또는 개선 요구를 한다.\n리서치, 유저 저니, 랜딩 카피, 유저 플로우, AI 정확도 판단, 프롬프트 튜닝 등 다양한 도메인에 이 패턴을 적용하며, 디자인은 시안 1/2/3안과 이유를 함께 제시받는다.\n\n인사이트\nClaude와 Codex를 단순 병렬이 아닌 'Claude가 Codex를 호출하는 계층적 구조'로 운영해 두 모델의 특성 차이를 활용하는 설계가 핵심이다.",
+  "removed": false,
+  "sort": 1675624540,
+  "tags": [
+    "ai",
+    "claude",
+    "codex",
+    "ai-workflow",
+    "ai-agent",
+    "prompt-engineering"
+  ],
+  "title": "Soph (@hongso0921) on Threads",
+  "type": "link",
+  "user": {
+    "$id": 724603,
+    "$ref": "users"
+  }
+}

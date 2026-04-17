@@ -1,17 +1,4 @@
 {
-  "quarantine_days": 10,
-  "quarantine_collection_name": "검증실패",
-  "max_bookmarks_per_batch": 50,
   "raindrop_api_base": "https://api.raindrop.io/rest/v1",
-  "raindrop_api_delay_ms": 500,
-  "site_base_url": "https://inchan.github.io/reading-list",
-  "rss_path": "index.xml",
-  "atom_path": "atom.xml",
-  "slug_max_length": 60,
-  "issue_labels": ["new-collection", "auto"],
-  "tag_pending": "대기중",
-  "tag_quarantine": "검증실패",
-  "tag_blocked": "접근불가",
-  "status_passed": "passed",
-  "status_failed": "failed"
+  "raindrop_api_delay_ms": 500
 }

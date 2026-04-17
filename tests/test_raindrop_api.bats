@@ -1,64 +1,44 @@
 #!/usr/bin/env bats
 
 setup() {
-  export RAINDROP_TEST_TOKEN="test-token-123"
+  export RAINDROP_TEST_TOKEN="***"
   source scripts/lib/raindrop-api.sh
   load_settings
 }
 
 @test "raindrop_auth_header returns correct header" {
   result=$(raindrop_auth_header)
-  [ "$result" = "Authorization: Bearer test-token-123" ]
+  [ "$result" = "Authorization: Bearer ***" ]
 }
 
-@test "slugify converts title to valid slug" {
-  result=$(slugify "React 19: Server Components Guide!")
-  [ "$result" = "react-19-server-components-guide" ]
+@test "load_settings reads live config correctly" {
+  [ "$API_BASE" = "https://api.raindrop.io/rest/v1" ]
+  [ "$API_DELAY_MS" = "500" ]
+  [ "$API_DELAY_S" = "0.5" ]
 }
 
-@test "slugify truncates to max length" {
-  long_title="This is a very long title that should be truncated to sixty characters maximum for slug"
-  result=$(slugify "$long_title")
-  [ ${#result} -le 60 ]
-}
+@test "raindrop_get_all_pages joins paginated items" {
+  export TEST_BIN_DIR="$BATS_TEST_TMPDIR/bin"
+  mkdir -p "$TEST_BIN_DIR"
+  export PATH="$TEST_BIN_DIR:$PATH"
 
-@test "slugify strips non-ascii title characters safely" {
-  result=$(slugify "리액트 19 서버 컴포넌트 가이드")
-  [ "$result" = "19" ]
-}
+  cat > "$TEST_BIN_DIR/curl" <<'EOF'
+#!/usr/bin/env bash
+set -euo pipefail
+url="${@: -1}"
+if [[ "$url" == *"page=0&perpage=50" ]]; then
+  printf '{"items":[{"_id":1},{"_id":2}]}'
+  exit 0
+fi
+if [[ "$url" == *"page=1&perpage=50" ]]; then
+  printf '{"items":[{"_id":3}]}'
+  exit 0
+fi
+printf '{"items":[]}'
+EOF
+  chmod +x "$TEST_BIN_DIR/curl"
 
-@test "load_settings reads config correctly" {
-  [ "$QUARANTINE_DAYS" = "10" ]
-  [ "$MAX_PER_BATCH" = "50" ]
-  [ "$TAG_PENDING" = "대기중" ]
-  [ "$TAG_QUARANTINE" = "검증실패" ]
-  [ "$STATUS_PASSED" = "passed" ]
-  [ "$STATUS_FAILED" = "failed" ]
-}
-
-@test "slugify_url strips protocol and query" {
-  result=$(slugify_url "https://example.com/path/to/page?q=1")
-  [ "$result" = "example-com-path-to-page" ]
-}
-
-@test "slugify_url handles trailing slash" {
-  result=$(slugify_url "https://example.com/blog/")
-  # trailing slash -> trailing dash -> slugify strips it
-  [ "$result" = "example-com-blog" ]
-}
-
-@test "title_from_url extracts readable title" {
-  result=$(title_from_url "https://example.com/blog/my-post")
-  [ "$result" = "example.com blog my-post" ]
-}
-
-@test "title_from_url respects max length" {
-  result=$(title_from_url "https://example.com/very/long/path/that/keeps/going" 20)
-  [ ${#result} -le 20 ]
-}
-
-@test "get_quarantine_id requires API (skip in unit test)" {
-  skip "requires live Raindrop API"
-  result=$(get_quarantine_id)
-  [ -n "$result" ]
+  result=$(raindrop_get_all_pages "/raindrops/-1")
+  [ "$(printf '%s' "$result" | jq 'length')" = "3" ]
+  [ "$(printf '%s' "$result" | jq '.[2]._id')" = "3" ]
 }

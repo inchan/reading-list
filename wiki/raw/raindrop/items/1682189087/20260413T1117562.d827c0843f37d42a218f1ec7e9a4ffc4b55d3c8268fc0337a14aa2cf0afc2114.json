@@ -1,0 +1,41 @@
+{
+  "_id": 1682189087,
+  "collection": {
+    "$id": -1,
+    "$ref": "collections",
+    "oid": -1
+  },
+  "collectionId": -1,
+  "cover": "https://scontent-ber1-1.cdninstagram.com/v/t51.82787-19/587785509_17876936292441994_985365110541271116_n.jpg?stp=dst-jpg_s640x640_tt6&efg=eyJ2ZW5jb2RlX3RhZyI6InByb2ZpbGVfcGljLmRqYW5nby45MjguYzIifQ&_nc_ht=scontent-ber1-1.cdninstagram.com&_nc_cat=110&_nc_oc=Q6cZ2gHQGDtCzi5RjrSkIX0dd4IWAedRUZWPk6NEwaiodA7R7Ni0zNcdi8WIWIKrljgEJx4&_nc_ohc=tQZ8qjs7fYAQ7kNvwHTTeI9&_nc_gid=_Cc2K87pkgM69P6ODsksFA&edm=APs17CUBAAAA&ccb=7-5&oh=00_Af2HKiPhWK-fWNwmUSUXMFYWLpC7G4d2ADkKjgjeqJ9N2w&oe=69E18DE0&_nc_sid=10d13b",
+  "created": "2026-04-12T17:02:53.556Z",
+  "creatorRef": {
+    "_id": 724603,
+    "avatar": "",
+    "email": "",
+    "name": "kangsazang"
+  },
+  "domain": "threads.com",
+  "excerpt": "Obsidian에 AI 에이전트를 붙이는 방법\n\n노트 앱에 Claude Code를 연결하면 뭘 할 수 있을까.\n\nObsidian 창시자 kepano가 직접 만든 Skills 모음.\nClaude Code, Codex CLI, OpenCode 모두 호환.\n\n스킬 5개:\n→ Obsidian 마크다운 (위키링크, 콜아웃, properties)\n→ Bases 파일 생성·편집\n→ JSON Canvas (노드·엣지 기반 캔버스)\n→ CLI로 볼트 직접 조작\n→ 웹페이지 → 클린 마크다운 추출 (Defuddle)\n\n설치는 한 줄. npx skills add git@github.com:kepano/obsidian-skills.git\n\n내 노트를 에이전트가 읽고, 쓰고, 연결한다.\n\n🔗 github.com/kepano/obsidian-skills",
+  "highlights": [],
+  "important": false,
+  "lastUpdate": "2026-04-13T11:17:56.253Z",
+  "link": "https://www.threads.com/@geumverse_ai/post/DXCQZA2E5Cb?xmt=AQF0BsIWNzLBzPxFsR_O2fUMP5rYlOArpPpIKL2ieTwFCfog4i_baMaIAVqldY1EoEgqjsE&slof=1",
+  "media": [
+    {
+      "link": "https://scontent-ber1-1.cdninstagram.com/v/t51.82787-19/587785509_17876936292441994_985365110541271116_n.jpg?stp=dst-jpg_s640x640_tt6&efg=eyJ2ZW5jb2RlX3RhZyI6InByb2ZpbGVfcGljLmRqYW5nby45MjguYzIifQ&_nc_ht=scontent-ber1-1.cdninstagram.com&_nc_cat=110&_nc_oc=Q6cZ2gHQGDtCzi5RjrSkIX0dd4IWAedRUZWPk6NEwaiodA7R7Ni0zNcdi8WIWIKrljgEJx4&_nc_ohc=tQZ8qjs7fYAQ7kNvwHTTeI9&_nc_gid=_Cc2K87pkgM69P6ODsksFA&edm=APs17CUBAAAA&ccb=7-5&oh=00_Af2HKiPhWK-fWNwmUSUXMFYWLpC7G4d2ADkKjgjeqJ9N2w&oe=69E18DE0&_nc_sid=10d13b",
+      "type": "image"
+    }
+  ],
+  "note": "",
+  "removed": false,
+  "sort": 1682189087,
+  "tags": [
+    "접근불가"
+  ],
+  "title": "Geum Verse (@geumverse_ai) on Threads",
+  "type": "link",
+  "user": {
+    "$id": 724603,
+    "$ref": "users"
+  }
+}

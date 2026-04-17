@@ -1,0 +1,58 @@
+{
+  "_id": 379447652,
+  "collection": {
+    "$id": 27494727,
+    "$ref": "collections",
+    "oid": 27494727
+  },
+  "collectionId": 27494727,
+  "cover": "https://blogthumb.pstatic.net/MjAyMTEwMjlfMTMg/MDAxNjM1NDU5NDEzNTU3.jbnChrPtUW_8sbBz7k8eL6GhSfgkKhr16rze5CNUQ5Ag.bIo0I8VPzZJj6efwonlt5bHKoaYp4pqrtozjw0tcwm0g.JPEG.jeecool0/20211022%A3%DF121310.jpg?type=w2",
+  "created": "2022-03-29T00:30:27.126Z",
+  "creatorRef": {
+    "_id": 724603,
+    "avatar": "",
+    "email": "",
+    "name": "kangsazang"
+  },
+  "domain": "m.blog.naver.com",
+  "excerpt": "속초 중앙시장 명물 맛집들중에서도 속초 현지인들의 포장맛집 순대국 오징어순대 아바이순대 맛 볼 수 있...",
+  "highlights": [],
+  "important": false,
+  "lastUpdate": "2026-03-22T15:38:14.469Z",
+  "link": "https://m.blog.naver.com/jeecool0/222551998031",
+  "media": [
+    {
+      "link": "https://blogthumb.pstatic.net/MjAyMTEwMjlfMTMg/MDAxNjM1NDU5NDEzNTU3.jbnChrPtUW_8sbBz7k8eL6GhSfgkKhr16rze5CNUQ5Ag.bIo0I8VPzZJj6efwonlt5bHKoaYp4pqrtozjw0tcwm0g.JPEG.jeecool0/20211022%A3%DF121310.jpg?type=w2",
+      "type": "image"
+    },
+    {
+      "link": "https://mblogthumb-phinf.pstatic.net/MjAyMTEwMjlfMTY1/MDAxNjM1NDYyNDY1ODQ3.-dFK-LxiI8fxsIZK5BN8Ttz1KZGWiDKs5h5VEJRKHZog.I8lKttKmXMYsnB38FEAvK-QMApSqWG3-m7PW-tu1TGMg.GIF.jeecool0/%EC%86%8D%EC%B4%88_%EC%95%84%EB%B0%94%EC%9D%B4%EB%A7%88%EC%9D%84_%EB%A7%9B%EC%A7%91.gif?type=w800",
+      "type": "image"
+    },
+    {
+      "link": "https://mblogthumb-phinf.pstatic.net/MjAyMTEwMjlfMTMg/MDAxNjM1NDU5NDEzNTU3.jbnChrPtUW_8sbBz7k8eL6GhSfgkKhr16rze5CNUQ5Ag.bIo0I8VPzZJj6efwonlt5bHKoaYp4pqrtozjw0tcwm0g.JPEG.jeecool0/20211022%EF%BC%BF121310.jpg?type=w800",
+      "type": "image"
+    },
+    {
+      "link": "https://mblogthumb-phinf.pstatic.net/MjAyMTEwMjlfMTAx/MDAxNjM1NDU5NDE2MDY4.cKjoaevPMY_LQ5bf9dJtFN3sK_6pt6rtStz8wjiFLfIg.AamhBkzusw2zVG_i0pgT8YQK9iwWDMRJ8O1s7MGYX2Ig.JPEG.jeecool0/20211022%EF%BC%BF115556.jpg?type=w800",
+      "type": "image"
+    },
+    {
+      "link": "https://mblogthumb-phinf.pstatic.net/MjAyMTEwMjlfMjQ2/MDAxNjM1NDU5NDE3ODg3.17r1hNwdeqfwVqbBYjRjsHn-YiCNwA0Cb_viKDuJdXAg._YBviyRUJgzUYKYQ8-YQeH3usgLTZ83OoFmHzijOZRUg.JPEG.jeecool0/VideoCapture%EF%BC%BF20211029%EF%BC%8D071640.jpg?type=w800",
+      "type": "image"
+    }
+  ],
+  "note": "",
+  "removed": false,
+  "sort": 434689931,
+  "tags": [
+    "속초",
+    "오징어순대"
+  ],
+  "title": "속초 오징어순대 중앙시장 아바이마을 현지 맛집",
+  "type": "link",
+  "user": {
+    "$id": 724603,
+    "$ref": "users"
+  }
+}

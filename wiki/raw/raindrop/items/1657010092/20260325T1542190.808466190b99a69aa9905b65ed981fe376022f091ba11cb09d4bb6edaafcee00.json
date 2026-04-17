@@ -1,0 +1,46 @@
+{
+  "_id": 1657010092,
+  "collection": {
+    "$id": 68757538,
+    "$ref": "collections",
+    "oid": 68757538
+  },
+  "collectionId": 68757538,
+  "cover": "https://scontent-fra5-2.cdninstagram.com/v/t51.82787-15/654868439_17930311923232485_1074906904744759340_n.jpg?stp=cp6_dst-jpg_e35_tt6&efg=eyJ2ZW5jb2RlX3RhZyI6InRocmVhZHMuRkVFRC5pbWFnZV91cmxnZW4uMjE0OHgxMzk4LnNkci5mODI3ODcuZGVmYXVsdF9pbWFnZS5jMiJ9&_nc_ht=scontent-fra5-2.cdninstagram.com&_nc_cat=109&_nc_oc=Q6cZ2gH1lKWGIOp6goH9uIrEENgC647-fMkwwO0elySiLdWx6EPn5g3iMEu-t1NwLLEpZsQ&_nc_ohc=Xv4mFZc1SaEQ7kNvwGLQdDo&_nc_gid=cZw3ZSgeOdhPilRCZv65Yw&edm=APs17CUBAAAA&ccb=7-5&ig_cache_key=Mzg2MDI4NzIwMjE4MjUzNTU5MA%3D%3D.3-ccb7-5&oh=00_Afyn7Nfo25k_ANOXX3XdhSkieBlpNwPBTk7FpUvMiHLL7g&oe=69C9B665&_nc_sid=10d13b",
+  "created": "2026-03-25T11:58:16.177Z",
+  "creatorRef": {
+    "_id": 724603,
+    "avatar": "",
+    "email": "",
+    "name": "kangsazang"
+  },
+  "domain": "threads.com",
+  "excerpt": "해외에선 빠르게 화제가 되고 있는 블로그 글입니다.\n\n앤트로픽의 \"Harness design for long-running application development.\"라는 블로그인데요. 멀티 에이전트 하네스를 어떻게 만들었고, 모델이 발전하면서 그 구조를 어떻게 다시 단순화했는지를 상세히 기록해 두었습니다. \n\n핵심은 모델이 아무리 똑똑해져도, 모델을 감싸는 '하네스(harness)'의 설계가 최종 결과물의 품질을 결정한다는 것입니다. 남들과 다른 아웃풋을 원하는 분들이 꼭 읽어보시면 좋은 글입니다.\n\n꼭 읽어보세요.",
+  "highlights": [],
+  "important": false,
+  "lastUpdate": "2026-03-25T15:42:19.056Z",
+  "link": "https://www.threads.com/@aicoffeechat/post/DWSfsH5E5mm?xmt=AQF03ewOK7J-Qvv_u2_p8C2J9tnXIizn7jeC-Q9mIQRXv0_tO8gj5iG0ettCCuqAlZKj5tn1&slof=1",
+  "media": [
+    {
+      "link": "https://scontent-fra5-2.cdninstagram.com/v/t51.82787-15/654868439_17930311923232485_1074906904744759340_n.jpg?stp=cp6_dst-jpg_e35_tt6&efg=eyJ2ZW5jb2RlX3RhZyI6InRocmVhZHMuRkVFRC5pbWFnZV91cmxnZW4uMjE0OHgxMzk4LnNkci5mODI3ODcuZGVmYXVsdF9pbWFnZS5jMiJ9&_nc_ht=scontent-fra5-2.cdninstagram.com&_nc_cat=109&_nc_oc=Q6cZ2gH1lKWGIOp6goH9uIrEENgC647-fMkwwO0elySiLdWx6EPn5g3iMEu-t1NwLLEpZsQ&_nc_ohc=Xv4mFZc1SaEQ7kNvwGLQdDo&_nc_gid=cZw3ZSgeOdhPilRCZv65Yw&edm=APs17CUBAAAA&ccb=7-5&ig_cache_key=Mzg2MDI4NzIwMjE4MjUzNTU5MA%3D%3D.3-ccb7-5&oh=00_Afyn7Nfo25k_ANOXX3XdhSkieBlpNwPBTk7FpUvMiHLL7g&oe=69C9B665&_nc_sid=10d13b",
+      "type": "image"
+    }
+  ],
+  "note": "핵심 요약\nAnthropic 엔지니어링 블로그 'Harness design for long-running application development'(2026년 3월 24일 게시)를 소개하는 Threads 게시물이다. 블로그는 Prithvi Rajasekaran이 작성했으며, 초기화 에이전트와 코딩 에이전트로 구성된 멀티 에이전트 구조를 실험하고 모델 발전에 따라 이를 점진적으로 단순화한 과정을 상세히 기록한다. 컨텍스트 윈도우 포화와 자기 평가 오류라는 두 가지 핵심 실패 모드를 발견하고 하네스 설계로 극복한 사례를 공유한다. 핵심 교훈은 모델이 향상될수록 하네스의 흥미로운 조합 공간이 사라지는 게 아니라 이동한다는 것이며, AI 엔지니어의 역할은 그 새로운 최전선을 지속적으로 탐색하는 것임을 강조한다.\n\n인사이트\n모델 능력이 향상될수록 하네스를 단순화할 수 있다는 역설적 인사이트가 실무에 즉시 적용 가능하다. 기존에 성능을 위해 도입했던 복잡한 분해 구조가 오히려 오버헤드가 될 수 있으므로, 새 모델 출시 시마다 하네스를 재검토하는 습관이 중요하다. 또한 에이전트의 자기 평가 편향(자신이 만든 결과물을 과도하게 칭찬하는 경향)을 별도 메커니즘으로 보정해야 한다는 점은 프로덕션 AI 시스템 설계에서 간과하기 쉬운 포인트다.\n\n분류\n카테고리: 지식\n태그: ai, claude, harness-engineering, ai-agent, ai-dev, context-engineering\n검증: 통과",
+  "removed": false,
+  "sort": 1657010092,
+  "tags": [
+    "ai",
+    "claude",
+    "harness-engineering",
+    "ai-agent",
+    "ai-dev",
+    "context-engineering"
+  ],
+  "title": "AI Coffee Chat (@aicoffeechat) on Threads",
+  "type": "link",
+  "user": {
+    "$id": 724603,
+    "$ref": "users"
+  }
+}

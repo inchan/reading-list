@@ -1,0 +1,46 @@
+{
+  "_id": 393213830,
+  "collection": {
+    "$id": 20521420,
+    "$ref": "collections",
+    "oid": 20521420
+  },
+  "collectionId": 20521420,
+  "cover": "https://www.dogdrip.net/files/attach/xeicon/default_image.png?20211119094908",
+  "created": "2022-05-10T03:23:32.496Z",
+  "creatorRef": {
+    "_id": 724603,
+    "avatar": "",
+    "email": "",
+    "name": "kangsazang"
+  },
+  "domain": "dogdrip.net",
+  "excerpt": "",
+  "highlights": [],
+  "important": false,
+  "lastUpdate": "2026-03-22T22:51:51.919Z",
+  "link": "https://www.dogdrip.net/401831115",
+  "media": [
+    {
+      "link": "https://www.dogdrip.net/files/attach/xeicon/default_image.png?20211119094908",
+      "type": "image"
+    },
+    {
+      "link": "https://www.dogdrip.net/dvs/d/22/05/01/7900ae12d62fa414536c59a69923f1cc.jpg",
+      "type": "image"
+    }
+  ],
+  "note": "",
+  "removed": false,
+  "sort": 393213830,
+  "tags": [
+    "김치찌개",
+    "레시피"
+  ],
+  "title": "친정엄마가 알려준 식당 김치찌개 레시피.jpg - DogDrip.Net 개드립",
+  "type": "link",
+  "user": {
+    "$id": 724603,
+    "$ref": "users"
+  }
+}

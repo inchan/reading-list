@@ -1,0 +1,46 @@
+{
+  "_id": 1665003970,
+  "collection": {
+    "$id": 68757538,
+    "$ref": "collections",
+    "oid": 68757538
+  },
+  "collectionId": 68757538,
+  "cover": "https://scontent-ham3-1.cdninstagram.com/v/t51.2885-19/358256919_1686911008400110_8517723467181121070_n.jpg?efg=eyJ2ZW5jb2RlX3RhZyI6InByb2ZpbGVfcGljLmRqYW5nby4xNTAuYzIifQ&_nc_ht=scontent-ham3-1.cdninstagram.com&_nc_cat=110&_nc_oc=Q6cZ2gFYp4gNGRIQL3_YKRZlvN602PKb5eNGbxGM1tcCd0sZItzA3Y1kjwhM0ngRHyLcH_A&_nc_ohc=dsL9MCx8dKYQ7kNvwEBbufF&_nc_gid=CsxaAGOZzWmLH1EtwapylA&edm=APs17CUBAAAA&ccb=7-5&oh=00_AfyebbiiBVzqRQZrkyZfJoQ_wDoZBKIfhtvYZzFZKKy_cQ&oe=69CF1E6A&_nc_sid=10d13b",
+  "created": "2026-03-29T17:56:23.880Z",
+  "creatorRef": {
+    "_id": 724603,
+    "avatar": "",
+    "email": "",
+    "name": "kangsazang"
+  },
+  "domain": "threads.com",
+  "excerpt": "AI 에이전트의 문서 검색 속도를 2-3초에서 10ms로 줄였다.\n온톨로지를 붙였다. 새로운 기술이 아니다. 오히려 아주 전통적인 거다.\n근데 이게 원래 사람이 직접 구축하려면 죽어나는 작업이었다. 관계 하나하나 정의하고 유지보수하고...\nAI한테 토큰을 녹여서 시켰더니 사람이 손으로 짜는 것보다 더 촘촘한 관계를 만들어낸다. 이게 되는 시대가 온 거다.",
+  "highlights": [],
+  "important": false,
+  "lastUpdate": "2026-03-30T11:05:15.790Z",
+  "link": "https://www.threads.com/@adite/post/DWd03MYD6T2?xmt=AQF02o1WVi0YTf3d_apuGUTpD7hRXyL2orlZ7umI7XURD7KeNwMq51MVZegBsnRDdpIfKIg&slof=1",
+  "media": [
+    {
+      "link": "https://scontent-ham3-1.cdninstagram.com/v/t51.2885-19/358256919_1686911008400110_8517723467181121070_n.jpg?efg=eyJ2ZW5jb2RlX3RhZyI6InByb2ZpbGVfcGljLmRqYW5nby4xNTAuYzIifQ&_nc_ht=scontent-ham3-1.cdninstagram.com&_nc_cat=110&_nc_oc=Q6cZ2gFYp4gNGRIQL3_YKRZlvN602PKb5eNGbxGM1tcCd0sZItzA3Y1kjwhM0ngRHyLcH_A&_nc_ohc=dsL9MCx8dKYQ7kNvwEBbufF&_nc_gid=CsxaAGOZzWmLH1EtwapylA&edm=APs17CUBAAAA&ccb=7-5&oh=00_AfyebbiiBVzqRQZrkyZfJoQ_wDoZBKIfhtvYZzFZKKy_cQ&oe=69CF1E6A&_nc_sid=10d13b",
+      "type": "image"
+    }
+  ],
+  "note": "AI 에이전트에 온톨로지를 적용해 문서 검색 속도를 2-3초에서 10ms로 대폭 단축한 실무 경험을 공유하는 짧은 포스트다.\n온톨로지는 새로운 기술이 아니라 전통적인 지식 표현 방식이지만, 과거에는 관계를 수동으로 정의·유지보수하는 비용이 매우 높았다.\nAI를 활용해 온톨로지를 자동 구축하면 사람이 직접 작성하는 것보다 더 촘촘한 관계망이 만들어진다는 핵심 관찰을 담고 있다.\n이는 GraphRAG나 하이브리드 검색(그래프+벡터) 아키텍처와 맥을 같이하는 실무 인사이트다.\n\n인사이트\nRAG 파이프라인의 벡터 검색 한계를 보완하는 방향으로 온톨로지/지식 그래프 기반 검색이 재조명받고 있다.",
+  "removed": false,
+  "sort": 1665313169,
+  "tags": [
+    "ai",
+    "ai-agent",
+    "rag",
+    "context-engineering",
+    "온톨로지",
+    "knowledge-graph"
+  ],
+  "title": "강민구 (@adite) on Threads",
+  "type": "link",
+  "user": {
+    "$id": 724603,
+    "$ref": "users"
+  }
+}

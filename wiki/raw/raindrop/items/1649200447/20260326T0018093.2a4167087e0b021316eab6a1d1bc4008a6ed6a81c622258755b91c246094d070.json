@@ -1,0 +1,45 @@
+{
+  "_id": 1649200447,
+  "collection": {
+    "$id": 68738562,
+    "$ref": "collections",
+    "oid": 68738562
+  },
+  "collectionId": 68738562,
+  "cover": "https://scontent-dus1-1.cdninstagram.com/v/t51.82787-15/652762804_17934162795207210_3983346668558648532_n.jpg?stp=dst-jpg_e35_tt6&efg=eyJ2ZW5jb2RlX3RhZyI6InRocmVhZHMuRkVFRC5pbWFnZV91cmxnZW4uNjgweDQ0Mi5zZHIuZjgyNzg3LmRlZmF1bHRfaW1hZ2UuYzIifQ&_nc_ht=scontent-dus1-1.cdninstagram.com&_nc_cat=106&_nc_oc=Q6cZ2gG6l9ag0COxhDwW9OokvNF68LKjuctlrgJ9IGLfjE6F-6j2l6SdgHpp7JYmMOD0zjc&_nc_ohc=DOgie2I4pT4Q7kNvwEVtuJc&_nc_gid=g1hSeQ_5Kus6hUE2HstT-A&edm=APs17CUBAAAA&ccb=7-5&ig_cache_key=Mzg1NTI1MDM4MDg3OTkwMjU0OQ%3D%3D.3-ccb7-5&oh=00_AfylAAmqVNUux1qwcKAmz-xy_NUD7gxALT6pbMVahtBNPA&oe=69C10B9A&_nc_sid=10d13b",
+  "created": "2026-03-19T00:21:33.524Z",
+  "creatorRef": {
+    "_id": 724603,
+    "avatar": "",
+    "email": "",
+    "name": "kangsazang"
+  },
+  "domain": "threads.com",
+  "excerpt": "Kaku, Mole, Pake을 만든 tw93이 추천하는 페이지가 있습니다.\n\nClaude 공식 \"Get inspired by what you can do with Claude\" 페이지.\n\n리서치, 글쓰기, 코딩, 분석, 일상 업무까지. \"Claude로 이런 걸 할 수 있어요\"를 실제 예시로 보여주는 공식 컬렉션이에요. 생각보다 훨씬 깊습니다.\n\n누군가의 요약을 읽는 것보다 공식 컬렉션을 직접 보는 게 낫습니다. 카테고리별로 정리돼 있어서 자기한테 맞는 것만 골라볼 수 있어요.\n\n참고로 tw93은 GitHub 스타 11만 개 이상의 프로덕트 엔지니어예요. AI 코딩 터미널 Kaku, 파일 매니저 Mole, 웹앱 래퍼 Pake을 만든 사람. Claude Code 6개월 사용기를 정리한 딥다이브 글도 최근에 공개했습니다.\n\n그 사람이 추천하는 거면 한 번 볼 가치가 있어요.",
+  "highlights": [],
+  "important": false,
+  "lastUpdate": "2026-03-26T00:18:09.369Z",
+  "link": "https://www.threads.com/@unclejobs.ai/post/DWAmcugiTdV?xmt=AQF0NdSJst6pz5SmKlXZbAAjHFvNzbStEQrssgzouObFPNrbEpu9zaXe3Fdv97fGSTAMmaw&slof=1",
+  "media": [
+    {
+      "link": "https://scontent-dus1-1.cdninstagram.com/v/t51.82787-15/652762804_17934162795207210_3983346668558648532_n.jpg?stp=dst-jpg_e35_tt6&efg=eyJ2ZW5jb2RlX3RhZyI6InRocmVhZHMuRkVFRC5pbWFnZV91cmxnZW4uNjgweDQ0Mi5zZHIuZjgyNzg3LmRlZmF1bHRfaW1hZ2UuYzIifQ&_nc_ht=scontent-dus1-1.cdninstagram.com&_nc_cat=106&_nc_oc=Q6cZ2gG6l9ag0COxhDwW9OokvNF68LKjuctlrgJ9IGLfjE6F-6j2l6SdgHpp7JYmMOD0zjc&_nc_ohc=DOgie2I4pT4Q7kNvwEVtuJc&_nc_gid=g1hSeQ_5Kus6hUE2HstT-A&edm=APs17CUBAAAA&ccb=7-5&ig_cache_key=Mzg1NTI1MDM4MDg3OTkwMjU0OQ%3D%3D.3-ccb7-5&oh=00_AfylAAmqVNUux1qwcKAmz-xy_NUD7gxALT6pbMVahtBNPA&oe=69C10B9A&_nc_sid=10d13b",
+      "type": "image"
+    }
+  ],
+  "note": "Kaku, Mole, Pake을 만든 tw93이 추천하는 페이지가 있습니다.\nClaude 공식 \"Get inspired by what you can do with Claude\" 페이지.\n리서치, 글쓰기, 코딩, 분석, 일상 업무까지.\n\"Claude로 이런 걸 할 수 있어요\"를 실제 예시로 보여주는 공식 컬렉션이에요.\n\n메모: 기존 report 본문이 남아 있지 않아 저장 시점 제목, excerpt, 태그를 기준으로 복구한 note입니다.\n원문: 엉클잡스 | Ai 시대, 돈이 되는 정보 전달 (@unclejobs.ai) on Threads\n태그: ClaudeCode, tw93, Kaku, AI활용, 오픈소스\n상태: 복구노트",
+  "removed": false,
+  "sort": 1651703226,
+  "tags": [
+    "ClaudeCode",
+    "tw93",
+    "Kaku",
+    "AI활용",
+    "오픈소스"
+  ],
+  "title": "엉클잡스 | Ai 시대, 돈이 되는 정보 전달 (@unclejobs.ai) on Threads",
+  "type": "link",
+  "user": {
+    "$id": 724603,
+    "$ref": "users"
+  }
+}

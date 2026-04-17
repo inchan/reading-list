@@ -1,0 +1,44 @@
+{
+  "_id": 1653037890,
+  "collection": {
+    "$id": 68738645,
+    "$ref": "collections",
+    "oid": 68738645
+  },
+  "collectionId": 68738645,
+  "cover": "https://scontent-ham3-1.cdninstagram.com/v/t51.82787-15/656869516_17953430565110550_678899699932312598_n.jpg?stp=dst-jpg_e35_tt6&efg=eyJ2ZW5jb2RlX3RhZyI6InRocmVhZHMuRkVFRC5pbWFnZV91cmxnZW4uNjY0eDQ4MS5zZHIuZjgyNzg3LmRlZmF1bHRfaW1hZ2UuYzIifQ&_nc_ht=scontent-ham3-1.cdninstagram.com&_nc_cat=106&_nc_oc=Q6cZ2gGLEGTGj9gXq745_vvHAOxGOiozKLMSq_oOlXhPYldfz1p2BmZ23BJ2526XA-7HOe0&_nc_ohc=vsApl7mAvNYQ7kNvwEhj42l&_nc_gid=-J2AgjkEeGkA-4gWNa81Bw&edm=APs17CUBAAAA&ccb=7-5&ig_cache_key=Mzg1ODA5OTE1ODE2NDA0MTUwNQ%3D%3D.3-ccb7-5&oh=00_Afwwnl7Fw-F-W5ez-Ka8udxTBaqz3u1QG_vQUYcC4JDWVg&oe=69C56715&_nc_sid=10d13b",
+  "created": "2026-03-22T08:16:12.934Z",
+  "creatorRef": {
+    "_id": 724603,
+    "avatar": "",
+    "email": "",
+    "name": "kangsazang"
+  },
+  "domain": "threads.com",
+  "excerpt": "개인적으로 Andrej Karpathy 에게서 공감하거나 유사점을 많이 봅니다. 하는 생각, 표현, 심지어는 특정 컨셉을 지칭하는 용어까지.\n\n최승준 님이 잘 정리해 주신 카파시와 타오의 비교 분석글 ( https://www.facebook.com/share/p/18P9dT8xbb/ ) 을 읽고 비유해보면 저는 전체 100일때 카파시에 70, 타오 30 정도의 위치에 있는 것 같고, \n\n역시 최승준님께서 올려주신 카파시의 최근 인터뷰 정리 글 ( https://www.facebook.com/share/p/1DTS32iKuw/ )을 봐도 그렇고.\n\n(아, 두 글 모두 꽤 길지만 매우 도움이 되기에 추천합니다. 글보다 영상이 편하신 분들은 당연히 유튜브 원본이 있으니 그걸 보셔도 되구요.)\n\nManifesting 이라는 단어... \n\n#ai #career #manifesting",
+  "highlights": [],
+  "important": false,
+  "lastUpdate": "2026-03-26T07:50:29.162Z",
+  "link": "https://www.threads.com/@gonnector/post/DWKuL5Gme8h?xmt=AQF0zVJ6ojeNCcMhkSglAE_s-bGK5pXH5gDGNsAds6v957BK2P-ucDxIVlcbY7z5GdGEfFNf&slof=1",
+  "media": [
+    {
+      "link": "https://scontent-ham3-1.cdninstagram.com/v/t51.82787-15/656869516_17953430565110550_678899699932312598_n.jpg?stp=dst-jpg_e35_tt6&efg=eyJ2ZW5jb2RlX3RhZyI6InRocmVhZHMuRkVFRC5pbWFnZV91cmxnZW4uNjY0eDQ4MS5zZHIuZjgyNzg3LmRlZmF1bHRfaW1hZ2UuYzIifQ&_nc_ht=scontent-ham3-1.cdninstagram.com&_nc_cat=106&_nc_oc=Q6cZ2gGLEGTGj9gXq745_vvHAOxGOiozKLMSq_oOlXhPYldfz1p2BmZ23BJ2526XA-7HOe0&_nc_ohc=vsApl7mAvNYQ7kNvwEhj42l&_nc_gid=-J2AgjkEeGkA-4gWNa81Bw&edm=APs17CUBAAAA&ccb=7-5&ig_cache_key=Mzg1ODA5OTE1ODE2NDA0MTUwNQ%3D%3D.3-ccb7-5&oh=00_Afwwnl7Fw-F-W5ez-Ka8udxTBaqz3u1QG_vQUYcC4JDWVg&oe=69C56715&_nc_sid=10d13b",
+      "type": "image"
+    }
+  ],
+  "note": "개인적으로 Andrej Karpathy 에게서 공감하거나 유사점을 많이 봅니다.\n하는 생각, 표현, 심지어는 특정 컨셉을 지칭하는 용어까지.\n최승준 님이 잘 정리해 주신 카파시와 타오의 비교 분석글 ( https://www.facebook.com/share/p/18P9dT8xbb/ ) 을 읽고 비유해보면 저는 전체 100일때 카파시에 70, 타오 30 정도의 위치에 있는 것 같고,\n역시 최승준님께서 올려주신 카파시의 최근 인터뷰 정리 글 ( https://www.facebook.com/share/p/1DTS32iKuw/ )을 봐도 그렇고.\n\n인사이트\n기존 report 본문이 남아 있지 않아 저장 시점 제목, excerpt, 태그를 기준으로 복구한 note입니다.",
+  "removed": false,
+  "sort": 1653037890,
+  "tags": [
+    "ai",
+    "career",
+    "manifesting",
+    "Andrej Karpathy"
+  ],
+  "title": "고영혁 (@gonnector) on Threads",
+  "type": "link",
+  "user": {
+    "$id": 724603,
+    "$ref": "users"
+  }
+}

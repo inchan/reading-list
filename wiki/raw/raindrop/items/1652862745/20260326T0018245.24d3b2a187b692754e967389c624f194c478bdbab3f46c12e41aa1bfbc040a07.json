@@ -1,0 +1,49 @@
+{
+  "_id": 1652862745,
+  "collection": {
+    "$id": 27494682,
+    "$ref": "collections",
+    "oid": 27494682
+  },
+  "collectionId": 27494682,
+  "cover": "https://media.licdn.com/dms/image/v2/D5605AQGJTCcM3vs8fw/videocover-high/B56Zzp0mRuJYBg-/0/1773449406647?e=2147483647&v=beta&t=x21Do18HB2qF7HIL6sudYRsLFjvU2rSu0-PgG35LwkI",
+  "created": "2026-03-22T03:18:17.611Z",
+  "creatorRef": {
+    "_id": 724603,
+    "avatar": "",
+    "email": "",
+    "name": "kangsazang"
+  },
+  "domain": "linkedin.com",
+  "excerpt": "중국인 퀀트 트레이더가 \"뉴스 하나 터지면 주가가 어떻게 움직이는지\" AI로 미리 시뮬레이션하는 시스템을 만들었습니다. 실제 수익: $100k+, 블록체인으로 전부 공개 검증됩니다. \n\n비결은 이겁니다. \n지난 40년치 S&P500 거래 데이터를 전부 AI에 학습시킨 뒤, \"만약 지금 이런 사건이 터지면 주가는 어디로 갈까?\"를 수천 가지 시나리오로 돌려보는 구조입니다.\n\n이 시스템의 엔진으로 쓴 게 MiroFish입니다. \n중국 대학생이 Vibe Coding으로 단 10일 만에 만들어 GitHub 글로벌 트렌딩 1위에 오른 오픈소스 프로젝트인데, 이후 성다그룹으로부터 3,000만 위안(약 57억 원) 투자까지 받았습니다. \n\n→ GitHub: https://lnkd.in/gfHUeKkk (⭐ 18k+)\n\n→ 지갑 주소: https://lnkd.in/g7tSTd7K\n\n쉽게 말하면 이런 구조입니다:\n① 주가 데이터 수집 (Alpha Vantage / Quandl) \n② 데이터 정리 및 가공 (Python) \n③ 매수/매도 시그널 추출 (RSI, MACD 등 보조지표) \n④ 40년치 데이터를 AI가 읽을 수 있는 형태로 변환 \n⑤ AI 애널리스트 여러 명이 동시에 분석 (거시경제 담당 / 실적 담당 / 시장심리 담당) \n⑥ 각 시나리오별 확률 계산 \n⑦ 최종 매매 판단 (S&P500 선물, SPY ETF)\n\n이 구조 전체를 Claude에 붙여넣으면, 직접 소형 시뮬레이션 모델을 만들어볼 수 있습니다. 관심 있으신 분들 저장해두세요.",
+  "highlights": [],
+  "important": false,
+  "lastUpdate": "2026-03-26T00:18:24.548Z",
+  "link": "https://www.linkedin.com/posts/seungpil_%EC%A4%91%EA%B5%AD%EC%9D%B8-%ED%80%80%ED%8A%B8-%ED%8A%B8%EB%A0%88%EC%9D%B4%EB%8D%94%EA%B0%80-%EB%89%B4%EC%8A%A4-%ED%95%98%EB%82%98-%ED%84%B0%EC%A7%80%EB%A9%B4-%EC%A3%BC%EA%B0%80%EA%B0%80-%EC%96%B4%EB%96%BB%EA%B2%8C-%EC%9B%80%EC%A7%81%EC%9D%B4%EB%8A%94%EC%A7%80-ai%EB%A1%9C-ugcPost-7438385924486516736-8tjq?utm_medium=ios_app&rcm=ACoAAA4SEZsBgqKKU-c5BOS30892p8n4JhoccNs&utm_source=social_share_send&utm_campaign=share_via",
+  "media": [
+    {
+      "link": "https://media.licdn.com/dms/image/v2/D5605AQGJTCcM3vs8fw/videocover-high/B56Zzp0mRuJYBg-/0/1773449406647?e=2147483647&v=beta&t=x21Do18HB2qF7HIL6sudYRsLFjvU2rSu0-PgG35LwkI",
+      "type": "image"
+    },
+    {
+      "link": "https://dms.licdn.com/playlist/vid/v2/D5605AQGJTCcM3vs8fw/thumbnail-with-play-button-overlay-high/B56Zzp0mRuJYDc-/0/1773449406812?e=2147483647&v=beta&t=YEjqwBvTkBy0E5V9d5roqlMqnWAv-DQop7w8MtjY4zk",
+      "type": "image"
+    }
+  ],
+  "note": "중국인 퀀트 트레이더가 \"뉴스 하나 터지면 주가가 어떻게 움직이는지\" AI로 미리 시뮬레이션하는 시스템을 만들었습니다.\n실제 수익: $100k+, 블록체인으로 전부 공개 검증됩니다.\n비결은 이겁니다.\n지난 40년치 S&P500 거래 데이터를 전부 AI에 학습시킨 뒤, \"만약 지금 이런 사건이 터지면 주가는 어디로 갈까?\"를 수천 가지 시나리오로 돌려보는 구조입니다.\n\n메모: 기존 report 본문이 남아 있지 않아 저장 시점 제목, excerpt, 태그를 기준으로 복구한 note입니다.\n원문: 중국인 퀀트 트레이더가 \"뉴스 하나 터지면 주가가 어떻게 움직이는지\" AI로 미리 시뮬레이션하는 시스템을 만들었습니다. 실제 수익: $100k+, 블록체인으로 전부 공개 검증됩니다. 비결은 이겁니다. 지난 40년치 S&P500 거래 데이터를 전부 AI에 학습시킨 뒤, \"만약 지금 이런 사건이 터지면 주가는 어디로 갈까?\"를 수천 가지 시나리오로… | Seungpil Lee | 댓글 24\n태그: 퀀트트레이딩, AI시뮬레이션, MiroFish, 주식, 오픈소스\n상태: 복구노트",
+  "removed": false,
+  "sort": 1652862745,
+  "tags": [
+    "퀀트트레이딩",
+    "AI시뮬레이션",
+    "MiroFish",
+    "주식",
+    "오픈소스"
+  ],
+  "title": "중국인 퀀트 트레이더가 \"뉴스 하나 터지면 주가가 어떻게 움직이는지\" AI로 미리 시뮬레이션하는 시스템을 만들었습니다. 실제 수익: $100k+, 블록체인으로 전부 공개 검증됩니다. 비결은 이겁니다. 지난 40년치 S&P500 거래 데이터를 전부 AI에 학습시킨 뒤, \"만약 지금 이런 사건이 터지면 주가는 어디로 갈까?\"를 수천 가지 시나리오로… | Seungpil Lee | 댓글 24",
+  "type": "video",
+  "user": {
+    "$id": 724603,
+    "$ref": "users"
+  }
+}

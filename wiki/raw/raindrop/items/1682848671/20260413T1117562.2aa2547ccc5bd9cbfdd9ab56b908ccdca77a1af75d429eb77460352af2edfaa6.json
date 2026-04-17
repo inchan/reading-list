@@ -1,0 +1,41 @@
+{
+  "_id": 1682848671,
+  "collection": {
+    "$id": -1,
+    "$ref": "collections",
+    "oid": -1
+  },
+  "collectionId": -1,
+  "cover": "https://scontent-ber1-1.cdninstagram.com/v/t51.82787-15/670268892_17938081704207210_1000475768778761379_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=109&ig_cache_key=Mzg3NDA0MTA1MzkwMTQ4NTg3NQ%3D%3D.3-ccb7-5&ccb=7-5&_nc_sid=58cdad&efg=eyJ2ZW5jb2RlX3RhZyI6InhwaWRzLjEyMDB4MTIwMC5zZHIuQzMifQ%3D%3D&_nc_ohc=RlCBUY83rxYQ7kNvwFXO7ov&_nc_oc=AdpHlq3w_QtxWWHg3cCIVJoQZYLFBiuhKb60AvzzB8AzoOQA9jOh1cW53L3eYAjRods&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=scontent-ber1-1.cdninstagram.com&_nc_gid=4t-eKpWMDt_96l9BAYo83Q&_nc_ss=7a32e&oh=00_Af1-6u4yypTO_z5SfKGFGeENwK5rKwYjWVruxFOLy-Lk0A&oe=69E252FB",
+  "created": "2026-04-13T06:20:39.175Z",
+  "creatorRef": {
+    "_id": 724603,
+    "avatar": "",
+    "email": "",
+    "name": "kangsazang"
+  },
+  "domain": "threads.com",
+  "excerpt": "스킬이 수천 개인 시대에,\n문서파일 8개로 해결하려 합니다.\n\nWaza(技)라는 오픈소스예요.\n일본어로 무술의 \"기(技)\".\n\nClaude Code 스킬 라이브러리인데, 코드가 한 줄도 없이\n마크다운만으로 이루어져 있습니다.\n\n만든 사람은 tw93. Mole의 아버지죠.\n\nSuperpowers를 깔아봤는데 무거웠고,\ngstack도 써봤는데 여전히 무거웠대요.\n심플하고, 쓸만하고, 뭘 하는지 투명한 걸 원했습니다.\n\n\"이 8개만 깔면 된다. 더 건드릴 필요 없다.\"\n\n8개 스킬이 도구가 아니라,\nAI 시대에 엔지니어가 갖춰야 할 8가지 습관에 대응해요.",
+  "highlights": [],
+  "important": false,
+  "lastUpdate": "2026-04-13T11:17:56.253Z",
+  "link": "https://www.threads.com/@unclejobs.ai/post/DXDW9AfE_cz?xmt=AQF0-3JFRm3FhG9vfvHjLWwCoeI2vuqC50XVYcNmXZK3Be5kjgzKWMOEu5GHMDK_ZqY2fjOe&slof=1",
+  "media": [
+    {
+      "link": "https://scontent-ber1-1.cdninstagram.com/v/t51.82787-15/670268892_17938081704207210_1000475768778761379_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=109&ig_cache_key=Mzg3NDA0MTA1MzkwMTQ4NTg3NQ%3D%3D.3-ccb7-5&ccb=7-5&_nc_sid=58cdad&efg=eyJ2ZW5jb2RlX3RhZyI6InhwaWRzLjEyMDB4MTIwMC5zZHIuQzMifQ%3D%3D&_nc_ohc=RlCBUY83rxYQ7kNvwFXO7ov&_nc_oc=AdpHlq3w_QtxWWHg3cCIVJoQZYLFBiuhKb60AvzzB8AzoOQA9jOh1cW53L3eYAjRods&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=scontent-ber1-1.cdninstagram.com&_nc_gid=4t-eKpWMDt_96l9BAYo83Q&_nc_ss=7a32e&oh=00_Af1-6u4yypTO_z5SfKGFGeENwK5rKwYjWVruxFOLy-Lk0A&oe=69E252FB",
+      "type": "image"
+    }
+  ],
+  "note": "",
+  "removed": false,
+  "sort": 1682848671,
+  "tags": [
+    "접근불가"
+  ],
+  "title": "엉클잡스 | Ai 시대, 돈이 되는 정보 전달 (@unclejobs.ai) on Threads",
+  "type": "link",
+  "user": {
+    "$id": 724603,
+    "$ref": "users"
+  }
+}

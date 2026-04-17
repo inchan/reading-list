@@ -1,0 +1,45 @@
+{
+  "_id": 1674933040,
+  "collection": {
+    "$id": -1,
+    "$ref": "collections",
+    "oid": -1
+  },
+  "collectionId": -1,
+  "cover": "https://share.redd.it/preview/post/1se45mn",
+  "created": "2026-04-06T17:01:40.497Z",
+  "creatorRef": {
+    "_id": 724603,
+    "avatar": "",
+    "email": "",
+    "name": "kangsazang"
+  },
+  "domain": "reddit.com",
+  "excerpt": "Posted in r/ClaudeCode by u/OrganizationOk9886 • 6 points and 0 comments",
+  "highlights": [],
+  "important": false,
+  "lastUpdate": "2026-04-08T10:57:09.133Z",
+  "link": "https://www.reddit.com/r/ClaudeCode/comments/1se45mn/a_tiny_mac_menu_bar_app_for_checking_if_youre_on/",
+  "media": [
+    {
+      "link": "https://share.redd.it/preview/post/1se45mn",
+      "type": "image"
+    },
+    {
+      "link": "https://external-preview.redd.it/w48g3h5mbltg1.png?overlay-align=bottom,left&crop=336:62,smart&overlay-height=15p&overlay=%2Fwatermark%2Ft5_dp6k3k.png%3Fs%3D499575a75f27e48a4219ae790ad32fc81e982360&width=336&height=62&auto=webp&s=f6dc3ee0ab53da408329750fbc352f1741b38f99",
+      "type": "image"
+    }
+  ],
+  "note": "",
+  "removed": false,
+  "sort": 1674933040,
+  "tags": [
+    "접근불가"
+  ],
+  "title": "A tiny Mac menu bar app for checking if you're on track on weekly Claude/Codex usage : ClaudeCode",
+  "type": "link",
+  "user": {
+    "$id": 724603,
+    "$ref": "users"
+  }
+}

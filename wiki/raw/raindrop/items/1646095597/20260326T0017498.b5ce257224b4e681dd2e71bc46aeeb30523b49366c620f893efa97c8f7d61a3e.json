@@ -1,0 +1,39 @@
+{
+  "_id": 1646095597,
+  "collection": {
+    "$id": 68738562,
+    "$ref": "collections",
+    "oid": 68738562
+  },
+  "collectionId": 68738562,
+  "cover": "https://opengraph.githubassets.com/c7eeab223cd47b9cc972a8439cdc517246c24b0aa3b23f61c41171b3507f0356/zubair-trabzada/geo-seo-claude",
+  "created": "2026-03-16T12:59:39.952Z",
+  "creatorRef": {
+    "_id": 724603,
+    "avatar": "",
+    "email": "",
+    "name": "kangsazang"
+  },
+  "domain": "github.com",
+  "excerpt": "GEO-first SEO skill for Claude Code. Comprehensive AI search optimization for any website — citability scoring, AI crawler analysis, brand authority, schema markup, platform-specific optimization, ...",
+  "highlights": [],
+  "important": false,
+  "lastUpdate": "2026-03-26T00:17:49.812Z",
+  "link": "https://github.com/zubair-trabzada/geo-seo-claude?media_id=3854094815449621905_76574528153&media_author_id=76574528153&ranking_info_token=GCA2ZmRkNjM0NmY3Y2U0NTFlYTlmYmE2YzZkMDk5MDMzYyWGs2UVyAEWsve%2Fmw0YEzM4NTQwOTQ4MTU0NDk2MjE5MDUoA3ZsbAA%3D&utm_source=ig_text_feed_timeline",
+  "media": [
+    {
+      "link": "https://opengraph.githubassets.com/c7eeab223cd47b9cc972a8439cdc517246c24b0aa3b23f61c41171b3507f0356/zubair-trabzada/geo-seo-claude",
+      "type": "image"
+    }
+  ],
+  "note": "Claude Code용 GEO(Generative Engine Optimization) 중심 SEO 스킬.\nAI 검색 엔진(ChatGPT, Claude, Perplexity, Gemini, Google AI Overviews)에 최적화된 웹사이트 분석을 제공한다.\n인용가능성 점수, AI 크롤러 분석(14개 이상), 브랜드 권위도, 스키마 마크업, 플랫폼별 최적화 등 11개 전문 서브스킬을 포함하며 PDF 보고서 생성을 지원한다.\n3,500개 이상의 GitHub 스타를 기록 중이다.\n\n메모: 전통적 SEO를 넘어 AI 검색 최적화라는 새로운 영역을 체계적으로 다루는 도구.\n제안: 미정\n태그: seo, geo, ai-search-optimization, claude-code, 마케팅\n상태: #대기중",
+  "removed": false,
+  "sort": 1646122533,
+  "tags": [],
+  "title": "zubair-trabzada/geo-seo-claude: GEO-first SEO skill for Claude Code. Comprehensive AI search optimization for any website — citability scoring, AI crawler analysis, brand authority, schema markup, platform-specific optimization, and PDF reports. If you want learn how to sell this to real businesses, check out the skool community",
+  "type": "link",
+  "user": {
+    "$id": 724603,
+    "$ref": "users"
+  }
+}

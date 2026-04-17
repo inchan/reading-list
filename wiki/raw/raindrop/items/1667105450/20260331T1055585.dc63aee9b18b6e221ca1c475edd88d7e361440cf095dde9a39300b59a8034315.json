@@ -1,0 +1,45 @@
+{
+  "_id": 1667105450,
+  "collection": {
+    "$id": 68757538,
+    "$ref": "collections",
+    "oid": 68757538
+  },
+  "collectionId": 68757538,
+  "cover": "https://scontent-fra5-2.cdninstagram.com/v/t51.2885-19/450721458_846421956941766_2561454700738555301_n.jpg?stp=dst-jpg_s640x640_tt6&efg=eyJ2ZW5jb2RlX3RhZyI6InByb2ZpbGVfcGljLmRqYW5nby4xMDgwLmMyIn0&_nc_ht=scontent-fra5-2.cdninstagram.com&_nc_cat=106&_nc_oc=Q6cZ2gH_bSrCDZvoKnnEuv-1ds4Yzlr77xN7RL0NUlIBf0eo9y5up-2dVEBUOX9C4W84PVI&_nc_ohc=3PsbQymgJgYQ7kNvwHH7UXR&_nc_gid=nIQr7LA6qn8iOhfX3Uf3gg&edm=APs17CUBAAAA&ccb=7-5&oh=00_AfxEBPEAoLM9zzrPQLVBNYEeabp2X7gJbF2MQbkO629IGA&oe=69D1862E&_nc_sid=10d13b",
+  "created": "2026-03-31T10:02:34.935Z",
+  "creatorRef": {
+    "_id": 724603,
+    "avatar": "",
+    "email": "",
+    "name": "kangsazang"
+  },
+  "domain": "threads.com",
+  "excerpt": "오늘 회사 QA팀들이 2번쯤 놀랄 소식 떴네\n\nMarketrix AI가 새 QA 자동화 플랫폼 공개했대 🔥\n\n기존처럼 Selenium, Playwright 스크립트 2개 붙잡고 테스트하는 방식이 아니라\n첫 방문 유저, 파워 유저 같은 페르소나로 앱을 직접 돌아다니며 본다는 거\n\nQA 엔지니어가 시나리오 하나씩 짜는 방식에서\n행동 기반 탐색으로 넘어가려는 흐름이 보이네",
+  "highlights": [],
+  "important": false,
+  "lastUpdate": "2026-03-31T10:55:58.531Z",
+  "link": "https://www.threads.com/@dev_seochan/post/DWi2BhLFQpi?xmt=AQF0O95Nn-bxNKrrsYUeCqdispQP6s_oLd5RKmkEtd5sNNfrtIZVmH7fF1Sx7V2bwI4iuNz4&slof=1",
+  "media": [
+    {
+      "link": "https://scontent-fra5-2.cdninstagram.com/v/t51.2885-19/450721458_846421956941766_2561454700738555301_n.jpg?stp=dst-jpg_s640x640_tt6&efg=eyJ2ZW5jb2RlX3RhZyI6InByb2ZpbGVfcGljLmRqYW5nby4xMDgwLmMyIn0&_nc_ht=scontent-fra5-2.cdninstagram.com&_nc_cat=106&_nc_oc=Q6cZ2gH_bSrCDZvoKnnEuv-1ds4Yzlr77xN7RL0NUlIBf0eo9y5up-2dVEBUOX9C4W84PVI&_nc_ohc=3PsbQymgJgYQ7kNvwHH7UXR&_nc_gid=nIQr7LA6qn8iOhfX3Uf3gg&edm=APs17CUBAAAA&ccb=7-5&oh=00_AfxEBPEAoLM9zzrPQLVBNYEeabp2X7gJbF2MQbkO629IGA&oe=69D1862E&_nc_sid=10d13b",
+      "type": "image"
+    }
+  ],
+  "note": "Marketrix AI가 2026년 3월 31일 페르소나 기반 자율 QA 자동화 플랫폼을 공식 출시했다.\n기존 Selenium/Playwright 스크립트 방식과 달리, 첫 방문 유저·파워 유저 등 다양한 페르소나로 앱을 직접 탐색하며 목표 기반 테스트를 수행한다.\nUI가 바뀌어도 스크립트를 수정할 필요 없이 동작하며, 회원가입 이탈 구간 파악·결제 플로우 검증·릴리즈 후 회귀 테스트 등에 활용 가능하다.\nCI/CD와 연동해 수동 개입 없이 지속적으로 테스트를 트리거할 수 있다.\n\n인사이트\n스크립트 기반 QA에서 에이전트 기반 행동 탐색 QA로의 패러다임 전환을 보여주는 사례이다.",
+  "removed": false,
+  "sort": 1667105450,
+  "tags": [
+    "ai",
+    "ai-agent",
+    "ai-workflow",
+    "testing",
+    "qa-automation"
+  ],
+  "title": "서찬(Seochan) (@dev_seochan) on Threads",
+  "type": "link",
+  "user": {
+    "$id": 724603,
+    "$ref": "users"
+  }
+}

@@ -1,0 +1,45 @@
+{
+  "_id": 1667707861,
+  "collection": {
+    "$id": 68757539,
+    "$ref": "collections",
+    "oid": 68757539
+  },
+  "collectionId": 68757539,
+  "cover": "https://scontent-dus1-1.cdninstagram.com/v/t51.82787-15/656388907_17857711770682315_568636291849046851_n.jpg?stp=dst-jpg_e35_tt6&efg=eyJ2ZW5jb2RlX3RhZyI6InRocmVhZHMuRkVFRC5pbWFnZV91cmxnZW4uOTAweDc2MS5zZHIuZjgyNzg3LmRlZmF1bHRfaW1hZ2UuYzEifQ&_nc_ht=scontent-dus1-1.cdninstagram.com&_nc_cat=107&_nc_oc=Q6cZ2gGjSDG_UKadpYRfbWEF2sNQ-LE-G2zBVGHQFyBL5yTA7IeDBdD1wkQ9Wste1Y-Mhnc&_nc_ohc=4b-y2qYXWFEQ7kNvwGS_Ax9&_nc_gid=c16Jl3tDWFqe8nJuKllOAw&edm=APs17CUBAAAA&ccb=7-5&ig_cache_key=Mzg2NDgyODAyNzgwMDc2ODY4MA%3D%3D.3-ccb7-5&oh=00_Af0DTmKc0NVSqhE_eox0vt7jBfhFUrRRsqkyaeJmmgNxeA&oe=69D22D93&_nc_sid=10d13b",
+  "created": "2026-03-31T23:35:08.601Z",
+  "creatorRef": {
+    "_id": 724603,
+    "avatar": "",
+    "email": "",
+    "name": "kangsazang"
+  },
+  "domain": "threads.com",
+  "excerpt": "토큰 효율성을 높이는 방법 공유!\n클로드.md에 규칙을 수정해서 보다 효율적으로 일하게 하는 방법이네요.\n그냥 클로드 앱 켜서\nhttps://github.com/drona23/claude-token-efficient\n이 주소를 적용하라고 명령하시면 됩니다!",
+  "highlights": [],
+  "important": false,
+  "lastUpdate": "2026-04-02T11:01:26.418Z",
+  "link": "https://www.threads.com/@ict_whitepeach/post/DWioJ1TCdCo?xmt=AQF0-KdVZoc5tVbwdA2m1cVNDOmCSW03Y_8Lhd1CoJ-hJv1D3ZbO0nTfo8_IkTKguVbcWlM&slof=1",
+  "media": [
+    {
+      "link": "https://scontent-dus1-1.cdninstagram.com/v/t51.82787-15/656388907_17857711770682315_568636291849046851_n.jpg?stp=dst-jpg_e35_tt6&efg=eyJ2ZW5jb2RlX3RhZyI6InRocmVhZHMuRkVFRC5pbWFnZV91cmxnZW4uOTAweDc2MS5zZHIuZjgyNzg3LmRlZmF1bHRfaW1hZ2UuYzEifQ&_nc_ht=scontent-dus1-1.cdninstagram.com&_nc_cat=107&_nc_oc=Q6cZ2gGjSDG_UKadpYRfbWEF2sNQ-LE-G2zBVGHQFyBL5yTA7IeDBdD1wkQ9Wste1Y-Mhnc&_nc_ohc=4b-y2qYXWFEQ7kNvwGS_Ax9&_nc_gid=c16Jl3tDWFqe8nJuKllOAw&edm=APs17CUBAAAA&ccb=7-5&ig_cache_key=Mzg2NDgyODAyNzgwMDc2ODY4MA%3D%3D.3-ccb7-5&oh=00_Af0DTmKc0NVSqhE_eox0vt7jBfhFUrRRsqkyaeJmmgNxeA&oe=69D22D93&_nc_sid=10d13b",
+      "type": "image"
+    }
+  ],
+  "note": "claude-token-efficient 프로젝트를 소개하는 Threads 게시물로, CLAUDE.md에 특정 규칙을 추가하면 Claude의 출력 토큰을 최대 63%까지 줄일 수 있다는 내용이다.\n서두/맺음말 제거, 아첨성 표현 금지, 응답 압축, 코드 과잉 설계 금지, 요청 범위 외 작업 금지 등 여러 규칙을 포함한다.\nClaude 앱에서 GitHub URL을 붙여넣기만 하면 AI가 자동으로 프로젝트를 참조해 CLAUDE.md에 규칙을 적용하는 방식이다.\n댓글에서 일부 사용자는 단순 지시만으로는 효과가 제한적이라는 의견을 제기하기도 했다.\n\n인사이트\nCLAUDE.md를 이용한 행동 제어는 harness engineering의 가장 접근하기 쉬운 형태다.",
+  "removed": false,
+  "sort": 1668753418,
+  "tags": [
+    "ai",
+    "claude",
+    "harness-engineering",
+    "ai-dev",
+    "context-engineering"
+  ],
+  "title": "@ict_whitepeach on Threads",
+  "type": "link",
+  "user": {
+    "$id": 724603,
+    "$ref": "users"
+  }
+}

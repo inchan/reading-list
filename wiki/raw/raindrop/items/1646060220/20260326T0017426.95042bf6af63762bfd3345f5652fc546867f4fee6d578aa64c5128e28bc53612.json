@@ -1,0 +1,44 @@
+{
+  "_id": 1646060220,
+  "collection": {
+    "$id": 68738562,
+    "$ref": "collections",
+    "oid": 68738562
+  },
+  "collectionId": 68738562,
+  "cover": "https://scontent-fra5-2.cdninstagram.com/v/t51.82787-15/652223695_17949356658112159_8617661157619495889_n.jpg?stp=dst-jpg_e35_tt6&efg=eyJ2ZW5jb2RlX3RhZyI6InRocmVhZHMuRkVFRC5pbWFnZV91cmxnZW4uMjQ5MngxMjMxLnNkci5mODI3ODcuZGVmYXVsdF9pbWFnZS5jMiJ9&_nc_ht=scontent-fra5-2.cdninstagram.com&_nc_cat=107&_nc_oc=Q6cZ2QFkd09QD6WpLqDLJcGlSGJU7KD4l57FlkTheBvzzwnpCU9cMjuBwlhFdgclBPWYyYA&_nc_ohc=Q_WpUj87OvEQ7kNvwFcBYmD&_nc_gid=5xtNQtZfE3XTltxEZ_SzBg&edm=APs17CUBAAAA&ccb=7-5&ig_cache_key=Mzg1Mzk4NTIxODc1NTY1MzE0MQ%3D%3D.3-ccb7-5&oh=00_AfxekIT6DtQCcoFkFYMIE1w4_gF6utr3ngUJErlFX-nHRw&oe=69BDC670&_nc_sid=10d13b",
+  "created": "2026-03-16T12:12:01.214Z",
+  "creatorRef": {
+    "_id": 724603,
+    "avatar": "",
+    "email": "",
+    "name": "kangsazang"
+  },
+  "domain": "threads.com",
+  "excerpt": "클로드 코드 에이전트 팀 최대 장점 : \n뭔가 개쩌는 일을 하는 거 같음\n\n물론 대량의 업무를 빨리 해주는 것도 맞고,\nSonnet 대량 스폰이나 Codex 스폰으로 토큰 아껴주는 것도 맞음!",
+  "highlights": [],
+  "important": false,
+  "lastUpdate": "2026-03-26T00:17:42.668Z",
+  "link": "https://www.threads.com/@tofukyung/post/DV8GyMdiW4V?xmt=AQF0IPaxAHZkNcBiww-sDsQqRckBPAzLmqddSvvigqN2Sjg3VZ7sf1Gh_RVgIMDSW4wiqPY&slof=1",
+  "media": [
+    {
+      "link": "https://scontent-fra5-2.cdninstagram.com/v/t51.82787-15/652223695_17949356658112159_8617661157619495889_n.jpg?stp=dst-jpg_e35_tt6&efg=eyJ2ZW5jb2RlX3RhZyI6InRocmVhZHMuRkVFRC5pbWFnZV91cmxnZW4uMjQ5MngxMjMxLnNkci5mODI3ODcuZGVmYXVsdF9pbWFnZS5jMiJ9&_nc_ht=scontent-fra5-2.cdninstagram.com&_nc_cat=107&_nc_oc=Q6cZ2QFkd09QD6WpLqDLJcGlSGJU7KD4l57FlkTheBvzzwnpCU9cMjuBwlhFdgclBPWYyYA&_nc_ohc=Q_WpUj87OvEQ7kNvwFcBYmD&_nc_gid=5xtNQtZfE3XTltxEZ_SzBg&edm=APs17CUBAAAA&ccb=7-5&ig_cache_key=Mzg1Mzk4NTIxODc1NTY1MzE0MQ%3D%3D.3-ccb7-5&oh=00_AfxekIT6DtQCcoFkFYMIE1w4_gF6utr3ngUJErlFX-nHRw&oe=69BDC670&_nc_sid=10d13b",
+      "type": "image"
+    }
+  ],
+  "note": "클로드 코드 에이전트 팀 최대 장점 :\n뭔가 개쩌는 일을 하는 거 같음\n물론 대량의 업무를 빨리 해주는 것도 맞고,\nSonnet 대량 스폰이나 Codex 스폰으로 토큰 아껴주는 것도 맞음!\n\n메모: 기존 report 본문이 남아 있지 않아 저장 시점 제목, excerpt, 태그를 기준으로 복구한 note입니다.\n원문: 김재경 (@tofukyung) on Threads\n태그: ClaudeCode, AI에이전트, 멀티에이전트, 워크플로우\n상태: 복구노트",
+  "removed": false,
+  "sort": 1651703224,
+  "tags": [
+    "ClaudeCode",
+    "AI에이전트",
+    "멀티에이전트",
+    "워크플로우"
+  ],
+  "title": "김재경 (@tofukyung) on Threads",
+  "type": "link",
+  "user": {
+    "$id": 724603,
+    "$ref": "users"
+  }
+}

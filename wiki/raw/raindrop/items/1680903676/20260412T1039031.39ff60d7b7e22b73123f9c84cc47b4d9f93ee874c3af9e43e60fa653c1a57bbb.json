@@ -1,0 +1,41 @@
+{
+  "_id": 1680903676,
+  "collection": {
+    "$id": -1,
+    "$ref": "collections",
+    "oid": -1
+  },
+  "collectionId": -1,
+  "cover": "https://scontent-dus1-1.cdninstagram.com/v/t51.82787-15/670729770_17957236962112832_6632602527532094018_n.jpg?stp=cp6_dst-jpg_e35_tt6&_nc_cat=109&ig_cache_key=Mzg3Mjc3NTUwMjM0Mzc4NDg5OQ%3D%3D.3-ccb7-5&ccb=7-5&_nc_sid=58cdad&efg=eyJ2ZW5jb2RlX3RhZyI6InhwaWRzLjE1OTR4MTM5MC5zZHIuQzMifQ%3D%3D&_nc_ohc=P7WD6bzepoUQ7kNvwGoHRTS&_nc_oc=AdqubzXssJKqph9XRrqRqcB29KpqgRJg_IPg7ap9yM-rboBRHBfB2sU3vx-TkhXKEtM&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=scontent-dus1-1.cdninstagram.com&_nc_gid=GSCarBAZatKyI4y67YcBvg&_nc_ss=7a32e&oh=00_Af3lgWA9drpzc5jdN2Xi60ADbNG-2zNoC_1UPOQHqZ7laA&oe=69E01DAE",
+  "created": "2026-04-11T11:43:07.056Z",
+  "creatorRef": {
+    "_id": 724603,
+    "avatar": "",
+    "email": "",
+    "name": "kangsazang"
+  },
+  "domain": "threads.com",
+  "excerpt": "YC의 수장이 자신이 매일 쓰는 'AI 뇌'를 통째로 무료로 풀었습니다.\n\n Combinator의 CEO 개리 탄(Garry Tan)이 실제 업무에 쓰던 AI 기억 시스템 'GBrain'을 전격 오픈소스화했습니다.\nOpenClaw나 Hermes 에이전트와 연동해 방대한 개인 데이터를 오차 없이 기억하고 꺼내 쓸 수 있는 강력한 인프라입니다.\n\n그동안 많은 사람들이 에이전트 메모리 시스템을 바닥부터 만드느라 고전했는데, 프로덕션급의 튼튼한 뼈대가 무료로 제공되면서 생태계 구축 속도가 크게 앞당겨질 것으로 보입니다.\n\n\"이제 VSCode를 직접 열지 않는 것처럼 파일도 직접 보지 않는다\"는 그의 말처럼, 우리도 파일 탐색기가 아닌 AI와 대화하며 일하는 게 당연해지는 시점이 온 것 같습니다.",
+  "highlights": [],
+  "important": false,
+  "lastUpdate": "2026-04-12T10:39:03.136Z",
+  "link": "https://www.threads.com/@choi.openai/post/DW-3MzwCUnD?xmt=AQF00hTodBY3RAdwFftcUAoytM7cKQNAqYCSyfAdyZ1cAdbBL43ame5fRgwNljVKtP-Joz8&slof=1",
+  "media": [
+    {
+      "link": "https://scontent-dus1-1.cdninstagram.com/v/t51.82787-15/670729770_17957236962112832_6632602527532094018_n.jpg?stp=cp6_dst-jpg_e35_tt6&_nc_cat=109&ig_cache_key=Mzg3Mjc3NTUwMjM0Mzc4NDg5OQ%3D%3D.3-ccb7-5&ccb=7-5&_nc_sid=58cdad&efg=eyJ2ZW5jb2RlX3RhZyI6InhwaWRzLjE1OTR4MTM5MC5zZHIuQzMifQ%3D%3D&_nc_ohc=P7WD6bzepoUQ7kNvwGoHRTS&_nc_oc=AdqubzXssJKqph9XRrqRqcB29KpqgRJg_IPg7ap9yM-rboBRHBfB2sU3vx-TkhXKEtM&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=scontent-dus1-1.cdninstagram.com&_nc_gid=GSCarBAZatKyI4y67YcBvg&_nc_ss=7a32e&oh=00_Af3lgWA9drpzc5jdN2Xi60ADbNG-2zNoC_1UPOQHqZ7laA&oe=69E01DAE",
+      "type": "image"
+    }
+  ],
+  "note": "",
+  "removed": false,
+  "sort": 1680903676,
+  "tags": [
+    "접근불가"
+  ],
+  "title": "CHOI (@choi.openai) on Threads",
+  "type": "link",
+  "user": {
+    "$id": 724603,
+    "$ref": "users"
+  }
+}

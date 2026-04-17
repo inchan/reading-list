@@ -1,0 +1,43 @@
+{
+  "_id": 426196308,
+  "collection": {
+    "$id": 27494617,
+    "$ref": "collections",
+    "oid": 27494617
+  },
+  "collectionId": 27494617,
+  "cover": "https://rdl.ink/render/https%3A%2F%2Ftheqoo.net%2Findex.php%3Fmid%3Dhot%26filter_mode%3Dnormal%26document_srl%3D2537062210",
+  "created": "2022-08-02T15:07:57.799Z",
+  "creatorRef": {
+    "_id": 724603,
+    "avatar": "",
+    "email": "",
+    "name": "kangsazang"
+  },
+  "domain": "theqoo.net",
+  "excerpt": "제주에 오래 살았는데 관광객 맛집 말고 다른 곳을 찾는 덬들을 위한 추천리스트! 정말 내 기준이고, 자주 가고 좋아하는 곳 위주로 적을게 사진은 잘 안 남기는 편이라 있는 거 긁어 모아봤어! (사진이 왜 돌아가는지는 모르겠어...) 1. 통창에 한적한 바다뷰 - 젠하이드어웨이 제주 특산물 혹은 관광객 맛집 말고 바다뷰 보면서 밥 먹고 싶으면 '젠하이드어웨이' 추천. 제주시내에서는 멀지만 서귀포 외곽쪽을 간다면 ...",
+  "highlights": [],
+  "important": false,
+  "lastUpdate": "2026-03-22T15:38:14.469Z",
+  "link": "https://theqoo.net/index.php?mid=hot&filter_mode=normal&document_srl=2537062210",
+  "media": [
+    {
+      "link": "https://rdl.ink/render/https%3A%2F%2Ftheqoo.net%2Findex.php%3Fmid%3Dhot%26filter_mode%3Dnormal%26document_srl%3D2537062210",
+      "screenshot": true,
+      "type": "image"
+    }
+  ],
+  "note": "",
+  "removed": false,
+  "sort": 434689931,
+  "tags": [
+    "제주",
+    "맛집"
+  ],
+  "title": "HOT - 제주도민을 위한 제주 도민 맛집 추천(이미 유명할 수도..)",
+  "type": "link",
+  "user": {
+    "$id": 724603,
+    "$ref": "users"
+  }
+}

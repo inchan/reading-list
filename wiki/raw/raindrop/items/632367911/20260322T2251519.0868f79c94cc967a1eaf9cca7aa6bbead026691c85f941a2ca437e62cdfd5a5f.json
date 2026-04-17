@@ -1,0 +1,58 @@
+{
+  "_id": 632367911,
+  "collection": {
+    "$id": 20521420,
+    "$ref": "collections",
+    "oid": 20521420
+  },
+  "collectionId": 20521420,
+  "cover": "https://www.dogdrip.net/files/attach/xeicon/default_image.png?20211119094908",
+  "created": "2023-08-22T11:48:28.294Z",
+  "creatorRef": {
+    "_id": 724603,
+    "avatar": "",
+    "email": "",
+    "name": "kangsazang"
+  },
+  "domain": "dogdrip.net",
+  "excerpt": "",
+  "highlights": [],
+  "important": false,
+  "lastUpdate": "2026-03-22T22:51:51.919Z",
+  "link": "https://www.dogdrip.net/496665594",
+  "media": [
+    {
+      "link": "https://www.dogdrip.net/files/attach/xeicon/default_image.png?20211119094908",
+      "type": "image"
+    },
+    {
+      "link": "https://www.dogdrip.net/dvs/d/23/07/20/56f142351a5ca2faa1c5d53fd79fd63c.jpg",
+      "type": "image"
+    },
+    {
+      "link": "https://www.dogdrip.net/dvs/d/23/07/20/2c2cf8e64cd61486f742e7eb25d33ff3.jpg",
+      "type": "image"
+    },
+    {
+      "link": "https://www.dogdrip.net/dvs/d/23/07/20/28674f5e998c7c28e91dd26c120bf2ce.jpg",
+      "type": "image"
+    },
+    {
+      "link": "https://www.dogdrip.net/dvs/d/23/07/20/1d217617d56cbb27c4a3fd22dad3d144.jpg",
+      "type": "image"
+    }
+  ],
+  "note": "",
+  "removed": false,
+  "sort": 857568896,
+  "tags": [
+    "레시피",
+    "평냉"
+  ],
+  "title": "평양냉면 저렴하게 먹는법 - DogDrip.Net 개드립",
+  "type": "article",
+  "user": {
+    "$id": 724603,
+    "$ref": "users"
+  }
+}

@@ -1,0 +1,46 @@
+{
+  "_id": 857570519,
+  "collection": {
+    "$id": 20521420,
+    "$ref": "collections",
+    "oid": 20521420
+  },
+  "collectionId": 20521420,
+  "cover": "https://img-cdn.theqoo.net/JCZlFi.jpg",
+  "created": "2024-09-20T03:21:42.219Z",
+  "creatorRef": {
+    "_id": 724603,
+    "avatar": "",
+    "email": "",
+    "name": "kangsazang"
+  },
+  "domain": "theqoo.net",
+  "excerpt": "",
+  "highlights": [],
+  "important": false,
+  "lastUpdate": "2026-03-22T22:51:51.919Z",
+  "link": "https://theqoo.net/hot/3369226830?filter_mode=normal&page=3",
+  "media": [
+    {
+      "link": "https://img-cdn.theqoo.net/JCZlFi.jpg",
+      "type": "image"
+    }
+  ],
+  "note": "",
+  "reminder": {
+    "date": null
+  },
+  "removed": false,
+  "sort": 857570519,
+  "tags": [
+    "레시피",
+    "차승원",
+    "제육볶음"
+  ],
+  "title": "차승원 - 제육볶음",
+  "type": "link",
+  "user": {
+    "$id": 724603,
+    "$ref": "users"
+  }
+}

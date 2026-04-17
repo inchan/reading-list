@@ -1,0 +1,56 @@
+{
+  "_id": 1654523534,
+  "collection": {
+    "$id": 68757539,
+    "$ref": "collections",
+    "oid": 68757539
+  },
+  "collectionId": 68757539,
+  "cover": "https://opengraph.githubassets.com/eddcc38e50e854ca91c80eb725d1d2e6895f5f8469f8604cb6a47fc9eae7dec3/PleasePrompto/ductor",
+  "created": "2026-03-23T12:12:35.770Z",
+  "creatorRef": {
+    "_id": 724603,
+    "avatar": "",
+    "email": "",
+    "name": "kangsazang"
+  },
+  "domain": "github.com",
+  "excerpt": "Control Claude Code, Codex CLI and Gemini CLI from Telegram. Live streaming, persistent memory, cron jobs, webhooks, Docker sandboxing. - PleasePrompto/ductor",
+  "highlights": [],
+  "important": false,
+  "lastUpdate": "2026-03-26T00:18:53.224Z",
+  "link": "https://github.com/PleasePrompto/ductor",
+  "media": [
+    {
+      "link": "https://opengraph.githubassets.com/eddcc38e50e854ca91c80eb725d1d2e6895f5f8469f8604cb6a47fc9eae7dec3/PleasePrompto/ductor",
+      "type": "image"
+    },
+    {
+      "link": "https://raw.githubusercontent.com/PleasePrompto/ductor/main/docs/images/ductor-start.jpeg",
+      "type": "image"
+    },
+    {
+      "link": "https://raw.githubusercontent.com/PleasePrompto/ductor/main/docs/images/ductor-quick-actions.jpeg",
+      "type": "image"
+    }
+  ],
+  "note": "ductor는 PleasePrompto가 개발한 Python 도구로, Telegram 또는 Matrix 메신저를 통해 Claude Code·Codex CLI·Gemini CLI를 원격으로 제어할 수 있게 해준다.\n실시간 응답 스트리밍, 지속적 메모리, 크론 잡 스케줄러, 웹훅, Docker 샌드박싱 등 고급 자동화 기능을 지원하며 PyPI를 통해 설치 가능하다.\n듀얼 허용 목록(allowed_user_ids + allowed_group_ids) 보안 모델로 외부 접근을 안전하게 통제하며, Telegram 포럼 모드나 Matrix 룸마다 독립적인 CLI 컨텍스트를 유지한다.\n여러 CLI 도구에 걸쳐 스킬을 공유하는 크로스 툴 스킬 동기화 기능도 제공한다.\n\n메모: 스마트폰에서 AI 코딩 작업을 모니터링·승인·제어하는 새로운 워크플로우를 가능하게 하며, 장시간 실행 배치 작업이나 자동화 파이프라인 운영에 특히 유용하다.\n분류: 아티펙트\n태그: telegram, claude-code, codex-cli, gemini-cli, automation",
+  "reminder": {
+    "date": null
+  },
+  "removed": false,
+  "sort": 1654523534,
+  "tags": [
+    "telegram",
+    "claude-code",
+    "codex-cli",
+    "gemini-cli",
+    "automation"
+  ],
+  "title": "PleasePrompto/ductor: Control Claude Code, Codex CLI and Gemini CLI from Telegram. Live streaming, persistent memory, cron jobs, webhooks, Docker sandboxing.",
+  "type": "link",
+  "user": {
+    "$id": 724603,
+    "$ref": "users"
+  }
+}

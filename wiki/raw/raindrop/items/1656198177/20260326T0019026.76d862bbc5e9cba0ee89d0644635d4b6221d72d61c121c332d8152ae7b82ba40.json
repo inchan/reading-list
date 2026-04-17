@@ -1,0 +1,46 @@
+{
+  "_id": 1656198177,
+  "collection": {
+    "$id": 68757538,
+    "$ref": "collections",
+    "oid": 68757538
+  },
+  "collectionId": 68757538,
+  "cover": "https://scontent-fra5-2.cdninstagram.com/v/t51.82787-19/630172068_17853797301664914_3389448805024595981_n.jpg?stp=dst-jpg_s640x640_tt6&efg=eyJ2ZW5jb2RlX3RhZyI6InByb2ZpbGVfcGljLmRqYW5nby44MDEuYzIifQ&_nc_ht=scontent-fra5-2.cdninstagram.com&_nc_cat=106&_nc_oc=Q6cZ2gHJ1-pyGYtF0ogdkNynrzr9OnwpOjgApfxruNoHMoDKTKsAR7BQqnXEWJsM8O-bqOY&_nc_ohc=01yVwV23BlcQ7kNvwED1QrG&_nc_gid=bEp4ExcS-k9t_mGUuS2z6w&edm=APs17CUBAAAA&ccb=7-5&oh=00_Afxcj-Ql2_XTGGkI6J-CwmtBe5pi9qH63ECLFWjXzzhq4w&oe=69C8780A&_nc_sid=10d13b",
+  "created": "2026-03-24T16:14:24.666Z",
+  "creatorRef": {
+    "_id": 724603,
+    "avatar": "",
+    "email": "",
+    "name": "kangsazang"
+  },
+  "domain": "threads.com",
+  "excerpt": "GitAgent가 AI 에이전트 개발의 파편화 문제를 해결하려는 오픈소스 프로젝트예요.\n\n현재 LangChain, AutoGen, CrewAI, OpenAI Assistants, Claude Code 등 5개 프레임워크가 각자 다른 방식으로 에이전트를 정의하거든요. 프레임워크를 바꾸려면 핵심 코드를 처음부터 다시 써야 하는 게 현실이에요.\n\nGitAgent는 에이전트를 Git 저장소 내 폴더 구조로 정의해요. agent.yaml(메타데이터), SOUL.md(에이전트 정체성), DUTIES.md(역할과 제한 범위), rules/(가드레일) 같은 파일들로 구성되는데, 이 정의를 한 번 작성하면 어느 프레임워크에도 내보낼 수 있다는 게 핵심이에요.\n\nDocker가 컨테이너 실행 환경을 표준화했듯, GitAgent는 에이전트 정의 자체를 표준화하려는 시도예요.",
+  "highlights": [],
+  "important": false,
+  "lastUpdate": "2026-03-26T00:19:02.671Z",
+  "link": "https://www.threads.com/@ai_jobdori/post/DWRJnMBATOW?xmt=AQF0dpClr679ZzA5GSzDV2h0WoCg7m1ckiCPfpLXouVKc_6ms6XAMggvM7mtsQgwhYPDTpEW&slof=1",
+  "media": [
+    {
+      "link": "https://scontent-fra5-2.cdninstagram.com/v/t51.82787-19/630172068_17853797301664914_3389448805024595981_n.jpg?stp=dst-jpg_s640x640_tt6&efg=eyJ2ZW5jb2RlX3RhZyI6InByb2ZpbGVfcGljLmRqYW5nby44MDEuYzIifQ&_nc_ht=scontent-fra5-2.cdninstagram.com&_nc_cat=106&_nc_oc=Q6cZ2gHJ1-pyGYtF0ogdkNynrzr9OnwpOjgApfxruNoHMoDKTKsAR7BQqnXEWJsM8O-bqOY&_nc_ohc=01yVwV23BlcQ7kNvwED1QrG&_nc_gid=bEp4ExcS-k9t_mGUuS2z6w&edm=APs17CUBAAAA&ccb=7-5&oh=00_Afxcj-Ql2_XTGGkI6J-CwmtBe5pi9qH63ECLFWjXzzhq4w&oe=69C8780A&_nc_sid=10d13b",
+      "type": "image"
+    }
+  ],
+  "note": "GitAgent는 AI 에이전트 개발의 프레임워크 파편화 문제를 해결하기 위해 2026년 3월 공개된 오픈소스 표준이다.\nGit 저장소 내 agent.yaml, SOUL.md, DUTIES.md, rules/ 등의 파일로 에이전트를 정의하면, LangChain·AutoGen·CrewAI·OpenAI Assistants·Claude Code 등 5개 주요 프레임워크로 내보내기가 가능하다.\nDocker가 컨테이너 실행 환경을 표준화했듯, GitAgent는 에이전트 '정의' 자체를 프레임워크에 무관한 공통 포맷으로 표준화한다.\nGit의 브랜치·PR·diff 기능을 그대로 활용해 에이전트 행동 변화를 코드 리뷰하듯 관리할 수 있으며 롤백도 가능하다.\n\n메모: 에이전트 정의를 특정 프레임워크에서 분리한다는 발상은 팀이 기술 스택을 변경할 때의 전환 비용을 획기적으로 낮춰준다.\n분류: 지식\n태그: ai, ai-agent, harness-engineering, ai-dev, openclaw, context-engineering",
+  "removed": false,
+  "sort": 1656198177,
+  "tags": [
+    "ai",
+    "ai-agent",
+    "harness-engineering",
+    "ai-dev",
+    "openclaw",
+    "context-engineering"
+  ],
+  "title": "AI잡돌쌤 (@ai_jobdori) on Threads",
+  "type": "link",
+  "user": {
+    "$id": 724603,
+    "$ref": "users"
+  }
+}

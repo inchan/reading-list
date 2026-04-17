@@ -6,11 +6,11 @@ on:
       collection_id:
         description: "Raindrop collection id (-1 = Unsorted, 0 = All)"
         required: false
-        default: "-1"
+        default: "0"
       limit:
-        description: "Sample limit for raw sync"
+        description: "Optional limit for raw sync (blank = all matched items)"
         required: false
-        default: "3"
+        default: ""
       dry_run:
         description: "Run without committing changes"
         required: false
@@ -28,46 +28,41 @@ jobs:
     runs-on: ubuntu-latest
     env:
       RAINDROP_TEST_TOKEN: ${{ secrets.RAINDROP_TEST_TOKEN }}
-      CLAUDE_CODE_OAUTH_TOKEN: ${{ secrets.CLAUDE_CODE_OAUTH_TOKEN }}
-      COLLECTION_ID: ${{ github.event.inputs.collection_id || '-1' }}
-      SYNC_LIMIT: ${{ github.event.inputs.limit || '3' }}
+      COLLECTION_ID: ${{ github.event.inputs.collection_id || '0' }}
+      SYNC_LIMIT: ${{ github.event.inputs.limit || '' }}
       DRY_RUN: ${{ github.event.inputs.dry_run || 'true' }}
+      WIKI_SITE_URL: ${{ vars.WIKI_SITE_URL || format('https://{0}.github.io/{1}/', github.repository_owner, github.event.repository.name) }}
     steps:
       - uses: actions/checkout@v4
 
       - name: Setup tools
         run: sudo apt-get update && sudo apt-get install -y jq
 
-      - name: Install Claude Code
-        run: npm install -g @anthropic-ai/claude-code
-
       - name: Sync Raindrop raw snapshots
         run: |
-          scripts/sync-raindrop-raw.sh \
-            --collection "$COLLECTION_ID" \
-            --limit "$SYNC_LIMIT" \
-            --queue tmp/wiki-compile-queue.json
+          args=(--collection "$COLLECTION_ID" --queue tmp/wiki-compile-queue.json)
+          if [ -n "$SYNC_LIMIT" ]; then
+            args+=(--limit "$SYNC_LIMIT")
+          fi
+          scripts/sync-raindrop-raw.sh "${args[@]}"
 
-      - name: Compile raw sources into wiki with prompt-only skill
+      - name: Report local Codex compile queue
         run: |
           queue_count="$(jq '.items | length' tmp/wiki-compile-queue.json)"
           if [ "$queue_count" -eq 0 ]; then
-            echo "No new raw sources to compile."
+            echo "No new raw sources queued for local Codex compilation."
             exit 0
           fi
 
-          system_prompt="$(
-            printf '%s\n\n' "$(cat prompts/skills/karpathy-llm-wiki.upstream.md)"
-            printf '%s\n\n' "$(cat wiki/SCHEMA.md)"
-            printf '%s\n\n' "$(cat prompts/ingest-source-into-wiki.md)"
-            printf '%s\n' "$(cat prompts/actions/wiki-compile.md)"
-          )"
+          echo "Queued $queue_count raw source(s) for local Codex compilation."
+          echo "Compile locally with prompts/actions/wiki-compile.md, then run:"
+          echo "  scripts/prepare-wiki-publish.sh --site-url \"$WIKI_SITE_URL\""
 
-          claude --print \
-            --system-prompt "$system_prompt" \
-            --dangerously-skip-permissions \
-            --max-turns 30 \
-            "Compile the raw sources listed in tmp/wiki-compile-queue.json into the reading-list wiki. Edit repository files directly according to the prompt contracts."
+      - name: Generate wiki RSS feed
+        run: |
+          scripts/prepare-wiki-publish.sh \
+            --site-url "$WIKI_SITE_URL" \
+            --feed-output wiki/feed.xml
 
       - name: Validate wiki-only changes
         run: |
@@ -106,6 +101,6 @@ jobs:
 
           git add wiki
           git diff --cached --quiet && echo "No wiki changes to commit." && exit 0
-          git commit -m "Compile reading-list wiki from raw sources"
+          git commit -m "Update reading-list wiki raw snapshots and RSS"
           git pull --rebase origin main || { git rebase --abort 2>/dev/null; git pull --no-rebase origin main; }
           git push

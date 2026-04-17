@@ -1,0 +1,54 @@
+{
+  "_id": 497216440,
+  "collection": {
+    "$id": 26972538,
+    "$ref": "collections",
+    "oid": 26972538
+  },
+  "collectionId": 26972538,
+  "cover": "https://ssl.pstatic.net/sstatic/search/common/og_v3.png",
+  "created": "2023-01-06T05:05:29.618Z",
+  "creatorRef": {
+    "_id": 724603,
+    "avatar": "",
+    "email": "",
+    "name": "kangsazang"
+  },
+  "domain": "m.search.naver.com",
+  "excerpt": "'콩새야'의 네이버 통합검색 결과입니다.",
+  "highlights": [],
+  "important": false,
+  "lastUpdate": "2026-03-22T15:38:14.469Z",
+  "link": "https://m.search.naver.com/search.naver?sm=mtp_hty.top&where=m&query=%EC%BD%A9%EC%83%88%EC%95%BC",
+  "media": [
+    {
+      "link": "https://search.pstatic.net/common/?autoRotate=true&quality=95&type=f400_300&src=https%3A%2F%2Fldb-phinf.pstatic.net%2F20211211_57%2F1639216368143MEYXJ_JPEG%2FOqPL6OwQZNG_2ZdLQAXeVrRRJPxxAFf4edqxEMh8YKghDKm-BDtEjfFyLe4fjQ97.jpg",
+      "type": "image"
+    },
+    {
+      "link": "https://search.pstatic.net/common/?autoRotate=true&quality=95&type=f400_300&src=https%3A%2F%2Fldb-phinf.pstatic.net%2F20211211_87%2F1639216368069SkCjE_JPEG%2FncPRxxglxen2qznuOigSTdmtgwH1_J7sePaBXl_byZh_P9dLA6rU__2jiVOmZUM2.jpg",
+      "type": "image"
+    },
+    {
+      "link": "https://search.pstatic.net/common/?autoRotate=true&quality=95&type=f400_300&src=https%3A%2F%2Fldb-phinf.pstatic.net%2F20201222_164%2F16086262063602iokk_JPEG%2FncPRxxglxen2qznuOigSTZCrj_m0DH-XHxbi-Tg1B5SmN6W8tUP_-gpPjPneXmPz.jpg",
+      "type": "image"
+    },
+    {
+      "link": "https://search.pstatic.net/common/?autoRotate=true&quality=95&type=f400_300&src=https%3A%2F%2Fldb-phinf.pstatic.net%2F20201222_231%2F16086223944378Kkrv_JPEG%2FncPRxxglxen2qznuOigSTV8ADDAALdYwJiQYDnR2qRxJ_9ghbW77yVWdmqhjbQFQ.jpg",
+      "type": "image"
+    }
+  ],
+  "note": "",
+  "removed": false,
+  "sort": 632368503,
+  "tags": [
+    "강릉",
+    "맛집"
+  ],
+  "title": "콩새야 : 네이버 통합검색",
+  "type": "link",
+  "user": {
+    "$id": 724603,
+    "$ref": "users"
+  }
+}

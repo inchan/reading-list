@@ -1,0 +1,60 @@
+{
+  "_id": 857569407,
+  "collection": {
+    "$id": 47947246,
+    "$ref": "collections",
+    "oid": 47947246
+  },
+  "collectionId": 47947246,
+  "cover": "http://file3.instiz.net/data/file3/2021/10/19/2/3/a/23a88f82489810e05579db89bdd7ba72.gif",
+  "created": "2024-09-20T03:10:46.303Z",
+  "creatorRef": {
+    "_id": 724603,
+    "avatar": "",
+    "email": "",
+    "name": "kangsazang"
+  },
+  "domain": "theqoo.net",
+  "excerpt": "....? 그리고 한컷만에 붙임머리 하고 나타난 할리...는 아니고 이 친구는 영국에서 온 '애니'! 역시나 여름캠프에 참가하러 옴",
+  "highlights": [],
+  "important": false,
+  "lastUpdate": "2026-03-22T22:51:52.507Z",
+  "link": "https://theqoo.net/hot/2849353593?filter_mode=normal",
+  "media": [
+    {
+      "link": "http://file3.instiz.net/data/file3/2021/10/19/2/3/a/23a88f82489810e05579db89bdd7ba72.gif",
+      "type": "image"
+    },
+    {
+      "link": "http://file3.instiz.net/data/file3/2021/10/19/4/3/5/43504af835292019e629c2aa996fb697.gif",
+      "type": "image"
+    },
+    {
+      "link": "http://file3.instiz.net/data/file3/2021/10/19/8/e/e/8ee76469f6a7eea923c2aa43f9fc12e3.gif",
+      "type": "image"
+    },
+    {
+      "link": "http://file3.instiz.net/data/file3/2021/10/19/d/e/3/de34900accfb8f7120dce4433d14f963.gif",
+      "type": "image"
+    },
+    {
+      "link": "http://file3.instiz.net/data/file3/2021/10/19/3/a/8/3a848ba678add3a4d1e20e8729c92788.gif",
+      "type": "image"
+    }
+  ],
+  "note": "",
+  "reminder": {
+    "date": null
+  },
+  "removed": false,
+  "sort": 857569407,
+  "tags": [
+    "영화"
+  ],
+  "title": "더쿠 - 여름캠프 갔는데 도플갱어를 만나버렸어여 죽는건가;;;gif",
+  "type": "link",
+  "user": {
+    "$id": 724603,
+    "$ref": "users"
+  }
+}

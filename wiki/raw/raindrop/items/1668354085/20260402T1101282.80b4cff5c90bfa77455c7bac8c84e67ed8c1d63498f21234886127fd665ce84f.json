@@ -1,0 +1,45 @@
+{
+  "_id": 1668354085,
+  "collection": {
+    "$id": 68757538,
+    "$ref": "collections",
+    "oid": 68757538
+  },
+  "collectionId": 68757538,
+  "cover": "https://scontent-ham3-1.cdninstagram.com/v/t51.82787-15/659757637_17936446845207210_4654097081305423942_n.jpg?stp=dst-jpg_e35_tt6&efg=eyJ2ZW5jb2RlX3RhZyI6InRocmVhZHMuQ0FST1VTRUxfSVRFTS5pbWFnZV91cmxnZW4uOTAweDYwNC5zZHIuZjgyNzg3LmRlZmF1bHRfaW1hZ2UuYzIifQ&_nc_ht=scontent-ham3-1.cdninstagram.com&_nc_cat=106&_nc_oc=Q6cZ2gEHcbvqcPkEzvd7ORpNBAvtkCZ9l_2_kbA2vlKL9g2Btak-tBNf-bXJCOCsvY39t_c&_nc_ohc=FfaGlgxt2xsQ7kNvwGufWM0&_nc_gid=MzvRIvZk_ZYabwtPC5LEvw&edm=APs17CUBAAAA&ccb=7-5&ig_cache_key=Mzg2NTcyMjQ4OTQ0MzgxMDc3NA%3D%3D.3-ccb7-5&oh=00_Af2wq8SDdyXJ_249GfcIOzVFvvVnNTMviaNTrfKO9087jQ&oe=69D31FD4&_nc_sid=10d13b",
+  "created": "2026-04-01T15:49:30.556Z",
+  "creatorRef": {
+    "_id": 724603,
+    "avatar": "",
+    "email": "",
+    "name": "kangsazang"
+  },
+  "domain": "threads.com",
+  "excerpt": "AI가 코드를 써주는 시대에, 코드 리뷰는 어떻게 바뀌어야 할까요.\n\nAI가 코드를 3배 더 빠르게 만들어내는데, 리뷰하는 방식은 그대로입니다. 사람이 diff를 열고, 대충 훑어보고, 맥락을 추측하고, \"프로덕션 안 터지겠지\" 하고 넘기는 구조. 이게 사람이 사람 속도로 코드를 쓰던 시절에 만들어진 방식이에요. 그 전제가 깨진 거죠.\n\nQodo의 Nnenna Ndukwe가 2026년에 자리잡을 AI 코드 리뷰 패턴 5가지를 정리했습니다. \"AI를 리뷰에 추가하자\"가 아니라 \"리뷰 자체를 다시 설계하자\"는 관점이에요. \n\n하나씩 봅니다.",
+  "highlights": [],
+  "important": false,
+  "lastUpdate": "2026-04-02T11:01:28.241Z",
+  "link": "https://www.threads.com/@unclejobs.ai/post/DWlziC-id5r?xmt=AQF0-a0dkTuYFpDkx0tU1JpTExRLnXcNlmViEcW0psZDMb9QiGwaNgy6ez8RJA8ZKJ0VW4iC&slof=1",
+  "media": [
+    {
+      "link": "https://scontent-ham3-1.cdninstagram.com/v/t51.82787-15/659757637_17936446845207210_4654097081305423942_n.jpg?stp=dst-jpg_e35_tt6&efg=eyJ2ZW5jb2RlX3RhZyI6InRocmVhZHMuQ0FST1VTRUxfSVRFTS5pbWFnZV91cmxnZW4uOTAweDYwNC5zZHIuZjgyNzg3LmRlZmF1bHRfaW1hZ2UuYzIifQ&_nc_ht=scontent-ham3-1.cdninstagram.com&_nc_cat=106&_nc_oc=Q6cZ2gEHcbvqcPkEzvd7ORpNBAvtkCZ9l_2_kbA2vlKL9g2Btak-tBNf-bXJCOCsvY39t_c&_nc_ohc=FfaGlgxt2xsQ7kNvwGufWM0&_nc_gid=MzvRIvZk_ZYabwtPC5LEvw&edm=APs17CUBAAAA&ccb=7-5&ig_cache_key=Mzg2NTcyMjQ4OTQ0MzgxMDc3NA%3D%3D.3-ccb7-5&oh=00_Af2wq8SDdyXJ_249GfcIOzVFvvVnNTMviaNTrfKO9087jQ&oe=69D31FD4&_nc_sid=10d13b",
+      "type": "image"
+    }
+  ],
+  "note": "AI가 코드를 3배 빠르게 생성하는 시대에 기존 코드 리뷰 방식의 한계를 지적하며, Qodo의 Nnenna Ndukwe가 제안한 2026년 AI 코드 리뷰 5가지 패턴을 한국어로 상세히 풀어 설명하는 Threads 스레드다.\n①맥락 우선(Context-First): 히스토리·아키텍처 문서를 먼저 수집해 리뷰 시작, ②중요도 기반(Severity-Driven): 필수 수정/권장/사소한 제안으로 등급 분류, ③전문가 에이전트(Specialist-Agent): 보안·성능·정확성 에이전트 분업 후 조율, ④기여 추적(Attribution-Based): 제안 수용 여부 추적으로 시스템이 자기 학습, ⑤흐름 연결(Flow-to-Fix): 발견에서 수정·재검증까지 단일 루프로 연결.\n핵심 관점은 'AI를 리뷰에 추가'하는 게 아니라 '리뷰 자체를 재설계'하는 것이다.\n\n인사이트\nAI 생성 코드 증가로 리뷰 병목이 심각해지는 상황에서 리뷰 프로세스 자체의 재설계 필요성을 명확히 짚는다.",
+  "removed": false,
+  "sort": 1668754545,
+  "tags": [
+    "ai",
+    "ai-dev",
+    "ai-workflow",
+    "ai-agent",
+    "context-engineering"
+  ],
+  "title": "엉클잡스 | Ai 시대, 돈이 되는 정보 전달 (@unclejobs.ai) on Threads",
+  "type": "link",
+  "user": {
+    "$id": 724603,
+    "$ref": "users"
+  }
+}

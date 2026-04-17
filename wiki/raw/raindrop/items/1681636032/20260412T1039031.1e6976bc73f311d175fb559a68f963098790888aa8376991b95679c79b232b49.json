@@ -1,0 +1,41 @@
+{
+  "_id": 1681636032,
+  "collection": {
+    "$id": -1,
+    "$ref": "collections",
+    "oid": -1
+  },
+  "collectionId": -1,
+  "cover": "https://scontent-dus1-1.cdninstagram.com/v/t51.82787-15/662855054_17937879591207210_3234066700838926732_n.jpg?stp=cp6_dst-jpg_e35_tt6&_nc_cat=101&ig_cache_key=Mzg3Mjk4Njk4MTA2NDA4MDg5Mg%3D%3D.3-ccb7-5&ccb=7-5&_nc_sid=58cdad&efg=eyJ2ZW5jb2RlX3RhZyI6InhwaWRzLjE3MjB4MTQzOS5zZHIuQzMifQ%3D%3D&_nc_ohc=Z0D3JD_qmDwQ7kNvwFKDoLJ&_nc_oc=Adpjp5AnSNLn_0Yggs0yAIJgccMMNHPD8Sqa42SWk4g5EKLsgiZ9ZFyCPRr_GxkBhL8&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=scontent-dus1-1.cdninstagram.com&_nc_gid=2_UhHSdtXXisUm42bOh_5Q&_nc_ss=7a32e&oh=00_Af0_J2ASOWgTNasD4MKW1LwH3lHNktfHv3rQnsrtBLQrlQ&oe=69E0FFA6",
+  "created": "2026-04-12T05:29:41.414Z",
+  "creatorRef": {
+    "_id": 724603,
+    "avatar": "",
+    "email": "",
+    "name": "kangsazang"
+  },
+  "domain": "threads.com",
+  "excerpt": "디자인은 정답이 없어서 AI가 어려워합니다.\n그러니 정답을 만들어주면 됩니다.\n\nAwesome Design MD라는 오픈소스예요.\nApple, Spotify, Stripe, IBM, NVIDIA 등\n55개 이상 글로벌 브랜드의 디자인 시스템을\nDESIGN.md라는 마크다운 파일 하나에 담았습니다.\n\n색상 코드, 폰트, 간격, 버튼 스타일, 레이아웃 패턴까지\n정확한 수치로 들어 있어요.\n\n프로젝트 폴더에 파일 하나 넣고\nClaude Code에 \"이 스펙대로 만들어\"라고 하면 끝.\n\n바이브 디자인을 위해 준비했습니다.",
+  "highlights": [],
+  "important": false,
+  "lastUpdate": "2026-04-12T10:39:03.136Z",
+  "link": "https://www.threads.com/@unclejobs.ai/post/DW_nSOqCX38?xmt=AQF0QZ6emfUoT2WyjLucvqWXddMl1-vLWURjLkiPu_jYmOKyR3pe9eQ6vCgEtC6XTp3yjgc&slof=1",
+  "media": [
+    {
+      "link": "https://scontent-dus1-1.cdninstagram.com/v/t51.82787-15/662855054_17937879591207210_3234066700838926732_n.jpg?stp=cp6_dst-jpg_e35_tt6&_nc_cat=101&ig_cache_key=Mzg3Mjk4Njk4MTA2NDA4MDg5Mg%3D%3D.3-ccb7-5&ccb=7-5&_nc_sid=58cdad&efg=eyJ2ZW5jb2RlX3RhZyI6InhwaWRzLjE3MjB4MTQzOS5zZHIuQzMifQ%3D%3D&_nc_ohc=Z0D3JD_qmDwQ7kNvwFKDoLJ&_nc_oc=Adpjp5AnSNLn_0Yggs0yAIJgccMMNHPD8Sqa42SWk4g5EKLsgiZ9ZFyCPRr_GxkBhL8&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=scontent-dus1-1.cdninstagram.com&_nc_gid=2_UhHSdtXXisUm42bOh_5Q&_nc_ss=7a32e&oh=00_Af0_J2ASOWgTNasD4MKW1LwH3lHNktfHv3rQnsrtBLQrlQ&oe=69E0FFA6",
+      "type": "image"
+    }
+  ],
+  "note": "",
+  "removed": false,
+  "sort": 1681636032,
+  "tags": [
+    "접근불가"
+  ],
+  "title": "엉클잡스 | Ai 시대, 돈이 되는 정보 전달 (@unclejobs.ai) on Threads",
+  "type": "link",
+  "user": {
+    "$id": 724603,
+    "$ref": "users"
+  }
+}

@@ -1,0 +1,46 @@
+{
+  "_id": 1655839637,
+  "collection": {
+    "$id": 68757538,
+    "$ref": "collections",
+    "oid": 68757538
+  },
+  "collectionId": 68757538,
+  "cover": "https://scontent-fra5-1.cdninstagram.com/v/t51.82787-19/649362770_17878381902507614_3409580000121196331_n.jpg?stp=dst-jpg_s640x640_tt6&efg=eyJ2ZW5jb2RlX3RhZyI6InByb2ZpbGVfcGljLmRqYW5nby4xMDI0LmMyIn0&_nc_ht=scontent-fra5-1.cdninstagram.com&_nc_cat=102&_nc_oc=Q6cZ2gGPtDw_gdipvBwZS_uEowhLAIF9o5-SLr2jF2JqWm0wtZrveNBfA20D611g3Fw0ETU&_nc_ohc=W2VeLT70Wn8Q7kNvwHMm7fe&_nc_gid=Z7o7era6inzxDZcHUASZsw&edm=APs17CUBAAAA&ccb=7-5&oh=00_Afx8a5cFOAHIKeH2Mbjg74SZnV4JlX7S3J32EfFdEBcCeg&oe=69C83228&_nc_sid=10d13b",
+  "created": "2026-03-24T10:58:35.867Z",
+  "creatorRef": {
+    "_id": 724603,
+    "avatar": "",
+    "email": "",
+    "name": "kangsazang"
+  },
+  "domain": "threads.com",
+  "excerpt": "https://github.com/lightpanda-io/browser\n\n스래드에서 보고 사용했는데 진짜 좋아 으응으음청 빨라 쵝오야\n대신 web api 부족과 cdp 모드가 한계(헤드리스라서 다 걸림)\n단순 스크래핑용으로는 좋음 로그인 같은 로직 힘듦",
+  "highlights": [],
+  "important": false,
+  "lastUpdate": "2026-03-26T00:18:58.012Z",
+  "link": "https://www.threads.com/@keke_appa/post/DWP8Li-Ei-O?xmt=AQF04yuqxJCTv-XbP8FGwt9wd83a7GNXE-Xt7OB7YSAPKE7hXcM19QIAPUBzFCcOpnwlKywA&slof=1",
+  "media": [
+    {
+      "link": "https://scontent-fra5-1.cdninstagram.com/v/t51.82787-19/649362770_17878381902507614_3409580000121196331_n.jpg?stp=dst-jpg_s640x640_tt6&efg=eyJ2ZW5jb2RlX3RhZyI6InByb2ZpbGVfcGljLmRqYW5nby4xMDI0LmMyIn0&_nc_ht=scontent-fra5-1.cdninstagram.com&_nc_cat=102&_nc_oc=Q6cZ2gGPtDw_gdipvBwZS_uEowhLAIF9o5-SLr2jF2JqWm0wtZrveNBfA20D611g3Fw0ETU&_nc_ohc=W2VeLT70Wn8Q7kNvwHMm7fe&_nc_gid=Z7o7era6inzxDZcHUASZsw&edm=APs17CUBAAAA&ccb=7-5&oh=00_Afx8a5cFOAHIKeH2Mbjg74SZnV4JlX7S3J32EfFdEBcCeg&oe=69C83228&_nc_sid=10d13b",
+      "type": "image"
+    }
+  ],
+  "note": "Lightpanda(lightpanda-io/browser)는 Chromium 포크가 아닌 Zig 언어로 처음부터 새로 작성된 오픈소스 헤드리스 브라우저로, AI 에이전트와 자동화를 위해 설계되었다.\nChrome 대비 메모리 9배 절감, 실행 속도 11배 향상을 표방하며 JavaScript 실행과 즉시 시작(instant startup)이 강점이다.\nPlaywright·Puppeteer 호환을 위한 CDP는 현재 WIP(작업 중) 상태로, 헤드리스 특성상 로그인이 필요한 시나리오나 복잡한 Web API 의존 페이지에서는 한계가 있다.\n현재 베타로 Linux x86_64·macOS aarch64를 지원하며 Docker 이미지도 제공된다.\n\n메모: Chromium 기반 도구의 높은 메모리·CPU 부담이 AI 에이전트 워크플로우에서 병목이 되는 경우, Lightpanda는 실용적인 대안이다.\n분류: 지식\n태그: ai, ai-infra, scraping, automation, headless-browser, ai-dev",
+  "removed": false,
+  "sort": 1656522688,
+  "tags": [
+    "ai",
+    "ai-infra",
+    "scraping",
+    "automation",
+    "headless-browser",
+    "ai-dev"
+  ],
+  "title": "keke (@keke_appa) on Threads",
+  "type": "link",
+  "user": {
+    "$id": 724603,
+    "$ref": "users"
+  }
+}

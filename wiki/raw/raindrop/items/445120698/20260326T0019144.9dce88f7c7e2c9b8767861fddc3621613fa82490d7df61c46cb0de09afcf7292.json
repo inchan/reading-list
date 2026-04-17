@@ -1,0 +1,50 @@
+{
+  "_id": 445120698,
+  "collection": {
+    "$id": 68738561,
+    "$ref": "collections",
+    "oid": 68738561
+  },
+  "collectionId": 68738561,
+  "cover": "https://www.dogdrip.net/files/attach/xeicon/default_image.png?20211119094908",
+  "created": "2022-09-13T02:19:20.791Z",
+  "creatorRef": {
+    "_id": 724603,
+    "avatar": "",
+    "email": "",
+    "name": "kangsazang"
+  },
+  "domain": "dogdrip.net",
+  "excerpt": "Video: Dr. Weil's Breathing Exercises: 4-7-8 Breath (drweil.com)",
+  "highlights": [],
+  "important": false,
+  "lastUpdate": "2026-03-26T00:19:14.422Z",
+  "link": "https://www.dogdrip.net/419366619",
+  "media": [
+    {
+      "link": "https://www.dogdrip.net/files/attach/xeicon/default_image.png?20211119094908",
+      "type": "image"
+    },
+    {
+      "link": "https://www.dogdrip.net/dvs/d/22/07/19/dc3c9def2039e508677eb009a9706646.jpg",
+      "type": "image"
+    },
+    {
+      "link": "https://www.dogdrip.net/dvs/d/22/07/19/44caf424501eb7c04b1dfdaed81d5bd0.jpg",
+      "type": "image"
+    }
+  ],
+  "note": "Dr.\nAndrew Weil이 개발한 4-7-8 호흡법을 소개하는 게시물.\n4초간 코로 흡입, 7초간 숨 유지, 8초간 입으로 배출하는 리듬으로 부교감신경계를 활성화하여 수면을 유도하는 방법이다.\n요가의 프라나야마에서 유래했으며, Cleveland Clinic과 WebMD 등 의료기관에서도 효과를 인정하고 있다.\n\n메모: 과학적 근거가 있는 수면 유도 호흡법.\n제안: 미정\n태그: 수면, 호흡법, 건강, 웰빙\n상태: #대기중",
+  "removed": false,
+  "sort": 981280216,
+  "tags": [
+    "잠",
+    "수면"
+  ],
+  "title": "잠이 잘 온다는 4-7-8 호흡법.jpg - DogDrip.Net 개드립",
+  "type": "link",
+  "user": {
+    "$id": 724603,
+    "$ref": "users"
+  }
+}

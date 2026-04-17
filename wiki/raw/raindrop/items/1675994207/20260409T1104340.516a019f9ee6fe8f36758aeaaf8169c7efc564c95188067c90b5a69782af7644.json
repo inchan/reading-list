@@ -1,0 +1,47 @@
+{
+  "_id": 1675994207,
+  "collection": {
+    "$id": 68757539,
+    "$ref": "collections",
+    "oid": 68757539
+  },
+  "collectionId": 68757539,
+  "cover": "https://opengraph.githubassets.com/951c4cc922a06e084626073a1e837907f9e575a6061be274241e8f1a98e26092/tobi/qmd",
+  "created": "2026-04-07T16:22:00.574Z",
+  "creatorRef": {
+    "_id": 724603,
+    "avatar": "",
+    "email": "",
+    "name": "kangsazang"
+  },
+  "domain": "github.com",
+  "excerpt": "mini cli search engine for your docs, knowledge bases, meeting notes, whatever. Tracking current sota approaches while being all local - tobi/qmd",
+  "highlights": [],
+  "important": false,
+  "lastUpdate": "2026-04-09T11:04:34.018Z",
+  "link": "https://github.com/tobi/qmd",
+  "media": [
+    {
+      "link": "https://opengraph.githubassets.com/951c4cc922a06e084626073a1e837907f9e575a6061be274241e8f1a98e26092/tobi/qmd",
+      "type": "image"
+    }
+  ],
+  "note": "qmd는 마크다운 문서, 회의록, 지식베이스 등을 로컬에서 인덱싱하고 검색하는 CLI 도구로, BM25 전문 검색·벡터 의미 검색·LLM 재랭킹을 결합한 하이브리드 파이프라인을 완전 로컬에서 실행한다.\n파인튜닝된 1.7B 쿼리 확장 모델로 쿼리 변형을 생성해 병렬 검색 후 RRF(Reciprocal Rank Fusion)로 합산하고 Qwen3-Reranker로 최종 재랭킹한다.\nnode-llama-cpp를 통해 세 종류의 GGUF 모델(임베딩·재랭킹·쿼리 확장)을 HuggingFace에서 자동 다운로드해 로컬 실행하며, AST 기반 코드 청킹, MCP 서버, Claude Code 플러그인, HTTP transport 데몬 모드 등 에이전트 워크플로우 통합도 잘 갖춰져 있다.\nSDK로도 제공되어 Node.js/Bun 애플리케이션에 직접 임베드할 수 있다.\n\n인사이트\n쿼리 확장 모델을 직접 파인튜닝한 점이 일반 RAG 도구와의 핵심 차별점이다.",
+  "removed": false,
+  "sort": 1676288169,
+  "tags": [
+    "ai",
+    "claude",
+    "rag",
+    "context-engineering",
+    "mcp",
+    "ai-infra",
+    "ai-dev"
+  ],
+  "title": "tobi/qmd: mini cli search engine for your docs, knowledge bases, meeting notes, whatever. Tracking current sota approaches while being all local",
+  "type": "link",
+  "user": {
+    "$id": 724603,
+    "$ref": "users"
+  }
+}

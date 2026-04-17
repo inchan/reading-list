@@ -1,0 +1,58 @@
+{
+  "_id": 400250040,
+  "collection": {
+    "$id": 25090102,
+    "$ref": "collections",
+    "oid": 25090102
+  },
+  "collectionId": 25090102,
+  "cover": "https://blogthumb.pstatic.net/MjAyMjA1MThfMTk1/MDAxNjUyODU0NDQ3NTAz.0SiTWElWhKl-5hh25YaEVhvzxKm4fomaeA0KHp_AjScg.eavXlAQPhBzMPVPqjXsw19jgnE-2WeX23wBXMEFvXQkg.JPEG.victory2633/KakaoTalk_20220518_125810416.jpg?type=w2",
+  "created": "2022-06-01T01:59:43.368Z",
+  "creatorRef": {
+    "_id": 724603,
+    "avatar": "",
+    "email": "",
+    "name": "kangsazang"
+  },
+  "domain": "m.blog.naver.com",
+  "excerpt": "안녕하세요 오늘은 단양 맛집으로 유명한 향미식당을 방문했습니다. 향미식당은 삼대천왕에 탕수육 맛집으...",
+  "highlights": [],
+  "important": false,
+  "lastUpdate": "2026-03-22T15:38:14.469Z",
+  "link": "https://m.blog.naver.com/victory2633/222737233371",
+  "media": [
+    {
+      "link": "https://blogthumb.pstatic.net/MjAyMjA1MThfMTk1/MDAxNjUyODU0NDQ3NTAz.0SiTWElWhKl-5hh25YaEVhvzxKm4fomaeA0KHp_AjScg.eavXlAQPhBzMPVPqjXsw19jgnE-2WeX23wBXMEFvXQkg.JPEG.victory2633/KakaoTalk_20220518_125810416.jpg?type=w2",
+      "type": "image"
+    },
+    {
+      "link": "https://mblogthumb-phinf.pstatic.net/MjAyMjA1MThfMTk1/MDAxNjUyODU0NDQ3NTAz.0SiTWElWhKl-5hh25YaEVhvzxKm4fomaeA0KHp_AjScg.eavXlAQPhBzMPVPqjXsw19jgnE-2WeX23wBXMEFvXQkg.JPEG.victory2633/SE-6cf6bfdb-9a55-46fc-a88d-d02a10b37a84.jpg?type=w800",
+      "type": "image"
+    },
+    {
+      "link": "https://simg.pstatic.net/static.map/v2/map/staticmap.bin?caller=smarteditor&markers=color%3A0x11cc73%7Csize%3Amid%7Cpos%3A128.3037546%2037.0298254%7CviewSizeRatio%3A0.6%7Ctype%3Ad&w=700&h=315&scale=1&dataversion=165.82",
+      "type": "image"
+    },
+    {
+      "link": "https://mblogthumb-phinf.pstatic.net/MjAyMjA1MThfMjU4/MDAxNjUyODU0ODY3MjQ4.yD--j-XMxXNquy-qZygOcdmtgy5JrFfBAmK-hyxG5EIg.eB7buUU5jXnqzto8t0x2Y_g7mje318aggaFIFequtWgg.JPEG.victory2633/KakaoTalk_20220518_125810416_03.jpg?type=w800",
+      "type": "image"
+    },
+    {
+      "link": "https://mblogthumb-phinf.pstatic.net/MjAyMjA1MThfMTMx/MDAxNjUyODU0NzY0MTQz.78fEI9HqRgjarbzjRviJ-CiSgpFiQLdEEPe0GtkVD-Yg.jOpKSUwMFdXKC6l1Qzn16Mmsj83Ul1xfYZhwIymLWGYg.JPEG.victory2633/KakaoTalk_20220518_125810416_05.jpg?type=w800",
+      "type": "image"
+    }
+  ],
+  "note": "",
+  "removed": false,
+  "sort": 434689934,
+  "tags": [
+    "단양",
+    "맛집"
+  ],
+  "title": "[단양] 3대천왕에 나온 웨이팅 맛집 \"향미식당\"",
+  "type": "link",
+  "user": {
+    "$id": 724603,
+    "$ref": "users"
+  }
+}

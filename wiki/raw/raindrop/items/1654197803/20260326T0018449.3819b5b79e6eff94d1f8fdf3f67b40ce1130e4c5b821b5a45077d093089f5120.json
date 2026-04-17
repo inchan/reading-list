@@ -1,0 +1,45 @@
+{
+  "_id": 1654197803,
+  "collection": {
+    "$id": 68757539,
+    "$ref": "collections",
+    "oid": 68757539
+  },
+  "collectionId": 68757539,
+  "cover": "https://scontent-fra5-2.cdninstagram.com/v/t51.82787-15/654973924_17954316699097674_8305234327001534303_n.jpg?stp=dst-jpg_e35_tt6&efg=eyJ2ZW5jb2RlX3RhZyI6InRocmVhZHMuQ0FST1VTRUxfSVRFTS5pbWFnZV91cmxnZW4uMTAzN3gxMjE2LnNkci5mODI3ODcuZGVmYXVsdF9pbWFnZS5jMiJ9&_nc_ht=scontent-fra5-2.cdninstagram.com&_nc_cat=106&_nc_oc=Q6cZ2gEVtqaRowXDTx0Y6x1uenZDh7KaQBR8yxkQMfdvXKE2WWgPCjta62_P3u6EQOREoV4&_nc_ohc=E6pYb3dftmoQ7kNvwEiLi8E&_nc_gid=fXdmh1FtyicTon-AlKko7Q&edm=APs17CUBAAAA&ccb=7-5&ig_cache_key=Mzg1ODM5Mjk4NDYxOTA0NjI3NQ%3D%3D.3-ccb7-5&oh=00_AfxwlGsY6XTUT9LrmOUudwXxRHXqu83LKdBjAuUPkdcXTw&oe=69C6A4B4&_nc_sid=10d13b",
+  "created": "2026-03-23T04:38:13.758Z",
+  "creatorRef": {
+    "_id": 724603,
+    "avatar": "",
+    "email": "",
+    "name": "kangsazang"
+  },
+  "domain": "threads.com",
+  "excerpt": "별로 놀랄일이 아닐 수 있으나\npaper-banana라는 논문이 있음. \n그리고 이 내용은 오픈소스로 구현되어 있음.\nhttps://github.com/llmsresearch/paperbanana\n방식은 자세히는 읽어보지 않아서 틀릴수 있겠으나, \n논문 방법을 제공하면, 여기에 어떤그림을 그릴지를 프롬프팅해서 프롬프트가 나오고, 그를 바탕으로 사진을 그린뒤, 사진을 보고 critic을 하고 수정 - 수정 - 해서 마지막 3번정도 그림을 그려서 결론을 내는것으로 알고 있음. \n보고 음 좋은아이디어네~ 하고 지나갔다가 다시 오늘 생각이남.\n아 이것도 skill로 등록이 가능하지 않을까? \n그리고 했더니 아주 잘 등록이 됐다. \n\n사실 이 인스톨이 뭔가 심리적 장벽이기도 하고, pip 로 깔면 이게 그 환경설정도 맞춰줘야되고, 코딩 못하는 사람은 여간 심리적 장벽이 아닐 수 없는데, 클로드 코드에서는 작동 가능함 \n\n아래 이어서..",
+  "highlights": [],
+  "important": false,
+  "lastUpdate": "2026-03-26T00:18:44.986Z",
+  "link": "https://www.threads.com/@ed_hjpark/post/DWLw_tpEynm?xmt=AQF0j7P62JxIFNj5X0Ti3kdcD2K374YEZMFNB5Xn0oftLYH7YC7Npm2vI-VmzzpXFyB1FGI&slof=1",
+  "media": [
+    {
+      "link": "https://scontent-fra5-2.cdninstagram.com/v/t51.82787-15/654973924_17954316699097674_8305234327001534303_n.jpg?stp=dst-jpg_e35_tt6&efg=eyJ2ZW5jb2RlX3RhZyI6InRocmVhZHMuQ0FST1VTRUxfSVRFTS5pbWFnZV91cmxnZW4uMTAzN3gxMjE2LnNkci5mODI3ODcuZGVmYXVsdF9pbWFnZS5jMiJ9&_nc_ht=scontent-fra5-2.cdninstagram.com&_nc_cat=106&_nc_oc=Q6cZ2gEVtqaRowXDTx0Y6x1uenZDh7KaQBR8yxkQMfdvXKE2WWgPCjta62_P3u6EQOREoV4&_nc_ohc=E6pYb3dftmoQ7kNvwEiLi8E&_nc_gid=fXdmh1FtyicTon-AlKko7Q&edm=APs17CUBAAAA&ccb=7-5&ig_cache_key=Mzg1ODM5Mjk4NDYxOTA0NjI3NQ%3D%3D.3-ccb7-5&oh=00_AfxwlGsY6XTUT9LrmOUudwXxRHXqu83LKdBjAuUPkdcXTw&oe=69C6A4B4&_nc_sid=10d13b",
+      "type": "image"
+    }
+  ],
+  "note": "llmsresearch/paperbanana는 Google Research의 학술 논문(arXiv:2601.23265)을 기반으로 한 오픈소스 구현체로, Retriever·Planner·Stylist·Visualizer·Critic 5개 전문 에이전트가 협업하여 출판 수준의 학술 그림과 다이어그램을 자동 생성한다.\nMatplotlib 실행 코드를 직접 생성하는 방식으로 수치 환각 문제를 원천 차단하며, 색상·타이포그래피·간격 등 심미적 요소도 자동으로 최적화한다.\nMCP 서버(generate_diagram, generate_plot, evaluate_diagram)와 3개의 Claude Code 스킬로 즉시 통합 가능하다.\nNeurIPS 2025 논문 292개로 구성된 PaperBananaBench에서 충실성·간결성·가독성·심미성 모든 차원에서 기존 기준선을 능가했다.\n\n메모: 그림 제작이라는 연구 워크플로우의 병목을 자동화하여 AI 과학자 시스템의 완성도를 높이는 핵심 구성 요소다.\n분류: 아티펙트\n태그: academic, paper-figure, ai-generation, mcp, claude-code",
+  "removed": false,
+  "sort": 1654523537,
+  "tags": [
+    "academic",
+    "paper-figure",
+    "ai-generation",
+    "mcp",
+    "claude-code"
+  ],
+  "title": "박형준 (@ed_hjpark) on Threads",
+  "type": "link",
+  "user": {
+    "$id": 724603,
+    "$ref": "users"
+  }
+}

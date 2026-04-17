@@ -1,0 +1,60 @@
+{
+  "_id": 1215186163,
+  "collection": {
+    "$id": 26972538,
+    "$ref": "collections",
+    "oid": 26972538
+  },
+  "collectionId": 26972538,
+  "cover": "https://edgio.clien.net/F01/15481461/71fabfeae2064c.jpeg",
+  "created": "2025-07-03T23:24:36.762Z",
+  "creatorRef": {
+    "_id": 724603,
+    "avatar": "",
+    "email": "",
+    "name": "kangsazang"
+  },
+  "domain": "m.clien.net",
+  "excerpt": "동생가족과 함께 방문한 칼국수가게입니다. 동생집에서 점심 먹으려다 외식하자고 해서 갔구요. 돈생네가 전에 한번 갔었는데 맛있었다고 해서 갔는데 과연 맛있었습니다. 조카가 있는데 사장님이 너무 귀여워해 주셨구요. 아기 먹이라고 작은 음식들도 준비해 주셨습니다. 해물칼국수에 코다리보리밥비빔밥도 시켜 먹었는데요. 다음에 오게 되면 코다리모듬찜도 궁금하네요.",
+  "highlights": [],
+  "important": false,
+  "lastUpdate": "2026-03-26T00:17:34.848Z",
+  "link": "https://m.clien.net/service/board/park/19017207?od=T31&po=1&category=0&groupCd=",
+  "media": [
+    {
+      "link": "https://edgio.clien.net/F01/15481461/71fabfeae2064c.jpeg",
+      "type": "image"
+    },
+    {
+      "link": "https://edgio.clien.net/F01/15481461/71fabfeae2064c.jpeg?scale=width:480",
+      "type": "image"
+    },
+    {
+      "link": "https://edgio.clien.net/F01/15481462/71fac09c4d973b.jpeg?scale=width:480",
+      "type": "image"
+    },
+    {
+      "link": "https://edgio.clien.net/F01/15481463/71fac147e5a65e.jpeg?scale=width:480",
+      "type": "image"
+    },
+    {
+      "link": "https://edgio.clien.net/F01/15481464/71fac1c6848f7e.jpeg?scale=width:480",
+      "type": "image"
+    }
+  ],
+  "note": "동생가족과 함께 방문한 칼국수가게입니다.\n동생집에서 점심 먹으려다 외식하자고 해서 갔구요.\n돈생네가 전에 한번 갔었는데 맛있었다고 해서 갔는데 과연 맛있었습니다.\n조카가 있는데 사장님이 너무 귀여워해 주셨구요.\n\n메모: 기존 report 본문이 남아 있지 않아 저장 시점 제목, excerpt, 태그를 기준으로 복구한 note입니다.\n원문: 전북 익산시 대왕해물손칼국수. : 클리앙\n태그: 익산, 칼국수, 해물, 전북맛집\n상태: 복구노트",
+  "removed": false,
+  "sort": 1651703204,
+  "tags": [
+    "익산",
+    "칼국수",
+    "해물",
+    "전북맛집"
+  ],
+  "title": "전북 익산시 대왕해물손칼국수. : 클리앙",
+  "type": "link",
+  "user": {
+    "$id": 724603,
+    "$ref": "users"
+  }
+}

@@ -1,0 +1,50 @@
+{
+  "_id": 857568897,
+  "collection": {
+    "$id": 20521420,
+    "$ref": "collections",
+    "oid": 20521420
+  },
+  "collectionId": 20521420,
+  "cover": "https://www.dogdrip.net/dvs/d/24/01/26/29cf708c265b9bbde9b27a4fda9aa590.jpeg",
+  "created": "2024-09-20T03:06:10.655Z",
+  "creatorRef": {
+    "_id": 724603,
+    "avatar": "",
+    "email": "",
+    "name": "kangsazang"
+  },
+  "domain": "dogdrip.net",
+  "excerpt": "",
+  "highlights": [],
+  "important": false,
+  "lastUpdate": "2026-03-22T22:51:51.919Z",
+  "link": "https://www.dogdrip.net/536012302",
+  "media": [
+    {
+      "link": "https://www.dogdrip.net/dvs/d/24/01/26/29cf708c265b9bbde9b27a4fda9aa590.jpeg",
+      "type": "image"
+    },
+    {
+      "link": "https://www.dogdrip.net/dvs/d/24/01/26/245e2210da4d3ea6318e11fa6f268192.jpeg",
+      "type": "image"
+    }
+  ],
+  "note": "",
+  "reminder": {
+    "date": null
+  },
+  "removed": false,
+  "sort": 857568895,
+  "tags": [
+    "레시피",
+    "류수영",
+    "돼지갈비찜"
+  ],
+  "title": "류수영 - 돼지갈비찜",
+  "type": "article",
+  "user": {
+    "$id": 724603,
+    "$ref": "users"
+  }
+}

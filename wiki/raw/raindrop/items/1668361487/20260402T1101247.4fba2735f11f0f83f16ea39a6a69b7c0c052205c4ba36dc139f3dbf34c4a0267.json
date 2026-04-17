@@ -1,0 +1,63 @@
+{
+  "_id": 1668361487,
+  "collection": {
+    "$id": 68757539,
+    "$ref": "collections",
+    "oid": 68757539
+  },
+  "collectionId": 68757539,
+  "cover": "https://opengraph.githubassets.com/5a5b1c9310793e507d27448dd823d2033fe49f6ec33a1ad86c2be3e397d61bf3/mvanhorn/last30days-skill",
+  "created": "2026-04-01T16:06:25.384Z",
+  "creatorRef": {
+    "_id": 724603,
+    "avatar": "",
+    "email": "",
+    "name": "kangsazang"
+  },
+  "domain": "github.com",
+  "excerpt": "AI agent skill that researches any topic across Reddit, X, YouTube, HN, Polymarket, and the web - then synthesizes a grounded summary - mvanhorn/last30days-skill",
+  "highlights": [],
+  "important": false,
+  "lastUpdate": "2026-04-02T11:01:24.739Z",
+  "link": "https://github.com/mvanhorn/last30days-skill",
+  "media": [
+    {
+      "link": "https://opengraph.githubassets.com/5a5b1c9310793e507d27448dd823d2033fe49f6ec33a1ad86c2be3e397d61bf3/mvanhorn/last30days-skill",
+      "type": "image"
+    },
+    {
+      "link": "https://github.com/mvanhorn/last30days-skill/raw/main/assets/swimmom-mockup.jpeg",
+      "type": "image"
+    },
+    {
+      "link": "https://github.com/mvanhorn/last30days-skill/raw/main/assets/dog-original.jpeg",
+      "type": "image"
+    },
+    {
+      "link": "https://github.com/mvanhorn/last30days-skill/raw/main/assets/dog-as-human.png",
+      "type": "image"
+    },
+    {
+      "link": "https://github.com/mvanhorn/last30days-skill/raw/main/assets/aging-portrait.jpeg",
+      "type": "image"
+    }
+  ],
+  "note": "last30days-skill은 어떤 주제든 Reddit, X(트위터), YouTube, Hacker News, Polymarket, Bluesky, TikTok, Instagram 등 최대 10개 소스에서 최근 30일간의 정보를 수집·분석·요약해주는 Claude Code 스킬이다.\nv2.9.5 기준 17.4k GitHub 스타를 보유한 인기 오픈소스 프로젝트로, `/plugin marketplace add mvanhorn/last30days-skill` 한 줄로 설치할 수 있다.\nPolymarket 예측 시장 데이터와 HN 커뮤니티 반응을 결합한 다중 신호 품질 랭킹이 특징이며, X 핸들 자동 해석, 스마트 서브레딧 발견, 주제 비교 모드(comparative mode) 등 고급 기능을 제공한다.\nAPI 키 없이도 Reddit·HN·Polymarket 3개 소스를 즉시 사용 가능하며, Gemini CLI 및 OpenAI Codex CLI와도 호환된다.\n\n인사이트\n단순 검색 도구를 넘어 '커뮤니티가 실제로 관심을 갖고 베팅하는 것'을 파악하는 실시간 인텔리전스 도구다.",
+  "removed": false,
+  "sort": 1668361487,
+  "tags": [
+    "ai",
+    "claude",
+    "codex",
+    "gemini",
+    "ai-skills",
+    "ai-agent",
+    "ai-workflow"
+  ],
+  "title": "mvanhorn/last30days-skill: AI agent skill that researches any topic across Reddit, X, YouTube, HN, Polymarket, and the web - then synthesizes a grounded summary",
+  "type": "link",
+  "user": {
+    "$id": 724603,
+    "$ref": "users"
+  }
+}

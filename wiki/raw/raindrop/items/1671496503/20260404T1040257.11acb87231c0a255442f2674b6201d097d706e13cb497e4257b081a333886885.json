@@ -1,0 +1,46 @@
+{
+  "_id": 1671496503,
+  "collection": {
+    "$id": 68757538,
+    "$ref": "collections",
+    "oid": 68757538
+  },
+  "collectionId": 68757538,
+  "cover": "https://scontent-fra5-2.cdninstagram.com/v/t51.82787-15/658966800_17936822463207210_8998180818908333578_n.jpg?stp=dst-jpg_e35_tt6&efg=eyJ2ZW5jb2RlX3RhZyI6InRocmVhZHMuRkVFRC5pbWFnZV91cmxnZW4uMTIyNHg2MTYuc2RyLmY4Mjc4Ny5kZWZhdWx0X2ltYWdlLmMyIn0&_nc_ht=scontent-fra5-2.cdninstagram.com&_nc_cat=106&_nc_oc=Q6cZ2gG4NtXqJARNRmxuvZ8a0eUk2OCRcWS6kBFQx7rTPkL8_PmFZUOURNi3xGMJI9jnfI8&_nc_ohc=yB7YUs9OD9EQ7kNvwGCQDt6&_nc_gid=M3-_A4OrUp1okKa6EnJKwg&edm=APs17CUBAAAA&ccb=7-5&ig_cache_key=Mzg2NzYzNzAyODA0MTA4MTMxOA%3D%3D.3-ccb7-5&oh=00_Af33sBre7FLnJyYhCmtdv_GUIP0HGZY1unGcSo26RWK7Dw&oe=69D65FFE&_nc_sid=10d13b",
+  "created": "2026-04-04T05:53:51.680Z",
+  "creatorRef": {
+    "_id": 724603,
+    "avatar": "",
+    "email": "",
+    "name": "kangsazang"
+  },
+  "domain": "threads.com",
+  "excerpt": "지금 에이전트 스킬이 어떻게 작동하는지 보면요.\n\n`/frontend-design` 같은 슬래시 명령어를 사용자가 직접 입력합니다.\n\n스킬 텍스트가 컨텍스트 창 상단에 고정돼요.\n\n작업이 끝나면 빠집니다.",
+  "highlights": [],
+  "important": false,
+  "lastUpdate": "2026-04-04T10:40:25.703Z",
+  "link": "https://www.threads.com/@unclejobs.ai/post/DWsm2KoiUHm?xmt=AQF0srgkN0kRgh64DfOJvVIDs7Q8Tg083lKkUO1Q9q5r5SLJxtwGgZb--mluKJWPS7RozlVn&slof=1",
+  "media": [
+    {
+      "link": "https://scontent-fra5-2.cdninstagram.com/v/t51.82787-15/658966800_17936822463207210_8998180818908333578_n.jpg?stp=dst-jpg_e35_tt6&efg=eyJ2ZW5jb2RlX3RhZyI6InRocmVhZHMuRkVFRC5pbWFnZV91cmxnZW4uMTIyNHg2MTYuc2RyLmY4Mjc4Ny5kZWZhdWx0X2ltYWdlLmMyIn0&_nc_ht=scontent-fra5-2.cdninstagram.com&_nc_cat=106&_nc_oc=Q6cZ2gG4NtXqJARNRmxuvZ8a0eUk2OCRcWS6kBFQx7rTPkL8_PmFZUOURNi3xGMJI9jnfI8&_nc_ohc=yB7YUs9OD9EQ7kNvwGCQDt6&_nc_gid=M3-_A4OrUp1okKa6EnJKwg&edm=APs17CUBAAAA&ccb=7-5&ig_cache_key=Mzg2NzYzNzAyODA0MTA4MTMxOA%3D%3D.3-ccb7-5&oh=00_Af33sBre7FLnJyYhCmtdv_GUIP0HGZY1unGcSo26RWK7Dw&oe=69D65FFE&_nc_sid=10d13b",
+      "type": "image"
+    }
+  ],
+  "note": "AI 에이전트 스킬의 현재 작동 메커니즘을 다이어그램과 함께 설명하는 포스트로, 앞 포스트(ID 1671496610)의 연속이다.\n사용자가 슬래시 명령어를 입력하면 스킬 텍스트가 컨텍스트 창 상단에 고정되고, 에피소드 경계에서 해당 컨텍스트가 초기화된다.\n다이어그램은 스킬이 오케스트레이터가 아닌 스레드 내부에 존재하는 구조를 시각적으로 보여준다.\n이 아키텍처는 스킬의 위치, 우선순위, 생애주기를 명확하게 정의한다.\n\n인사이트\n스킬이 '컨텍스트 창 상단에 고정된 텍스트'로 동작한다는 구체적 메커니즘은 AI 에이전트 개발자에게 실용적인 인사이트를 제공한다.",
+  "removed": false,
+  "sort": 1671496700,
+  "tags": [
+    "ai",
+    "ai-agent",
+    "ai-skills",
+    "context-engineering",
+    "claude",
+    "harness-engineering"
+  ],
+  "title": "엉클잡스 | Ai 시대, 돈이 되는 정보 전달 (@unclejobs.ai) on Threads",
+  "type": "link",
+  "user": {
+    "$id": 724603,
+    "$ref": "users"
+  }
+}

@@ -1,0 +1,46 @@
+{
+  "_id": 1668040727,
+  "collection": {
+    "$id": 68757538,
+    "$ref": "collections",
+    "oid": 68757538
+  },
+  "collectionId": 68757538,
+  "cover": "https://scontent-dus1-1.cdninstagram.com/v/t51.2885-19/459513539_1309046770061690_1294675066508233673_n.jpg?stp=dst-jpg_s640x640_tt6&efg=eyJ2ZW5jb2RlX3RhZyI6InByb2ZpbGVfcGljLmRqYW5nby4xMDgwLmMyIn0&_nc_ht=scontent-dus1-1.cdninstagram.com&_nc_cat=102&_nc_oc=Q6cZ2gGGvIt_-h24k6DmKe_pyPuFVwvkdZ3Vad3h-x_vsspph7VIwWZazcpRGwYRn0uQ3Zg&_nc_ohc=w0Wbxl86tHMQ7kNvwE1Q6P3&_nc_gid=VqPA2yz_aqmzCy4dfefu2A&edm=APs17CUBAAAA&ccb=7-5&oh=00_Af1Uj8cJlgay62Br7PFYx47ew7KJooKL8OSz7hzMRuatxg&oe=69D2C3C5&_nc_sid=10d13b",
+  "created": "2026-04-01T08:48:21.294Z",
+  "creatorRef": {
+    "_id": 724603,
+    "avatar": "",
+    "email": "",
+    "name": "kangsazang"
+  },
+  "domain": "threads.com",
+  "excerpt": "Anthropic이 공식 블로그에서 AI 에이전트의 \"하네스 설계\"를 공개했음\n\n핵심: 아무리 똑똑한 모델이어도, 하네스 설계가 최종 결과물의 품질을 결정함\n\n📌 자기 평가의 한계 — AI한테 \"네가 만든 거 평가해봐\" 하면 항상 후한 점수를 줌. 만드는 AI와 평가하는 AI를 분리하는 게 핵심\n📌 GAN에서 영감 — Generator가 만들고, Evaluator가 실제 페이지를 돌아다니며 채점. 5~15번 반복하면서 품질이 올라감\n📌 3단 구조 → 다시 단순화 — Opus 4.5에선 Planner+Generator+Evaluator 3개가 필요했는데, Opus 4.6이 나오자 스프린트 분해를 통째로 제거\n📌 진짜 교훈 — \"하네스의 모든 부품은 모델이 혼자서 못하는 것에 대한 가정. 모델이 발전하면 그 가정을 재검증하라\"\n\nSolo 에이전트: 20분, $9 → 게임 플레이 안됨\nFull 하네스: 6시간, $200 → 완전히 동작하는 앱",
+  "highlights": [],
+  "important": false,
+  "lastUpdate": "2026-04-02T11:01:29.070Z",
+  "link": "https://www.threads.com/@working.ref/post/DWkpe4vgSNE?xmt=AQF0UTSEUKVJtHMriInNjoegOEA6BALFwCjdyVybTgXDowEVnlhQ9hoMktxGjVIJEDS_UGc&slof=1",
+  "media": [
+    {
+      "link": "https://scontent-dus1-1.cdninstagram.com/v/t51.2885-19/459513539_1309046770061690_1294675066508233673_n.jpg?stp=dst-jpg_s640x640_tt6&efg=eyJ2ZW5jb2RlX3RhZyI6InByb2ZpbGVfcGljLmRqYW5nby4xMDgwLmMyIn0&_nc_ht=scontent-dus1-1.cdninstagram.com&_nc_cat=102&_nc_oc=Q6cZ2gGGvIt_-h24k6DmKe_pyPuFVwvkdZ3Vad3h-x_vsspph7VIwWZazcpRGwYRn0uQ3Zg&_nc_ohc=w0Wbxl86tHMQ7kNvwE1Q6P3&_nc_gid=VqPA2yz_aqmzCy4dfefu2A&edm=APs17CUBAAAA&ccb=7-5&oh=00_Af1Uj8cJlgay62Br7PFYx47ew7KJooKL8OSz7hzMRuatxg&oe=69D2C3C5&_nc_sid=10d13b",
+      "type": "image"
+    }
+  ],
+  "note": "Anthropic 엔지니어링 블로그에서 공개한 장기 실행 AI 에이전트 하네스 설계 원칙을 요약한 Threads 게시물이다.\n핵심은 AI의 자기 평가 편향(자신이 만든 결과물을 항상 후하게 평가하는 현상)을 해결하기 위해 GAN에서 영감 받은 Generator+Evaluator 분리 구조를 도입했다는 것이다.\nEvaluator는 Playwright로 실제 페이지를 탐색하며 5~15회 반복 평가로 품질을 개선한다.\nOpus 4.5에서 Planner+Generator+Evaluator 3단 구조가 필요했으나 Opus 4.6에서 스프린트 분해 단계를 제거해 더 단순해졌다.\n\n인사이트\n핵심 교훈은 '하네스의 모든 부품은 모델이 혼자서 못하는 것에 대한 가정이며, 모델이 발전하면 그 가정을 재검증하라'는 것이다.",
+  "removed": false,
+  "sort": 1668754546,
+  "tags": [
+    "ai",
+    "claude",
+    "harness-engineering",
+    "ai-agent",
+    "ai-infra",
+    "context-engineering"
+  ],
+  "title": "@working.ref on Threads",
+  "type": "link",
+  "user": {
+    "$id": 724603,
+    "$ref": "users"
+  }
+}

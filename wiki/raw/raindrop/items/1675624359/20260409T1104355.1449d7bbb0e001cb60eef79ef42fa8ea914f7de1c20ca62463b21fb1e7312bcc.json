@@ -1,0 +1,45 @@
+{
+  "_id": 1675624359,
+  "collection": {
+    "$id": 68757538,
+    "$ref": "collections",
+    "oid": 68757538
+  },
+  "collectionId": 68757538,
+  "cover": "https://scontent-ber1-1.cdninstagram.com/v/t51.82787-15/660374581_17956942356114903_3921870025374317733_n.jpg?stp=dst-jpg_e35_tt6&efg=eyJ2ZW5jb2RlX3RhZyI6InRocmVhZHMuRkVFRC5pbWFnZV91cmxnZW4uMTE1NXg3MjAuc2RyLmY4Mjc4Ny5kZWZhdWx0X2ltYWdlLmMyIn0&_nc_ht=scontent-ber1-1.cdninstagram.com&_nc_cat=103&_nc_oc=Q6cZ2gHGDhRfTMdKP2Yuqcgu7ry5nBfKOB63vH91SpqbE1ZNZPw3x6UUAr05-fDonAbWkfY&_nc_ohc=gMjMQfMR6ioQ7kNvwGsE1To&_nc_gid=rrb_V4U2IWfwLAE4_NozDQ&edm=APs17CUBAAAA&ccb=7-5&ig_cache_key=Mzg2OTkyMjE2NTYyNTI1ODAxNw%3D%3D.3-ccb7-5&oh=00_Af0np20iEAFFaEYcCLRZRHS6GO6f0Go5VfWZ3ogNFxPTSQ&oe=69DA9A81&_nc_sid=10d13b",
+  "created": "2026-04-07T09:53:46.542Z",
+  "creatorRef": {
+    "_id": 724603,
+    "avatar": "",
+    "email": "",
+    "name": "kangsazang"
+  },
+  "domain": "threads.com",
+  "excerpt": "이번에 goal-driven-autoresearch-loop 스킬로 온라인 테트리스를 거의 사람 개입 없이 end-to-end로 구현해봤다.\n기획 문서 읽고, 구현하고, 테스트하고, 실패하면 수정하고, 다시 검증하는 루프를 Codex가 계속 돌게 한 방식.\n\n중간에 50분 쯤 돌았을 때 일이 있어 중단 했어야했지만\n총 2시간 40분 동안 돌며 서버부터 클라이언트까지 모두 완성했다.\n이상하게 동작하거나 버그는 없었다.",
+  "highlights": [],
+  "important": false,
+  "lastUpdate": "2026-04-09T11:04:35.580Z",
+  "link": "https://www.threads.com/@kyungju_benj/post/DW0ubS2gQAh?xmt=AQF01xqp-ksFqw4qYDUv0lvE7P_zxCaF1peCHAeJpJ3YNyz_e_tZUcaGNQwTzlW7KN8EoddG&slof=1",
+  "media": [
+    {
+      "link": "https://scontent-ber1-1.cdninstagram.com/v/t51.82787-15/660374581_17956942356114903_3921870025374317733_n.jpg?stp=dst-jpg_e35_tt6&efg=eyJ2ZW5jb2RlX3RhZyI6InRocmVhZHMuRkVFRC5pbWFnZV91cmxnZW4uMTE1NXg3MjAuc2RyLmY4Mjc4Ny5kZWZhdWx0X2ltYWdlLmMyIn0&_nc_ht=scontent-ber1-1.cdninstagram.com&_nc_cat=103&_nc_oc=Q6cZ2gHGDhRfTMdKP2Yuqcgu7ry5nBfKOB63vH91SpqbE1ZNZPw3x6UUAr05-fDonAbWkfY&_nc_ohc=gMjMQfMR6ioQ7kNvwGsE1To&_nc_gid=rrb_V4U2IWfwLAE4_NozDQ&edm=APs17CUBAAAA&ccb=7-5&ig_cache_key=Mzg2OTkyMjE2NTYyNTI1ODAxNw%3D%3D.3-ccb7-5&oh=00_Af0np20iEAFFaEYcCLRZRHS6GO6f0Go5VfWZ3ogNFxPTSQ&oe=69DA9A81&_nc_sid=10d13b",
+      "type": "image"
+    }
+  ],
+  "note": "goal-driven-autoresearch-loop 스킬을 사용해 Codex가 인간 개입 없이 end-to-end로 온라인 멀티플레이 테트리스를 구현한 실험 경험을 공유한다.\nChatGPT로 PRD와 기능 명세서를 작성하고, Codex가 구현→테스트→검증→수정 루프를 자율적으로 반복하는 방식으로 총 2시간 40분(중단 포함) 동안 서버부터 클라이언트까지 완성했다.\n컨텍스트 압축이 발생해도 진행 상황을 재확인하고 문서를 대조해 스스로 계획을 재수립하며 지속했다는 점이 특기할 만하다.\n작년 Claude Code + Opus로 시도했을 때는 멀티플레이 구현이 인간 개입 없이 불가능했으나 이번에는 완전 자율 구현에 성공해 AI 에이전트 코딩 능력의 실질적 도약을 체감할 수 있었다.\n\n인사이트\nPRD 문서를 단일 진실 원천(Single Source of Truth)으로 삼아 자율 루프를 구동하는 설계는 에이전트 드리프트를 방지하는 실용적 접근이다.",
+  "removed": false,
+  "sort": 1675624541,
+  "tags": [
+    "ai",
+    "codex",
+    "ai-workflow",
+    "ai-agent",
+    "ai-skills"
+  ],
+  "title": "Kyungju Lee (@kyungju_benj) on Threads",
+  "type": "link",
+  "user": {
+    "$id": 724603,
+    "$ref": "users"
+  }
+}

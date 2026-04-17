@@ -1,37 +1,95 @@
 # reading-list
 
-reading-list is shifting from a one-pass Raindrop summarizer into a persistent wiki-style knowledge project.
+reading-list is a Raindrop-to-wiki pipeline.
 
-Current direction:
-- sync raw data from Raindrop into immutable raw-source files
-- treat Raindrop as one source among multiple future source systems
-- compile durable wiki pages from raw sources instead of only writing one-off summaries
-- make the result readable like an LLM wiki / personal knowledge base
+The current codebase does one thing well:
+- sync raw source material from Raindrop into immutable snapshots under `wiki/raw/raindrop/`
+- queue newly seen raw sources for local Codex-assisted compilation
+- compile durable markdown wiki pages under `wiki/`
+- generate an RSS feed from the compiled wiki pages
 
-Working layers:
-- `wiki/raw/raindrop/` — immutable Raindrop sync snapshots and source material
-- `wiki/raw/sources/` — future non-Raindrop sources
+It does not currently implement the older bookmark-triage/reporting flow.
+
+## Active architecture
+
+Source of truth is the code, not the old migration notes.
+
+Runtime path:
+1. `.github/workflows/process-bookmarks.yml`
+2. `scripts/sync-raindrop-raw.sh`
+3. `scripts/lib/raindrop-api.sh`
+4. prompt-only local Codex compile inputs in `prompts/`
+5. compiled wiki output in `wiki/`
+6. `scripts/prepare-wiki-publish.sh` and `scripts/generate-wiki-rss.py`
+
+## Active directories
+
+- `config/settings.json` — minimal config used by the live raw-sync code
+- `scripts/` — deterministic Raindrop sync helpers
+- `prompts/` — prompt contracts used by the local Codex compile step
+- `tests/` — Bats tests for the live sync/helper behavior
+- `wiki/raw/raindrop/` — immutable synced source snapshots
 - `wiki/entities/`, `wiki/concepts/`, `wiki/comparisons/`, `wiki/queries/` — compiled wiki pages
-- `prompts/` — source analysis and wiki-ingestion prompts
-- `scripts/` — deterministic sync / batching / apply helpers
+- `wiki/index.md`, `wiki/log.md`, `wiki/SCHEMA.md`, `wiki/feed.xml`, `index.xml` — wiki navigation, schema, internal feed, and deployment RSS
+- `docs/codebase-status.md` — codebase-based project status and boundaries
 
-Current non-goal:
-- do not optimize for the old “read a list and emit a temporary summary” workflow anymore
-- instead, optimize for durable source sync and compounding wiki pages
+## Current workflow
 
-## Current pipeline
+The GitHub Actions workflow is manual and sample-first. It syncs raw sources,
+records the local Codex compile queue, and regenerates RSS from the current
+compiled wiki. The synthesis step is intentionally local.
 
-The active GitHub Actions path is manual and sample-first:
+- Trigger: `workflow_dispatch`
+- Default collection: `0` (all Raindrop items)
+- Default limit: blank (all matched items)
+- Default mode: `dry_run=true`
 
-1. `scripts/sync-raindrop-raw.sh` syncs Raindrop items into immutable files under `wiki/raw/raindrop/`.
-2. The workflow passes a prompt-only LLM Wiki skill from `prompts/skills/` plus the project schema to Claude Code.
-3. Claude compiles queued raw sources into durable wiki pages and updates `wiki/index.md` / `wiki/log.md`.
+Flow:
+1. Sync Raindrop items into immutable raw markdown/json pairs.
+2. Build `tmp/wiki-compile-queue.json` for newly seen content digests.
+3. Compile queued raw sources locally with Codex using the prompt contracts.
+4. Keep compiled summaries, section headings, and explanatory prose Korean-first.
+5. Run `scripts/prepare-wiki-publish.sh --site-url "$READING_LIST_SITE_URL"` to regenerate `wiki/feed.xml` and deployment `index.xml`.
+6. Commit only wiki changes when `dry_run=false`.
 
-The workflow does not install a global skill package and does not write results back to Raindrop.
-It defaults to `dry_run=true`, so the first Action run shows pending wiki changes without committing them.
+## What is intentionally not in the live code path
 
-Planned public RSS address:
+These older ideas are not part of the current implementation:
+- per-bookmark markdown reports under `reports/`
+- GitHub Pages publishing for report pages
+- `generate-reports.sh` / `generate-index.sh`
+- direct write-back workflow as the primary product surface
+- the old "temporary summary" prompt flow
 
-`https://inchan.github.io/reading-list/index.xml`
+## Current maturity
 
-RSS clients subscribe to that URL after the `public/index.xml` publishing stage is implemented and GitHub Pages is enabled for the repository.
+Implemented:
+- deterministic raw sync
+- digest-based deduped compile queue
+- prompt-only local Codex wiki compile workflow
+- initial compiled wiki pages from real synced sources
+- local RSS feed generation from compiled wiki pages
+- Bats coverage for helper + raw sync behavior
+
+Not yet implemented:
+- scheduled production sync cadence
+- wiki lint/audit tooling
+- public hosting automation for the wiki/RSS output
+- non-Raindrop source adapters
+- stronger verification of compiled page quality
+
+## Running tests
+
+```bash
+bats tests
+```
+
+## Repo rule
+
+When docs and code disagree, update docs to match the files currently exercised by:
+- `.github/workflows/process-bookmarks.yml`
+- `scripts/generate-wiki-rss.py`
+- `scripts/prepare-wiki-publish.sh`
+- `scripts/sync-raindrop-raw.sh`
+- `tests/test_raindrop_api.bats`
+- `tests/test_sync_raindrop_raw.bats`

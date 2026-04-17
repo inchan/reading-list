@@ -1,0 +1,56 @@
+{
+  "_id": 1666015481,
+  "collection": {
+    "$id": 68757538,
+    "$ref": "collections",
+    "oid": 68757538
+  },
+  "collectionId": 68757538,
+  "cover": "https://opengraph.githubassets.com/e93dba7ed07590e4644dc499c919cc3c3857e14053d36f21a1530c13fdfc569e/Fission-AI/OpenSpec",
+  "created": "2026-03-30T15:19:12.823Z",
+  "creatorRef": {
+    "_id": 724603,
+    "avatar": "",
+    "email": "",
+    "name": "kangsazang"
+  },
+  "domain": "github.com",
+  "excerpt": "Spec-driven development (SDD) for AI coding assistants. - Issues · Fission-AI/OpenSpec",
+  "highlights": [
+    {
+      "_id": "69ca94702b8c8e8de078b581",
+      "color": "yellow",
+      "created": "2026-03-30T15:19:12.822Z",
+      "creatorRef": 724603,
+      "lastUpdate": "2026-03-30T15:19:12.823Z",
+      "note": "",
+      "position": 6,
+      "text": "Status"
+    }
+  ],
+  "lastUpdate": "2026-03-31T10:55:57.561Z",
+  "link": "https://github.com/Fission-AI/OpenSpec/issues?page=2",
+  "media": [
+    {
+      "link": "https://opengraph.githubassets.com/e93dba7ed07590e4644dc499c919cc3c3857e14053d36f21a1530c13fdfc569e/Fission-AI/OpenSpec",
+      "type": "image"
+    }
+  ],
+  "note": "Fission-AI/OpenSpec의 GitHub 이슈 페이지(2페이지)로, 35,900개의 스타를 받은 활발한 오픈소스 스펙 주도 개발(SDD) 도구에 대한 커뮤니티 논의를 보여준다.\n269개의 열린 이슈 중 순서형/계층형 워크플로우 지원, 스키마 기반 아티팩트 검증, 전역 설정 파일, 실행 로그, 복구 커맨드 등 다양한 기능 요청이 있다.\nClaude Code와의 시퀀스 준수 문제, Qwen Code용 TOML 커맨드 생성 오류 등 특정 AI 도구와의 통합 이슈도 활발히 논의되고 있다.\n에이전트 환각(hallucination)과 비결정론적 지시 적용 등 AI 특유의 문제들도 이슈로 등록되어 있어 실무 적용 시 참고할 만하다.\n\n인사이트\nOpenSpec 이슈 목록은 스펙 주도 AI 코딩의 실무적 한계를 생생하게 보여주는 자료이다.",
+  "removed": false,
+  "sort": 1666015481,
+  "tags": [
+    "ai",
+    "ai-dev",
+    "harness-engineering",
+    "openclaw",
+    "claude",
+    "context-engineering"
+  ],
+  "title": "Issues · Fission-AI/OpenSpec",
+  "type": "link",
+  "user": {
+    "$id": 724603,
+    "$ref": "users"
+  }
+}

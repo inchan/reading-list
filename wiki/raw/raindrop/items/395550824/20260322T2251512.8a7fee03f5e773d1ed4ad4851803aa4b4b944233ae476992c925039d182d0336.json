@@ -1,0 +1,50 @@
+{
+  "_id": 395550824,
+  "collection": {
+    "$id": 20521417,
+    "$ref": "collections",
+    "oid": 20521417
+  },
+  "collectionId": 20521417,
+  "cover": "https://cdn.ppomppu.co.kr/zboard/data3/2022/0516/20220516225308_uIv0VuAAZJ.jpg",
+  "created": "2022-05-17T01:25:23.802Z",
+  "creatorRef": {
+    "_id": 724603,
+    "avatar": "",
+    "email": "",
+    "name": "kangsazang"
+  },
+  "domain": "m.ppomppu.co.kr",
+  "excerpt": "여기를 눌러 링크를 확인하세요",
+  "highlights": [],
+  "important": false,
+  "lastUpdate": "2026-03-22T22:51:51.218Z",
+  "link": "https://m.ppomppu.co.kr/new/bbs_view.php?id=tour&no=102805",
+  "media": [
+    {
+      "link": "https://cdn.ppomppu.co.kr/zboard/data3/2022/0516/20220516225308_uIv0VuAAZJ.jpg",
+      "type": "image"
+    },
+    {
+      "link": "https://cdn.ppomppu.co.kr/zboard/data3/2022/0516/m_20220516225308_uIv0VuAAZJ.jpg",
+      "type": "image"
+    },
+    {
+      "link": "https://media.tenor.com/images/04da1319e41ef8d9030d37550db379f8/tenor.gif",
+      "type": "image"
+    }
+  ],
+  "note": "",
+  "removed": false,
+  "sort": 395550824,
+  "tags": [
+    "떠나자",
+    "한국"
+  ],
+  "title": "한국의 가볼만한 여행지들 15선",
+  "type": "link",
+  "user": {
+    "$id": 724603,
+    "$ref": "users"
+  }
+}

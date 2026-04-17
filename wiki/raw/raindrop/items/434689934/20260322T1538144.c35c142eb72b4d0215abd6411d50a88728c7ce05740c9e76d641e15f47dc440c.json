@@ -1,0 +1,55 @@
+{
+  "_id": 434689934,
+  "collection": {
+    "$id": 47947206,
+    "$ref": "collections",
+    "oid": 47947206
+  },
+  "collectionId": 47947206,
+  "cover": "https://blogthumb.pstatic.net/MjAyMjA1MTVfMjg4/MDAxNjUyNjIyMTM3MDg1.ENPZ77yXQ_V89W0AQ2iQi7TeR5UXFUlm0oNNpcUOKBsg.0OJI4FrZ31yZoZjU84o0JSET4HQUriP8Tndq4IGeGrog.JPEG.ectoplasma/20220429_065647730_iOS.jpg?type=w2",
+  "created": "2022-08-22T02:21:13.658Z",
+  "creatorRef": {
+    "_id": 724603,
+    "avatar": "",
+    "email": "",
+    "name": "kangsazang"
+  },
+  "domain": "m.blog.naver.com",
+  "excerpt": "2022.04.29 생일을 맞아 Stayfolio에서 영동지방 숙소를 찾던 도중 남애에 적당한 숙소가 있어 보여서 예...",
+  "highlights": [],
+  "important": false,
+  "lastUpdate": "2026-03-22T15:38:14.469Z",
+  "link": "https://m.blog.naver.com/ectoplasma/222729489152",
+  "media": [
+    {
+      "link": "https://blogthumb.pstatic.net/MjAyMjA1MTVfMjg4/MDAxNjUyNjIyMTM3MDg1.ENPZ77yXQ_V89W0AQ2iQi7TeR5UXFUlm0oNNpcUOKBsg.0OJI4FrZ31yZoZjU84o0JSET4HQUriP8Tndq4IGeGrog.JPEG.ectoplasma/20220429_065647730_iOS.jpg?type=w2",
+      "type": "image"
+    },
+    {
+      "link": "https://mblogthumb-phinf.pstatic.net/MjAyMjA1MTVfMjg4/MDAxNjUyNjIyMTM3MDg1.ENPZ77yXQ_V89W0AQ2iQi7TeR5UXFUlm0oNNpcUOKBsg.0OJI4FrZ31yZoZjU84o0JSET4HQUriP8Tndq4IGeGrog.JPEG.ectoplasma/20220429_065647730_iOS.jpg?type=w800",
+      "type": "image"
+    },
+    {
+      "link": "https://mblogthumb-phinf.pstatic.net/MjAyMjA1MTVfMzcg/MDAxNjUyNjIyMTM3MjA3.CaTViJUyycz1XsdFzeLXLd_UaEUgtIDLdYjArti8_jIg.tXJh3Rh3ilD9TX6MmO6Z1_mdxWN_AGlz-0TqknREBYkg.JPEG.ectoplasma/20220429_065833170_iOS.jpg?type=w800",
+      "type": "image"
+    },
+    {
+      "link": "https://dthumb-phinf.pstatic.net/?src=%22https%3A%2F%2Fcdn.imweb.me%2Fupload%2FS201905015cc95f05ef7d4%2F426b39faec751.png%22&type=ff500_300",
+      "type": "image"
+    }
+  ],
+  "note": "",
+  "removed": false,
+  "sort": 434689931,
+  "tags": [
+    "숙박",
+    "강원도",
+    "주문진"
+  ],
+  "title": "[양양, 남애] 비온후풍경",
+  "type": "link",
+  "user": {
+    "$id": 724603,
+    "$ref": "users"
+  }
+}

@@ -1,0 +1,45 @@
+{
+  "_id": 1656197953,
+  "collection": {
+    "$id": 68757538,
+    "$ref": "collections",
+    "oid": 68757538
+  },
+  "collectionId": 68757538,
+  "cover": "https://scontent-dus1-1.cdninstagram.com/v/t51.82787-15/658694370_17858372238622325_6545606083583558843_n.jpg?stp=dst-jpg_e35_tt6&efg=eyJ2ZW5jb2RlX3RhZyI6InRocmVhZHMuQ0FST1VTRUxfSVRFTS5pbWFnZV91cmxnZW4uMTA4MHgxMDgwLnNkci5mODI3ODcuZGVmYXVsdF9pbWFnZS5jMiJ9&_nc_ht=scontent-dus1-1.cdninstagram.com&_nc_cat=105&_nc_oc=Q6cZ2gHRJcFlg1mFSpFpl1OxttxkNMtCaHgAfW1dBbFYUJG-lzwZkCJLGUjODA6a14lWBGs&_nc_ohc=x-1snZwFlfAQ7kNvwEyQiDN&_nc_gid=ZdbsyAUk48lC_DE0RjOgww&edm=APs17CUBAAAA&ccb=7-5&ig_cache_key=Mzg1OTk4MTkyOTIwMjM4NzUzOQ%3D%3D.3-ccb7-5&oh=00_Afzkd-gKHnpSy9rbwgs2WojbXI3vGxBfsh2e0w54CnEQ3A&oe=69C87204&_nc_sid=10d13b",
+  "created": "2026-03-24T16:13:49.053Z",
+  "creatorRef": {
+    "_id": 724603,
+    "avatar": "",
+    "email": "",
+    "name": "kangsazang"
+  },
+  "domain": "threads.com",
+  "excerpt": "Grok이 코딩 에이전트를 오픈소스로 냈습니다.\n\nGrok CLI v1 - npm 한 줄 설치. Grok 네이티브 X/웹 검색 + 멀티 에이전트 + Telegram 원격 제어. 100% MIT 오픈소스.\n\n1,247 Likes, 137K+ 조회. 실시간 X 데이터에 접근하는 유일한 에이전트.\n\naithreads",
+  "highlights": [],
+  "important": false,
+  "lastUpdate": "2026-03-26T00:19:00.296Z",
+  "link": "https://www.threads.com/@aisolutiondev/post/DWRaWqRiVpU?xmt=AQF0135fnM4YwUF6e8iYpOZKP76ilFeV5ZPoAHg13wiXCG18UZ27RbESq-z2RfVJYnh4mdWH&slof=1",
+  "media": [
+    {
+      "link": "https://scontent-dus1-1.cdninstagram.com/v/t51.82787-15/658694370_17858372238622325_6545606083583558843_n.jpg?stp=dst-jpg_e35_tt6&efg=eyJ2ZW5jb2RlX3RhZyI6InRocmVhZHMuQ0FST1VTRUxfSVRFTS5pbWFnZV91cmxnZW4uMTA4MHgxMDgwLnNkci5mODI3ODcuZGVmYXVsdF9pbWFnZS5jMiJ9&_nc_ht=scontent-dus1-1.cdninstagram.com&_nc_cat=105&_nc_oc=Q6cZ2gHRJcFlg1mFSpFpl1OxttxkNMtCaHgAfW1dBbFYUJG-lzwZkCJLGUjODA6a14lWBGs&_nc_ohc=x-1snZwFlfAQ7kNvwEyQiDN&_nc_gid=ZdbsyAUk48lC_DE0RjOgww&edm=APs17CUBAAAA&ccb=7-5&ig_cache_key=Mzg1OTk4MTkyOTIwMjM4NzUzOQ%3D%3D.3-ccb7-5&oh=00_Afzkd-gKHnpSy9rbwgs2WojbXI3vGxBfsh2e0w54CnEQ3A&oe=69C87204&_nc_sid=10d13b",
+      "type": "image"
+    }
+  ],
+  "note": "Grok CLI는 xAI의 Grok 모델을 터미널에서 사용할 수 있는 오픈소스(MIT) 코딩 에이전트로, npm i -g grok-dev 한 줄로 설치된다.\nGrok의 실시간 X·웹 검색, 멀티 에이전트 위임, Telegram 원격 제어, 1M 토큰 컨텍스트 윈도우, 이미지·영상 생성 등을 지원한다.\n다만 이 프로젝트는 xAI 공식 제품이 아니라 슈퍼에이전트(superagent-ai)가 만든 커뮤니티 빌드 비공식 도구임을 주의해야 한다.\nClaude Code 대비 '실시간 X 데이터 접근'을 차별점으로 내세우며 Claude Code Alternatives로도 소개되고 있다.\n\n메모: xAI 공식 CLI가 아닌 커뮤니티 프로젝트임에도 2.5K+ 스타를 기록하며 빠르게 성장 중인 점은, Claude Code 생태계 외부에서 유사한 agentic coding 도구가 활발히 등장하고 있음을 시사한다.\n분류: 지식\n태그: ai, openclaw, ai-dev, ai-agent, ai-workflow",
+  "removed": false,
+  "sort": 1656198178,
+  "tags": [
+    "ai",
+    "openclaw",
+    "ai-dev",
+    "ai-agent",
+    "ai-workflow"
+  ],
+  "title": "sloth (@aisolutiondev) on Threads",
+  "type": "link",
+  "user": {
+    "$id": 724603,
+    "$ref": "users"
+  }
+}

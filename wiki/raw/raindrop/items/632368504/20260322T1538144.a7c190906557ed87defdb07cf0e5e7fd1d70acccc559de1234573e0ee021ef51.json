@@ -1,0 +1,57 @@
+{
+  "_id": 632368504,
+  "collection": {
+    "$id": 26972538,
+    "$ref": "collections",
+    "oid": 26972538
+  },
+  "collectionId": 26972538,
+  "cover": "https://www.dogdrip.net/files/attach/xeicon/default_image.png?20211119094908",
+  "created": "2023-08-22T11:49:41.952Z",
+  "creatorRef": {
+    "_id": 724603,
+    "avatar": "",
+    "email": "",
+    "name": "kangsazang"
+  },
+  "domain": "dogdrip.net",
+  "excerpt": "글로만 봤을 땐 아무것도 없는 상권에 돈까스집만 덩그러니 있는 디스토피아를 생각했었는데 생각보다 입점이 많이되어있었음 5층 내리자마자 이런 푸드코트가 나오는데, 돈스파 외에도 짬뽕집 등이 영업중이었음 그...",
+  "highlights": [],
+  "important": false,
+  "lastUpdate": "2026-03-22T15:38:14.469Z",
+  "link": "https://www.dogdrip.net/503786744",
+  "media": [
+    {
+      "link": "https://www.dogdrip.net/files/attach/xeicon/default_image.png?20211119094908",
+      "type": "image"
+    },
+    {
+      "link": "https://www.dogdrip.net/dvs/d/23/08/19/fa46788dec36c10fb9e9fb0e37f43186.jpg",
+      "type": "image"
+    },
+    {
+      "link": "https://www.dogdrip.net/dvs/d/23/08/19/4f6c38b30ac9a5091871819b296e3fa9.jpg",
+      "type": "image"
+    },
+    {
+      "link": "https://www.dogdrip.net/dvs/d/23/08/19/0a70435183a2d0c7462744c177d50243.jpg",
+      "type": "image"
+    },
+    {
+      "link": "https://www.dogdrip.net/dvs/d/23/08/19/b132b8642ef6f3877e719aab7cc31416.jpg",
+      "type": "image"
+    }
+  ],
+  "note": "",
+  "removed": false,
+  "sort": 632368502,
+  "tags": [
+    "맛집"
+  ],
+  "title": "요즘 핫한 부천 돈까스전문점 '돈스파' 다녀옴 - DogDrip.Net 개드립",
+  "type": "article",
+  "user": {
+    "$id": 724603,
+    "$ref": "users"
+  }
+}

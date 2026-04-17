@@ -1,0 +1,45 @@
+{
+  "_id": 1651703200,
+  "collection": {
+    "$id": 68738562,
+    "$ref": "collections",
+    "oid": 68738562
+  },
+  "collectionId": 68738562,
+  "cover": "https://scontent-dus1-1.cdninstagram.com/v/t51.82787-19/543674244_17842447422575597_5970494666551745347_n.jpg?efg=eyJ2ZW5jb2RlX3RhZyI6InByb2ZpbGVfcGljLmRqYW5nby41MTIuYzIifQ&_nc_ht=scontent-dus1-1.cdninstagram.com&_nc_cat=105&_nc_oc=Q6cZ2gGkZP6ZEnMj8stduY4Q_W6wRjVKrZqNh2-v_WxkdLdobwrVWG8pgAJt9vHRM3w3-O0&_nc_ohc=2w5dzi_Yj1oQ7kNvwFxoNNS&_nc_gid=0PVoTELAh4M4tIq3AD8AsA&edm=APs17CUBAAAA&ccb=7-5&oh=00_Afzn6Hi0oL4yJPyFvpXYWx4-nsHaT9UTUTx8Dhf4hBFh3w&oe=69C3DA20&_nc_sid=10d13b",
+  "created": "2026-03-21T02:10:47.465Z",
+  "creatorRef": {
+    "_id": 724603,
+    "avatar": "",
+    "email": "",
+    "name": "kangsazang"
+  },
+  "domain": "threads.com",
+  "excerpt": "이거 아는 사람 별로 없음\n\n크롬 146에 WebMCP라는 기능이 슬쩍 들어갔는데\nAI가 브라우저를 완전히 사람처럼 조작할 수 있게 해줌\n\n나는 이걸로 AWS 웹콘솔, 앱스토어 등록,\n구글 API 설정 같은 복잡한 작업을 시키고 있는데\n웹사이트가 AI인 줄도 모름\n\n기존 브라우저 자동화가 70점이었다면\n이건 95점 수준\n\n아직 베타라 설정이 좀 귀찮지만\n이거 정식 나오면 진짜 게임 바뀜\n\n#AIThreads #바이브코딩 #AI활용 #자동화",
+  "highlights": [],
+  "important": false,
+  "lastUpdate": "2026-03-26T00:18:21.289Z",
+  "link": "https://www.threads.com/@funcodingdavelee/post/DWIOLfLkgun?xmt=AQF0cJ0JzN__seY9RLGiIrulk33Q_wKQasH7P0fPA4VViU51WsHhdhqbXTYsDEURrpILAvM&slof=1",
+  "media": [
+    {
+      "link": "https://scontent-dus1-1.cdninstagram.com/v/t51.82787-19/543674244_17842447422575597_5970494666551745347_n.jpg?efg=eyJ2ZW5jb2RlX3RhZyI6InByb2ZpbGVfcGljLmRqYW5nby41MTIuYzIifQ&_nc_ht=scontent-dus1-1.cdninstagram.com&_nc_cat=105&_nc_oc=Q6cZ2gGkZP6ZEnMj8stduY4Q_W6wRjVKrZqNh2-v_WxkdLdobwrVWG8pgAJt9vHRM3w3-O0&_nc_ohc=2w5dzi_Yj1oQ7kNvwFxoNNS&_nc_gid=0PVoTELAh4M4tIq3AD8AsA&edm=APs17CUBAAAA&ccb=7-5&oh=00_Afzn6Hi0oL4yJPyFvpXYWx4-nsHaT9UTUTx8Dhf4hBFh3w&oe=69C3DA20&_nc_sid=10d13b",
+      "type": "image"
+    }
+  ],
+  "note": "이거 아는 사람 별로 없음\n크롬 146에 WebMCP라는 기능이 슬쩍 들어갔는데\nAI가 브라우저를 완전히 사람처럼 조작할 수 있게 해줌\n나는 이걸로 AWS 웹콘솔, 앱스토어 등록,\n\n메모: 기존 report 본문이 남아 있지 않아 저장 시점 제목, excerpt, 태그를 기준으로 복구한 note입니다.\n원문: 잔재미코딩 | Dave Lee (@funcodingdavelee) on Threads\n태그: WebMCP, Chrome, 브라우저자동화, AI에이전트, 웹표준\n상태: 복구노트",
+  "removed": false,
+  "sort": 1651703218,
+  "tags": [
+    "WebMCP",
+    "Chrome",
+    "브라우저자동화",
+    "AI에이전트",
+    "웹표준"
+  ],
+  "title": "잔재미코딩 | Dave Lee (@funcodingdavelee) on Threads",
+  "type": "link",
+  "user": {
+    "$id": 724603,
+    "$ref": "users"
+  }
+}

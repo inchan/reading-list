@@ -1,0 +1,44 @@
+{
+  "_id": 1649221150,
+  "collection": {
+    "$id": 68738562,
+    "$ref": "collections",
+    "oid": 68738562
+  },
+  "collectionId": 68738562,
+  "cover": "https://scontent-fra3-1.cdninstagram.com/v/t51.82787-15/653498664_17854277961683319_3548882078990188874_n.webp?efg=eyJ2ZW5jb2RlX3RhZyI6InRocmVhZHMuQ0FST1VTRUxfSVRFTS5pbWFnZV91cmxnZW4uMTY4OHgyMTEwLnNkci5mODI3ODcuZGVmYXVsdF9pbWFnZS5jMiJ9&_nc_ht=scontent-fra3-1.cdninstagram.com&_nc_cat=103&_nc_oc=Q6cZ2gEuTQyhWsfZh0Penn8l6luXYii2kj0-mucv55tVR6Mawx_8sx3HTWXZYLSlgnsYOqw&_nc_ohc=z58q7tKd3MIQ7kNvwFmGEXH&_nc_gid=UVYEm4hpSSFYWEXVNP2yFA&edm=APs17CUBAAAA&ccb=7-5&ig_cache_key=Mzg1NTc1NzIxMjM4ODU2MzA0Ng%3D%3D.3-ccb7-5&oh=00_Afwh5_hS3u1jLPjYEI7muMEzkRq2PhygtekjDOfBUzZOTQ&oe=69C115DA&_nc_sid=10d13b",
+  "created": "2026-03-19T00:31:57.668Z",
+  "creatorRef": {
+    "_id": 724603,
+    "avatar": "",
+    "email": "",
+    "name": "kangsazang"
+  },
+  "domain": "threads.com",
+  "excerpt": "PROMPT in Last Slide and Text attachment in the Comments below.\n\nmidjourney prompt nomadic woman, blue scarf wind motion, golden hour desert aesthetic, ethereal bokeh portrait, cinematic ribbon flow. @prompts.cc \n\n#MidjourneyPrompt #WindBlownNomad #GoldenHourAI #CinematicPortrait #EtherealDesertVibes",
+  "highlights": [],
+  "important": false,
+  "lastUpdate": "2026-03-26T00:18:15.415Z",
+  "link": "https://www.threads.com/@prompts.cc/post/DWCZ2aFEsjT?xmt=AQF0cXe5D3dfQW4ZxZlRnJVx19RTaj8sYRCQuEhQz30yEjdxzzwbx93mX4X1orP1FD5mP-rg&slof=1",
+  "media": [
+    {
+      "link": "https://scontent-fra3-1.cdninstagram.com/v/t51.82787-15/653498664_17854277961683319_3548882078990188874_n.webp?efg=eyJ2ZW5jb2RlX3RhZyI6InRocmVhZHMuQ0FST1VTRUxfSVRFTS5pbWFnZV91cmxnZW4uMTY4OHgyMTEwLnNkci5mODI3ODcuZGVmYXVsdF9pbWFnZS5jMiJ9&_nc_ht=scontent-fra3-1.cdninstagram.com&_nc_cat=103&_nc_oc=Q6cZ2gEuTQyhWsfZh0Penn8l6luXYii2kj0-mucv55tVR6Mawx_8sx3HTWXZYLSlgnsYOqw&_nc_ohc=z58q7tKd3MIQ7kNvwFmGEXH&_nc_gid=UVYEm4hpSSFYWEXVNP2yFA&edm=APs17CUBAAAA&ccb=7-5&ig_cache_key=Mzg1NTc1NzIxMjM4ODU2MzA0Ng%3D%3D.3-ccb7-5&oh=00_Afwh5_hS3u1jLPjYEI7muMEzkRq2PhygtekjDOfBUzZOTQ&oe=69C115DA&_nc_sid=10d13b",
+      "type": "image"
+    }
+  ],
+  "note": "PROMPT in Last Slide and Text attachment in the Comments below.\nmidjourney prompt nomadic woman, blue scarf wind motion, golden hour desert aesthetic, ethereal bokeh portrait, cinematic ribbon flow.\n@prompts.cc\n#MidjourneyPrompt #WindBlownNomad #GoldenHourAI #CinematicPortrait #EtherealDesertVibes\n\n메모: 기존 report 본문이 남아 있지 않아 저장 시점 제목, excerpt, 태그를 기준으로 복구한 note입니다.\n원문: prompts (@prompts.cc) on Threads\n태그: Midjourney, 프롬프트, AI이미지, 창작\n상태: 복구노트",
+  "removed": false,
+  "sort": 1651703223,
+  "tags": [
+    "Midjourney",
+    "프롬프트",
+    "AI이미지",
+    "창작"
+  ],
+  "title": "prompts (@prompts.cc) on Threads",
+  "type": "link",
+  "user": {
+    "$id": 724603,
+    "$ref": "users"
+  }
+}

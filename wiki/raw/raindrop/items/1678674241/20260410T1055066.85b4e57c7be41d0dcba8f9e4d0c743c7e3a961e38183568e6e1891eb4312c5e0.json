@@ -1,0 +1,41 @@
+{
+  "_id": 1678674241,
+  "collection": {
+    "$id": -1,
+    "$ref": "collections",
+    "oid": -1
+  },
+  "collectionId": -1,
+  "cover": "https://scontent-fra5-1.cdninstagram.com/v/t51.2885-19/459513539_1309046770061690_1294675066508233673_n.jpg?stp=dst-jpg_s640x640_tt6&efg=eyJ2ZW5jb2RlX3RhZyI6InByb2ZpbGVfcGljLmRqYW5nby4xMDgwLmMyIn0&_nc_ht=scontent-fra5-1.cdninstagram.com&_nc_cat=102&_nc_oc=Q6cZ2gEIUqYmpwsbMXBN21ybVXMIkMXMYMP-mduUtaURkfWxCXj0JmmOtK2ApKeRL-i1vQk&_nc_ohc=hV_nPWcwhmoQ7kNvwH4-FVP&_nc_gid=7MpmZjQR8jOJegkbQGbunA&edm=APs17CUBAAAA&ccb=7-5&oh=00_Af2jwUdZ0fUU60IM6E7lQFgQrr4KFytu1weFXrJJ0DR_pQ&oe=69DD8805&_nc_sid=10d13b",
+  "created": "2026-04-09T15:58:27.699Z",
+  "creatorRef": {
+    "_id": 724603,
+    "avatar": "",
+    "email": "",
+    "name": "kangsazang"
+  },
+  "domain": "threads.com",
+  "excerpt": "드디어......... \n\n피그마 디자인을 99% 그대로..... \n클로드 딸깍 복제...... 성공 🫀\n\n작년부터 수없이 많은 시도를 해봤다. \n피그마 자체에서 주는 코드, 플러그인, 그대로 복제해준다고 마케팅하는 SaaS 툴 등...\n\n하지만 단 한번도, \n디자이너의 디자인을 \"그대로 복제\"하지 못했고 \nAI에게 늘 아래와 같은 피드백을 반복한다. \n\n\"컬러랑 아이콘이 다르잖아 왜이런거야?\"\n\"하...... 걍 비교할 수 있게 원본 디자인과 현재 모습 캡처 줄게 확인해봐\"\n\"아니 원본 디자인과 다르잖아!! 안보여??? 그냥 딱봐도 다르잖아\" \n\n이제 클로드한테 화 안내도 됨.\n\n핵심은 \"정확한 디자인 데이터 전달 + 자동 검증 루프(픽셀 diff 루프)\" 이 두 가지야.\n\n이걸로 Saqoosha라는 일본 개발자가 이걸로 배경 일치율 99.8% 찍었다고 해서 해봤는데 진짜로 됨.",
+  "highlights": [],
+  "important": false,
+  "lastUpdate": "2026-04-10T10:55:06.651Z",
+  "link": "https://www.threads.com/@working.ref/post/DW5OLLuEmc9?xmt=AQF0YdqFP9N9TPSoMEAZD3IbrSBbZ04SCOciUu9LwZSJ1ZS4gJAXe_t2pPRHxXFK153z91o_&slof=1",
+  "media": [
+    {
+      "link": "https://scontent-fra5-1.cdninstagram.com/v/t51.2885-19/459513539_1309046770061690_1294675066508233673_n.jpg?stp=dst-jpg_s640x640_tt6&efg=eyJ2ZW5jb2RlX3RhZyI6InByb2ZpbGVfcGljLmRqYW5nby4xMDgwLmMyIn0&_nc_ht=scontent-fra5-1.cdninstagram.com&_nc_cat=102&_nc_oc=Q6cZ2gEIUqYmpwsbMXBN21ybVXMIkMXMYMP-mduUtaURkfWxCXj0JmmOtK2ApKeRL-i1vQk&_nc_ohc=hV_nPWcwhmoQ7kNvwH4-FVP&_nc_gid=7MpmZjQR8jOJegkbQGbunA&edm=APs17CUBAAAA&ccb=7-5&oh=00_Af2jwUdZ0fUU60IM6E7lQFgQrr4KFytu1weFXrJJ0DR_pQ&oe=69DD8805&_nc_sid=10d13b",
+      "type": "image"
+    }
+  ],
+  "note": "",
+  "removed": false,
+  "sort": 1678674241,
+  "tags": [
+    "접근불가"
+  ],
+  "title": "@working.ref on Threads",
+  "type": "link",
+  "user": {
+    "$id": 724603,
+    "$ref": "users"
+  }
+}

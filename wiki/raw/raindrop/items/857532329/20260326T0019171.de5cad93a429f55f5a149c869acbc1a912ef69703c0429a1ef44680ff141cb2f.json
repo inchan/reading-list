@@ -1,0 +1,39 @@
+{
+  "_id": 857532329,
+  "collection": {
+    "$id": 68738561,
+    "$ref": "collections",
+    "oid": 68738561
+  },
+  "collectionId": 68738561,
+  "cover": "https://rdl.ink/render/https%3A%2F%2Fm.nfcf.or.kr%2Fforest%2Fuser.tdf%3Fa%3Duser.songi.SongiApp%26c%3D1003%26mc%3DMOB_CST01",
+  "created": "2024-09-20T01:33:18.891Z",
+  "creatorRef": {
+    "_id": 724603,
+    "avatar": "",
+    "email": "",
+    "name": "kangsazang"
+  },
+  "domain": "m.nfcf.or.kr",
+  "excerpt": "",
+  "highlights": [],
+  "important": false,
+  "lastUpdate": "2026-03-26T00:19:17.194Z",
+  "link": "https://m.nfcf.or.kr/forest/user.tdf?a=user.songi.SongiApp&c=1003&mc=MOB_CST01",
+  "media": [],
+  "note": "산림조합중앙회가 운영하는 모바일 송이 공판 현황 조회 서비스이다.\n전국 경기·강원·충청·전라·경상 등 16개 지역별로 송이의 등급(특상·상·중·하품)과 무게, 낙찰 평균 단가를 실시간으로 확인할 수 있다.\n공판장은 당일 오후 4시까지 출하된 송이를 등급별로 선별한 후 수요업체 간 공개경쟁 입찰로 공급가격을 결정한다.\nPC 웹(iforest.nfcf.or.kr) 및 모바일(m.nfcf.or.kr) 모두 이용 가능하며, 문의는 1544-4200(금융) 또는 02-3434-7114(일반)로 할 수 있다.\n\n메모: 송이를 직접 채취하거나 구매하려는 사람에게 유용한 공식 공판가 정보 서비스이다.\n분류: 쇼핑/생활\n태그: 송이, 농산물가격, 공판현황, 산림조합",
+  "removed": false,
+  "sort": 1651703202,
+  "tags": [
+    "송이",
+    "농산물가격",
+    "공판현황",
+    "산림조합"
+  ],
+  "title": "산림조합중앙회",
+  "type": "link",
+  "user": {
+    "$id": 724603,
+    "$ref": "users"
+  }
+}

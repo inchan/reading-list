@@ -1,0 +1,55 @@
+{
+  "_id": 434689888,
+  "collection": {
+    "$id": 47947206,
+    "$ref": "collections",
+    "oid": 47947206
+  },
+  "collectionId": 47947206,
+  "cover": "https://blogthumb.pstatic.net/MjAyMjAyMThfMTQ2/MDAxNjQ1MTE2MDg0NzQ4.Lbv4Jo5GgTiuz0SNQYQeG53n25G-TPEmr_zBvhhwNWEg._iykBDUHJBi2OORJJrCijRCGU2ds18mICPZGfTwgkEwg.PNG.dlekgus7792/image.png?type=w2",
+  "created": "2022-08-22T02:20:39.283Z",
+  "creatorRef": {
+    "_id": 724603,
+    "avatar": "",
+    "email": "",
+    "name": "kangsazang"
+  },
+  "domain": "m.blog.naver.com",
+  "excerpt": "#뚜벅이주문진여행#강원도1박2일#여자둘여행#남애항#바다빛무지개펜션#오션뷰숙소#뚜벅이여자둘여행 #뚜벅...",
+  "highlights": [],
+  "important": false,
+  "lastUpdate": "2026-03-22T15:38:14.469Z",
+  "link": "https://m.blog.naver.com/dlekgus7792/222650711905",
+  "media": [
+    {
+      "link": "https://blogthumb.pstatic.net/MjAyMjAyMThfMTQ2/MDAxNjQ1MTE2MDg0NzQ4.Lbv4Jo5GgTiuz0SNQYQeG53n25G-TPEmr_zBvhhwNWEg._iykBDUHJBi2OORJJrCijRCGU2ds18mICPZGfTwgkEwg.PNG.dlekgus7792/image.png?type=w2",
+      "type": "image"
+    },
+    {
+      "link": "https://mblogthumb-phinf.pstatic.net/MjAyMjAyMThfMTQ2/MDAxNjQ1MTE2MDg0NzQ4.Lbv4Jo5GgTiuz0SNQYQeG53n25G-TPEmr_zBvhhwNWEg._iykBDUHJBi2OORJJrCijRCGU2ds18mICPZGfTwgkEwg.PNG.dlekgus7792/SE-3e374c0c-7604-4c46-b41d-50d61c2173b2.png?type=w800",
+      "type": "image"
+    },
+    {
+      "link": "https://mblogthumb-phinf.pstatic.net/MjAyMjAyMTdfMjAx/MDAxNjQ1MTA2OTM0NjE5.s__cO4H-aMVAYIhd4UJ2TKyKb-i858Dm9aQHuPp0_-gg.coBNh3tjf9iiTFRG2NeP55h6Xm-JpNgv_59BJe9YGGYg.PNG.dlekgus7792/image.png?type=w800",
+      "type": "image"
+    },
+    {
+      "link": "https://mblogthumb-phinf.pstatic.net/MjAyMjAyMTdfMTYy/MDAxNjQ1MTA4MzUyMTA5.-ZIJywOEzpPEwstkl44OIVYT7YDzF9QY6d_tRAwEFQog.ESRz9Qc0qD1wxOvXZ027ABb8MtvUZ0n1FItUgbPZLykg.PNG.dlekgus7792/image.png?type=w800",
+      "type": "image"
+    }
+  ],
+  "note": "",
+  "removed": false,
+  "sort": 434689932,
+  "tags": [
+    "주문진",
+    "강원도",
+    "숙박"
+  ],
+  "title": "1박2일주문진여행/뚜벅이강원도여행/강원도1박2일/남애항/바다빛무지개펜션/양양오션뷰숙소/뚜벅이여자둘여행/양양펜션/주문진펜션/주문진고속시외버스/강릉여행/강릉수제버거/복사꽃싸롱",
+  "type": "link",
+  "user": {
+    "$id": 724603,
+    "$ref": "users"
+  }
+}

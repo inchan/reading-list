@@ -1,0 +1,45 @@
+{
+  "_id": 1645967186,
+  "collection": {
+    "$id": 68738562,
+    "$ref": "collections",
+    "oid": 68738562
+  },
+  "collectionId": 68738562,
+  "cover": "https://scontent-fra5-1.cdninstagram.com/v/t51.82787-15/651733539_17913032412343858_4572901711556136639_n.jpg?stp=dst-jpg_e35_tt6&efg=eyJ2ZW5jb2RlX3RhZyI6InRocmVhZHMuRkVFRC5pbWFnZV91cmxnZW4uMTQ2OHg2NDAuc2RyLmY4Mjc4Ny5kZWZhdWx0X2ltYWdlLmMyIn0&_nc_ht=scontent-fra5-1.cdninstagram.com&_nc_cat=110&_nc_oc=Q6cZ2QHsI7EjxP__ZnD8ScX_51E-sY-hFSM18PtSgU4wRpYrcYp5GdqvzNUW3sDe-ZZap5g&_nc_ohc=NpPL682TBv0Q7kNvwH-GSlH&_nc_gid=44GlIxAwuXAAGjSQ0kueAA&edm=APs17CUBAAAA&ccb=7-5&ig_cache_key=Mzg1Mzg5ODE2NzgzMTExNDg0MQ%3D%3D.3-ccb7-5&oh=00_AfxIr0DN6OJPj8vMuE8FR7GJ-Lr-v3gtyxw7rYPDz9-2Fg&oe=69BD983F&_nc_sid=10d13b",
+  "created": "2026-03-16T09:12:20.360Z",
+  "creatorRef": {
+    "_id": 724603,
+    "avatar": "",
+    "email": "",
+    "name": "kangsazang"
+  },
+  "domain": "threads.com",
+  "excerpt": "Anthropic이 \"Claude Architect\" 자격증을 만들었음.\n감독관 있는 진짜 시험.\n개인 응시 불가. 파트너 조직 소속만.\n근데 누군가가 공식 시험 가이드를 분석해서\n5개 영역, 출제 범위, 학습 로드맵을\n통째로 공개했음.",
+  "highlights": [],
+  "important": false,
+  "lastUpdate": "2026-03-26T00:17:37.400Z",
+  "link": "https://www.threads.com/@jisang0914/post/DV7y_b-GjRZ?xmt=AQF0K1o8kvJtnqG9nGW00HBYSs_euBP_aNmp-G6DOc_uzPslrUnKVWv2MYPKDt_nGOl3QSaq&slof=1",
+  "media": [
+    {
+      "link": "https://scontent-fra5-1.cdninstagram.com/v/t51.82787-15/651733539_17913032412343858_4572901711556136639_n.jpg?stp=dst-jpg_e35_tt6&efg=eyJ2ZW5jb2RlX3RhZyI6InRocmVhZHMuRkVFRC5pbWFnZV91cmxnZW4uMTQ2OHg2NDAuc2RyLmY4Mjc4Ny5kZWZhdWx0X2ltYWdlLmMyIn0&_nc_ht=scontent-fra5-1.cdninstagram.com&_nc_cat=110&_nc_oc=Q6cZ2QHsI7EjxP__ZnD8ScX_51E-sY-hFSM18PtSgU4wRpYrcYp5GdqvzNUW3sDe-ZZap5g&_nc_ohc=NpPL682TBv0Q7kNvwH-GSlH&_nc_gid=44GlIxAwuXAAGjSQ0kueAA&edm=APs17CUBAAAA&ccb=7-5&ig_cache_key=Mzg1Mzg5ODE2NzgzMTExNDg0MQ%3D%3D.3-ccb7-5&oh=00_AfxIr0DN6OJPj8vMuE8FR7GJ-Lr-v3gtyxw7rYPDz9-2Fg&oe=69BD983F&_nc_sid=10d13b",
+      "type": "image"
+    }
+  ],
+  "note": "Anthropic이 \"Claude Architect\" 자격증을 만들었음.\n감독관 있는 진짜 시험.\n개인 응시 불가.\n파트너 조직 소속만.\n\n메모: 기존 report 본문이 남아 있지 않아 저장 시점 제목, excerpt, 태그를 기준으로 복구한 note입니다.\n원문: Jisang Han (@jisang0914) on Threads\n태그: ClaudeArchitect, 자격증, Anthropic, MCP, AI인증\n상태: 복구노트",
+  "removed": false,
+  "sort": 1651703222,
+  "tags": [
+    "ClaudeArchitect",
+    "자격증",
+    "Anthropic",
+    "MCP",
+    "AI인증"
+  ],
+  "title": "Jisang Han (@jisang0914) on Threads",
+  "type": "link",
+  "user": {
+    "$id": 724603,
+    "$ref": "users"
+  }
+}

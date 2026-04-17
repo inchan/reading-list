@@ -1,0 +1,63 @@
+{
+  "_id": 1684398815,
+  "collection": {
+    "$id": 68757539,
+    "$ref": "collections",
+    "oid": 68757539
+  },
+  "collectionId": 68757539,
+  "cover": "https://opengraph.githubassets.com/bcdce29660efe90cf240d06c72bc30d031df83132d2c3925864a4258c26b819d/virattt/ai-hedge-fund",
+  "created": "2026-04-14T13:34:04.657Z",
+  "creatorRef": {
+    "_id": 724603,
+    "avatar": "",
+    "email": "",
+    "name": "kangsazang"
+  },
+  "domain": "github.com",
+  "excerpt": "An AI Hedge Fund Team. Contribute to virattt/ai-hedge-fund development by creating an account on GitHub.",
+  "highlights": [],
+  "important": false,
+  "lastUpdate": "2026-04-15T11:01:04.538Z",
+  "link": "https://github.com/virattt/ai-hedge-fund",
+  "media": [
+    {
+      "link": "https://opengraph.githubassets.com/bcdce29660efe90cf240d06c72bc30d031df83132d2c3925864a4258c26b819d/virattt/ai-hedge-fund",
+      "type": "image"
+    },
+    {
+      "link": "https://private-user-images.githubusercontent.com/901795/425765974-cbae3dcf-b571-490d-b0ad-3f0f035ac0d4.png?jwt=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3NzYxNzM5MjgsIm5iZiI6MTc3NjE3MzYyOCwicGF0aCI6Ii85MDE3OTUvNDI1NzY1OTc0LWNiYWUzZGNmLWI1NzEtNDkwZC1iMGFkLTNmMGYwMzVhYzBkNC5wbmc_WC1BbXotQWxnb3JpdGhtPUFXUzQtSE1BQy1TSEEyNTYmWC1BbXotQ3JlZGVudGlhbD1BS0lBVkNPRFlMU0E1M1BRSzRaQSUyRjIwMjYwNDE0JTJGdXMtZWFzdC0xJTJGczMlMkZhd3M0X3JlcXVlc3QmWC1BbXotRGF0ZT0yMDI2MDQxNFQxMzMzNDhaJlgtQW16LUV4cGlyZXM9MzAwJlgtQW16LVNpZ25hdHVyZT1hZTZlYmMyODQyYTA4MzlmZWIxYjRiYWYyYjg2MzczN2RmZGRiYmM5NDRiOWQ2OWQzYmY2OTBiZWE3MGVkN2I2JlgtQW16LVNpZ25lZEhlYWRlcnM9aG9zdCZyZXNwb25zZS1jb250ZW50LXR5cGU9aW1hZ2UlMkZwbmcifQ.Son1GdKJysRfViFbJMFGmsMeYIDSx36hrldtReV0NGk",
+      "type": "image"
+    },
+    {
+      "link": "https://private-user-images.githubusercontent.com/901795/400576829-e8ca04bf-9989-4a7d-a8b4-34e04666663b.png?jwt=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3NzYxNzM5MjgsIm5iZiI6MTc3NjE3MzYyOCwicGF0aCI6Ii85MDE3OTUvNDAwNTc2ODI5LWU4Y2EwNGJmLTk5ODktNGE3ZC1hOGI0LTM0ZTA0NjY2NjYzYi5wbmc_WC1BbXotQWxnb3JpdGhtPUFXUzQtSE1BQy1TSEEyNTYmWC1BbXotQ3JlZGVudGlhbD1BS0lBVkNPRFlMU0E1M1BRSzRaQSUyRjIwMjYwNDE0JTJGdXMtZWFzdC0xJTJGczMlMkZhd3M0X3JlcXVlc3QmWC1BbXotRGF0ZT0yMDI2MDQxNFQxMzMzNDhaJlgtQW16LUV4cGlyZXM9MzAwJlgtQW16LVNpZ25hdHVyZT1mNDc2YmJlZmM0MTI2Yzc3NWEyOTk1NDg2MTFhOTg3YmE0NzhlMTJjNzNmNzUzOWMyYjZmMTMzM2EzYjNmMWYyJlgtQW16LVNpZ25lZEhlYWRlcnM9aG9zdCZyZXNwb25zZS1jb250ZW50LXR5cGU9aW1hZ2UlMkZwbmcifQ.bKMO6_uZ78kxy76Gek5JGC6iIYCIJxnxSIcnBHmLVjk",
+      "type": "image"
+    },
+    {
+      "link": "https://private-user-images.githubusercontent.com/901795/400576351-00e794ea-8628-44e6-9a84-8f8a31ad3b47.png?jwt=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3NzYxNzM5MjgsIm5iZiI6MTc3NjE3MzYyOCwicGF0aCI6Ii85MDE3OTUvNDAwNTc2MzUxLTAwZTc5NGVhLTg2MjgtNDRlNi05YTg0LThmOGEzMWFkM2I0Ny5wbmc_WC1BbXotQWxnb3JpdGhtPUFXUzQtSE1BQy1TSEEyNTYmWC1BbXotQ3JlZGVudGlhbD1BS0lBVkNPRFlMU0E1M1BRSzRaQSUyRjIwMjYwNDE0JTJGdXMtZWFzdC0xJTJGczMlMkZhd3M0X3JlcXVlc3QmWC1BbXotRGF0ZT0yMDI2MDQxNFQxMzMzNDhaJlgtQW16LUV4cGlyZXM9MzAwJlgtQW16LVNpZ25hdHVyZT05NDZkYzUyNjgwMGVkMWUyNWMxM2Y1ZjZkMDFhYTcxYzY2YjEwNTZjNmM0MTQ3ZmYzY2IyNWZmYTQ5MGJjNWM4JlgtQW16LVNpZ25lZEhlYWRlcnM9aG9zdCZyZXNwb25zZS1jb250ZW50LXR5cGU9aW1hZ2UlMkZwbmcifQ.qFgpp7wTnBbHXXHm4DbhzDTfrbrW847XhTyhumibocY",
+      "type": "image"
+    },
+    {
+      "link": "https://private-user-images.githubusercontent.com/901795/460261723-b95ab696-c9f4-416c-9ad1-51feb1f5374b.png?jwt=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3NzYxNzM5MjgsIm5iZiI6MTc3NjE3MzYyOCwicGF0aCI6Ii85MDE3OTUvNDYwMjYxNzIzLWI5NWFiNjk2LWM5ZjQtNDE2Yy05YWQxLTUxZmViMWY1Mzc0Yi5wbmc_WC1BbXotQWxnb3JpdGhtPUFXUzQtSE1BQy1TSEEyNTYmWC1BbXotQ3JlZGVudGlhbD1BS0lBVkNPRFlMU0E1M1BRSzRaQSUyRjIwMjYwNDE0JTJGdXMtZWFzdC0xJTJGczMlMkZhd3M0X3JlcXVlc3QmWC1BbXotRGF0ZT0yMDI2MDQxNFQxMzMzNDhaJlgtQW16LUV4cGlyZXM9MzAwJlgtQW16LVNpZ25hdHVyZT0xOTA0NGU5MDk0NTI4MmU0NDQ1ODU0YjU3NWI3NjZjYzI5MTc3YTE3NGJlOGU3OWY0ZDQxZmZjZmNiZDYwMzQ4JlgtQW16LVNpZ25lZEhlYWRlcnM9aG9zdCZyZXNwb25zZS1jb250ZW50LXR5cGU9aW1hZ2UlMkZwbmcifQ.3_e9mOmUAZeRY6fkScvCavnDJnMOUGYaGSCrkJXxt6s",
+      "type": "image"
+    }
+  ],
+  "note": "AI Hedge Fund는 유명 투자자의 투자 철학을 모방한 AI 에이전트들로 구성된 가상 헤지펀드 시뮬레이션 프로젝트로, 교육 및 연구 목적으로 개발되었다.\nWarren Buffett, Ben Graham, Charlie Munger, Michael Burry, Cathie Wood, Nassim Taleb 등 13명의 투자 에이전트와 Valuation·Sentiment·Fundamentals·Technicals·Risk Manager·Portfolio Manager 등 6개의 분석 에이전트, 총 19개 에이전트가 협력 구조로 동작한다.\nOpenAI, Anthropic, DeepSeek, Groq API 및 로컬 Ollama 모델을 지원하며, CLI와 웹 애플리케이션 두 가지 인터페이스를 제공한다.\n백테스팅 기능을 내장하여 특정 기간 동안의 투자 전략 성과를 시뮬레이션할 수 있다.\n\n인사이트\n멀티에이전트 협력 아키텍처를 금융 도메인에 적용한 훌륭한 레퍼런스 구현체로, 에이전트 역할 분리·신호 집계·포트폴리오 관리 계층 설계 패턴을 학습하기에 적합하다.",
+  "removed": false,
+  "sort": 1684398815,
+  "tags": [
+    "ai",
+    "ai-agent",
+    "codex",
+    "claude",
+    "ai-workflow",
+    "finance",
+    "멀티에이전트"
+  ],
+  "title": "virattt/ai-hedge-fund: An AI Hedge Fund Team",
+  "type": "link",
+  "user": {
+    "$id": 724603,
+    "$ref": "users"
+  }
+}

@@ -1,0 +1,46 @@
+{
+  "_id": 379447825,
+  "collection": {
+    "$id": 47947208,
+    "$ref": "collections",
+    "oid": 47947208
+  },
+  "collectionId": 47947208,
+  "cover": "https://www.ppomppu.co.kr/images/icon_app_20160427.png",
+  "created": "2022-03-29T00:33:54.235Z",
+  "creatorRef": {
+    "_id": 724603,
+    "avatar": "",
+    "email": "",
+    "name": "kangsazang"
+  },
+  "domain": "m.ppomppu.co.kr",
+  "excerpt": "못잊어 닭내장탕(일찍 문닫음)\n\n   \n\n동화가든 짬뽕순두부(속초분점있음)\n\n   \n\n최씨국수집 알곤지",
+  "highlights": [],
+  "important": false,
+  "lastUpdate": "2026-03-22T15:38:14.469Z",
+  "link": "https://m.ppomppu.co.kr/new/bbs_view.php?id=issue&no=542881&keyword=%C1%D6%B9%AE%C1%F8",
+  "media": [
+    {
+      "link": "https://www.ppomppu.co.kr/images/icon_app_20160427.png",
+      "type": "image"
+    }
+  ],
+  "note": "",
+  "removed": false,
+  "sort": 379447825,
+  "tags": [
+    "속초",
+    "동해",
+    "강릉",
+    "삼척",
+    "울진",
+    "맛집리스트"
+  ],
+  "title": "속초 동해 강릉 삼척 울진 맛집 메모",
+  "type": "link",
+  "user": {
+    "$id": 724603,
+    "$ref": "users"
+  }
+}

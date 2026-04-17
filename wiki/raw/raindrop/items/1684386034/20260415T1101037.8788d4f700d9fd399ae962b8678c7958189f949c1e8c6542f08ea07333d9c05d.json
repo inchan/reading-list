@@ -1,0 +1,64 @@
+{
+  "_id": 1684386034,
+  "collection": {
+    "$id": 68757538,
+    "$ref": "collections",
+    "oid": 68757538
+  },
+  "collectionId": 68757538,
+  "cover": "https://opengraph.githubassets.com/8c46e8459ec5aa7c2d57229c8e03d722b6b8f852254a9dc6c1cba953599f87c3/Lum1104/Understand-Anything",
+  "created": "2026-04-14T13:10:22.951Z",
+  "creatorRef": {
+    "_id": 724603,
+    "avatar": "",
+    "email": "",
+    "name": "kangsazang"
+  },
+  "domain": "github.com",
+  "excerpt": "Graphs that teach &gt; graphs that impress. Turn any code, or knowledge base (Karpathy LLM wiki), into an interactive knowledge graph you can explore, search, and ask questions about. Works with Cl...",
+  "highlights": [],
+  "important": false,
+  "lastUpdate": "2026-04-15T11:01:03.728Z",
+  "link": "https://github.com/Lum1104/Understand-Anything",
+  "media": [
+    {
+      "link": "https://opengraph.githubassets.com/8c46e8459ec5aa7c2d57229c8e03d722b6b8f852254a9dc6c1cba953599f87c3/Lum1104/Understand-Anything",
+      "type": "image"
+    },
+    {
+      "link": "https://github.com/Lum1104/Understand-Anything/raw/main/assets/hero.jpg",
+      "type": "image"
+    },
+    {
+      "link": "https://github.com/Lum1104/Understand-Anything/raw/main/assets/overview-structural.gif",
+      "type": "image"
+    },
+    {
+      "link": "https://github.com/Lum1104/Understand-Anything/raw/main/assets/overview-domain.gif",
+      "type": "image"
+    },
+    {
+      "link": "https://camo.githubusercontent.com/625d4a6f49563ca3ebf8f1921c330a9fefd3879c9839254b6aeac825a2a11ec9/68747470733a2f2f6170692e737461722d686973746f72792e636f6d2f696d6167653f7265706f733d4c756d313130342f556e6465727374616e642d416e797468696e6726747970653d64617465266c6567656e643d746f702d6c656674",
+      "type": "image"
+    }
+  ],
+  "note": "Understand-Anything은 어떤 코드베이스나 지식 베이스(Karpathy LLM wiki 등)를 탐색 가능한 인터랙티브 지식 그래프로 변환하는 멀티플랫폼 AI 플러그인이다.\n5개 전문 에이전트가 병렬로 파일·함수·클래스·의존성을 추출하고 구조 그래프와 비즈니스 도메인 그래프 두 가지 뷰를 제공한다.\nClaude Code, Codex, Cursor, GitHub Copilot, Gemini CLI, OpenCode, OpenClaw, Antigravity, Pi Agent 등 10개 이상의 플랫폼을 지원하며, 각 플랫폼별 설치 방법이 정비되어 있다.\n퍼지·시맨틱 검색, 가이드 투어, diff 영향 분석, 페르소나 적응형 UI 등의 부가 기능도 내장되어 있다.\n\n인사이트\n대규모 코드베이스(20만 줄 이상)에 새로 합류한 개발자의 온보딩 시간을 크게 단축할 수 있는 실용적인 도구다.",
+  "removed": false,
+  "sort": 1684386034,
+  "tags": [
+    "ai",
+    "claude",
+    "codex",
+    "gemini",
+    "openclaw",
+    "ai-skills",
+    "knowledge-graph",
+    "ai-dev"
+  ],
+  "title": "Lum1104/Understand-Anything: Graphs that teach graphs that impress. Turn any code, or knowledge base (Karpathy LLM wiki), into an interactive knowledge graph you can explore, search, and ask questions about. Works with Claude Code, Codex, Cursor, Copilot, Gemini CLI, and more.",
+  "type": "link",
+  "user": {
+    "$id": 724603,
+    "$ref": "users"
+  }
+}

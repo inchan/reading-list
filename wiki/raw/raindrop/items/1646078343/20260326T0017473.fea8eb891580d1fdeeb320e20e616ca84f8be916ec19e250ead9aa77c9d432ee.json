@@ -1,0 +1,45 @@
+{
+  "_id": 1646078343,
+  "collection": {
+    "$id": 68738644,
+    "$ref": "collections",
+    "oid": 68738644
+  },
+  "collectionId": 68738644,
+  "cover": "https://scontent-ber1-1.cdninstagram.com/v/t51.82787-15/642508848_17931827781207210_7763433827737015330_n.jpg?stp=dst-jpg_e35_tt6&efg=eyJ2ZW5jb2RlX3RhZyI6InRocmVhZHMuRkVFRC5pbWFnZV91cmxnZW4uMTgyNXgxNDM5LnNkci5mODI3ODcuZGVmYXVsdF9pbWFnZS5jMiJ9&_nc_ht=scontent-ber1-1.cdninstagram.com&_nc_cat=106&_nc_oc=Q6cZ2QHxuAphFx__cxGlTlgMIwXSjmCiI6YV4DwWDnFXoCGCoPrS0P_5jqcSWVKTjq_VJ2Y&_nc_ohc=LYF8Ni1SrkAQ7kNvwEJ7ZHv&_nc_gid=eXHAdrLY5UmmFx9QMXB4HQ&edm=APs17CUBAAAA&ccb=7-5&ig_cache_key=Mzg0MzI4MjIyODIxMDExNTU3Nw%3D%3D.3-ccb7-5&oh=00_AfyKE1hx-EKAp2ce4YhEh9K_ehnFyOdKvP1H-_2ns0JjqA&oe=69BDB348&_nc_sid=10d13b",
+  "created": "2026-03-16T12:22:31.885Z",
+  "creatorRef": {
+    "_id": 724603,
+    "avatar": "",
+    "email": "",
+    "name": "kangsazang"
+  },
+  "domain": "threads.com",
+  "excerpt": "개발하다 보면 포트 충돌 한 번씩은 겪습니다.\n\n\"이미 사용 중인 포트입니다\" 뜨면 터미널 열고 PID 찾고 kill 치는 그 과정, 매번 귀찮습니다. Port Killer가 그걸 없애줍니다.\n\n참고로 Window에서도 사용 가능합니다. :)",
+  "highlights": [],
+  "important": false,
+  "lastUpdate": "2026-03-26T00:17:47.330Z",
+  "link": "https://www.threads.com/@unclejobs.ai/post/DVWFNLwCSP5?xmt=AQF01u6jEYCYKDS4vIhx5Amtj0HWQoiB2k6TZyYwSMyeAMc37kdVM71UVpt0wBImaNFqP5FX&slof=1",
+  "media": [
+    {
+      "link": "https://scontent-ber1-1.cdninstagram.com/v/t51.82787-15/642508848_17931827781207210_7763433827737015330_n.jpg?stp=dst-jpg_e35_tt6&efg=eyJ2ZW5jb2RlX3RhZyI6InRocmVhZHMuRkVFRC5pbWFnZV91cmxnZW4uMTgyNXgxNDM5LnNkci5mODI3ODcuZGVmYXVsdF9pbWFnZS5jMiJ9&_nc_ht=scontent-ber1-1.cdninstagram.com&_nc_cat=106&_nc_oc=Q6cZ2QHxuAphFx__cxGlTlgMIwXSjmCiI6YV4DwWDnFXoCGCoPrS0P_5jqcSWVKTjq_VJ2Y&_nc_ohc=LYF8Ni1SrkAQ7kNvwEJ7ZHv&_nc_gid=eXHAdrLY5UmmFx9QMXB4HQ&edm=APs17CUBAAAA&ccb=7-5&ig_cache_key=Mzg0MzI4MjIyODIxMDExNTU3Nw%3D%3D.3-ccb7-5&oh=00_AfyKE1hx-EKAp2ce4YhEh9K_ehnFyOdKvP1H-_2ns0JjqA&oe=69BDB348&_nc_sid=10d13b",
+      "type": "image"
+    }
+  ],
+  "note": "개발하다 보면 포트 충돌 한 번씩은 겪습니다.\n\"이미 사용 중인 포트입니다\" 뜨면 터미널 열고 PID 찾고 kill 치는 그 과정, 매번 귀찮습니다.\nPort Killer가 그걸 없애줍니다.\n참고로 Window에서도 사용 가능합니다.\n\n메모: 기존 report 본문이 남아 있지 않아 저장 시점 제목, excerpt, 태그를 기준으로 복구한 note입니다.\n원문: 엉클잡스 | Ai 시대, 돈이 되는 정보 전달 (@unclejobs.ai) on Threads\n태그: 포트관리, 개발도구, macOS, Windows, PortKiller\n상태: 복구노트",
+  "removed": false,
+  "sort": 1652882700,
+  "tags": [
+    "포트관리",
+    "개발도구",
+    "macOS",
+    "Windows",
+    "PortKiller"
+  ],
+  "title": "엉클잡스 | Ai 시대, 돈이 되는 정보 전달 (@unclejobs.ai) on Threads",
+  "type": "link",
+  "user": {
+    "$id": 724603,
+    "$ref": "users"
+  }
+}

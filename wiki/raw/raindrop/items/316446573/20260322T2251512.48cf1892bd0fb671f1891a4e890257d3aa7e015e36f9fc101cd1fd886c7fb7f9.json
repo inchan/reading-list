@@ -1,0 +1,45 @@
+{
+  "_id": 316446573,
+  "collection": {
+    "$id": 20521417,
+    "$ref": "collections",
+    "oid": 20521417
+  },
+  "collectionId": 20521417,
+  "cover": "https://rdl.ink/render/https%3A%2F%2Fup.raindrop.io%2Fraindrop%2Ffiles%2F316%2F446%2F573%2FSafari.html",
+  "created": "2021-09-30T04:23:26.020Z",
+  "creatorRef": {
+    "_id": 724603,
+    "avatar": "",
+    "email": "",
+    "name": "kangsazang"
+  },
+  "domain": "up.raindrop.io",
+  "excerpt": "",
+  "file": {
+    "name": "Safari 책갈피.html",
+    "size": 36317,
+    "type": "text/html"
+  },
+  "highlights": [],
+  "important": false,
+  "lastUpdate": "2026-03-22T22:51:51.218Z",
+  "link": "https://api.raindrop.io/v2/raindrop/316446573/file?type=text/html",
+  "media": [
+    {
+      "link": "https://rdl.ink/render/https%3A%2F%2Fup.raindrop.io%2Fraindrop%2Ffiles%2F316%2F446%2F573%2FSafari.html",
+      "screenshot": true,
+      "type": "image"
+    }
+  ],
+  "note": "",
+  "removed": false,
+  "sort": 316446573,
+  "tags": [],
+  "title": "Safari 책갈피.html",
+  "type": "link",
+  "user": {
+    "$id": 724603,
+    "$ref": "users"
+  }
+}

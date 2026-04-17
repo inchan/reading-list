@@ -1,6 +1,8 @@
-tmp/
 .omx/
+.hermes/
+tmp/
 .env
 *.log
 node_modules/
 .DS_Store
+autoresearch-results.tsv

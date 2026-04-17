@@ -1,0 +1,58 @@
+{
+  "_id": 379447627,
+  "collection": {
+    "$id": 68738561,
+    "$ref": "collections",
+    "oid": 68738561
+  },
+  "collectionId": 68738561,
+  "cover": "https://ssl.pstatic.net/sstatic/search/common/og_v3.png",
+  "created": "2022-03-29T00:29:44.700Z",
+  "creatorRef": {
+    "_id": 724603,
+    "avatar": "",
+    "email": "",
+    "name": "kangsazang"
+  },
+  "domain": "m.search.naver.com",
+  "excerpt": "'유발하라리'의 네이버 통합검색 결과입니다.",
+  "highlights": [],
+  "important": false,
+  "lastUpdate": "2026-03-22T15:38:13.934Z",
+  "link": "https://m.search.naver.com/search.naver?sm=mtp_hty.top&where=m&query=%EC%9C%A0%EB%B0%9C%ED%95%98%EB%9D%BC%EB%A6%AC",
+  "media": [
+    {
+      "link": "https://search.pstatic.net/common?type=f&size=210x296&quality=75&direct=true&src=https%3A%2F%2Fbookthumb-phinf.pstatic.net%2Fcover%2F212%2F928%2F21292827.jpg%3Ftype%3Dm200_290%26udate%3D20211204",
+      "type": "image"
+    },
+    {
+      "link": "https://search.pstatic.net/common?type=f&size=210x296&quality=75&direct=true&src=https%3A%2F%2Fbookthumb-phinf.pstatic.net%2Fcover%2F175%2F244%2F17524406.jpg%3Ftype%3Dm200_290%26udate%3D20220105",
+      "type": "image"
+    },
+    {
+      "link": "https://search.pstatic.net/common?type=f&size=210x296&quality=75&direct=true&src=https%3A%2F%2Fbookthumb-phinf.pstatic.net%2Fcover%2F167%2F450%2F16745025.jpg%3Ftype%3Dm200_290%26udate%3D20210423",
+      "type": "image"
+    },
+    {
+      "link": "https://search.pstatic.net/common?type=f&size=210x296&quality=75&direct=true&src=https%3A%2F%2Fbookthumb-phinf.pstatic.net%2Fcover%2F167%2F450%2F16745026.jpg%3Ftype%3Dm200_290%26udate%3D20210423",
+      "type": "image"
+    },
+    {
+      "link": "https://search.pstatic.net/common?type=f&size=210x296&quality=75&direct=true&src=https%3A%2F%2Fbookthumb-phinf.pstatic.net%2Fcover%2F167%2F450%2F16745034.jpg%3Ftype%3Dm200_290%26udate%3D20200928",
+      "type": "image"
+    }
+  ],
+  "note": "",
+  "removed": false,
+  "sort": 1651703204,
+  "tags": [
+    "책",
+    "접근불가"
+  ],
+  "title": "유발하라리 : 네이버 통합검색",
+  "type": "link",
+  "user": {
+    "$id": 724603,
+    "$ref": "users"
+  }
+}

@@ -1,0 +1,62 @@
+{
+  "_id": 857571198,
+  "collection": {
+    "$id": 27494682,
+    "$ref": "collections",
+    "oid": 27494682
+  },
+  "collectionId": 27494682,
+  "cover": "https://www.dogdrip.net/files/attach/xeicon/default_image.png?20211119094908",
+  "created": "2024-09-20T03:25:22.959Z",
+  "creatorRef": {
+    "_id": 724603,
+    "avatar": "",
+    "email": "",
+    "name": "kangsazang"
+  },
+  "domain": "dogdrip.net",
+  "excerpt": "1. 대학생을 위한 실용금융 대학생이나 사회초년생 대상 경제금융 공부 교재 1티어로 꼽히는 금융감독원의 대학생을 위한 실용금융입니다. 올해 제4판이 나왔습니다. 500페이지가 넘는 분량 단순 돈관리를 넘어 금융...",
+  "highlights": [],
+  "important": false,
+  "lastUpdate": "2026-03-22T15:38:13.035Z",
+  "link": "https://www.dogdrip.net/577006795",
+  "media": [
+    {
+      "link": "https://www.dogdrip.net/files/attach/xeicon/default_image.png?20211119094908",
+      "type": "image"
+    },
+    {
+      "link": "https://www.dogdrip.net/dvs/d/24/08/18/6fad8d48d1c38a0b1b149019bcb683f0.webp",
+      "type": "image"
+    },
+    {
+      "link": "https://www.dogdrip.net/dvs/d/24/08/18/24711029e8f26f509b990d5e4374daf0.webp",
+      "type": "image"
+    },
+    {
+      "link": "https://www.dogdrip.net/dvs/d/24/08/18/3aff4f12f6cf42c208971614ae120fae.webp",
+      "type": "image"
+    },
+    {
+      "link": "https://www.dogdrip.net/dvs/d/24/08/18/67eab7c1f7202252469c5cc4fced71b4.webp",
+      "type": "image"
+    }
+  ],
+  "note": "",
+  "reminder": {
+    "date": null
+  },
+  "removed": false,
+  "sort": 857571198,
+  "tags": [
+    "재테크",
+    "금융",
+    "숙제"
+  ],
+  "title": "재테크 무료 금융교재",
+  "type": "article",
+  "user": {
+    "$id": 724603,
+    "$ref": "users"
+  }
+}

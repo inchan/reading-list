@@ -1,0 +1,45 @@
+{
+  "_id": 1668244264,
+  "collection": {
+    "$id": 68757539,
+    "$ref": "collections",
+    "oid": 68757539
+  },
+  "collectionId": 68757539,
+  "cover": "https://scontent-ber1-1.cdninstagram.com/v/t51.82787-19/649495751_17933190315207210_5353338846932885448_n.jpg?stp=dst-jpg_s640x640_tt6&efg=eyJ2ZW5jb2RlX3RhZyI6InByb2ZpbGVfcGljLmRqYW5nby4xMDgwLmMyIn0&_nc_ht=scontent-ber1-1.cdninstagram.com&_nc_cat=1&_nc_oc=Q6cZ2gHOwqL200iJy_CDuckNYsJFoGv0ada8ZqYi_t0Z-fJ1ETm2GhDS4ZjPAzH63vTdE-M&_nc_ohc=-wQDiQLa-90Q7kNvwG3FskG&_nc_gid=Ve0x27qu6Kv1A0EjHmVRug&edm=APs17CUBAAAA&ccb=7-5&oh=00_Af1eP_cv4Tnt8XTvI_uvGOrr2fpx9msX1UJTxjCtJ44VWA&oe=69D2E337&_nc_sid=10d13b",
+  "created": "2026-04-01T12:51:37.932Z",
+  "creatorRef": {
+    "_id": 724603,
+    "avatar": "",
+    "email": "",
+    "name": "kangsazang"
+  },
+  "domain": "threads.com",
+  "excerpt": "https://github.com/paoloanzn/free-code",
+  "highlights": [],
+  "important": false,
+  "lastUpdate": "2026-04-02T11:01:27.418Z",
+  "link": "https://www.threads.com/@unclejobs.ai/post/DWli9heCazh?xmt=AQF0nuCq6x1nE1iCJ2McCFrnSLm69sbMnWopU-pxfMM-3396KG-iRxd-SYmAEKUriqYvkJUY&slof=1",
+  "media": [
+    {
+      "link": "https://scontent-ber1-1.cdninstagram.com/v/t51.82787-19/649495751_17933190315207210_5353338846932885448_n.jpg?stp=dst-jpg_s640x640_tt6&efg=eyJ2ZW5jb2RlX3RhZyI6InByb2ZpbGVfcGljLmRqYW5nby4xMDgwLmMyIn0&_nc_ht=scontent-ber1-1.cdninstagram.com&_nc_cat=1&_nc_oc=Q6cZ2gHOwqL200iJy_CDuckNYsJFoGv0ada8ZqYi_t0Z-fJ1ETm2GhDS4ZjPAzH63vTdE-M&_nc_ohc=-wQDiQLa-90Q7kNvwG3FskG&_nc_gid=Ve0x27qu6Kv1A0EjHmVRug&edm=APs17CUBAAAA&ccb=7-5&oh=00_Af1eP_cv4Tnt8XTvI_uvGOrr2fpx9msX1UJTxjCtJ44VWA&oe=69D2E337&_nc_sid=10d13b",
+      "type": "image"
+    }
+  ],
+  "note": "paoloanzn/free-code는 2026년 3월 31일 Anthropic npm 패키지에서 실수로 유출된 Claude Code 소스 코드를 기반으로 한 오픈소스 포크를 소개하는 Threads 게시물이다.\n모든 텔레메트리 제거·보안 프롬프트 가드레일 제거·실험적 기능 전부 활성화가 특징이며, OpenAI OAuth 지원 추가로 API 키 없이 GPT-5.4 및 Codex-5.3 사용이 가능해졌다고 전한다.\n관련 스레드에서는 유출 소스코드에서 발견된 44개 피처 플래그와 ULTRAPLAN 기능도 소개한다.\n공개 직후 2.4k 스타를 빠르게 기록했다.\n\n인사이트\nClaude Code 소스 유출은 Anthropic에게 보안 사고지만 개발자 커뮤니티에게는 AI 코딩 도구 내부 구조 이해와 오픈소스 대안 구축의 기회가 됐다.",
+  "removed": false,
+  "sort": 1668753419,
+  "tags": [
+    "ai",
+    "claude",
+    "codex",
+    "openclaw",
+    "ai-dev"
+  ],
+  "title": "엉클잡스 | Ai 시대, 돈이 되는 정보 전달 (@unclejobs.ai) on Threads",
+  "type": "link",
+  "user": {
+    "$id": 724603,
+    "$ref": "users"
+  }
+}

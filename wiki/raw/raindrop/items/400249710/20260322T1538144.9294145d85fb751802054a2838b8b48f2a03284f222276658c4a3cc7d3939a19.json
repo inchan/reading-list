@@ -1,0 +1,54 @@
+{
+  "_id": 400249710,
+  "collection": {
+    "$id": 25090102,
+    "$ref": "collections",
+    "oid": 25090102
+  },
+  "collectionId": 25090102,
+  "cover": "https://blogthumb.pstatic.net/MjAyMjA1MTZfOTcg/MDAxNjUyNjMyNTM5ODU4.W9hFr76TNLjtSthZRUlHISZLguzwYtnycWo5f1uWg80g.C-HaAquru4W2CCmFewPOHJ-B4h36djJpfv_SjdXgc6Ig.PNG.angela10140/KakaoTalk_20220516_013505589.png?type=w2",
+  "created": "2022-06-01T01:58:04.996Z",
+  "creatorRef": {
+    "_id": 724603,
+    "avatar": "",
+    "email": "",
+    "name": "kangsazang"
+  },
+  "domain": "m.blog.naver.com",
+  "excerpt": "글 들어가기 전에, 진짜 대산원조마늘순대 여기 순대국 너무 맛있으니까 꼬옥 먹어주세요,.......... 단양...",
+  "highlights": [],
+  "important": false,
+  "lastUpdate": "2026-03-22T15:38:14.469Z",
+  "link": "https://m.blog.naver.com/angela10140/222733774463",
+  "media": [
+    {
+      "link": "https://blogthumb.pstatic.net/MjAyMjA1MTZfOTcg/MDAxNjUyNjMyNTM5ODU4.W9hFr76TNLjtSthZRUlHISZLguzwYtnycWo5f1uWg80g.C-HaAquru4W2CCmFewPOHJ-B4h36djJpfv_SjdXgc6Ig.PNG.angela10140/KakaoTalk_20220516_013505589.png?type=w2",
+      "type": "image"
+    },
+    {
+      "link": "https://dthumb-phinf.pstatic.net/?src=%22https%3A%2F%2Fblogthumb.pstatic.net%2FMjAyMjA1MTZfMjE5%2FMDAxNjUyNjI4ODA1OTcz.buPM-gSf2zL38XQj_6eHOiWCVSDZONN0ZVHU1p9f_dwg.MMOoKgSrsrbb4GMcX3URu0joz5wH-0SqXmspVao8fYog.JPEG.angela10140%2FKakaoTalk_20220516_003047831.jpg%3Ftype%3Dw2%22&type=ff500_300",
+      "type": "image"
+    },
+    {
+      "link": "https://simg.pstatic.net/static.map/v2/map/staticmap.bin?caller=smarteditor&markers=color%3A0x11cc73%7Csize%3Amid%7Cpos%3A128.3697894%2036.9830845%7CviewSizeRatio%3A0.6%7Ctype%3Ad&w=700&h=315&scale=1&dataversion=165.82",
+      "type": "image"
+    },
+    {
+      "link": "https://simg.pstatic.net/static.map/v2/map/staticmap.bin?caller=smarteditor&markers=color%3A0x11cc73%7Csize%3Amid%7Cpos%3A128.3698922%2036.981999%7CviewSizeRatio%3A0.6%7Ctype%3Ad&w=700&h=315&scale=1&dataversion=165.82",
+      "type": "image"
+    }
+  ],
+  "note": "",
+  "removed": false,
+  "sort": 434689933,
+  "tags": [
+    "단양",
+    "맛집리스트"
+  ],
+  "title": "단양 음식점 리뷰2 💥대산원조마늘순대 단빵제빵소 소노문 단양 미채원｜단양 현지인 추천 맛집 !",
+  "type": "link",
+  "user": {
+    "$id": 724603,
+    "$ref": "users"
+  }
+}

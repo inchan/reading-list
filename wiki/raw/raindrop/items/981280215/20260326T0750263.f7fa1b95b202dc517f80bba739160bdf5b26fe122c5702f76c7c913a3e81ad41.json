@@ -1,0 +1,41 @@
+{
+  "_id": 981280215,
+  "collection": {
+    "$id": 68738561,
+    "$ref": "collections",
+    "oid": 68738561
+  },
+  "collectionId": 68738561,
+  "cover": "https://img-cdn.theqoo.net/HaEzVD.jpg",
+  "created": "2025-02-27T23:14:25.493Z",
+  "creatorRef": {
+    "_id": 724603,
+    "avatar": "",
+    "email": "",
+    "name": "kangsazang"
+  },
+  "domain": "theqoo.net",
+  "excerpt": "",
+  "highlights": [],
+  "important": false,
+  "lastUpdate": "2026-03-26T07:50:26.368Z",
+  "link": "https://theqoo.net/hot/3629473401?filter_mode=normal",
+  "media": [
+    {
+      "link": "https://img-cdn.theqoo.net/HaEzVD.jpg",
+      "type": "image"
+    }
+  ],
+  "note": "국내에서 최근 인기를 끌고 있는 도자기 브랜드 7곳을 소개하는 커뮤니티 게시물.\n이미지 기반 콘텐츠로 78,000회 이상의 조회수와 1,100개 이상의 댓글을 기록했다.\n구체적인 브랜드 목록은 이미지에 포함되어 텍스트로 추출이 어려우나, 높은 반응으로 보아 실용적인 참고 자료로 평가된다.\n\n인사이트\n이미지 기반 콘텐츠라 상세 브랜드 정보 확인이 제한적이나, 높은 조회수와 댓글 수가 콘텐츠의 유용성을 방증한다.",
+  "removed": false,
+  "sort": 981280217,
+  "tags": [
+    "도자기"
+  ],
+  "title": "더쿠 - 최근 핫한 국내 도자기 브랜드 7곳.jpg",
+  "type": "link",
+  "user": {
+    "$id": 724603,
+    "$ref": "users"
+  }
+}

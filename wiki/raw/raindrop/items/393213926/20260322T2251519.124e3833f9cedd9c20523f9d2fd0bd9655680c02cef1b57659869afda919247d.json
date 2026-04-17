@@ -1,0 +1,58 @@
+{
+  "_id": 393213926,
+  "collection": {
+    "$id": 20521420,
+    "$ref": "collections",
+    "oid": 20521420
+  },
+  "collectionId": 20521420,
+  "cover": "https://img.theqoo.net/img/Qnzzg.jpg",
+  "created": "2022-05-10T03:25:19.558Z",
+  "creatorRef": {
+    "_id": 724603,
+    "avatar": "",
+    "email": "",
+    "name": "kangsazang"
+  },
+  "domain": "theqoo.net",
+  "excerpt": "",
+  "highlights": [],
+  "important": false,
+  "lastUpdate": "2026-03-22T22:51:51.919Z",
+  "link": "https://theqoo.net/index.php?mid=hot&filter_mode=normal&document_srl=2436959961",
+  "media": [
+    {
+      "link": "https://img.theqoo.net/img/Qnzzg.jpg",
+      "type": "image"
+    },
+    {
+      "link": "https://img.theqoo.net/img/mLwhK.jpg",
+      "type": "image"
+    },
+    {
+      "link": "https://img.theqoo.net/img/zEdJr.jpg",
+      "type": "image"
+    },
+    {
+      "link": "https://img.theqoo.net/img/GLZqP.jpg",
+      "type": "image"
+    },
+    {
+      "link": "https://img.theqoo.net/img/PiISS.jpg",
+      "type": "image"
+    }
+  ],
+  "note": "",
+  "removed": false,
+  "sort": 393213926,
+  "tags": [
+    "에어프라이어 레시피 모음",
+    "레시피"
+  ],
+  "title": "에어프라이어 레시피.zip",
+  "type": "link",
+  "user": {
+    "$id": 724603,
+    "$ref": "users"
+  }
+}

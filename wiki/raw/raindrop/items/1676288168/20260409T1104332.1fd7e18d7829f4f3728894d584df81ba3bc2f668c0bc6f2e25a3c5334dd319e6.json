@@ -1,0 +1,51 @@
+{
+  "_id": 1676288168,
+  "collection": {
+    "$id": 68757539,
+    "$ref": "collections",
+    "oid": 68757539
+  },
+  "collectionId": 68757539,
+  "cover": "https://opengraph.githubassets.com/8b037e55e50f881db6f6fec8e6cd650b03356e507e932646ac8331a5d7e619a8/safishamsi/graphify",
+  "created": "2026-04-07T23:59:39.651Z",
+  "creatorRef": {
+    "_id": 724603,
+    "avatar": "",
+    "email": "",
+    "name": "kangsazang"
+  },
+  "domain": "github.com",
+  "excerpt": "AI coding assistant skill (Claude Code, Codex, OpenCode, OpenClaw, Factory Droid). Turn any folder of code, docs, papers, or images into a queryable knowledge graph - safishamsi/graphify",
+  "highlights": [],
+  "important": false,
+  "lastUpdate": "2026-04-09T11:04:33.208Z",
+  "link": "https://github.com/safishamsi/graphify",
+  "media": [
+    {
+      "link": "https://opengraph.githubassets.com/8b037e55e50f881db6f6fec8e6cd650b03356e507e932646ac8331a5d7e619a8/safishamsi/graphify",
+      "type": "image"
+    },
+    {
+      "link": "https://camo.githubusercontent.com/4d6f410013f7579cfd95d11c62d8f5da3bd7a8c7502b58f5ee7f4218bed4989f/68747470733a2f2f6170692e737461722d686973746f72792e636f6d2f7376673f7265706f733d736166697368616d73692f677261706869667926747970653d44617465",
+      "type": "image"
+    }
+  ],
+  "note": "graphify는 Claude Code, Codex, OpenCode, OpenClaw, Factory Droid, Trae 등 주요 AI 코딩 어시스턴트에서 `/graphify` 명령으로 사용할 수 있는 지식 그래프 스킬이다.\n코드 파일은 tree-sitter AST로 로컬 처리하고, 문서·논문·이미지는 Claude 비전으로 의미 추출하여 하나의 NetworkX 그래프로 병합한다.\n클러스터링은 Leiden 알고리즘으로 임베딩 없이 그래프 토폴로지만으로 커뮤니티를 탐지하며, 모든 관계는 EXTRACTED/INFERRED/AMBIGUOUS로 신뢰도를 명시한다.\nKarpathy 저장소+논문+이미지 52개 파일 기준 쿼리당 71.5배 토큰 절감을 달성하며, SHA256 캐시로 변경된 파일만 재처리한다.\n\n인사이트\n기존 RAG의 벡터 임베딩 없이 그래프 토폴로지만으로 의미 유사도를 표현하는 접근이 핵심 차별점이다.",
+  "removed": false,
+  "sort": 1676288168,
+  "tags": [
+    "ai",
+    "claude",
+    "codex",
+    "openclaw",
+    "ai-skills",
+    "knowledge-graph",
+    "context-engineering"
+  ],
+  "title": "safishamsi/graphify: AI coding assistant skill (Claude Code, Codex, OpenCode, OpenClaw, Factory Droid). Turn any folder of code, docs, papers, or images into a queryable knowledge graph",
+  "type": "link",
+  "user": {
+    "$id": 724603,
+    "$ref": "users"
+  }
+}

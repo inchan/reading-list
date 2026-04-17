@@ -1,0 +1,46 @@
+{
+  "_id": 1685716649,
+  "collection": {
+    "$id": 68757538,
+    "$ref": "collections",
+    "oid": 68757538
+  },
+  "collectionId": 68757538,
+  "cover": "https://avatars.githubusercontent.com/u/140389712?s=280&v=4",
+  "created": "2026-04-16T03:46:35.007Z",
+  "creatorRef": {
+    "_id": 724603,
+    "avatar": "",
+    "email": "",
+    "name": "kangsazang"
+  },
+  "domain": "github.com",
+  "excerpt": "AI Open Source Hacker House backed by Markr AI. NomaDamas has 31 repositories available. Follow their code on GitHub.",
+  "highlights": [],
+  "important": false,
+  "lastUpdate": "2026-04-16T11:04:20.314Z",
+  "link": "https://github.com/NomaDamas",
+  "media": [
+    {
+      "link": "https://avatars.githubusercontent.com/u/140389712?s=280&v=4",
+      "type": "image"
+    }
+  ],
+  "note": "NomaDamas는 Markr AI의 지원을 받는 한국 서울 소재 AI 오픈소스 해커하우스 조직이다.\n대표 프로젝트로 한국 특화 AI 스킬 모음집 k-skill(3,300+ 스타), 수능 국어를 푸는 AI KICE_slayer_AI_Korean(530+ 스타), RAG 연구 자동화 도구 AutoRAG-Research(125+ 스타), 한국어 LLM의 어두운 패턴을 분석하는 KoDarkBench 등이 있다.\n멤버들은 Meta Research, LlamaIndex, Hugging Face, NVIDIA 등 주요 AI 오픈소스 프로젝트에도 기여하고 있으며, 총 31개의 공개 저장소를 활발히 운영 중이다.\n\n인사이트\n한국 AI 생태계에서 주목할 만한 오픈소스 커뮤니티로, k-skill의 3,300+ 스타는 한국 특화 AI 스킬/도구에 대한 높은 시장 수요를 증명한다.",
+  "removed": false,
+  "sort": 1685716649,
+  "tags": [
+    "ai",
+    "openclaw",
+    "rag",
+    "ai-skills",
+    "prompt-engineering",
+    "한국어-llm"
+  ],
+  "title": "NomaDamas",
+  "type": "link",
+  "user": {
+    "$id": 724603,
+    "$ref": "users"
+  }
+}

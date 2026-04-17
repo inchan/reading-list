@@ -1,0 +1,41 @@
+{
+  "_id": 1684404379,
+  "collection": {
+    "$id": -1,
+    "$ref": "collections",
+    "oid": -1
+  },
+  "collectionId": -1,
+  "cover": "https://scontent-muc2-1.cdninstagram.com/v/t51.82787-19/670848079_18064427288474088_2299729987399800639_n.jpg?efg=eyJ2ZW5jb2RlX3RhZyI6InByb2ZpbGVfcGljLmRqYW5nby4zMjAuYzIifQ&_nc_ht=scontent-muc2-1.cdninstagram.com&_nc_cat=100&_nc_oc=Q6cZ2gETLMQS-1nGlBEaOGnfTKid_0FgY-SpZvi_Qh7qalnhlsAPEBIzRS8f-dYcqRW6G28&_nc_ohc=VhfBK9WCVrgQ7kNvwEcCvpS&_nc_gid=uYgu29prinQ0e_lT1NjEJQ&edm=APs17CUBAAAA&ccb=7-5&oh=00_Af0T5XZindeSDlfuqFxpAh6rEGTsDCCuGypBlxAzwUZkpg&oe=69E41CAD&_nc_sid=10d13b",
+  "created": "2026-04-14T13:46:35.570Z",
+  "creatorRef": {
+    "_id": 724603,
+    "avatar": "",
+    "email": "",
+    "name": "kangsazang"
+  },
+  "domain": "threads.com",
+  "excerpt": "터미널에서 이거 한 줄 치면 됩니다. \ncurl -fsSL https://openclis.com/install.sh | sh\n그 다음부터는 이렇게요. \nopenclis install monogram — 코드 검색이 0.1초 \nopenclis install monomento — 문서 수천 개를 즉시 검색 \nopenclis install monofetch — 웹 문서를 AI용 지식으로 변환 \nopenclis install monosurf — 브라우저를 터미널에서 제어 \nopenclis install vpncli — 다른 컴퓨터에 P2P로 바로 연결 \nopenclis install niia — 4개 DB 통합 검색, 자가진단까지 \n전부 Rust 싱글 바이너리예요. Node 없음. Python 없음. Docker 없음. 의존성 0. \n설치 5초, 실행 즉시. 10개 도구가 하나의 생태계로 연결됩니다. \n접 써보면 압니다. 말로 설명하는 것보다 openclis install 한 번이 빨라요.",
+  "highlights": [],
+  "important": false,
+  "lastUpdate": "2026-04-15T10:59:31.362Z",
+  "link": "https://www.threads.com/@niia.ai.clis/post/DW8VlPOD64W?xmt=AQF0oD56iA9G_bauAlJotbnbRWUydrVIDHfHpwjk6bw_YhjIjb5QCHdUlUhEF9HIO_HWuzOU&slof=1",
+  "media": [
+    {
+      "link": "https://scontent-muc2-1.cdninstagram.com/v/t51.82787-19/670848079_18064427288474088_2299729987399800639_n.jpg?efg=eyJ2ZW5jb2RlX3RhZyI6InByb2ZpbGVfcGljLmRqYW5nby4zMjAuYzIifQ&_nc_ht=scontent-muc2-1.cdninstagram.com&_nc_cat=100&_nc_oc=Q6cZ2gETLMQS-1nGlBEaOGnfTKid_0FgY-SpZvi_Qh7qalnhlsAPEBIzRS8f-dYcqRW6G28&_nc_ohc=VhfBK9WCVrgQ7kNvwEcCvpS&_nc_gid=uYgu29prinQ0e_lT1NjEJQ&edm=APs17CUBAAAA&ccb=7-5&oh=00_Af0T5XZindeSDlfuqFxpAh6rEGTsDCCuGypBlxAzwUZkpg&oe=69E41CAD&_nc_sid=10d13b",
+      "type": "image"
+    }
+  ],
+  "note": "",
+  "removed": false,
+  "sort": 1684404379,
+  "tags": [
+    "접근불가"
+  ],
+  "title": "CLIs (@niia.ai.clis) on Threads",
+  "type": "link",
+  "user": {
+    "$id": 724603,
+    "$ref": "users"
+  }
+}

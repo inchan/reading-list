@@ -1,0 +1,46 @@
+{
+  "_id": 1671496610,
+  "collection": {
+    "$id": 68757538,
+    "$ref": "collections",
+    "oid": 68757538
+  },
+  "collectionId": 68757538,
+  "cover": "https://scontent-ber1-1.cdninstagram.com/v/t51.82787-19/649495751_17933190315207210_5353338846932885448_n.jpg?stp=dst-jpg_s640x640_tt6&efg=eyJ2ZW5jb2RlX3RhZyI6InByb2ZpbGVfcGljLmRqYW5nby4xMDgwLmMyIn0&_nc_ht=scontent-ber1-1.cdninstagram.com&_nc_cat=106&_nc_oc=Q6cZ2gF6ITb26vAEYBP7EzMPUd5d1m4Y-69KSofmqtmZ-mrcwiyyLV7cFiIhdizIwx1Qw9Y&_nc_ohc=YjTMWj6lkJoQ7kNvwEWww4o&_nc_gid=15rV0ceG8ZGPMUxOOp16Cw&edm=APs17CUBAAAA&ccb=7-5&oh=00_Af1sRj8YzXx4kdfLG5jn6ZAhVYWVXPWSclwr4REvHssiFQ&oe=69D66737&_nc_sid=10d13b",
+  "created": "2026-04-04T05:54:06.977Z",
+  "creatorRef": {
+    "_id": 724603,
+    "avatar": "",
+    "email": "",
+    "name": "kangsazang"
+  },
+  "domain": "threads.com",
+  "excerpt": "AI 에이전트의 \"스킬\"이 \n슬래시 명령어 수준에 머물러 있다는 지적이 나왔습니다.\n\nRandom Labs가 Slate 블로그에서 던진 질문이에요.\n\n에이전트 스킬은 사람의 스킬과 같아야 하는데,\n지금은 사용자가 직접 발동하는 슬래시 명령어에 불과하다는 겁니다.\n\n스킬을 행동으로 바꾸면 어떻게 되는지, \n그리고 그걸 엮으면 뭐가 가능한지 나옵니다.\n\nSkill Chaining, \n에이전트 스킬이 슬래시 명령어를 벗어나는 법입니다.",
+  "highlights": [],
+  "important": false,
+  "lastUpdate": "2026-04-04T10:40:24.943Z",
+  "link": "https://www.threads.com/@unclejobs.ai/post/DWsm2H8CXbH?xmt=AQF0f0vooOBBIXRGVlK79tpr4UE8KQepSYq6GKaXg1ZbtLS5sN6C8xpabtqFJyUykA5TyGKs&slof=1",
+  "media": [
+    {
+      "link": "https://scontent-ber1-1.cdninstagram.com/v/t51.82787-19/649495751_17933190315207210_5353338846932885448_n.jpg?stp=dst-jpg_s640x640_tt6&efg=eyJ2ZW5jb2RlX3RhZyI6InByb2ZpbGVfcGljLmRqYW5nby4xMDgwLmMyIn0&_nc_ht=scontent-ber1-1.cdninstagram.com&_nc_cat=106&_nc_oc=Q6cZ2gF6ITb26vAEYBP7EzMPUd5d1m4Y-69KSofmqtmZ-mrcwiyyLV7cFiIhdizIwx1Qw9Y&_nc_ohc=YjTMWj6lkJoQ7kNvwEWww4o&_nc_gid=15rV0ceG8ZGPMUxOOp16Cw&edm=APs17CUBAAAA&ccb=7-5&oh=00_Af1sRj8YzXx4kdfLG5jn6ZAhVYWVXPWSclwr4REvHssiFQ&oe=69D66737&_nc_sid=10d13b",
+      "type": "image"
+    }
+  ],
+  "note": "Y Combinator 지원 스타트업 Random Labs의 Slate 블로그에서 제기한 AI 에이전트 스킬 아키텍처의 한계를 소개하는 포스트다.\n현재 에이전트 스킬은 사용자가 직접 발동해야 하는 슬래시 명령어 수준에 머물러 있어, 사람의 스킬처럼 능동적으로 작동하지 못한다는 비판이다.\nSkill Chaining 개념을 통해 스킬을 서로 연결하고 행동으로 전환하면 훨씬 강력한 자율 에이전트 구현이 가능하다고 주장한다.\nSlate는 '스웜 네이티브(swarm-native)' 방식의 병렬 실행으로 이를 구현하고 있다.\n\n인사이트\nClaude Code를 비롯한 현재 AI 코딩 에이전트의 스킬이 사용자 발동에 의존한다는 근본적 한계를 명확히 짚어낸다.",
+  "removed": false,
+  "sort": 1671496699,
+  "tags": [
+    "ai",
+    "ai-agent",
+    "ai-skills",
+    "context-engineering",
+    "claude",
+    "ai-dev"
+  ],
+  "title": "엉클잡스 | Ai 시대, 돈이 되는 정보 전달 (@unclejobs.ai) on Threads",
+  "type": "link",
+  "user": {
+    "$id": 724603,
+    "$ref": "users"
+  }
+}

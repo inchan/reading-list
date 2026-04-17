@@ -1,0 +1,51 @@
+{
+  "_id": 857570762,
+  "collection": {
+    "$id": 47947246,
+    "$ref": "collections",
+    "oid": 47947246
+  },
+  "collectionId": 47947246,
+  "cover": "https://img-cdn.theqoo.net/YktdDi.webp",
+  "created": "2024-09-20T03:24:11.241Z",
+  "creatorRef": {
+    "_id": 724603,
+    "avatar": "",
+    "email": "",
+    "name": "kangsazang"
+  },
+  "domain": "theqoo.net",
+  "excerpt": "영국의 한적한 마을에서 17살 여학생이 살해된 지 5년. 한 학생이 사건의 진실을 밝히고 진짜 범인을 찾아내겠다고 결심한다.시청 뷰수 : 19,500,000* 소설 원작",
+  "highlights": [],
+  "important": false,
+  "lastUpdate": "2026-03-22T22:51:52.507Z",
+  "link": "https://theqoo.net/hot/3397951158?filter_mode=normal",
+  "media": [
+    {
+      "link": "https://img-cdn.theqoo.net/YktdDi.webp",
+      "type": "image"
+    },
+    {
+      "link": "https://img-cdn.theqoo.net/IacKIY.webp",
+      "type": "image"
+    }
+  ],
+  "note": "",
+  "reminder": {
+    "date": null
+  },
+  "removed": false,
+  "sort": 857570762,
+  "tags": [
+    "OTT",
+    "드라마",
+    "영국",
+    "넷플릭스"
+  ],
+  "title": "더쿠 - 올해 타율 대박이라는 영국 넷플릭스 드라마.jpg",
+  "type": "link",
+  "user": {
+    "$id": 724603,
+    "$ref": "users"
+  }
+}

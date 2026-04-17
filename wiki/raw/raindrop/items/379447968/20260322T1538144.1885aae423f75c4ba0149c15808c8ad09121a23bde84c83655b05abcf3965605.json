@@ -1,0 +1,58 @@
+{
+  "_id": 379447968,
+  "collection": {
+    "$id": 47947218,
+    "$ref": "collections",
+    "oid": 47947218
+  },
+  "collectionId": 47947218,
+  "cover": "https://www.dogdrip.net/files/attach/xeicon/default_image.png?20211119094908",
+  "created": "2022-03-29T00:36:57.616Z",
+  "creatorRef": {
+    "_id": 724603,
+    "avatar": "",
+    "email": "",
+    "name": "kangsazang"
+  },
+  "domain": "dogdrip.net",
+  "excerpt": "육전. 가격대가 좀 있긴한데, 먹는 속도 맞춰서 직접 구워주심. 전반적으로 나오는 반찬도 가격대가 있어서 고급진편. 저녁에 가서 슬한잔하면서 천천히 먹기 좋은 메뉴 떡갈비. 일단 떡갈비에 백반상을 줌. 그리고 ...",
+  "highlights": [],
+  "important": false,
+  "lastUpdate": "2026-03-22T15:38:14.469Z",
+  "link": "https://www.dogdrip.net/384328174",
+  "media": [
+    {
+      "link": "https://www.dogdrip.net/files/attach/xeicon/default_image.png?20211119094908",
+      "type": "image"
+    },
+    {
+      "link": "https://www.dogdrip.net/dvs/d/22/02/18/b6d295723c35681281491a5e4018affd.jpeg",
+      "type": "image"
+    },
+    {
+      "link": "https://www.dogdrip.net/dvs/d/22/02/18/c32c42412f63a54e5a948fb211b2f1cf.jpeg",
+      "type": "image"
+    },
+    {
+      "link": "https://www.dogdrip.net/dvs/d/22/02/18/d8aefa5d0e05991015854cea166cdfc3.jpeg",
+      "type": "image"
+    },
+    {
+      "link": "https://www.dogdrip.net/dvs/d/22/02/18/02ac8804fc90d87e121d32ea7bb0f524.jpeg",
+      "type": "image"
+    }
+  ],
+  "note": "",
+  "removed": false,
+  "sort": 379447968,
+  "tags": [
+    "광주",
+    "맛집리스트"
+  ],
+  "title": "광주가면 먹어봄직함 음식들 모음 - DogDrip.Net 개드립",
+  "type": "article",
+  "user": {
+    "$id": 724603,
+    "$ref": "users"
+  }
+}

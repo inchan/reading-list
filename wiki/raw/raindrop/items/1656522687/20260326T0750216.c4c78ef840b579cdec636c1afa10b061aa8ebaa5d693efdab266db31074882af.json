@@ -1,0 +1,45 @@
+{
+  "_id": 1656522687,
+  "collection": {
+    "$id": 68757538,
+    "$ref": "collections",
+    "oid": 68757538
+  },
+  "collectionId": 68757538,
+  "cover": "https://scontent-fra5-1.cdninstagram.com/v/t51.82787-15/656085917_17869133295596148_8421560233898284254_n.jpg?stp=cp6_dst-jpg_e35_tt6&efg=eyJ2ZW5jb2RlX3RhZyI6InRocmVhZHMuRkVFRC5pbWFnZV91cmxnZW4uMTI1M3g4NDAuc2RyLmY4Mjc4Ny5kZWZhdWx0X2ltYWdlLmMyIn0&_nc_ht=scontent-fra5-1.cdninstagram.com&_nc_cat=100&_nc_oc=Q6cZ2gE-JKo65CUcG0kWoh1ek7KpYJMeAA0tq3jMZR-MQmfTY0H9lC0De0gMM2z7dJI5kqY&_nc_ohc=FDB0L92ZiQAQ7kNvwHLKUXs&_nc_gid=q0VyrGnwG9Jq4vVvSaRHrg&edm=APs17CUBAAAA&ccb=7-5&ig_cache_key=Mzg2MDE1Njg3Njg1MjUyNDE3NQ%3D%3D.3-ccb7-5&oh=00_AfxK95vZ_jde0OWUFP3B_5DoVu7YmjISSWGj7aMX9K1juw&oe=69C8DF8A&_nc_sid=10d13b",
+  "created": "2026-03-24T23:52:32.851Z",
+  "creatorRef": {
+    "_id": 724603,
+    "avatar": "",
+    "email": "",
+    "name": "kangsazang"
+  },
+  "domain": "threads.com",
+  "excerpt": "vLLM으로 모델 서빙하시는 분들, 이번에 공개된 Semantic Router 비전 페이퍼는 꼭 한번 훑어보시면 좋겠습니다.\n\n단순히 요청을 어디로 보낼지 결정하는 라우팅을 넘어, 이제는 'WRP(Workload-Router-Pool)'라는 개념으로 추론 시스템 전체를 최적화하는 밑그림을 그리고 있네요.\n\n어떤 작업(Workload)을 처리할지, 어떻게 분배(Router)할지, 그리고 어디서 실행(Pool)할지를 엔드투엔드로 묶어서 고민한 흔적이 보입니다.\n\nLLM 인퍼런스 비용이나 구조 효율화 고민 중이시라면 앞으로 시스템이 어떻게 진화할지 꽤 좋은 힌트를 얻으실 수 있을 것 같습니다.",
+  "highlights": [],
+  "important": false,
+  "lastUpdate": "2026-03-26T07:50:21.622Z",
+  "link": "https://www.threads.com/@feelfree_ai/post/DWSCDo-E3SP?xmt=AQF0ITntGlQm1vNlg800BPi2b07EvdPXW_WAOjeAOxXThv-CR2kqtE2L-MPk67pg29WWP0A&slof=1",
+  "media": [
+    {
+      "link": "https://scontent-fra5-1.cdninstagram.com/v/t51.82787-15/656085917_17869133295596148_8421560233898284254_n.jpg?stp=cp6_dst-jpg_e35_tt6&efg=eyJ2ZW5jb2RlX3RhZyI6InRocmVhZHMuRkVFRC5pbWFnZV91cmxnZW4uMTI1M3g4NDAuc2RyLmY4Mjc4Ny5kZWZhdWx0X2ltYWdlLmMyIn0&_nc_ht=scontent-fra5-1.cdninstagram.com&_nc_cat=100&_nc_oc=Q6cZ2gE-JKo65CUcG0kWoh1ek7KpYJMeAA0tq3jMZR-MQmfTY0H9lC0De0gMM2z7dJI5kqY&_nc_ohc=FDB0L92ZiQAQ7kNvwHLKUXs&_nc_gid=q0VyrGnwG9Jq4vVvSaRHrg&edm=APs17CUBAAAA&ccb=7-5&ig_cache_key=Mzg2MDE1Njg3Njg1MjUyNDE3NQ%3D%3D.3-ccb7-5&oh=00_AfxK95vZ_jde0OWUFP3B_5DoVu7YmjISSWGj7aMX9K1juw&oe=69C8DF8A&_nc_sid=10d13b",
+      "type": "image"
+    }
+  ],
+  "note": "vLLM Semantic Router는 LLM 서빙 요청을 의미론적으로 분류·라우팅하는 오픈소스 프레임워크로, 2025년 9월 처음 공개된 후 2026년 3월 v0.2 Athena까지 발전했다.\n최신 비전 페이퍼(arXiv 2603.04444)는 Workload·Router·Pool(WRP) 아키텍처를 제시하여 어떤 요청을 처리할지, 어떻게 분배할지, 어디서 실행할지를 통합 최적화하는 밑그림을 그린다.\nNeurIPS 2025 논문에서는 단순 쿼리에 추론 모드를 생략함으로써 지연 47.1%, 토큰 사용 48.5% 절감을 달성했다.\nvLLM·OpenAI·Anthropic·Azure·Bedrock·Gemini 등 다중 백엔드를 아우르는 멀티 프로바이더 라우팅도 지원한다.\n\n인사이트\nWRP 아키텍처는 LLM 인퍼런스 비용을 줄이려는 팀이 '어느 모델을 얼마나 써야 하나'라는 질문에 체계적으로 답하는 프레임워크다.",
+  "removed": false,
+  "sort": 1656522687,
+  "tags": [
+    "ai",
+    "ai-infra",
+    "context-engineering",
+    "rag",
+    "ai-workflow"
+  ],
+  "title": "feelfree_ai (@feelfree_ai) on Threads",
+  "type": "link",
+  "user": {
+    "$id": 724603,
+    "$ref": "users"
+  }
+}

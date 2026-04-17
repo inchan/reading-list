@@ -1,0 +1,46 @@
+{
+  "_id": 379448020,
+  "collection": {
+    "$id": 20521418,
+    "$ref": "collections",
+    "oid": 20521418
+  },
+  "collectionId": 20521418,
+  "cover": "https://www.dogdrip.net/files/attach/xeicon/default_image.png?20211119094908",
+  "created": "2022-03-29T00:38:12.720Z",
+  "creatorRef": {
+    "_id": 724603,
+    "avatar": "",
+    "email": "",
+    "name": "kangsazang"
+  },
+  "domain": "dogdrip.net",
+  "excerpt": "",
+  "highlights": [],
+  "important": false,
+  "lastUpdate": "2026-03-22T15:38:14.469Z",
+  "link": "https://www.dogdrip.net/380473644",
+  "media": [
+    {
+      "link": "https://www.dogdrip.net/files/attach/xeicon/default_image.png?20211119094908",
+      "type": "image"
+    },
+    {
+      "link": "https://www.dogdrip.net/dvs/d/22/01/31/a69ed76f12d5387c284a1fd182349968.jpg",
+      "type": "image"
+    }
+  ],
+  "note": "",
+  "removed": false,
+  "sort": 379448020,
+  "tags": [
+    "동해",
+    "맛집"
+  ],
+  "title": "교차검증된 맛집 - DogDrip.Net 개드립",
+  "type": "article",
+  "user": {
+    "$id": 724603,
+    "$ref": "users"
+  }
+}

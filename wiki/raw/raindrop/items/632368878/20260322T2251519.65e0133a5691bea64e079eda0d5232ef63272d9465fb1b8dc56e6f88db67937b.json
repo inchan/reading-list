@@ -1,0 +1,57 @@
+{
+  "_id": 632368878,
+  "collection": {
+    "$id": 20521420,
+    "$ref": "collections",
+    "oid": 20521420
+  },
+  "collectionId": 20521420,
+  "cover": "https://cdn.ppomppu.co.kr/zboard/data3/2023/0803/20230803001052_QveH0z5INU.jpg",
+  "created": "2023-08-22T11:49:59.092Z",
+  "creatorRef": {
+    "_id": 724603,
+    "avatar": "",
+    "email": "",
+    "name": "kangsazang"
+  },
+  "domain": "m.ppomppu.co.kr",
+  "excerpt": "여기를 눌러 링크를 확인하세요",
+  "highlights": [],
+  "important": false,
+  "lastUpdate": "2026-03-22T22:51:51.919Z",
+  "link": "https://m.ppomppu.co.kr/new/bbs_view.php?id=etc_info&no=37969",
+  "media": [
+    {
+      "link": "https://cdn.ppomppu.co.kr/zboard/data3/2023/0803/20230803001052_QveH0z5INU.jpg",
+      "type": "image"
+    },
+    {
+      "link": "https://cdn.ppomppu.co.kr/zboard/data3/2023/0803/m_20230803001052_QveH0z5INU.jpg",
+      "type": "image"
+    },
+    {
+      "link": "https://cdn.ppomppu.co.kr/zboard/data3/2023/0803/m_20230803001052_CGU1WakkwM.jpg",
+      "type": "image"
+    },
+    {
+      "link": "https://cdn.ppomppu.co.kr/zboard/data3/2023/0803/m_20230803001053_7OfVlZ8zbH.jpg",
+      "type": "image"
+    },
+    {
+      "link": "https://cdn.ppomppu.co.kr/zboard/data3/2023/0803/m_20230803001053_InuhX8GsuK.jpg",
+      "type": "image"
+    }
+  ],
+  "note": "",
+  "removed": false,
+  "sort": 857568897,
+  "tags": [
+    "레시피"
+  ],
+  "title": "고깃집 비밀 레시피 ㄷ..JPG",
+  "type": "article",
+  "user": {
+    "$id": 724603,
+    "$ref": "users"
+  }
+}

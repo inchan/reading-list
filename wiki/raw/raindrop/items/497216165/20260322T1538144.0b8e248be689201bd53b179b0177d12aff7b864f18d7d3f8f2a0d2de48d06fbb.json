@@ -1,0 +1,42 @@
+{
+  "_id": 497216165,
+  "collection": {
+    "$id": 26972538,
+    "$ref": "collections",
+    "oid": 26972538
+  },
+  "collectionId": 26972538,
+  "cover": "https://ssl.pstatic.net/sstatic/search/common/og_v3.png",
+  "created": "2023-01-06T05:02:51.260Z",
+  "creatorRef": {
+    "_id": 724603,
+    "avatar": "",
+    "email": "",
+    "name": "kangsazang"
+  },
+  "domain": "m.search.naver.com",
+  "excerpt": "'라꼬시나'의 네이버 통합검색 결과입니다.",
+  "highlights": [],
+  "important": false,
+  "lastUpdate": "2026-03-22T15:38:14.469Z",
+  "link": "https://m.search.naver.com/search.naver?where=m&sm=mtb_jum&query=%EB%9D%BC%EA%BC%AC%EC%8B%9C%EB%82%98",
+  "media": [
+    {
+      "link": "https://ssl.pstatic.net/sstatic/search/common/og_v3.png",
+      "type": "image"
+    }
+  ],
+  "note": "",
+  "removed": false,
+  "sort": 632368504,
+  "tags": [
+    "강릉",
+    "맛집"
+  ],
+  "title": "라꼬시나 : 네이버 통합검색",
+  "type": "link",
+  "user": {
+    "$id": 724603,
+    "$ref": "users"
+  }
+}

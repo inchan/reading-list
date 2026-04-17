@@ -1,0 +1,59 @@
+{
+  "_id": 379450738,
+  "collection": {
+    "$id": 47947214,
+    "$ref": "collections",
+    "oid": 47947214
+  },
+  "collectionId": 47947214,
+  "cover": "https://blogthumb.pstatic.net/MjAyMTEwMDFfMTIy/MDAxNjMzMDcwOTMzNjEz.-adYpgBdq2I6wnwUce5eSuxrzdWpH7ckn90EMSX5l7kg.FkqdnIUR5shB8e1aDNmFH_8LN82Lj_jaQL9u1h9qCnUg.JPEG.jmjm3060/1633070831250.jpg?type=w2",
+  "created": "2022-03-29T00:42:52.261Z",
+  "creatorRef": {
+    "_id": 724603,
+    "avatar": "",
+    "email": "",
+    "name": "kangsazang"
+  },
+  "domain": "m.blog.naver.com",
+  "excerpt": "식객 허영만의 백반 기행 123회 충남 보령 서해안 밥상 편에는 배우 김유미 씨와 함께합니다. 배우 김유미 ...",
+  "highlights": [],
+  "important": false,
+  "lastUpdate": "2026-03-22T15:38:14.469Z",
+  "link": "https://m.blog.naver.com/jmjm3060/222523411261",
+  "media": [
+    {
+      "link": "https://blogthumb.pstatic.net/MjAyMTEwMDFfMTIy/MDAxNjMzMDcwOTMzNjEz.-adYpgBdq2I6wnwUce5eSuxrzdWpH7ckn90EMSX5l7kg.FkqdnIUR5shB8e1aDNmFH_8LN82Lj_jaQL9u1h9qCnUg.JPEG.jmjm3060/1633070831250.jpg?type=w2",
+      "type": "image"
+    },
+    {
+      "link": "https://mblogthumb-phinf.pstatic.net/MjAyMTEwMDFfMTgz/MDAxNjMzMDcwOTMxNTk1.34gAKiv-JU5wMqGocQcW_wEmqR9I9ZxCpZHAPdd10fQg.32dzBXuEMwyXgjPMDnlfSffv0EmRMTdcspzjRplYeewg.JPEG.jmjm3060/1633070840232.jpg?type=w800",
+      "type": "image"
+    },
+    {
+      "link": "https://mblogthumb-phinf.pstatic.net/MjAyMTEwMDFfMSAg/MDAxNjMzMDcwOTMyNDYz.E9WmZzOm0TsqTVve2RBrKe5pOjoj5NmXeph_V9CDxIEg.MqnGUMgd1mGBSJcDNlRL-1RjeufreebiILzuos5ePN8g.JPEG.jmjm3060/1633070828727.jpg?type=w800",
+      "type": "image"
+    },
+    {
+      "link": "https://mblogthumb-phinf.pstatic.net/MjAyMTEwMDFfODIg/MDAxNjMzMDcwOTMzMjM5.fQANZOpYaPJeS3MVUVo0o-xFIZaQbKB0rQE-JU9zBrMg.S9Uk8Gy3S4t-gCtn-kpzZ1TOIivNK9NJk9x1rqHcmyUg.JPEG.jmjm3060/1633070833171.jpg?type=w800",
+      "type": "image"
+    },
+    {
+      "link": "https://mblogthumb-phinf.pstatic.net/MjAyMTEwMDFfMTIy/MDAxNjMzMDcwOTMzNjEz.-adYpgBdq2I6wnwUce5eSuxrzdWpH7ckn90EMSX5l7kg.FkqdnIUR5shB8e1aDNmFH_8LN82Lj_jaQL9u1h9qCnUg.JPEG.jmjm3060/1633070831250.jpg?type=w800",
+      "type": "image"
+    }
+  ],
+  "note": "",
+  "removed": false,
+  "sort": 387450513,
+  "tags": [
+    "서해",
+    "보령",
+    "쌈밥"
+  ],
+  "title": "식객 허영만의 백반 기행 123회 충남 서해 보령 밥상, 오천항 키조개 샤부샤부 두루치기,쫄복탕 복어찜백반, 대천항 전어 대하 구이 꽃게찜, 자장면 라조면 고추짬뽕 사천성 중국집",
+  "type": "link",
+  "user": {
+    "$id": 724603,
+    "$ref": "users"
+  }
+}

@@ -1,0 +1,45 @@
+{
+  "_id": 1654298965,
+  "collection": {
+    "$id": 68757539,
+    "$ref": "collections",
+    "oid": 68757539
+  },
+  "collectionId": 68757539,
+  "cover": "https://scontent-ber1-1.cdninstagram.com/v/t51.82787-15/655993181_17934891918207210_2855479461190099496_n.jpg?stp=dst-jpg_e35_tt6&efg=eyJ2ZW5jb2RlX3RhZyI6InRocmVhZHMuRkVFRC5pbWFnZV91cmxnZW4uMTAxNHgxMjAwLnNkci5mODI3ODcuZGVmYXVsdF9pbWFnZS5jMiJ9&_nc_ht=scontent-ber1-1.cdninstagram.com&_nc_cat=106&_nc_oc=Q6cZ2gG-jelLEJIQfcIBiPNj7SDLsNZg-PkA_HFdr4r4aAST-4phenwACuWzYbLmHlSpvVA&_nc_ohc=Mb8oBQbgdhMQ7kNvwEHOH1c&_nc_gid=TD5fcdh7j4gA1-nfL70YGA&edm=APs17CUBAAAA&ccb=7-5&ig_cache_key=Mzg1ODQxNzU4MDg1NTkwNjM5Nw%3D%3D.3-ccb7-5&oh=00_AfysIB4ETE1QCmsPFOT8YW75uYYat-eSMp5Ape9wF_25Yg&oe=69C698BC&_nc_sid=10d13b",
+  "created": "2026-03-23T06:47:58.359Z",
+  "creatorRef": {
+    "_id": 724603,
+    "avatar": "",
+    "email": "",
+    "name": "kangsazang"
+  },
+  "domain": "threads.com",
+  "excerpt": "AI 에이전트가 헤지펀드를 통째로 시뮬레이션합니다\n\n애널리스트 4명, 리서처 2명, 트레이더 1명, 리스크 매니저, 펀드 매니저. \n전부 AI. 전부 오픈소스.\n\nTradingAgents. GitHub 스타 3만 5,900개. 포크 6,800개.\n\n한 명의 AI가 주식을 사고파는 게 아닙니다. AI들이 실제 트레이딩 회사처럼 역할을 나누고, 서로 토론하고, 반박하고, 위험을 평가한 다음에야 비로소 한 건의 매매를 결정합니다.\n\n헤지펀드가 2% 관리 수수료 + 20% 성과 수수료를 받고 하는 바로 그 워크플로우입니다. 이건 무료입니다.",
+  "highlights": [],
+  "important": false,
+  "lastUpdate": "2026-03-26T00:18:47.482Z",
+  "link": "https://www.threads.com/@unclejobs.ai/post/DWL2ljWCdBd?xmt=AQF0leOzdZbaLP_vAvgeuTKA6RHad-KWitxUjpBngT-ic8T40ZWkA9YinaWvPGxGMGcD4-Ud&slof=1",
+  "media": [
+    {
+      "link": "https://scontent-ber1-1.cdninstagram.com/v/t51.82787-15/655993181_17934891918207210_2855479461190099496_n.jpg?stp=dst-jpg_e35_tt6&efg=eyJ2ZW5jb2RlX3RhZyI6InRocmVhZHMuRkVFRC5pbWFnZV91cmxnZW4uMTAxNHgxMjAwLnNkci5mODI3ODcuZGVmYXVsdF9pbWFnZS5jMiJ9&_nc_ht=scontent-ber1-1.cdninstagram.com&_nc_cat=106&_nc_oc=Q6cZ2gG-jelLEJIQfcIBiPNj7SDLsNZg-PkA_HFdr4r4aAST-4phenwACuWzYbLmHlSpvVA&_nc_ohc=Mb8oBQbgdhMQ7kNvwEHOH1c&_nc_gid=TD5fcdh7j4gA1-nfL70YGA&edm=APs17CUBAAAA&ccb=7-5&ig_cache_key=Mzg1ODQxNzU4MDg1NTkwNjM5Nw%3D%3D.3-ccb7-5&oh=00_AfysIB4ETE1QCmsPFOT8YW75uYYat-eSMp5Ape9wF_25Yg&oe=69C698BC&_nc_sid=10d13b",
+      "type": "image"
+    }
+  ],
+  "note": "TradingAgents는 UCLA·MIT 연구자들이 개발한 멀티 에이전트 LLM 금융 거래 프레임워크로, 실제 헤지펀드 조직 구조를 AI 에이전트로 구현한다.\n기본·감성·뉴스·기술 분석가 4팀이 병렬로 시장 정보를 수집하고, 리서처가 종합한 뒤 트레이더가 결정하면 리스크 매니저 검토 후 펀드 매니저가 최종 승인하는 5단계 워크플로우다.\nGitHub에서 39,300개 이상의 스타와 7,300개 이상의 포크를 기록하며 오픈소스 금융 AI 분야의 대표 프로젝트로 자리잡았다.\nLangGraph 기반으로 OpenAI·Google·Anthropic·xAI 등 다양한 LLM 공급자를 지원하며, v0.2.0(2026년 2월)부터 Claude 4.x도 공식 지원한다.\n\n메모: 금융 도메인에서 검증된 역할 분담 멀티 에이전트 아키텍처는 다른 복잡한 의사결정 도메인(법률 분석, 의료 진단 등)에도 참고할 수 있는 설계 패턴을 제공한다.\n분류: 아티펙트\n태그: trading, multi-agent, finance, llm, open-source",
+  "removed": false,
+  "sort": 1654523538,
+  "tags": [
+    "trading",
+    "multi-agent",
+    "finance",
+    "llm",
+    "open-source"
+  ],
+  "title": "엉클잡스 | Ai 시대, 돈이 되는 정보 전달 (@unclejobs.ai) on Threads",
+  "type": "link",
+  "user": {
+    "$id": 724603,
+    "$ref": "users"
+  }
+}

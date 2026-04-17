@@ -1,0 +1,45 @@
+{
+  "_id": 1653989367,
+  "collection": {
+    "$id": 68757539,
+    "$ref": "collections",
+    "oid": 68757539
+  },
+  "collectionId": 68757539,
+  "cover": "https://scontent-fra3-1.cdninstagram.com/v/t51.82787-19/552980117_18537037000008433_7485189244062459637_n.jpg?stp=dst-jpg_s640x640_tt6&efg=eyJ2ZW5jb2RlX3RhZyI6InByb2ZpbGVfcGljLmRqYW5nby4xMDI0LmMyIn0&_nc_ht=scontent-fra3-1.cdninstagram.com&_nc_cat=1&_nc_oc=Q6cZ2gEcqrbcT0J8cUNhrnu-YCz_CJqe5A7h8v7h-4Ej0RMq_xN7FBt2LZxYJfJJxKQUklY&_nc_ohc=aPuHC0mF8oEQ7kNvwG_b8fC&_nc_gid=Ng3Qvcjkii4QlB5F5JO9Sg&edm=APs17CUBAAAA&ccb=7-5&oh=00_Afz10XrB7F8n4TpBcrEjeT8O08AOZrTYdSkSkldslaT3jw&oe=69C6716F&_nc_sid=10d13b",
+  "created": "2026-03-23T01:17:11.437Z",
+  "creatorRef": {
+    "_id": 724603,
+    "avatar": "",
+    "email": "",
+    "name": "kangsazang"
+  },
+  "domain": "threads.com",
+  "excerpt": "깃허브 :\nhttps://github.com/louislva/claude-peers-mcp",
+  "highlights": [],
+  "important": false,
+  "lastUpdate": "2026-03-26T00:18:40.690Z",
+  "link": "https://www.threads.com/@choi.openai/post/DWLqcpAj-cN?xmt=AQF0gRXVfMVQCZAlDwO7MIgiELtWHO7wq_6zZfuoxJrG5C9eNXT17ZmriFQuaifPuiDSc3c&slof=1",
+  "media": [
+    {
+      "link": "https://scontent-fra3-1.cdninstagram.com/v/t51.82787-19/552980117_18537037000008433_7485189244062459637_n.jpg?stp=dst-jpg_s640x640_tt6&efg=eyJ2ZW5jb2RlX3RhZyI6InByb2ZpbGVfcGljLmRqYW5nby4xMDI0LmMyIn0&_nc_ht=scontent-fra3-1.cdninstagram.com&_nc_cat=1&_nc_oc=Q6cZ2gEcqrbcT0J8cUNhrnu-YCz_CJqe5A7h8v7h-4Ej0RMq_xN7FBt2LZxYJfJJxKQUklY&_nc_ohc=aPuHC0mF8oEQ7kNvwG_b8fC&_nc_gid=Ng3Qvcjkii4QlB5F5JO9Sg&edm=APs17CUBAAAA&ccb=7-5&oh=00_Afz10XrB7F8n4TpBcrEjeT8O08AOZrTYdSkSkldslaT3jw&oe=69C6716F&_nc_sid=10d13b",
+      "type": "image"
+    }
+  ],
+  "note": "claude-peers-mcp는 같은 머신에서 실행되는 여러 Claude Code 세션이 사전 설정 없이 서로 직접 메시지를 교환할 수 있도록 하는 MCP 서버다.\n로컬호스트 7899 포트의 브로커 데몬과 SQLite DB를 통한 허브-앤-스포크 아키텍처로, Claude 인스턴스마다 작업 디렉토리·Git 루트·작업 요약을 등록하고 다른 피어를 발견한다.\nOpenAI API 키를 설정하면 각 인스턴스가 시작 시 현재 작업 맥락을 자동으로 요약해 다른 인스턴스에게 공유한다.\n메시지는 SQLite에 저장되고 1초마다 폴링하는 방식으로 거의 실시간 전달된다.\n\n메모: 복잡한 pre-configuration 없이 여러 Claude Code 세션이 역할 분담 협업을 할 수 있어, 하나가 백엔드를 만드는 동안 다른 하나가 프론트엔드를 병렬 개발하는 워크플로우가 즉시 가능하다.\n분류: 아티펙트\n태그: mcp, claude-code, multi-agent, peer-to-peer, developer-tools",
+  "removed": false,
+  "sort": 1654523536,
+  "tags": [
+    "mcp",
+    "claude-code",
+    "multi-agent",
+    "peer-to-peer",
+    "developer-tools"
+  ],
+  "title": "CHOI (@choi.openai) on Threads",
+  "type": "link",
+  "user": {
+    "$id": 724603,
+    "$ref": "users"
+  }
+}

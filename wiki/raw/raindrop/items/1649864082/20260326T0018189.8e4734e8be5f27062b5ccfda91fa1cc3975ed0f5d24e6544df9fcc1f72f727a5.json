@@ -1,0 +1,44 @@
+{
+  "_id": 1649864082,
+  "collection": {
+    "$id": 68738562,
+    "$ref": "collections",
+    "oid": 68738562
+  },
+  "collectionId": 68738562,
+  "cover": "https://scontent-dus1-1.cdninstagram.com/v/t51.82787-15/640915130_17895146814408836_5474574703499493496_n.jpg?stp=cp6_dst-jpg_e35_tt6&efg=eyJ2ZW5jb2RlX3RhZyI6InRocmVhZHMuQ0FST1VTRUxfSVRFTS5pbWFnZV91cmxnZW4uMTE3OXgxODY0LnNkci5mODI3ODcuZGVmYXVsdF9pbWFnZS5jMiJ9&_nc_ht=scontent-dus1-1.cdninstagram.com&_nc_cat=108&_nc_oc=Q6cZ2gEaoW5W8q_8jQDIrdUooEtrQOI0hGiCMw2TCoinFBPkYpeAq3KEl-yPXARDjNeznKo&_nc_ohc=7SBCquX-uIwQ7kNvwHL2HcY&_nc_gid=e4bAIaUdRv55hvYq0gBXDg&edm=APs17CUBAAAA&ccb=7-5&ig_cache_key=MzgzODU1Njk4MzE4OTAxOTIwNw%3D%3D.3-ccb7-5&oh=00_AfzAqvau-lwqNMsB4zZA9SVDlb8lO9aU84swPJRSWeUvtA&oe=69C20C35&_nc_sid=10d13b",
+  "created": "2026-03-19T16:07:22.490Z",
+  "creatorRef": {
+    "_id": 724603,
+    "avatar": "",
+    "email": "",
+    "name": "kangsazang"
+  },
+  "domain": "threads.com",
+  "excerpt": "클로드코드의 아버지 보리스 체르니가\n팀에서 사용하는 사례와 워크플로우를 공개했는데 \n이걸 X이용자가 Claude.md로 만들어서 공유했어\n\n그래서 나는 이걸 한글로 번역해서 분석까지 해왔음\n클로드코드 쓰는 사람들이면 꼭 한번 읽어보길 추천해\n\n• 워크플로우 오케스트레이션 \n• 서브 에이전트 전략\n• 자가 성장 루프\n• 완료 전 검증\n• 자동 버그 수정\n• 핵심 원칙",
+  "highlights": [],
+  "important": false,
+  "lastUpdate": "2026-03-26T00:18:18.965Z",
+  "link": "https://www.threads.com/@gptaku_ai/post/DVFSz5ckwKW?xmt=AQF0nmxc5KOAvtIBAe-TbO7xHRuEkWDMIPGbksM8Bbf2K32ykZWTEicpG-eBupBJziN6mM3Q&slof=1",
+  "media": [
+    {
+      "link": "https://scontent-dus1-1.cdninstagram.com/v/t51.82787-15/640915130_17895146814408836_5474574703499493496_n.jpg?stp=cp6_dst-jpg_e35_tt6&efg=eyJ2ZW5jb2RlX3RhZyI6InRocmVhZHMuQ0FST1VTRUxfSVRFTS5pbWFnZV91cmxnZW4uMTE3OXgxODY0LnNkci5mODI3ODcuZGVmYXVsdF9pbWFnZS5jMiJ9&_nc_ht=scontent-dus1-1.cdninstagram.com&_nc_cat=108&_nc_oc=Q6cZ2gEaoW5W8q_8jQDIrdUooEtrQOI0hGiCMw2TCoinFBPkYpeAq3KEl-yPXARDjNeznKo&_nc_ohc=7SBCquX-uIwQ7kNvwHL2HcY&_nc_gid=e4bAIaUdRv55hvYq0gBXDg&edm=APs17CUBAAAA&ccb=7-5&ig_cache_key=MzgzODU1Njk4MzE4OTAxOTIwNw%3D%3D.3-ccb7-5&oh=00_AfzAqvau-lwqNMsB4zZA9SVDlb8lO9aU84swPJRSWeUvtA&oe=69C20C35&_nc_sid=10d13b",
+      "type": "image"
+    }
+  ],
+  "note": "클로드코드의 아버지 보리스 체르니가\n팀에서 사용하는 사례와 워크플로우를 공개했는데\n이걸 X이용자가 Claude.md로 만들어서 공유했어\n그래서 나는 이걸 한글로 번역해서 분석까지 해왔음\n\n메모: 기존 report 본문이 남아 있지 않아 저장 시점 제목, excerpt, 태그를 기준으로 복구한 note입니다.\n원문: 스레드 클코대장 지피타쿠 (@gptaku_ai) on Threads\n태그: ClaudeCode, 보리스체르니, AI워크플로우, 에이전트전략\n상태: 복구노트",
+  "removed": false,
+  "sort": 1651703219,
+  "tags": [
+    "ClaudeCode",
+    "보리스체르니",
+    "AI워크플로우",
+    "에이전트전략"
+  ],
+  "title": "스레드 클코대장 지피타쿠 (@gptaku_ai) on Threads",
+  "type": "link",
+  "user": {
+    "$id": 724603,
+    "$ref": "users"
+  }
+}

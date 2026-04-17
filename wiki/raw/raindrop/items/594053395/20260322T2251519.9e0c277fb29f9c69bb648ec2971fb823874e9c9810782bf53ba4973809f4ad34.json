@@ -1,0 +1,59 @@
+{
+  "_id": 594053395,
+  "collection": {
+    "$id": 20521420,
+    "$ref": "collections",
+    "oid": 20521420
+  },
+  "collectionId": 20521420,
+  "cover": "https://cdn.ppomppu.co.kr/zboard/data3/2023/0614/20230614091050_44ock93A6X.jpg",
+  "created": "2023-06-19T01:32:50.152Z",
+  "creatorRef": {
+    "_id": 724603,
+    "avatar": "",
+    "email": "",
+    "name": "kangsazang"
+  },
+  "domain": "m.ppomppu.co.kr",
+  "excerpt": "여기를 눌러 링크를 확인하세요",
+  "highlights": [],
+  "important": false,
+  "lastUpdate": "2026-03-22T22:51:51.919Z",
+  "link": "https://m.ppomppu.co.kr/new/bbs_view.php?id=etc_info&no=37646",
+  "media": [
+    {
+      "link": "https://cdn.ppomppu.co.kr/zboard/data3/2023/0614/20230614091050_44ock93A6X.jpg",
+      "type": "image"
+    },
+    {
+      "link": "https://cdn.ppomppu.co.kr/zboard/data3/2023/0614/m_20230614091050_44ock93A6X.jpg",
+      "type": "image"
+    },
+    {
+      "link": "https://cdn.ppomppu.co.kr/zboard/data3/2023/0614/m_20230614091051_20uLIuysY2.jpg",
+      "type": "image"
+    },
+    {
+      "link": "https://cdn.ppomppu.co.kr/zboard/data3/2023/0614/m_20230614091052_6KcducrlXs.jpg",
+      "type": "image"
+    },
+    {
+      "link": "https://cdn.ppomppu.co.kr/zboard/data3/2023/0614/m_20230614091053_AG6NWZforF.jpg",
+      "type": "image"
+    }
+  ],
+  "note": "",
+  "removed": false,
+  "sort": 594053395,
+  "tags": [
+    "김치볶음밥",
+    "김치",
+    "레시피"
+  ],
+  "title": "존맛 김볶밥 ㄷ..JPG",
+  "type": "article",
+  "user": {
+    "$id": 724603,
+    "$ref": "users"
+  }
+}

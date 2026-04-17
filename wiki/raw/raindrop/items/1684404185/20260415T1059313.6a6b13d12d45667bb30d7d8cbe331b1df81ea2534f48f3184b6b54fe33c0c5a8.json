@@ -1,0 +1,41 @@
+{
+  "_id": 1684404185,
+  "collection": {
+    "$id": -1,
+    "$ref": "collections",
+    "oid": -1
+  },
+  "collectionId": -1,
+  "cover": "https://scontent-ber1-1.cdninstagram.com/v/t51.82787-19/600268207_17843001510656474_6394165564692997154_n.jpg?stp=dst-jpg_s640x640_tt6&efg=eyJ2ZW5jb2RlX3RhZyI6InByb2ZpbGVfcGljLmRqYW5nby42NjYuYzIifQ&_nc_ht=scontent-ber1-1.cdninstagram.com&_nc_cat=102&_nc_oc=Q6cZ2gH9Wi-KMGvl0YUHvXiPmmOhBKXtXAseVTJpSu9WoBEbCs6V0RwsDABk1VBtJ31LNok&_nc_ohc=tSoBZHRk1s4Q7kNvwESeS09&_nc_gid=NgI0n6InTdR_qXZ8qNjBlA&edm=APs17CUBAAAA&ccb=7-5&oh=00_Af0UT6yJ-RO47kzgH6xSnU2iYdo4vEJ2W9CGWD-ovGvljg&oe=69E4320A&_nc_sid=10d13b",
+  "created": "2026-04-14T13:46:02.564Z",
+  "creatorRef": {
+    "_id": 724603,
+    "avatar": "",
+    "email": "",
+    "name": "kangsazang"
+  },
+  "domain": "threads.com",
+  "excerpt": "요즘 간간히 Codex나 Claude Code 혹사시키시는 분들 계십니다. \nRAM이나 CPU 터지는 스샷과 함께요.\n\n근데 사실 대부분의 경우 AI 도구 자체가 무거운 게 아닙니다.\n\n 세션 끝나고 남은 고아 프로세스가 범인이에요.\n\n MCP 서버, 서브에이전트, 헤드리스 브라우저, esbuild 같은 자식 프로세스들이\n 세션 종료 후에도 안 죽고 쌓입니다. Activity Monitor 열어보시면 node\n 프로세스가 수십 개 떠있을 겁니다.\n\n 이걸 자동으로 정리하는 CLI를 소개합니다.  좀비클린 -zclean\n\n npx @thestackai/zclean init\n\n 한 줄이면 끝입니다.\n\n - 세션 종료 시 자동 정리 (SessionEnd hook)\n - 매 시간 백그라운드 스캔 (혹시 놓친 것 정리)\n - 실행 중인 세션은 절대 안 건드림\n - macOS / Linux / Windows\n - 의존성 0개",
+  "highlights": [],
+  "important": false,
+  "lastUpdate": "2026-04-15T10:59:31.362Z",
+  "link": "https://www.threads.com/@thestack_ai/post/DV-dQ7ADzIJ?xmt=AQF0fkAmiqFV9G7rsRE2C-v8Tys1pbIQetZgjlEI2tmJPIgezwh--vnqnA42bh46OSQQsRgh&slof=1",
+  "media": [
+    {
+      "link": "https://scontent-ber1-1.cdninstagram.com/v/t51.82787-19/600268207_17843001510656474_6394165564692997154_n.jpg?stp=dst-jpg_s640x640_tt6&efg=eyJ2ZW5jb2RlX3RhZyI6InByb2ZpbGVfcGljLmRqYW5nby42NjYuYzIifQ&_nc_ht=scontent-ber1-1.cdninstagram.com&_nc_cat=102&_nc_oc=Q6cZ2gH9Wi-KMGvl0YUHvXiPmmOhBKXtXAseVTJpSu9WoBEbCs6V0RwsDABk1VBtJ31LNok&_nc_ohc=tSoBZHRk1s4Q7kNvwESeS09&_nc_gid=NgI0n6InTdR_qXZ8qNjBlA&edm=APs17CUBAAAA&ccb=7-5&oh=00_Af0UT6yJ-RO47kzgH6xSnU2iYdo4vEJ2W9CGWD-ovGvljg&oe=69E4320A&_nc_sid=10d13b",
+      "type": "image"
+    }
+  ],
+  "note": "",
+  "removed": false,
+  "sort": 1684404185,
+  "tags": [
+    "접근불가"
+  ],
+  "title": "더 스택 | AI 아카이브 | AI 인사이트 (@thestack_ai) on Threads",
+  "type": "link",
+  "user": {
+    "$id": 724603,
+    "$ref": "users"
+  }
+}

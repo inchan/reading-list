@@ -1,0 +1,62 @@
+{
+  "_id": 857570468,
+  "collection": {
+    "$id": 20521420,
+    "$ref": "collections",
+    "oid": 20521420
+  },
+  "collectionId": 20521420,
+  "cover": "https://dcimg2.dcinside.co.kr/viewimage.php?id=29bed223f6c6&no=24b0d769e1d32ca73fe981fa11d028310a3eab44b7e01cf4f191bdce2881666c8809e56519376ed2d9f5db03abf5e1af42977fd83ffa841798540c27bcf33c0045f3f44c6a5aec4a077c08c47613d24fa8b0495fe28682da24a6f0c67e0b00910b65e90821e0838f71fbc2",
+  "created": "2024-09-20T03:20:56.520Z",
+  "creatorRef": {
+    "_id": 724603,
+    "avatar": "",
+    "email": "",
+    "name": "kangsazang"
+  },
+  "domain": "gall.dcinside.com",
+  "excerpt": "자 친구들 오랜만이야 오랜만에 류수영 레시피 돌아왔다! 최근 방송한 편스토랑  이번에 진짜 평생 써먹는 평생갈비찜 레시피를 공개함 먼저 수입산 냉동 소갈비 2kg준비! 이거면 가족끼리도 배터지게 먹는다고 함...ㄹㅇ",
+  "highlights": [],
+  "important": false,
+  "lastUpdate": "2026-03-22T22:51:51.919Z",
+  "link": "https://gall.dcinside.com/board/view/?id=dcbest&no=257974",
+  "media": [
+    {
+      "link": "https://dcimg2.dcinside.co.kr/viewimage.php?id=29bed223f6c6&no=24b0d769e1d32ca73fe981fa11d028310a3eab44b7e01cf4f191bdce2881666c8809e56519376ed2d9f5db03abf5e1af42977fd83ffa841798540c27bcf33c0045f3f44c6a5aec4a077c08c47613d24fa8b0495fe28682da24a6f0c67e0b00910b65e90821e0838f71fbc2",
+      "type": "image"
+    },
+    {
+      "link": "https://dcimg4.dcinside.co.kr/viewimage.php?id=2fbcc323e7d334aa51b1d3a24780&no=24b0d769e1d32ca73fe981fa11d028310a3eab44b7e01cf4f191bdce2881666c8809e56519376ed2d9f5db03abf5a5ff6acacd8b8c9dc8f6442626004ad340b31b2ea668ca91813366fa1f30dbe0ca6bf6157f7680bb37eb007a1a0d9b283b72c896c668cbc6d0028894e60d",
+      "type": "image"
+    },
+    {
+      "link": "https://dcimg4.dcinside.co.kr/viewimage.php?id=2fbcc323e7d334aa51b1d3a24780&no=24b0d769e1d32ca73fe981fa11d028310a3eab44b7e01cf4f191bdce2881666c8809e56519376ed2d9f5db03abf5a5ff6acacd8b8c9dc8f6442626004ad511b8f3ad39ea7fe526f89c63720b5f9213e00c33d5d6ba031246ee6f0432006302a2ec33a65749e3673d23301593",
+      "type": "image"
+    },
+    {
+      "link": "https://dcimg4.dcinside.co.kr/viewimage.php?id=2fbcc323e7d334aa51b1d3a24780&no=24b0d769e1d32ca73fe981fa11d028310a3eab44b7e01cf4f191bdce2881666c8809e56519376ed2d9f5db03abf5a5ff6acacd8b8c9dc8f6442626004a8313e8b521ac638f1b34e432fa9efdda64c89fe7cc67800e1f1ab87f944d5673fc64fd9b22656ab120720152d44bcb",
+      "type": "image"
+    },
+    {
+      "link": "https://dcimg4.dcinside.co.kr/viewimage.php?id=2fbcc323e7d334aa51b1d3a24780&no=24b0d769e1d32ca73fe981fa11d028310a3eab44b7e01cf4f191bdce2881666c8809e56519376ed2d9f5db03abf5a5ff6acacd8b8c9dc8f6442626004ad542be1169ca5e53638bf4768bf802d87efba198c44b12aaa76e80fd62f7ec0f145d290f6b49078e03ca5de3333704",
+      "type": "image"
+    }
+  ],
+  "note": "",
+  "reminder": {
+    "date": null
+  },
+  "removed": false,
+  "sort": 857570468,
+  "tags": [
+    "레시피",
+    "류수영",
+    "갈비찜"
+  ],
+  "title": "류수영 - 갈비찜",
+  "type": "link",
+  "user": {
+    "$id": 724603,
+    "$ref": "users"
+  }
+}

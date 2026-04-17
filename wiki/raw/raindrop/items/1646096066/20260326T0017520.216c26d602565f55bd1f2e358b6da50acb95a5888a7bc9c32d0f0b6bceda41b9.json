@@ -1,0 +1,39 @@
+{
+  "_id": 1646096066,
+  "collection": {
+    "$id": 68738562,
+    "$ref": "collections",
+    "oid": 68738562
+  },
+  "collectionId": 68738562,
+  "cover": "https://opengraph.githubassets.com/4fadf1ecc790026bae74818e6ca639f9b9a578f96aa61395d17eb750b6df8be8/treylom/tofu-at",
+  "created": "2026-03-16T13:00:59.912Z",
+  "creatorRef": {
+    "_id": 724603,
+    "avatar": "",
+    "email": "",
+    "name": "kangsazang"
+  },
+  "domain": "github.com",
+  "excerpt": "Convert workflows into Agent Teams (Split Pane/Swarm) for Claude Code - treylom/tofu-at",
+  "highlights": [],
+  "important": false,
+  "lastUpdate": "2026-03-26T00:17:52.014Z",
+  "link": "https://github.com/treylom/tofu-at/tree/feature/codex?media_id=3853429103470924595_63388232158&media_author_id=63388232158&ranking_info_token=GCA2ZmRkNjM0NmY3Y2U0NTFlYTlmYmE2YzZkMDk5MDMzYyWGs2UVkAMWsve%2Fmw0YEzM4NTMzOTUxMTUwMjkxMTkyMjgoA3ZsbAA%3D&utm_source=ig_text_post_permalink",
+  "media": [
+    {
+      "link": "https://opengraph.githubassets.com/4fadf1ecc790026bae74818e6ca639f9b9a578f96aa61395d17eb750b6df8be8/treylom/tofu-at",
+      "type": "image"
+    }
+  ],
+  "note": "기존 스킬, 에이전트, 커맨드를 분석하여 Claude Code의 Agent Teams(Split Pane/Swarm) 구성을 자동 생성하는 오케스트레이션 프레임워크.\n27개 도메인의 137명 전문가 페르소나, Ralph Loop 품질 보장 사이클, 3계층 공유 메모리(Markdown + SQLite WAL + MCP Memory)를 포함한다.\n원클릭 설치 스크립트와 슬래시 커맨드(/tofu-at)로 간편하게 실행 가능하며, Agent Office 대시보드로 실시간 진행 상황을 추적할 수 있다.\n\n메모: Claude Code의 실험적 Agent Teams 기능을 실용적으로 활용할 수 있게 만드는 도구.\n제안: 미정\n태그: claude-code, agent-teams, orchestration, 병렬처리\n상태: #대기중",
+  "removed": false,
+  "sort": 1646122534,
+  "tags": [],
+  "title": "treylom/tofu-at at feature/codex",
+  "type": "link",
+  "user": {
+    "$id": 724603,
+    "$ref": "users"
+  }
+}
