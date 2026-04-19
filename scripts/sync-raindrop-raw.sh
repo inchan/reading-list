@@ -110,6 +110,40 @@ write_markdown_snapshot() {
   } > "$md_path"
 }
 
+collect_handled_source_ids() {
+  local output_file="$1"
+  : > "$output_file"
+
+  if [ -d wiki ]; then
+    while IFS= read -r file; do
+      awk '
+        NR == 1 && $0 == "---" { in_frontmatter = 1; next }
+        in_frontmatter && $0 == "---" { exit }
+        in_frontmatter && /^source_ids:/ { in_source_ids = 1; next }
+        in_frontmatter && in_source_ids && /^[[:space:]]*-[[:space:]]*/ {
+          line = $0
+          sub(/^[[:space:]]*-[[:space:]]*/, "", line)
+          gsub(/^["\047]/, "", line)
+          gsub(/["\047]$/, "", line)
+          print line
+          next
+        }
+        in_frontmatter && in_source_ids { in_source_ids = 0 }
+      ' "$file" >> "$output_file"
+    done < <(find wiki -type f -name '*.md' \
+      ! -path 'wiki/raw/*' \
+      ! -name 'index.md' \
+      ! -name 'log.md' \
+      ! -name 'SCHEMA.md' | sort)
+  fi
+
+  if [ -f wiki/log.md ]; then
+    grep -Eo 'raindrop:[0-9]+' wiki/log.md >> "$output_file" || true
+  fi
+
+  sort -u "$output_file" -o "$output_file"
+}
+
 mkdir -p wiki/raw/raindrop/items wiki/raw/raindrop/manifests tmp "$(dirname "$queue_file")"
 
 log_info "Raindrop raw sync start: collection=${collection_id}"
@@ -121,10 +155,13 @@ fi
 
 manifest_lines="$(mktemp)"
 queue_lines="$(mktemp)"
-trap 'rm -f "$manifest_lines" "$queue_lines"' EXIT
+handled_source_ids="$(mktemp)"
+trap 'rm -f "$manifest_lines" "$queue_lines" "$handled_source_ids"' EXIT
+collect_handled_source_ids "$handled_source_ids"
 
 printf '%s' "$items" | jq -c '.[]' | while IFS= read -r item; do
   id=$(printf '%s' "$item" | jq -r '._id // .id')
+  source_id="raindrop:${id}"
   updated=$(printf '%s' "$item" | jq -r '.lastUpdate // .created // ""')
   normalized=$(printf '%s' "$item" | jq -S '.')
   digest=$(printf '%s' "$normalized" | sha256_text)
@@ -133,6 +170,7 @@ printf '%s' "$items" | jq -c '.[]' | while IFS= read -r item; do
   json_path="${item_dir}/${stamp}.${digest}.json"
   md_path="${item_dir}/${stamp}.${digest}.md"
   status="existing"
+  handled_status="pending"
 
   mkdir -p "$item_dir"
   if { [ -f "$json_path" ] && [ ! -f "$md_path" ]; } || { [ ! -f "$json_path" ] && [ -f "$md_path" ]; }; then
@@ -144,8 +182,15 @@ printf '%s' "$items" | jq -c '.[]' | while IFS= read -r item; do
     printf '%s\n' "$normalized" > "$json_path"
     write_markdown_snapshot "$item" "$json_path" "$md_path" "$digest"
     status="new"
+  fi
+
+  if grep -Fxq "$source_id" "$handled_source_ids"; then
+    handled_status="handled"
+  fi
+
+  if [ "$status" = "new" ] || [ "$handled_status" = "pending" ]; then
     jq -n \
-      --arg source_id "raindrop:${id}" \
+      --arg source_id "$source_id" \
       --arg title "$(printf '%s' "$item" | jq -r '.title // "Untitled"')" \
       --arg url "$(printf '%s' "$item" | jq -r '.link // .url // ""')" \
       --arg raw_markdown "$md_path" \
@@ -156,14 +201,15 @@ printf '%s' "$items" | jq -c '.[]' | while IFS= read -r item; do
   fi
 
   jq -n \
-    --arg source_id "raindrop:${id}" \
+    --arg source_id "$source_id" \
     --arg title "$(printf '%s' "$item" | jq -r '.title // "Untitled"')" \
     --arg url "$(printf '%s' "$item" | jq -r '.link // .url // ""')" \
     --arg status "$status" \
+    --arg handled_status "$handled_status" \
     --arg raw_markdown "$md_path" \
     --arg raw_json "$json_path" \
     --arg digest "sha256:${digest}" \
-    '{source_id:$source_id,title:$title,url:$url,status:$status,raw_markdown:$raw_markdown,raw_json:$raw_json,content_digest:$digest}' \
+    '{source_id:$source_id,title:$title,url:$url,status:$status,handled_status:$handled_status,raw_markdown:$raw_markdown,raw_json:$raw_json,content_digest:$digest}' \
     >> "$manifest_lines"
 done
 

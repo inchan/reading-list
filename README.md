@@ -46,9 +46,10 @@ compiled wiki. The synthesis step is intentionally local.
 
 Flow:
 1. Sync Raindrop items into immutable raw markdown/json pairs.
-2. Build `tmp/wiki-compile-queue.json` for newly seen content digests.
-3. Compile queued raw sources locally with Codex using the prompt contracts.
-4. Keep compiled summaries, section headings, and explanatory prose Korean-first.
+2. Build `tmp/wiki-compile-queue.json` for raw sources that are not yet reflected in compiled wiki pages or `needs-review` log coverage.
+3. On the first bootstrap, this means the queue can include the full library backlog; after sources are handled, subsequent runs collapse back to incremental additions and updates.
+4. Compile queued raw sources locally with Codex using the prompt contracts.
+5. Keep compiled summaries, section headings, and explanatory prose Korean-first.
 5. Run `scripts/prepare-wiki-publish.sh --site-url "$READING_LIST_SITE_URL"` to regenerate `wiki/feed.xml` and deployment `index.xml`.
 6. Commit only wiki changes when `dry_run=false`.
 

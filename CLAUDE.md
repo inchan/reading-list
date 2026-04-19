@@ -7,9 +7,10 @@ This repository turns Raindrop bookmarks into immutable raw source snapshots and
 ## Active architecture
 
 1. `scripts/sync-raindrop-raw.sh` fetches Raindrop items and stores immutable `.json` + `.md` raw snapshots under `wiki/raw/raindrop/items/`.
-2. The same script emits `tmp/wiki-compile-queue.json` containing only newly seen content digests.
-3. Codex runs locally with prompt-only skill material plus local schema/prompt contracts.
-4. Codex updates compiled pages in `wiki/`, navigation files in `wiki/index.md` and `wiki/log.md`, then regenerates `wiki/feed.xml` and deployment `index.xml`.
+2. The same script emits `tmp/wiki-compile-queue.json` for raw sources that are still unhandled by compiled wiki pages or `needs-review` log coverage.
+3. On an initial bootstrap, the queue can include the full Raindrop backlog; once sources are handled, later runs shrink back to incremental additions and updates.
+4. Codex runs locally with prompt-only skill material plus local schema/prompt contracts.
+5. Codex updates compiled pages in `wiki/`, navigation files in `wiki/index.md` and `wiki/log.md`, then regenerates `wiki/feed.xml` and deployment `index.xml`.
 
 ## Boundaries
 

@@ -8,7 +8,7 @@ setup() {
   mkdir -p "$TEST_WORKDIR/wiki/raw/raindrop" "$TEST_WORKDIR/wiki/raw/sources"
   cd "$TEST_WORKDIR"
 
-  export RAINDROP_TEST_TOKEN="test-token-123"
+  export RAINDROP_TEST_TOKEN="***"
   export TEST_BIN_DIR="$BATS_TEST_TMPDIR/bin"
   mkdir -p "$TEST_BIN_DIR"
   export PATH="$TEST_BIN_DIR:$PATH"
@@ -33,6 +33,35 @@ EOF
   chmod +x "$TEST_BIN_DIR/curl"
 }
 
+write_compiled_fixture() {
+  mkdir -p wiki/concepts
+  cat > wiki/concepts/example.md <<'EOF'
+---
+title: Example
+created: 2026-04-18
+updated: 2026-04-18
+type: concept
+sources:
+  - wiki/raw/raindrop/items/101/raw.md
+source_ids:
+  - raindrop:101
+tags: [test]
+---
+
+# Example
+EOF
+}
+
+write_needs_review_log_fixture() {
+  cat > wiki/log.md <<'EOF'
+# Wiki Log
+
+## [2026-04-18] needs-review | Example
+- Sources: raindrop:101
+- Status: raw capture was too sparse for safe compilation.
+EOF
+}
+
 @test "syncs Raindrop items into immutable raw snapshots and compile queue" {
   run bash scripts/sync-raindrop-raw.sh --collection -1 --limit 1
 
@@ -51,7 +80,7 @@ EOF
   [ "$(jq -r '.items[0].raw_markdown' tmp/wiki-compile-queue.json)" = "$raw_md" ]
 }
 
-@test "second sync with same digest does not enqueue duplicate work" {
+@test "second sync keeps re-queueing existing raw items until they are reflected in wiki" {
   run bash scripts/sync-raindrop-raw.sh --collection -1 --limit 1
   [ "$status" -eq 0 ]
 
@@ -59,5 +88,26 @@ EOF
   [ "$status" -eq 0 ]
 
   [ "$(find wiki/raw/raindrop/items/101 -name '*.md' | wc -l | tr -d ' ')" = "1" ]
+  [ "$(jq '.items | length' tmp/wiki-compile-queue.json)" = "1" ]
+  [ "$(jq -r '.items[0].source_id' tmp/wiki-compile-queue.json)" = "raindrop:101" ]
+}
+
+@test "existing raw items stop re-queueing after a compiled wiki page records the source id" {
+  run bash scripts/sync-raindrop-raw.sh --collection -1 --limit 1
+  [ "$status" -eq 0 ]
+  write_compiled_fixture
+
+  run bash scripts/sync-raindrop-raw.sh --collection -1 --limit 1
+  [ "$status" -eq 0 ]
+  [ "$(jq '.items | length' tmp/wiki-compile-queue.json)" = "0" ]
+}
+
+@test "needs-review log entries count as handled sources for incremental sync" {
+  run bash scripts/sync-raindrop-raw.sh --collection -1 --limit 1
+  [ "$status" -eq 0 ]
+  write_needs_review_log_fixture
+
+  run bash scripts/sync-raindrop-raw.sh --collection -1 --limit 1
+  [ "$status" -eq 0 ]
   [ "$(jq '.items | length' tmp/wiki-compile-queue.json)" = "0" ]
 }

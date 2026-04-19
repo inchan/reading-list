@@ -6,7 +6,7 @@ Use this repository as a Raindrop raw-sync and wiki-compilation project.
 
 - sync raw source material from Raindrop
 - preserve raw snapshots as immutable source files
-- queue newly synced raw items for compilation
+- queue the full backlog on initial bootstrap, then only unresolved/new/updated raw items on later runs
 - compile durable markdown wiki pages from those raw files
 
 ## Working rules
@@ -32,6 +32,7 @@ Use this repository as a Raindrop raw-sync and wiki-compilation project.
 
 - raw-source sync remains deterministic
 - raw snapshots stay immutable once written
-- queued work only includes new content digests
+- initial bootstrap re-queues every unhandled source until the wiki or `needs-review` log reflects it
+- later runs collapse back to incremental additions and updates
 - wiki pages preserve provenance
 - output remains readable in a wiki-style browsing workflow

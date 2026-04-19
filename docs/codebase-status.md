@@ -22,9 +22,10 @@ Implemented surfaces:
 2. Normalize each item and compute a SHA-256 content digest.
 3. Write immutable raw snapshots under `wiki/raw/raindrop/items/<id>/`.
 4. Emit a manifest under `wiki/raw/raindrop/manifests/`.
-5. Emit `tmp/wiki-compile-queue.json` containing only newly seen digests.
-6. Compile queued raw sources locally with Codex into Korean-first wiki pages.
-7. Generate `wiki/feed.xml` from the current compiled wiki and mirror the deployment feed to `index.xml`.
+5. Emit `tmp/wiki-compile-queue.json` for any source that is still not represented in compiled wiki `source_ids` or the `needs-review` log.
+6. On the first bootstrap, this queue can contain the full Raindrop backlog; later runs naturally narrow to unresolved/new/updated sources.
+7. Compile queued raw sources locally with Codex into Korean-first wiki pages.
+8. Generate `wiki/feed.xml` from the current compiled wiki and mirror the deployment feed to `index.xml`.
 
 ## What was removed as non-live legacy
 
