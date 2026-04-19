@@ -7,19 +7,21 @@ site_url="${READING_LIST_SITE_URL:-}"
 feed_output="wiki/feed.xml"
 deploy_output="index.xml"
 wiki_dir="wiki"
+mode="raw"
 
 usage() {
   cat <<'EOF'
-Usage: scripts/prepare-wiki-publish.sh --site-url URL [--feed-output FILE] [--deploy-output FILE] [--wiki-dir DIR]
+Usage: scripts/prepare-wiki-publish.sh --site-url URL [--feed-output FILE] [--deploy-output FILE] [--wiki-dir DIR] [--mode MODE]
 
-Regenerate the local RSS feed for the compiled wiki. This prepares the wiki
-state for commit or publication without touching legacy report artifacts.
+Regenerate the local RSS feed for reading-list publication without touching the
+wiki index. By default, deployment uses raw-item RSS (one RSS item per raw source).
 
 Options:
   --site-url URL       Absolute base URL used in RSS links.
   --feed-output FILE   RSS output path. Default: wiki/feed.xml
   --deploy-output FILE Deployment RSS path. Default: index.xml
   --wiki-dir DIR       Wiki directory to scan. Default: wiki
+  --mode MODE          RSS mode passed to generate-wiki-rss.py. Default: raw
 EOF
 }
 
@@ -39,6 +41,10 @@ while [ "$#" -gt 0 ]; do
       ;;
     --wiki-dir)
       wiki_dir="${2:?--wiki-dir requires a directory}"
+      shift 2
+      ;;
+    --mode)
+      mode="${2:?--mode requires a mode}"
       shift 2
       ;;
     -h|--help)
@@ -61,6 +67,7 @@ fi
 python3 "$SCRIPT_DIR/generate-wiki-rss.py" \
   --wiki-dir "$wiki_dir" \
   --site-url "$site_url" \
+  --mode "$mode" \
   --output "$feed_output"
 
 if [ "$deploy_output" != "$feed_output" ]; then

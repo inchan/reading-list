@@ -121,3 +121,79 @@ EOF
   [ "$status" -ne 0 ]
   [[ "$output" == *"Korean-first summary required"* ]]
 }
+
+@test "generates raw-item RSS with one item per raw source and preserves tags" {
+  mkdir -p wiki/raw/raindrop/items/101 wiki/raw/raindrop/items/102 public
+
+  cat > wiki/raw/raindrop/items/101/raw.md <<'EOF'
+---
+title: "첫 번째 원문"
+source_type: raindrop
+source_id: 101
+source_url: "https://example.test/one"
+created: "2026-04-17T01:02:03Z"
+updated: "2026-04-18T09:10:11Z"
+synced_at: "2026-04-18T09:20:00Z"
+content_digest: sha256:abc123
+raw_json: "wiki/raw/raindrop/items/101/raw.json"
+tags: ["ai","korea"]
+---
+
+# 첫 번째 원문
+
+- Source URL: https://example.test/one
+- Raindrop ID: 101
+- Synced at: 2026-04-18T09:20:00Z
+- Content digest: sha256:abc123
+
+## Excerpt
+
+영문 excerpt only.
+
+## Note
+
+한국어 메모가 RSS 설명으로 들어가야 한다.
+EOF
+
+  cat > wiki/raw/raindrop/items/102/raw.md <<'EOF'
+---
+title: "두 번째 원문"
+source_type: raindrop
+source_id: 102
+source_url: "https://example.test/two"
+created: "2026-04-16T01:02:03Z"
+updated: "2026-04-17T09:10:11Z"
+synced_at: "2026-04-17T09:20:00Z"
+content_digest: sha256:def456
+raw_json: "wiki/raw/raindrop/items/102/raw.json"
+tags: ["travel"]
+---
+
+# 두 번째 원문
+
+## Note
+
+두 번째 한국어 메모다.
+EOF
+
+  run python3 scripts/generate-wiki-rss.py \
+    --site-url "https://example.test/reading-list" \
+    --mode raw \
+    --output public/feed.xml
+
+  [ "$status" -eq 0 ]
+  [ -f public/feed.xml ]
+
+  python3 - <<'PY'
+import xml.etree.ElementTree as ET
+root = ET.parse('public/feed.xml').getroot()
+channel = root.find('channel')
+items = channel.findall('item')
+assert len(items) == 2
+assert [i.findtext('title') for i in items] == ['첫 번째 원문', '두 번째 원문']
+assert items[0].findtext('link') == 'https://example.test/reading-list/wiki/raw/raindrop/items/101/raw.md'
+assert '한국어 메모가 RSS 설명으로 들어가야 한다.' in items[0].findtext('description')
+assert '[tags] ai, korea' in items[0].findtext('description')
+assert '[tags] travel' in items[1].findtext('description')
+PY
+}

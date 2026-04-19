@@ -7,6 +7,7 @@ import argparse
 import email.utils
 import re
 import sys
+import unicodedata
 import xml.etree.ElementTree as ET
 from dataclasses import dataclass
 from datetime import datetime, timezone
@@ -33,9 +34,15 @@ class WikiEntry:
 
 def parse_args() -> argparse.Namespace:
     parser = argparse.ArgumentParser(
-        description="Generate wiki/feed.xml from compiled wiki markdown pages."
+        description="Generate reading-list RSS feeds from compiled wiki pages or raw sources."
     )
     parser.add_argument("--wiki-dir", default="wiki", help="Wiki directory to scan.")
+    parser.add_argument(
+        "--mode",
+        choices=("compiled", "raw"),
+        default="compiled",
+        help="Feed mode: compiled wiki pages or raw-source items. Default: compiled",
+    )
     parser.add_argument(
         "--site-url",
         default="",
@@ -55,7 +62,7 @@ def parse_args() -> argparse.Namespace:
 
 
 def strip_quotes(value: str) -> str:
-    value = value.strip()
+    value = unicodedata.normalize("NFC", value.strip())
     if len(value) >= 2 and value[0] == value[-1] and value[0] in {"'", '"'}:
         return value[1:-1]
     return value
@@ -97,6 +104,36 @@ def first_body_paragraph(body: str) -> str:
         paragraph.append(line)
 
     return " ".join(paragraph).strip()
+
+
+def section_text(body: str, heading: str) -> str:
+    lines = body.splitlines()
+    collecting = False
+    collected: list[str] = []
+    target = f"## {heading}"
+    for raw_line in lines:
+        line = raw_line.rstrip()
+        if line == target:
+            collecting = True
+            continue
+        if collecting and line.startswith("## "):
+            break
+        if collecting:
+            stripped = line.strip()
+            if stripped:
+                collected.append(stripped)
+    return " ".join(collected).strip()
+
+
+def normalize_tags(value: str) -> list[str]:
+    value = value.strip()
+    if not value.startswith("[") or not value.endswith("]"):
+        return []
+    inner = value[1:-1].strip()
+    if not inner:
+        return []
+    parts = [part.strip().strip('"\'') for part in inner.split(",")]
+    return [part for part in parts if part]
 
 
 def load_index_summaries(wiki_dir: Path) -> dict[str, str]:
@@ -142,7 +179,7 @@ def rss_date(value: str) -> str:
 
 
 def has_hangul(value: str) -> bool:
-    return bool(HANGUL_RE.search(value))
+    return bool(HANGUL_RE.search(unicodedata.normalize("NFC", value)))
 
 
 def collect_entries(wiki_dir: Path, allow_non_korean_summary: bool) -> list[WikiEntry]:
@@ -192,6 +229,58 @@ def collect_entries(wiki_dir: Path, allow_non_korean_summary: bool) -> list[Wiki
     return sorted(entries, key=lambda entry: (parse_date(entry.updated), entry.title), reverse=True)
 
 
+def collect_raw_entries(wiki_dir: Path, allow_non_korean_summary: bool) -> list[WikiEntry]:
+    entries: list[WikiEntry] = []
+    errors: list[str] = []
+    raw_root = wiki_dir / 'raw' / 'raindrop' / 'items'
+    if not raw_root.exists():
+        return []
+
+    for path in sorted(raw_root.rglob('*.md')):
+        markdown = path.read_text(encoding='utf-8')
+        frontmatter, body = split_frontmatter(markdown)
+        relative_to_wiki = path.relative_to(wiki_dir).as_posix()
+        link_path = f"{wiki_dir.name}/{relative_to_wiki}"
+
+        title = frontmatter.get('title') or path.stem.replace('-', ' ').title()
+        updated = frontmatter.get('updated') or frontmatter.get('synced_at') or frontmatter.get('created') or ''
+        created = frontmatter.get('created') or updated
+        note = section_text(body, 'Note')
+        excerpt = section_text(body, 'Excerpt')
+        tags = normalize_tags(frontmatter.get('tags', '[]'))
+        if note == 'None':
+            note = ''
+        if excerpt == 'None':
+            excerpt = ''
+        summary = note or excerpt or title or first_body_paragraph(body)
+        if tags:
+            tag_suffix = f" [tags] {', '.join(tags)}"
+            summary = f"{summary}{tag_suffix}" if summary else tag_suffix.strip()
+
+        if not summary:
+            errors.append(f"{path}: missing RSS summary")
+        elif not allow_non_korean_summary and not has_hangul(summary):
+            errors.append(f"{path}: Korean-first summary required")
+
+        entries.append(
+            WikiEntry(
+                title=title,
+                relative_path=relative_to_wiki,
+                link_path=link_path,
+                updated=updated,
+                created=created,
+                summary=summary,
+            )
+        )
+
+    if errors:
+        for error in errors:
+            print(error, file=sys.stderr)
+        raise SystemExit(1)
+
+    return sorted(entries, key=lambda entry: (parse_date(entry.updated), entry.title), reverse=True)
+
+
 def build_feed(site_url: str, entries: list[WikiEntry]) -> ET.ElementTree:
     base_url = site_url.rstrip("/") + "/"
     rss = ET.Element("rss", version="2.0")
@@ -232,9 +321,10 @@ def main() -> int:
         print(f"Wiki directory not found: {wiki_dir}", file=sys.stderr)
         return 2
 
-    entries = collect_entries(
-        wiki_dir=wiki_dir,
-        allow_non_korean_summary=args.allow_non_korean_summary,
+    entries = (
+        collect_raw_entries(wiki_dir=wiki_dir, allow_non_korean_summary=args.allow_non_korean_summary)
+        if args.mode == 'raw'
+        else collect_entries(wiki_dir=wiki_dir, allow_non_korean_summary=args.allow_non_korean_summary)
     )
     output_path = Path(args.output)
     output_path.parent.mkdir(parents=True, exist_ok=True)
