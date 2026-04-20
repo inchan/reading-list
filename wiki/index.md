@@ -1,6 +1,6 @@
 # Wiki Index
 
-Last updated: 2026-04-18
+Last updated: 2026-04-20
 
 ## Raw source lanes
 - `wiki/raw/raindrop/` — Raindrop 동기화 스냅샷과 원문 캡처

@@ -164,13 +164,13 @@ def parse_date(value: str) -> datetime:
         return datetime(1970, 1, 1, tzinfo=timezone.utc)
 
     try:
-        return datetime.strptime(value[:10], "%Y-%m-%d").replace(tzinfo=timezone.utc)
+        parsed = datetime.fromisoformat(value.replace("Z", "+00:00"))
+        return parsed.astimezone(timezone.utc)
     except ValueError:
         pass
 
     try:
-        parsed = datetime.fromisoformat(value.replace("Z", "+00:00"))
-        return parsed.astimezone(timezone.utc)
+        return datetime.strptime(value[:10], "%Y-%m-%d").replace(tzinfo=timezone.utc)
     except ValueError:
         return datetime(1970, 1, 1, tzinfo=timezone.utc)
 
@@ -285,7 +285,7 @@ def collect_raw_entries(wiki_dir: Path, allow_non_korean_summary: bool) -> list[
             print(error, file=sys.stderr)
         raise SystemExit(1)
 
-    return sorted(entries, key=lambda entry: (parse_date(entry.updated), entry.title), reverse=True)
+    return sorted(entries, key=lambda entry: (parse_date(entry.created), entry.title), reverse=True)
 
 
 def build_feed(site_url: str, entries: list[WikiEntry]) -> ET.ElementTree:
@@ -311,7 +311,7 @@ def build_feed(site_url: str, entries: list[WikiEntry]) -> ET.ElementTree:
         ET.SubElement(item, "title").text = entry.title
         ET.SubElement(item, "link").text = primary_link
         ET.SubElement(item, "guid", isPermaLink="true").text = primary_link
-        ET.SubElement(item, "pubDate").text = rss_date(entry.updated or entry.created)
+        ET.SubElement(item, "pubDate").text = rss_date(entry.created)
         ET.SubElement(item, "description").text = description
 
     ET.indent(rss, space="  ")

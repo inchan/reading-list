@@ -10,6 +10,16 @@ upstream template references in this repository unless matching files exist
 under `prompts/skills/`. Use `wiki/SCHEMA.md` and this action prompt as the
 authoritative local schema.
 
+## Required orientation before compile work
+
+Before compiling anything, read in this order:
+
+1. `wiki/SCHEMA.md`
+2. `wiki/index.md`
+3. recent entries from `wiki/log.md`
+
+Do not skip this. The goal is to avoid duplicate pages, tag drift, and missed cross-links.
+
 ## Repository Layout Overrides
 
 - Raw sources live under `wiki/raw/`, not root-level `raw/`.
@@ -50,9 +60,21 @@ For each source:
 3. Preserve provenance in frontmatter with `sources` and `source_ids`.
 4. Cite raw sources in the body when making factual claims.
 5. Write summaries, section headings, and explanatory prose Korean-first.
-6. Update `wiki/index.md` with Korean-first summaries.
-7. Append a parseable entry to `wiki/log.md`.
-8. After compilation, run `scripts/prepare-wiki-publish.sh --site-url "$READING_LIST_SITE_URL"` to regenerate `wiki/feed.xml`.
+6. Set `primary_category` and canonical `tags`; use `status_tags` for source quality or workflow state.
+7. When raw or legacy spellings differ from canonical forms, record them in `aliases` when useful.
+8. Add at least 2 outbound links to related wiki pages when relevant pages exist.
+9. Update `wiki/index.md` with Korean-first summaries.
+10. Append a parseable entry to `wiki/log.md`.
+11. After compilation, run `scripts/prepare-wiki-publish.sh --site-url "$READING_LIST_SITE_URL"` to regenerate `wiki/feed.xml`.
+
+## Autonomous taxonomy rules
+
+- reading-list uses an LLM-managed taxonomy; human approval is not required before creating a category or tag.
+- Prefer existing canonical categories and tags when they fit.
+- If a new canonical category or tag is clearly needed, create it consistently and keep spelling stable.
+- Normalize near-duplicates into one canonical form instead of preserving drift.
+- Move source-quality labels such as `접근불가` into `status_tags`, not topical tags.
+- If a category is too weak to justify top-level navigation, treat it as a detail tag instead.
 
 ## Safety Rules
 
@@ -60,3 +82,4 @@ For each source:
 - Keep changes in markdown wiki files unless the task explicitly requires docs or workflow edits.
 - Do not touch old Raindrop write-back scripts.
 - If a source cannot be compiled safely, append a `needs-review` log entry instead of inventing missing facts.
+- If new information conflicts with an existing page, preserve the contradiction with dates/sources instead of silently overwriting it.

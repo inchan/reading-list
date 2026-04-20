@@ -193,6 +193,9 @@ assert len(items) == 2
 assert [i.findtext('title') for i in items] == ['첫 번째 원문', '두 번째 원문']
 assert items[0].findtext('link') == 'https://example.test/one'
 assert items[0].findtext('guid') == 'https://example.test/one'
+assert items[0].findtext('pubDate') == 'Fri, 17 Apr 2026 01:02:03 GMT'
+assert items[1].findtext('pubDate') == 'Thu, 16 Apr 2026 01:02:03 GMT'
+assert channel.findtext('lastBuildDate') == 'Sat, 18 Apr 2026 09:10:11 GMT'
 assert '한국어 메모가 RSS 설명으로 들어가야 한다.' in items[0].findtext('description')
 assert '[raw] https://example.test/reading-list/wiki/raw/raindrop/items/101/raw.md' in items[0].findtext('description')
 assert '[source] https://example.test/one' in items[0].findtext('description')

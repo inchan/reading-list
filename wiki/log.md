@@ -1,5 +1,15 @@
 # Wiki Log
 
+## [2026-04-20] update | Hermes-style wiki governance alignment
+- Updated: wiki/SCHEMA.md
+- Updated: prompts/actions/wiki-compile.md
+- Updated: prompts/ingest-source-into-wiki.md
+- Updated: AGENTS.md
+- Updated: docs/tag-audit/tag-normalization.md
+- Created: docs/tag-audit/hermes-wiki-alignment.md
+- Updated: wiki/index.md
+- Goal: preserve the existing reading-list wiki structure while adding explicit orientation, autonomous taxonomy governance, stronger frontmatter, and maintenance/lint expectations.
+
 ## [2026-04-18] ingest | Compile Raindrop raw queue into Korean-first wiki pages
 - Sources: 109 items from `tmp/wiki-compile-queue.json`
 - Created: wiki/concepts/ai-agent-harness-and-workflows.md

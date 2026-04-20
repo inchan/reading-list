@@ -1,0 +1,255 @@
+{
+  "wiki_pages": 12,
+  "tags": [
+    {
+      "tag": "ai-agent",
+      "count": 3,
+      "example": "wiki/concepts/ai-agent-harness-and-workflows.md"
+    },
+    {
+      "tag": "claude-code",
+      "count": 2,
+      "example": "wiki/concepts/ai-agent-harness-and-workflows.md"
+    },
+    {
+      "tag": "document-ai",
+      "count": 2,
+      "example": "wiki/concepts/ai-content-design-and-creative-automation.md"
+    },
+    {
+      "tag": "reference",
+      "count": 2,
+      "example": "wiki/concepts/culture-and-reference-watchlist.md"
+    },
+    {
+      "tag": "agentic-ai",
+      "count": 1,
+      "example": "wiki/concepts/ai-security-imperatives-post-claude-mythos.md"
+    },
+    {
+      "tag": "ai-agents",
+      "count": 1,
+      "example": "wiki/concepts/ai-security-imperatives-post-claude-mythos.md"
+    },
+    {
+      "tag": "ai-design",
+      "count": 1,
+      "example": "wiki/concepts/ai-content-design-and-creative-automation.md"
+    },
+    {
+      "tag": "ai-infra",
+      "count": 1,
+      "example": "wiki/concepts/llm-routing-and-cost-optimization.md"
+    },
+    {
+      "tag": "ai-workflow",
+      "count": 1,
+      "example": "wiki/concepts/ai-agent-harness-and-workflows.md"
+    },
+    {
+      "tag": "architecture",
+      "count": 1,
+      "example": "wiki/concepts/claude-code-architecture-diagram-skill.md"
+    },
+    {
+      "tag": "automation",
+      "count": 1,
+      "example": "wiki/concepts/ai-agent-tools-and-infrastructure.md"
+    },
+    {
+      "tag": "claude-mythos",
+      "count": 1,
+      "example": "wiki/concepts/ai-security-imperatives-post-claude-mythos.md"
+    },
+    {
+      "tag": "codex",
+      "count": 1,
+      "example": "wiki/concepts/ai-agent-harness-and-workflows.md"
+    },
+    {
+      "tag": "content-automation",
+      "count": 1,
+      "example": "wiki/concepts/ai-content-design-and-creative-automation.md"
+    },
+    {
+      "tag": "context-engineering",
+      "count": 1,
+      "example": "wiki/concepts/knowledge-graph-rag-and-document-ai.md"
+    },
+    {
+      "tag": "cost-optimization",
+      "count": 1,
+      "example": "wiki/concepts/llm-routing-and-cost-optimization.md"
+    },
+    {
+      "tag": "culture",
+      "count": 1,
+      "example": "wiki/concepts/culture-and-reference-watchlist.md"
+    },
+    {
+      "tag": "deception",
+      "count": 1,
+      "example": "wiki/concepts/ai-security-imperatives-post-claude-mythos.md"
+    },
+    {
+      "tag": "developer-tools",
+      "count": 1,
+      "example": "wiki/concepts/ai-agent-tools-and-infrastructure.md"
+    },
+    {
+      "tag": "diagrams",
+      "count": 1,
+      "example": "wiki/concepts/claude-code-architecture-diagram-skill.md"
+    },
+    {
+      "tag": "finance",
+      "count": 1,
+      "example": "wiki/concepts/ai-finance-and-market-analysis-tools.md"
+    },
+    {
+      "tag": "food-map",
+      "count": 1,
+      "example": "wiki/concepts/korea-food-and-travel-notes.md"
+    },
+    {
+      "tag": "harness-engineering",
+      "count": 1,
+      "example": "wiki/concepts/ai-agent-harness-and-workflows.md"
+    },
+    {
+      "tag": "hermes",
+      "count": 1,
+      "example": "wiki/concepts/claude-code-architecture-diagram-skill.md"
+    },
+    {
+      "tag": "home-cooking",
+      "count": 1,
+      "example": "wiki/concepts/home-cooking-recipe-notes.md"
+    },
+    {
+      "tag": "inference",
+      "count": 1,
+      "example": "wiki/concepts/llm-routing-and-cost-optimization.md"
+    },
+    {
+      "tag": "investing",
+      "count": 1,
+      "example": "wiki/concepts/ai-finance-and-market-analysis-tools.md"
+    },
+    {
+      "tag": "knowledge-graph",
+      "count": 1,
+      "example": "wiki/concepts/knowledge-graph-rag-and-document-ai.md"
+    },
+    {
+      "tag": "korea",
+      "count": 1,
+      "example": "wiki/concepts/korea-food-and-travel-notes.md"
+    },
+    {
+      "tag": "korean-food",
+      "count": 1,
+      "example": "wiki/concepts/home-cooking-recipe-notes.md"
+    },
+    {
+      "tag": "living",
+      "count": 1,
+      "example": "wiki/concepts/living-shopping-and-wellness-notes.md"
+    },
+    {
+      "tag": "llm-routing",
+      "count": 1,
+      "example": "wiki/concepts/llm-routing-and-cost-optimization.md"
+    },
+    {
+      "tag": "market-data",
+      "count": 1,
+      "example": "wiki/concepts/ai-finance-and-market-analysis-tools.md"
+    },
+    {
+      "tag": "mcp",
+      "count": 1,
+      "example": "wiki/concepts/ai-agent-tools-and-infrastructure.md"
+    },
+    {
+      "tag": "needs-review",
+      "count": 1,
+      "example": "wiki/concepts/culture-and-reference-watchlist.md"
+    },
+    {
+      "tag": "obsidian",
+      "count": 1,
+      "example": "wiki/concepts/knowledge-graph-rag-and-document-ai.md"
+    },
+    {
+      "tag": "open-source",
+      "count": 1,
+      "example": "wiki/concepts/ai-agent-tools-and-infrastructure.md"
+    },
+    {
+      "tag": "prompt",
+      "count": 1,
+      "example": "wiki/concepts/ai-content-design-and-creative-automation.md"
+    },
+    {
+      "tag": "rag",
+      "count": 1,
+      "example": "wiki/concepts/knowledge-graph-rag-and-document-ai.md"
+    },
+    {
+      "tag": "recipe",
+      "count": 1,
+      "example": "wiki/concepts/home-cooking-recipe-notes.md"
+    },
+    {
+      "tag": "restaurants",
+      "count": 1,
+      "example": "wiki/concepts/korea-food-and-travel-notes.md"
+    },
+    {
+      "tag": "security",
+      "count": 1,
+      "example": "wiki/concepts/ai-security-imperatives-post-claude-mythos.md"
+    },
+    {
+      "tag": "shopping",
+      "count": 1,
+      "example": "wiki/concepts/living-shopping-and-wellness-notes.md"
+    },
+    {
+      "tag": "skills",
+      "count": 1,
+      "example": "wiki/concepts/claude-code-architecture-diagram-skill.md"
+    },
+    {
+      "tag": "trading",
+      "count": 1,
+      "example": "wiki/concepts/ai-finance-and-market-analysis-tools.md"
+    },
+    {
+      "tag": "travel",
+      "count": 1,
+      "example": "wiki/concepts/korea-food-and-travel-notes.md"
+    },
+    {
+      "tag": "video",
+      "count": 1,
+      "example": "wiki/concepts/ai-content-design-and-creative-automation.md"
+    },
+    {
+      "tag": "vulnops",
+      "count": 1,
+      "example": "wiki/concepts/ai-security-imperatives-post-claude-mythos.md"
+    },
+    {
+      "tag": "watchlist",
+      "count": 1,
+      "example": "wiki/concepts/culture-and-reference-watchlist.md"
+    },
+    {
+      "tag": "wellness",
+      "count": 1,
+      "example": "wiki/concepts/living-shopping-and-wellness-notes.md"
+    }
+  ]
+}
