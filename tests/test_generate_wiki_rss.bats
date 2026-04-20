@@ -191,9 +191,14 @@ channel = root.find('channel')
 items = channel.findall('item')
 assert len(items) == 2
 assert [i.findtext('title') for i in items] == ['첫 번째 원문', '두 번째 원문']
-assert items[0].findtext('link') == 'https://example.test/reading-list/wiki/raw/raindrop/items/101/raw.md'
+assert items[0].findtext('link') == 'https://example.test/one'
+assert items[0].findtext('guid') == 'https://example.test/one'
 assert '한국어 메모가 RSS 설명으로 들어가야 한다.' in items[0].findtext('description')
+assert '[raw] https://example.test/reading-list/wiki/raw/raindrop/items/101/raw.md' in items[0].findtext('description')
+assert '[source] https://example.test/one' in items[0].findtext('description')
 assert '[tags] ai, korea' in items[0].findtext('description')
+assert '[raw] https://example.test/reading-list/wiki/raw/raindrop/items/102/raw.md' in items[1].findtext('description')
+assert '[source] https://example.test/two' in items[1].findtext('description')
 assert '[tags] travel' in items[1].findtext('description')
 PY
 }

@@ -82,6 +82,9 @@ deploy_channel = ET.parse("index.xml").getroot().find("channel")
 assert deploy_channel is not None
 deploy_items = deploy_channel.findall("item")
 assert len(deploy_items) == 1
-assert deploy_items[0].findtext("link") == "https://example.test/reading-list/wiki/raw/raindrop/items/101/raw.md"
+assert deploy_items[0].findtext("link") == "https://example.test/raw"
+assert deploy_items[0].findtext("guid") == "https://example.test/raw"
+assert '[raw] https://example.test/reading-list/wiki/raw/raindrop/items/101/raw.md' in deploy_items[0].findtext('description')
+assert '[source] https://example.test/raw' in deploy_items[0].findtext('description')
 PY
 }

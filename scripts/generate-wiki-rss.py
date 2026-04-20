@@ -30,6 +30,7 @@ class WikiEntry:
     updated: str
     created: str
     summary: str
+    primary_link: str | None = None
 
 
 def parse_args() -> argparse.Namespace:
@@ -218,6 +219,7 @@ def collect_entries(wiki_dir: Path, allow_non_korean_summary: bool) -> list[Wiki
                     updated=updated,
                     created=created,
                     summary=summary,
+                    primary_link=None,
                 )
             )
 
@@ -245,6 +247,7 @@ def collect_raw_entries(wiki_dir: Path, allow_non_korean_summary: bool) -> list[
         title = frontmatter.get('title') or path.stem.replace('-', ' ').title()
         updated = frontmatter.get('updated') or frontmatter.get('synced_at') or frontmatter.get('created') or ''
         created = frontmatter.get('created') or updated
+        source_url = frontmatter.get('source_url', '').strip()
         note = section_text(body, 'Note')
         excerpt = section_text(body, 'Excerpt')
         tags = normalize_tags(frontmatter.get('tags', '[]'))
@@ -253,6 +256,9 @@ def collect_raw_entries(wiki_dir: Path, allow_non_korean_summary: bool) -> list[
         if excerpt == 'None':
             excerpt = ''
         summary = note or excerpt or title or first_body_paragraph(body)
+        summary = f"{summary} [raw] __RAW_LINK__"
+        if source_url:
+            summary = f"{summary} [source] {source_url}"
         if tags:
             tag_suffix = f" [tags] {', '.join(tags)}"
             summary = f"{summary}{tag_suffix}" if summary else tag_suffix.strip()
@@ -270,6 +276,7 @@ def collect_raw_entries(wiki_dir: Path, allow_non_korean_summary: bool) -> list[
                 updated=updated,
                 created=created,
                 summary=summary,
+                primary_link=source_url or None,
             )
         )
 
@@ -298,12 +305,14 @@ def build_feed(site_url: str, entries: list[WikiEntry]) -> ET.ElementTree:
 
     for entry in entries:
         item = ET.SubElement(channel, "item")
-        link = urljoin(base_url, entry.link_path)
+        raw_link = urljoin(base_url, entry.link_path)
+        primary_link = entry.primary_link or raw_link
+        description = entry.summary.replace('__RAW_LINK__', raw_link)
         ET.SubElement(item, "title").text = entry.title
-        ET.SubElement(item, "link").text = link
-        ET.SubElement(item, "guid", isPermaLink="true").text = link
+        ET.SubElement(item, "link").text = primary_link
+        ET.SubElement(item, "guid", isPermaLink="true").text = primary_link
         ET.SubElement(item, "pubDate").text = rss_date(entry.updated or entry.created)
-        ET.SubElement(item, "description").text = entry.summary
+        ET.SubElement(item, "description").text = description
 
     ET.indent(rss, space="  ")
     return ET.ElementTree(rss)
