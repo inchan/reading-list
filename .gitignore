@@ -3,6 +3,9 @@
 tmp/
 .env
 *.log
+*.pyc
+__pycache__/
 node_modules/
 .DS_Store
 autoresearch-results.tsv
+docs/tag-audit/raw-tags.json

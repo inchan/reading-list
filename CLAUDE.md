@@ -11,6 +11,7 @@ This repository turns Raindrop bookmarks into immutable raw source snapshots and
 3. On an initial bootstrap, the queue can include the full Raindrop backlog; once sources are handled, later runs shrink back to incremental additions and updates.
 4. Codex runs locally with prompt-only skill material plus local schema/prompt contracts.
 5. Codex updates compiled pages in `wiki/`, navigation files in `wiki/index.md` and `wiki/log.md`, then regenerates `wiki/feed.xml` and deployment `index.xml`.
+6. GitHub Pages serves the committed deployment artifact at repo-root `index.xml`.
 
 ## Boundaries
 
@@ -18,11 +19,12 @@ Keep:
 - deterministic sync logic in shell scripts
 - source provenance in raw files and frontmatter
 - synthesis in compiled wiki pages
+- a single public RSS deployment artifact rooted at `index.xml`
 
 Do not assume this repo currently supports:
 - report-page generation
-- public hosting automation
 - broad write-back automation beyond the raw sync / wiki compile path
+- multiple public RSS endpoints beyond the committed deployment feed
 
 ## Current priorities
 
